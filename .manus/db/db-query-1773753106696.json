@@ -1,0 +1,19 @@
+{
+  "query": "SELECT COUNT(*) as total_questions FROM position_questions; SELECT COUNT(*) as total_categories FROM position_categories;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SELECT COUNT(*) as total_questions FROM position_questions; SELECT COUNT(*) as total_categories FROM position_categories;",
+  "rows": [
+    {
+      "total_questions": "127"
+    },
+    {
+      "total_questions": "total_categories"
+    },
+    {
+      "total_questions": "23"
+    }
+  ],
+  "messages": [],
+  "stdout": "total_questions\n127\ntotal_categories\n23\n",
+  "stderr": "",
+  "execution_time_ms": 1859
+}

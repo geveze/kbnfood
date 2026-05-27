@@ -1,0 +1,235 @@
+{
+  "query": "SELECT DISTINCT pq.categoryId FROM position_questions pq ORDER BY pq.categoryId;\nSELECT DISTINCT pc.id FROM position_categories pc ORDER BY pc.id;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SELECT DISTINCT pq.categoryId FROM position_questions pq ORDER BY pq.categoryId;\nSELECT DISTINCT pc.id FROM position_categories pc ORDER BY pc.id;",
+  "rows": [
+    {
+      "categoryId": "5"
+    },
+    {
+      "categoryId": "6"
+    },
+    {
+      "categoryId": "7"
+    },
+    {
+      "categoryId": "8"
+    },
+    {
+      "categoryId": "9"
+    },
+    {
+      "categoryId": "10"
+    },
+    {
+      "categoryId": "id"
+    },
+    {
+      "categoryId": "60026"
+    },
+    {
+      "categoryId": "60027"
+    },
+    {
+      "categoryId": "60028"
+    },
+    {
+      "categoryId": "60029"
+    },
+    {
+      "categoryId": "60030"
+    },
+    {
+      "categoryId": "60031"
+    },
+    {
+      "categoryId": "60032"
+    },
+    {
+      "categoryId": "60033"
+    },
+    {
+      "categoryId": "60034"
+    },
+    {
+      "categoryId": "60035"
+    },
+    {
+      "categoryId": "60036"
+    },
+    {
+      "categoryId": "60037"
+    },
+    {
+      "categoryId": "60038"
+    },
+    {
+      "categoryId": "60039"
+    },
+    {
+      "categoryId": "60040"
+    },
+    {
+      "categoryId": "60041"
+    },
+    {
+      "categoryId": "60042"
+    },
+    {
+      "categoryId": "60043"
+    },
+    {
+      "categoryId": "60044"
+    },
+    {
+      "categoryId": "60045"
+    },
+    {
+      "categoryId": "60046"
+    },
+    {
+      "categoryId": "60047"
+    },
+    {
+      "categoryId": "60048"
+    },
+    {
+      "categoryId": "60049"
+    },
+    {
+      "categoryId": "60050"
+    },
+    {
+      "categoryId": "60051"
+    },
+    {
+      "categoryId": "60052"
+    },
+    {
+      "categoryId": "60053"
+    },
+    {
+      "categoryId": "60054"
+    },
+    {
+      "categoryId": "60055"
+    },
+    {
+      "categoryId": "60056"
+    },
+    {
+      "categoryId": "60057"
+    },
+    {
+      "categoryId": "60058"
+    },
+    {
+      "categoryId": "60059"
+    },
+    {
+      "categoryId": "60060"
+    },
+    {
+      "categoryId": "60061"
+    },
+    {
+      "categoryId": "60062"
+    },
+    {
+      "categoryId": "60063"
+    },
+    {
+      "categoryId": "60064"
+    },
+    {
+      "categoryId": "60065"
+    },
+    {
+      "categoryId": "60066"
+    },
+    {
+      "categoryId": "60067"
+    },
+    {
+      "categoryId": "60068"
+    },
+    {
+      "categoryId": "60069"
+    },
+    {
+      "categoryId": "60070"
+    },
+    {
+      "categoryId": "60071"
+    },
+    {
+      "categoryId": "60072"
+    },
+    {
+      "categoryId": "60073"
+    },
+    {
+      "categoryId": "60074"
+    },
+    {
+      "categoryId": "60075"
+    },
+    {
+      "categoryId": "60076"
+    },
+    {
+      "categoryId": "60077"
+    },
+    {
+      "categoryId": "60078"
+    },
+    {
+      "categoryId": "60079"
+    },
+    {
+      "categoryId": "60080"
+    },
+    {
+      "categoryId": "60081"
+    },
+    {
+      "categoryId": "60082"
+    },
+    {
+      "categoryId": "60083"
+    },
+    {
+      "categoryId": "60084"
+    },
+    {
+      "categoryId": "60085"
+    },
+    {
+      "categoryId": "60086"
+    },
+    {
+      "categoryId": "60087"
+    },
+    {
+      "categoryId": "60088"
+    },
+    {
+      "categoryId": "60089"
+    },
+    {
+      "categoryId": "60090"
+    },
+    {
+      "categoryId": "60091"
+    },
+    {
+      "categoryId": "60092"
+    },
+    {
+      "categoryId": "60093"
+    }
+  ],
+  "messages": [],
+  "stdout": "categoryId\n5\n6\n7\n8\n9\n10\nid\n60026\n60027\n60028\n60029\n60030\n60031\n60032\n60033\n60034\n60035\n60036\n60037\n60038\n60039\n60040\n60041\n60042\n60043\n60044\n60045\n60046\n60047\n60048\n60049\n60050\n60051\n60052\n60053\n60054\n60055\n60056\n60057\n60058\n60059\n60060\n60061\n60062\n60063\n60064\n60065\n60066\n60067\n60068\n60069\n60070\n60071\n60072\n60073\n60074\n60075\n60076\n60077\n60078\n60079\n60080\n60081\n60082\n60083\n60084\n60085\n60086\n60087\n60088\n60089\n60090\n60091\n60092\n60093\n",
+  "stderr": "",
+  "execution_time_ms": 1815
+}

@@ -1,0 +1,8 @@
+{
+  "query": "DROP TABLE periods; CREATE TABLE periods (\n  id INT AUTO_INCREMENT PRIMARY KEY,\n  name VARCHAR(50) NOT NULL UNIQUE,\n  year INT NOT NULL,\n  month INT NOT NULL,\n  startDate TIMESTAMP NOT NULL,\n  endDate TIMESTAMP NOT NULL,\n  isActive BOOLEAN NOT NULL DEFAULT true,\n  createdAt TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,\n  updatedAt TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP\n);",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute DROP TABLE periods; CREATE TABLE periods (\n  id INT AUTO_INCREMENT PRIMARY KEY,\n  name VARCHAR(50) NOT NULL UNIQUE,\n  year INT NOT NULL,\n  month INT NOT NULL,\n  startDate TIMESTAMP NOT NULL,\n  endDate TIMESTAMP NOT NULL,\n  isActive BOOLEAN NOT NULL DEFAULT true,\n  createdAt TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,\n  updatedAt TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP\n);",
+  "returncode": 1,
+  "logs": [
+    "ERROR 3730 (HY000) at line 1: Cannot drop table 'periods' referenced by a foreign key constraint 'fk_3' on table 'actualValues'."
+  ]
+}

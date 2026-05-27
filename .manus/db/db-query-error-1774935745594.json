@@ -1,0 +1,14 @@
+{
+  "query": "-- position_questions tablosunun UPDATE işlemlerini engelle\nDELIMITER //\nCREATE TRIGGER prevent_update_position_questions\nBEFORE UPDATE ON position_questions\nFOR EACH ROW\nBEGIN\n  SIGNAL SQLSTATE '45000'\n  SET MESSAGE_TEXT = 'position_questions tablosu kilitlidir. Sorular değiştirilemez.';\nEND//\nDELIMITER ;\n\n-- position_questions tablosunun DELETE işlemlerini engelle\nDELIMITER //\nCREATE TRIGGER prevent_delete_position_questions\nBEFORE DELETE ON position_questions\nFOR EACH ROW\nBEGIN\n  SIGNAL SQLSTATE '45000'\n  SET MESSAGE_TEXT = 'position_questions tablosu kilitlidir. Sorular silinemez.';\nEND//\nDELIMITER ;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute -- position_questions tablosunun UPDATE işlemlerini engelle\nDELIMITER //\nCREATE TRIGGER prevent_update_position_questions\nBEFORE UPDATE ON position_questions\nFOR EACH ROW\nBEGIN\n  SIGNAL SQLSTATE '45000'\n  SET MESSAGE_TEXT = 'position_questions tablosu kilitlidir. Sorular değiştirilemez.';\nEND//\nDELIMITER ;\n\n-- position_questions tablosunun DELETE işlemlerini engelle\nDELIMITER //\nCREATE TRIGGER prevent_delete_position_questions\nBEFORE DELETE ON position_questions\nFOR EACH ROW\nBEGIN\n  SIGNAL SQLSTATE '45000'\n  SET MESSAGE_TEXT = 'position_questions tablosu kilitlidir. Sorular silinemez.';\nEND//\nDELIMITER ;",
+  "returncode": 1,
+  "logs": [
+    "ERROR 1064 (42000) at line 3: You have an error in your SQL syntax; check the manual that corresponds to your TiDB version for the right syntax to use line 1 column 14 near \"TRIGGER prevent_update_position_questions",
+    "BEFORE UPDATE ON position_questions",
+    "FOR EACH ROW",
+    "BEGIN",
+    "  SIGNAL SQLSTATE '45000'",
+    "  SET MESSAGE_TEXT = 'position_questions tablosu kilitlidir. Sorular değiştirilemez.';",
+    "END\""
+  ]
+}

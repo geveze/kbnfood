@@ -1,0 +1,70 @@
+{
+  "query": "SELECT branchName, period, target, dimension FROM kpi_target_cards_detail ORDER BY branchName, period, target;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SELECT branchName, period, target, dimension FROM kpi_target_cards_detail ORDER BY branchName, period, target;",
+  "rows": [
+    {
+      "branchName": "BY ORDU NOVADA AVM",
+      "period": "2026/1",
+      "target": "Ciro /Hamburger Adedi",
+      "dimension": "Finans"
+    },
+    {
+      "branchName": "BY ORDU NOVADA AVM",
+      "period": "2026/1",
+      "target": "Enerji ve Bakım Onarım Gideri",
+      "dimension": "Finans"
+    },
+    {
+      "branchName": "BY ORDU NOVADA AVM",
+      "period": "2026/1",
+      "target": "Eğitim Performans Oranı",
+      "dimension": "İnsan"
+    },
+    {
+      "branchName": "BY ORDU NOVADA AVM",
+      "period": "2026/1",
+      "target": "Google/Pazar Yerleri Puanı",
+      "dimension": "Müşteri"
+    },
+    {
+      "branchName": "BY ORDU NOVADA AVM",
+      "period": "2026/1",
+      "target": "Gıda/ Malzeme Maliyeti",
+      "dimension": "Finans"
+    },
+    {
+      "branchName": "BY ORDU NOVADA AVM",
+      "period": "2026/1",
+      "target": "Karlılık",
+      "dimension": "Finans"
+    },
+    {
+      "branchName": "BY ORDU NOVADA AVM",
+      "period": "2026/1",
+      "target": "Müşteri Şikayet Oranı",
+      "dimension": "Müşteri"
+    },
+    {
+      "branchName": "BY ORDU NOVADA AVM",
+      "period": "2026/1",
+      "target": "Personel Maliyeti",
+      "dimension": "İnsan"
+    },
+    {
+      "branchName": "BY ORDU NOVADA AVM",
+      "period": "2026/1",
+      "target": "Yan Ürün Satışı",
+      "dimension": "Finans"
+    },
+    {
+      "branchName": "BY ORDU NOVADA AVM",
+      "period": "2026/1",
+      "target": "İşgücü Devir Oranı",
+      "dimension": "İnsan"
+    }
+  ],
+  "messages": [],
+  "stdout": "branchName\tperiod\ttarget\tdimension\nBY ORDU NOVADA AVM\t2026/1\tCiro /Hamburger Adedi\tFinans\nBY ORDU NOVADA AVM\t2026/1\tEnerji ve Bakım Onarım Gideri\tFinans\nBY ORDU NOVADA AVM\t2026/1\tEğitim Performans Oranı\tİnsan\nBY ORDU NOVADA AVM\t2026/1\tGoogle/Pazar Yerleri Puanı\tMüşteri\nBY ORDU NOVADA AVM\t2026/1\tGıda/ Malzeme Maliyeti\tFinans\nBY ORDU NOVADA AVM\t2026/1\tKarlılık\tFinans\nBY ORDU NOVADA AVM\t2026/1\tMüşteri Şikayet Oranı\tMüşteri\nBY ORDU NOVADA AVM\t2026/1\tPersonel Maliyeti\tİnsan\nBY ORDU NOVADA AVM\t2026/1\tYan Ürün Satışı\tFinans\nBY ORDU NOVADA AVM\t2026/1\tİşgücü Devir Oranı\tİnsan\n",
+  "stderr": "",
+  "execution_time_ms": 1596
+}

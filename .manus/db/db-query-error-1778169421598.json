@@ -1,0 +1,8 @@
+{
+  "query": "ALTER TABLE `field_inspections` DROP FOREIGN KEY `field_inspections_inspectorId_users_id_fk`;\nALTER TABLE `field_inspections` MODIFY COLUMN `inspectorId` int NOT NULL;\nALTER TABLE `field_inspections` MODIFY COLUMN `generalAssessment` longtext;\nALTER TABLE `field_inspections` MODIFY COLUMN `pdfUrl` varchar(500);\nALTER TABLE `branches` ADD `branchEmail` varchar(320);\nALTER TABLE `field_inspections` ADD `additionalEmail` varchar(320);\nALTER TABLE `field_inspections` DROP COLUMN `createdAt`;\nALTER TABLE `field_inspections` DROP COLUMN `updatedAt`;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute ALTER TABLE `field_inspections` DROP FOREIGN KEY `field_inspections_inspectorId_users_id_fk`;\nALTER TABLE `field_inspections` MODIFY COLUMN `inspectorId` int NOT NULL;\nALTER TABLE `field_inspections` MODIFY COLUMN `generalAssessment` longtext;\nALTER TABLE `field_inspections` MODIFY COLUMN `pdfUrl` varchar(500);\nALTER TABLE `branches` ADD `branchEmail` varchar(320);\nALTER TABLE `field_inspections` ADD `additionalEmail` varchar(320);\nALTER TABLE `field_inspections` DROP COLUMN `createdAt`;\nALTER TABLE `field_inspections` DROP COLUMN `updatedAt`;",
+  "returncode": 1,
+  "logs": [
+    "ERROR 1091 (42000) at line 1: Can't DROP 'field_inspections_inspectorId_users_id_fk'; check that column/key exists"
+  ]
+}

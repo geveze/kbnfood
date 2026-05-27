@@ -1,0 +1,35 @@
+{
+  "query": "SELECT score, weightedScore, COUNT(*) FROM kpi_target_cards_detail WHERE period = '2026/3' GROUP BY score, weightedScore LIMIT 5;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SELECT score, weightedScore, COUNT(*) FROM kpi_target_cards_detail WHERE period = '2026/3' GROUP BY score, weightedScore LIMIT 5;",
+  "rows": [
+    {
+      "score": "69.64633708786809",
+      "weightedScore": "5.294007719768218",
+      "COUNT(*)": "1"
+    },
+    {
+      "score": "92.62085626145904",
+      "weightedScore": "14.283803081404233",
+      "COUNT(*)": "1"
+    },
+    {
+      "score": "70.71220755643417",
+      "weightedScore": "8.184959402480125",
+      "COUNT(*)": "1"
+    },
+    {
+      "score": "83.56907263730567",
+      "weightedScore": "12.979212480577837",
+      "COUNT(*)": "1"
+    },
+    {
+      "score": "70.22578350289332",
+      "weightedScore": "9.357065054920563",
+      "COUNT(*)": "1"
+    }
+  ],
+  "messages": [],
+  "stdout": "score\tweightedScore\tCOUNT(*)\n69.64633708786809\t5.294007719768218\t1\n92.62085626145904\t14.283803081404233\t1\n70.71220755643417\t8.184959402480125\t1\n83.56907263730567\t12.979212480577837\t1\n70.22578350289332\t9.357065054920563\t1\n",
+  "stderr": "",
+  "execution_time_ms": 1607
+}

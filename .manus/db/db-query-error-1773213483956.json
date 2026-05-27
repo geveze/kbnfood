@@ -1,0 +1,8 @@
+{
+  "query": "CREATE TABLE `periods` (\n\t`id` int AUTO_INCREMENT NOT NULL,\n\t`name` varchar(50) NOT NULL,\n\t`year` int NOT NULL,\n\t`month` int NOT NULL,\n\t`startDate` timestamp NOT NULL,\n\t`endDate` timestamp NOT NULL,\n\t`isActive` boolean NOT NULL DEFAULT true,\n\t`createdAt` timestamp NOT NULL DEFAULT (now()),\n\t`updatedAt` timestamp NOT NULL DEFAULT (now()) ON UPDATE CURRENT_TIMESTAMP,\n\tCONSTRAINT `periods_id` PRIMARY KEY(`id`),\n\tCONSTRAINT `periods_name_unique` UNIQUE(`name`)\n);",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute CREATE TABLE `periods` (\n\t`id` int AUTO_INCREMENT NOT NULL,\n\t`name` varchar(50) NOT NULL,\n\t`year` int NOT NULL,\n\t`month` int NOT NULL,\n\t`startDate` timestamp NOT NULL,\n\t`endDate` timestamp NOT NULL,\n\t`isActive` boolean NOT NULL DEFAULT true,\n\t`createdAt` timestamp NOT NULL DEFAULT (now()),\n\t`updatedAt` timestamp NOT NULL DEFAULT (now()) ON UPDATE CURRENT_TIMESTAMP,\n\tCONSTRAINT `periods_id` PRIMARY KEY(`id`),\n\tCONSTRAINT `periods_name_unique` UNIQUE(`name`)\n);",
+  "returncode": 1,
+  "logs": [
+    "ERROR 1050 (42S01) at line 1: Table '6XmnMHSGkmqmcvGw6sxZ3M.periods' already exists"
+  ]
+}

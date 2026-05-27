@@ -1,0 +1,90 @@
+{
+  "query": "SELECT id, name FROM branches LIMIT 20;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SELECT id, name FROM branches LIMIT 20;",
+  "rows": [
+    {
+      "id": "1",
+      "name": "BY İSTANBUL BAKIRKÖY "
+    },
+    {
+      "id": "30002",
+      "name": "BY ORDU NOVADA AVM"
+    },
+    {
+      "id": "30003",
+      "name": "AFYON WATERMALL"
+    },
+    {
+      "id": "30004",
+      "name": "ANTALYA ALANYA AKDENİZ AVM"
+    },
+    {
+      "id": "30005",
+      "name": "ANTALYA ALANYA CADDE"
+    },
+    {
+      "id": "30006",
+      "name": "AYDIN EFELER"
+    },
+    {
+      "id": "30007",
+      "name": "BURSA KENT MEYDANI AVM"
+    },
+    {
+      "id": "30008",
+      "name": "BURSA ÖZLÜCE"
+    },
+    {
+      "id": "30009",
+      "name": "ÇANAKKALE 17 BURDA AVM"
+    },
+    {
+      "id": "30010",
+      "name": "DENİZLİ FORUM AVM"
+    },
+    {
+      "id": "30011",
+      "name": "ESKİŞEHİR"
+    },
+    {
+      "id": "30012",
+      "name": "GAZİANTEP SANKO AVM"
+    },
+    {
+      "id": "30013",
+      "name": "İSTANBUL AKSARAY"
+    },
+    {
+      "id": "30014",
+      "name": "İSTANBUL AQUA FLORYA"
+    },
+    {
+      "id": "30015",
+      "name": "İSTANBUL ARENAPARK AVM"
+    },
+    {
+      "id": "30016",
+      "name": "İSTANBUL ATLAS ÜNİVERSİTESİ"
+    },
+    {
+      "id": "30017",
+      "name": "İSTANBUL AVCILAR ÇARŞI"
+    },
+    {
+      "id": "30018",
+      "name": "İSTANBUL BAĞCILAR"
+    },
+    {
+      "id": "30019",
+      "name": "İSTANBUL BAŞAKŞEHİR"
+    },
+    {
+      "id": "30020",
+      "name": "İSTANBUL BEŞİKTAŞ"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tname\n1\tBY İSTANBUL BAKIRKÖY \n30002\tBY ORDU NOVADA AVM\n30003\tAFYON WATERMALL\n30004\tANTALYA ALANYA AKDENİZ AVM\n30005\tANTALYA ALANYA CADDE\n30006\tAYDIN EFELER\n30007\tBURSA KENT MEYDANI AVM\n30008\tBURSA ÖZLÜCE\n30009\tÇANAKKALE 17 BURDA AVM\n30010\tDENİZLİ FORUM AVM\n30011\tESKİŞEHİR\n30012\tGAZİANTEP SANKO AVM\n30013\tİSTANBUL AKSARAY\n30014\tİSTANBUL AQUA FLORYA\n30015\tİSTANBUL ARENAPARK AVM\n30016\tİSTANBUL ATLAS ÜNİVERSİTESİ\n30017\tİSTANBUL AVCILAR ÇARŞI\n30018\tİSTANBUL BAĞCILAR\n30019\tİSTANBUL BAŞAKŞEHİR\n30020\tİSTANBUL BEŞİKTAŞ\n",
+  "stderr": "",
+  "execution_time_ms": 1560
+}

@@ -1,0 +1,23 @@
+CREATE TABLE `kpi_target_cards_detail` (
+	`id` int AUTO_INCREMENT NOT NULL,
+	`period` varchar(20) NOT NULL,
+	`branchName` varchar(255) NOT NULL,
+	`branchManager` varchar(255) NOT NULL,
+	`dimension` varchar(100) NOT NULL,
+	`target` varchar(255) NOT NULL,
+	`targetDescription` text,
+	`unit` varchar(50),
+	`source` varchar(100),
+	`frequency` varchar(50),
+	`weight` int DEFAULT 0,
+	`targetType` varchar(20),
+	`lowerLimit` varchar(50),
+	`targetValue` varchar(50),
+	`upperLimit` varchar(50),
+	`actualValue` varchar(50),
+	`score` varchar(50),
+	`weightedScore` varchar(50),
+	`createdAt` timestamp NOT NULL DEFAULT (now()),
+	`updatedAt` timestamp NOT NULL DEFAULT (now()) ON UPDATE CURRENT_TIMESTAMP,
+	CONSTRAINT `kpi_target_cards_detail_id` PRIMARY KEY(`id`)
+);

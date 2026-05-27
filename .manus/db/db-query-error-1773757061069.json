@@ -1,0 +1,8 @@
+{
+  "query": "INSERT INTO positions (id, name) VALUES (5, 'SERVIS'), (6, 'RESTORAN_YONETIMI'), (7, 'IZGARA_YONETICI'), (8, 'KASA')",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute INSERT INTO positions (id, name) VALUES (5, 'SERVIS'), (6, 'RESTORAN_YONETIMI'), (7, 'IZGARA_YONETICI'), (8, 'KASA')",
+  "returncode": 1,
+  "logs": [
+    "ERROR 1364 (HY000) at line 1: Field 'displayName' doesn't have a default value"
+  ]
+}

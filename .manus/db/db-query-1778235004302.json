@@ -1,0 +1,130 @@
+{
+  "query": "SHOW TABLES;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SHOW TABLES;",
+  "rows": [
+    {
+      "Tables_in_6XmnMHSGkmqmcvGw6sxZ3M": "__drizzle_migrations"
+    },
+    {
+      "Tables_in_6XmnMHSGkmqmcvGw6sxZ3M": "actualValues"
+    },
+    {
+      "Tables_in_6XmnMHSGkmqmcvGw6sxZ3M": "branches"
+    },
+    {
+      "Tables_in_6XmnMHSGkmqmcvGw6sxZ3M": "bulk_upload_history"
+    },
+    {
+      "Tables_in_6XmnMHSGkmqmcvGw6sxZ3M": "critical_questions"
+    },
+    {
+      "Tables_in_6XmnMHSGkmqmcvGw6sxZ3M": "customer_metrics"
+    },
+    {
+      "Tables_in_6XmnMHSGkmqmcvGw6sxZ3M": "email_settings"
+    },
+    {
+      "Tables_in_6XmnMHSGkmqmcvGw6sxZ3M": "evaluation_periods_used"
+    },
+    {
+      "Tables_in_6XmnMHSGkmqmcvGw6sxZ3M": "field_inspection_answers"
+    },
+    {
+      "Tables_in_6XmnMHSGkmqmcvGw6sxZ3M": "field_inspection_categories"
+    },
+    {
+      "Tables_in_6XmnMHSGkmqmcvGw6sxZ3M": "field_inspection_questions"
+    },
+    {
+      "Tables_in_6XmnMHSGkmqmcvGw6sxZ3M": "field_inspections"
+    },
+    {
+      "Tables_in_6XmnMHSGkmqmcvGw6sxZ3M": "financial_metrics"
+    },
+    {
+      "Tables_in_6XmnMHSGkmqmcvGw6sxZ3M": "hr_metrics"
+    },
+    {
+      "Tables_in_6XmnMHSGkmqmcvGw6sxZ3M": "inspection_actions"
+    },
+    {
+      "Tables_in_6XmnMHSGkmqmcvGw6sxZ3M": "inspection_evaluation_scale"
+    },
+    {
+      "Tables_in_6XmnMHSGkmqmcvGw6sxZ3M": "inspection_warnings"
+    },
+    {
+      "Tables_in_6XmnMHSGkmqmcvGw6sxZ3M": "inspector_general_evaluation"
+    },
+    {
+      "Tables_in_6XmnMHSGkmqmcvGw6sxZ3M": "kpiTargetCards"
+    },
+    {
+      "Tables_in_6XmnMHSGkmqmcvGw6sxZ3M": "kpi_target_cards_detail"
+    },
+    {
+      "Tables_in_6XmnMHSGkmqmcvGw6sxZ3M": "kpi_targets"
+    },
+    {
+      "Tables_in_6XmnMHSGkmqmcvGw6sxZ3M": "login_attempts"
+    },
+    {
+      "Tables_in_6XmnMHSGkmqmcvGw6sxZ3M": "notification_preferences"
+    },
+    {
+      "Tables_in_6XmnMHSGkmqmcvGw6sxZ3M": "openPifEvaluations"
+    },
+    {
+      "Tables_in_6XmnMHSGkmqmcvGw6sxZ3M": "open_pif_evaluations"
+    },
+    {
+      "Tables_in_6XmnMHSGkmqmcvGw6sxZ3M": "performance_data"
+    },
+    {
+      "Tables_in_6XmnMHSGkmqmcvGw6sxZ3M": "performance_evaluation_items"
+    },
+    {
+      "Tables_in_6XmnMHSGkmqmcvGw6sxZ3M": "performance_evaluations"
+    },
+    {
+      "Tables_in_6XmnMHSGkmqmcvGw6sxZ3M": "periods"
+    },
+    {
+      "Tables_in_6XmnMHSGkmqmcvGw6sxZ3M": "position_categories"
+    },
+    {
+      "Tables_in_6XmnMHSGkmqmcvGw6sxZ3M": "position_questions"
+    },
+    {
+      "Tables_in_6XmnMHSGkmqmcvGw6sxZ3M": "positions"
+    },
+    {
+      "Tables_in_6XmnMHSGkmqmcvGw6sxZ3M": "probation_evaluation_criteria"
+    },
+    {
+      "Tables_in_6XmnMHSGkmqmcvGw6sxZ3M": "probation_evaluation_criteria_v2"
+    },
+    {
+      "Tables_in_6XmnMHSGkmqmcvGw6sxZ3M": "probation_evaluations"
+    },
+    {
+      "Tables_in_6XmnMHSGkmqmcvGw6sxZ3M": "probation_evaluations_v2"
+    },
+    {
+      "Tables_in_6XmnMHSGkmqmcvGw6sxZ3M": "reports"
+    },
+    {
+      "Tables_in_6XmnMHSGkmqmcvGw6sxZ3M": "user_sessions"
+    },
+    {
+      "Tables_in_6XmnMHSGkmqmcvGw6sxZ3M": "users"
+    },
+    {
+      "Tables_in_6XmnMHSGkmqmcvGw6sxZ3M": "weekly_plans"
+    }
+  ],
+  "messages": [],
+  "stdout": "Tables_in_6XmnMHSGkmqmcvGw6sxZ3M\n__drizzle_migrations\nactualValues\nbranches\nbulk_upload_history\ncritical_questions\ncustomer_metrics\nemail_settings\nevaluation_periods_used\nfield_inspection_answers\nfield_inspection_categories\nfield_inspection_questions\nfield_inspections\nfinancial_metrics\nhr_metrics\ninspection_actions\ninspection_evaluation_scale\ninspection_warnings\ninspector_general_evaluation\nkpiTargetCards\nkpi_target_cards_detail\nkpi_targets\nlogin_attempts\nnotification_preferences\nopenPifEvaluations\nopen_pif_evaluations\nperformance_data\nperformance_evaluation_items\nperformance_evaluations\nperiods\nposition_categories\nposition_questions\npositions\nprobation_evaluation_criteria\nprobation_evaluation_criteria_v2\nprobation_evaluations\nprobation_evaluations_v2\nreports\nuser_sessions\nusers\nweekly_plans\n",
+  "stderr": "",
+  "execution_time_ms": 1919
+}

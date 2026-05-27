@@ -1,0 +1,9 @@
+{
+  "query": "SELECT \n  p.id,\n  p.name,\n  COUNT(DISTINCT pc.id) as category_count,\n  COUNT(pq.id) as question_count\nFROM positions p\nLEFT JOIN position_categories pc ON p.id = pc.positionId\nLEFT JOIN position_questions pq ON pc.id = pq.categoryId\nGROUP BY p.id, p.name\nORDER BY p.id;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SELECT \n  p.id,\n  p.name,\n  COUNT(DISTINCT pc.id) as category_count,\n  COUNT(pq.id) as question_count\nFROM positions p\nLEFT JOIN position_categories pc ON p.id = pc.positionId\nLEFT JOIN position_questions pq ON pc.id = pq.categoryId\nGROUP BY p.id, p.name\nORDER BY p.id;",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 1571
+}

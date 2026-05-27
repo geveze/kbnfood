@@ -1,0 +1,9 @@
+{
+  "query": "INSERT INTO positions (id, name, displayName) VALUES (5, 'SERVIS', 'Servis'), (6, 'RESTORAN_YONETIMI', 'Restoran Yönetimi'), (7, 'IZGARA_YONETICI', 'Izgara Yöneticisi'), (8, 'KASA', 'Kasa')",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute INSERT INTO positions (id, name, displayName) VALUES (5, 'SERVIS', 'Servis'), (6, 'RESTORAN_YONETIMI', 'Restoran Yönetimi'), (7, 'IZGARA_YONETICI', 'Izgara Yöneticisi'), (8, 'KASA', 'Kasa')",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 1615
+}

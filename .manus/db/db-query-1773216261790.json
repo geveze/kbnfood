@@ -1,0 +1,9 @@
+{
+  "query": "SELECT * FROM kpi_target_cards_detail WHERE branchName = 'Ordu' LIMIT 15;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SELECT * FROM kpi_target_cards_detail WHERE branchName = 'Ordu' LIMIT 15;",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 1583
+}

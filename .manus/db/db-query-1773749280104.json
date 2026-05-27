@@ -1,0 +1,9 @@
+{
+  "query": "ALTER TABLE `performance_evaluation_items` ADD `positionCode` varchar(50) NOT NULL DEFAULT 'UNKNOWN';",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute ALTER TABLE `performance_evaluation_items` ADD `positionCode` varchar(50) NOT NULL DEFAULT 'UNKNOWN';",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 2257
+}

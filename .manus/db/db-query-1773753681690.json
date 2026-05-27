@@ -1,0 +1,30 @@
+{
+  "query": "SELECT id, name FROM positions ORDER BY id;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SELECT id, name FROM positions ORDER BY id;",
+  "rows": [
+    {
+      "id": "8",
+      "name": "Kasa"
+    },
+    {
+      "id": "11",
+      "name": "Izgara"
+    },
+    {
+      "id": "12",
+      "name": "Izgara Yöneticisi"
+    },
+    {
+      "id": "13",
+      "name": "Servis"
+    },
+    {
+      "id": "30002",
+      "name": "Restoran Yönetimi"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tname\n8\tKasa\n11\tIzgara\n12\tIzgara Yöneticisi\n13\tServis\n30002\tRestoran Yönetimi\n",
+  "stderr": "",
+  "execution_time_ms": 1678
+}

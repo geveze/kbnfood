@@ -1,0 +1,160 @@
+{
+  "query": "SELECT id, username, name FROM users WHERE username IS NOT NULL AND username != '' ORDER BY username LIMIT 30;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SELECT id, username, name FROM users WHERE username IS NOT NULL AND username != '' ORDER BY username LIMIT 30;",
+  "rows": [
+    {
+      "id": "114",
+      "username": "admin",
+      "name": "Sistem Yöneticisi"
+    },
+    {
+      "id": "900118",
+      "username": "beykent",
+      "name": "beykent"
+    },
+    {
+      "id": "115",
+      "username": "bolge_muduru",
+      "name": "Bölge Operasyon Müdürü"
+    },
+    {
+      "id": "30094",
+      "username": "bolge_muduru2",
+      "name": "bolge_muduru2"
+    },
+    {
+      "id": "900413",
+      "username": "by2",
+      "name": "BY İSTANBUL BAKIRKÖY  Yöneticisi"
+    },
+    {
+      "id": "900416",
+      "username": "byaaa",
+      "name": "ANTALYA ALANYA AKDENİZ AVM Yöneticisi"
+    },
+    {
+      "id": "900417",
+      "username": "byaac",
+      "name": "ANTALYA ALANYA CADDE Yöneticisi"
+    },
+    {
+      "id": "900415",
+      "username": "byafy",
+      "name": "AFYON WATERMALL Yöneticisi"
+    },
+    {
+      "id": "900418",
+      "username": "byaye",
+      "name": "AYDIN EFELER Yöneticisi"
+    },
+    {
+      "id": "900419",
+      "username": "bybkm",
+      "name": "BURSA KENT MEYDANI AVM Yöneticisi"
+    },
+    {
+      "id": "900420",
+      "username": "byböz",
+      "name": "BURSA ÖZLÜCE Yöneticisi"
+    },
+    {
+      "id": "900422",
+      "username": "bydfa",
+      "name": "DENİZLİ FORUM AVM Yöneticisi"
+    },
+    {
+      "id": "900423",
+      "username": "byesk",
+      "name": "ESKİŞEHİR Yöneticisi"
+    },
+    {
+      "id": "900424",
+      "username": "bygsa",
+      "name": "GAZİANTEP SANKO AVM Yöneticisi"
+    },
+    {
+      "id": "900426",
+      "username": "byi̇af",
+      "name": "İSTANBUL AQUA FLORYA Yöneticisi"
+    },
+    {
+      "id": "900425",
+      "username": "byi̇ak",
+      "name": "İSTANBUL AKSARAY Yöneticisi"
+    },
+    {
+      "id": "900427",
+      "username": "byi̇ar",
+      "name": "İSTANBUL ARENAPARK AVM Yöneticisi"
+    },
+    {
+      "id": "900429",
+      "username": "byi̇aç",
+      "name": "İSTANBUL AVCILAR ÇARŞI Yöneticisi"
+    },
+    {
+      "id": "900428",
+      "username": "byi̇aü",
+      "name": "İSTANBUL ATLAS ÜNİVERSİTESİ Yöneticisi"
+    },
+    {
+      "id": "900430",
+      "username": "byi̇ba",
+      "name": "İSTANBUL BAĞCILAR Yöneticisi"
+    },
+    {
+      "id": "900432",
+      "username": "byi̇be",
+      "name": "İSTANBUL BEŞİKTAŞ Yöneticisi"
+    },
+    {
+      "id": "900433",
+      "username": "byi̇bey",
+      "name": "İSTANBUL BEYKENT Yöneticisi"
+    },
+    {
+      "id": "900434",
+      "username": "byi̇bk",
+      "name": "İSTANBUL BEYLİKDÜZÜ KAVAKLI Yöneticisi"
+    },
+    {
+      "id": "900431",
+      "username": "byi̇bş",
+      "name": "İSTANBUL BAŞAKŞEHİR Yöneticisi"
+    },
+    {
+      "id": "900435",
+      "username": "byi̇ca",
+      "name": "İSTANBUL CADDEBOSTAN Yöneticisi"
+    },
+    {
+      "id": "900436",
+      "username": "byi̇ce",
+      "name": "İSTANBUL CENNET Yöneticisi"
+    },
+    {
+      "id": "900437",
+      "username": "byi̇cv",
+      "name": "İSTANBUL CEVAHİR AVM Yöneticisi"
+    },
+    {
+      "id": "900439",
+      "username": "byi̇es",
+      "name": "İSTANBUL ESENLER Yöneticisi"
+    },
+    {
+      "id": "900440",
+      "username": "byi̇esy",
+      "name": "İSTANBUL ESENYURT Yöneticisi"
+    },
+    {
+      "id": "900441",
+      "username": "byi̇fo",
+      "name": "İSTANBUL FORUM İSTANBUL Yöneticisi"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tusername\tname\n114\tadmin\tSistem Yöneticisi\n900118\tbeykent\tbeykent\n115\tbolge_muduru\tBölge Operasyon Müdürü\n30094\tbolge_muduru2\tbolge_muduru2\n900413\tby2\tBY İSTANBUL BAKIRKÖY  Yöneticisi\n900416\tbyaaa\tANTALYA ALANYA AKDENİZ AVM Yöneticisi\n900417\tbyaac\tANTALYA ALANYA CADDE Yöneticisi\n900415\tbyafy\tAFYON WATERMALL Yöneticisi\n900418\tbyaye\tAYDIN EFELER Yöneticisi\n900419\tbybkm\tBURSA KENT MEYDANI AVM Yöneticisi\n900420\tbyböz\tBURSA ÖZLÜCE Yöneticisi\n900422\tbydfa\tDENİZLİ FORUM AVM Yöneticisi\n900423\tbyesk\tESKİŞEHİR Yöneticisi\n900424\tbygsa\tGAZİANTEP SANKO AVM Yöneticisi\n900426\tbyi̇af\tİSTANBUL AQUA FLORYA Yöneticisi\n900425\tbyi̇ak\tİSTANBUL AKSARAY Yöneticisi\n900427\tbyi̇ar\tİSTANBUL ARENAPARK AVM Yöneticisi\n900429\tbyi̇aç\tİSTANBUL AVCILAR ÇARŞI Yöneticisi\n900428\tbyi̇aü\tİSTANBUL ATLAS ÜNİVERSİTESİ Yöneticisi\n900430\tbyi̇ba\tİSTANBUL BAĞCILAR Yöneticisi\n900432\tbyi̇be\tİSTANBUL BEŞİKTAŞ Yöneticisi\n900433\tbyi̇bey\tİSTANBUL BEYKENT Yöneticisi\n900434\tbyi̇bk\tİSTANBUL BEYLİKDÜZÜ KAVAKLI Yöneticisi\n900431\tbyi̇bş\tİSTANBUL BAŞAKŞEHİR Yöneticisi\n900435\tbyi̇ca\tİSTANBUL CADDEBOSTAN Yöneticisi\n900436\tbyi̇ce\tİSTANBUL CENNET Yöneticisi\n900437\tbyi̇cv\tİSTANBUL CEVAHİR AVM Yöneticisi\n900439\tbyi̇es\tİSTANBUL ESENLER Yöneticisi\n900440\tbyi̇esy\tİSTANBUL ESENYURT Yöneticisi\n900441\tbyi̇fo\tİSTANBUL FORUM İSTANBUL Yöneticisi\n",
+  "stderr": "",
+  "execution_time_ms": 1521
+}

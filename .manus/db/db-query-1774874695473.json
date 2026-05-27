@@ -1,0 +1,40 @@
+{
+  "query": "SELECT \n  p.id as positionId,\n  p.name as positionName,\n  COUNT(DISTINCT pc.id) as categoryCount,\n  COUNT(DISTINCT pq.id) as questionCount\nFROM positions p\nLEFT JOIN position_categories pc ON p.id = pc.positionId\nLEFT JOIN position_questions pq ON pc.id = pq.categoryId\nGROUP BY p.id, p.name\nORDER BY p.id;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SELECT \n  p.id as positionId,\n  p.name as positionName,\n  COUNT(DISTINCT pc.id) as categoryCount,\n  COUNT(DISTINCT pq.id) as questionCount\nFROM positions p\nLEFT JOIN position_categories pc ON p.id = pc.positionId\nLEFT JOIN position_questions pq ON pc.id = pq.categoryId\nGROUP BY p.id, p.name\nORDER BY p.id;",
+  "rows": [
+    {
+      "positionId": "5",
+      "positionName": "SERVIS",
+      "categoryCount": "10",
+      "questionCount": "50"
+    },
+    {
+      "positionId": "6",
+      "positionName": "RESTORAN_YONETIMI",
+      "categoryCount": "8",
+      "questionCount": "50"
+    },
+    {
+      "positionId": "7",
+      "positionName": "IZGARA_YONETICI",
+      "categoryCount": "10",
+      "questionCount": "30"
+    },
+    {
+      "positionId": "8",
+      "positionName": "KASA",
+      "categoryCount": "10",
+      "questionCount": "50"
+    },
+    {
+      "positionId": "90002",
+      "positionName": "IZGARA",
+      "categoryCount": "10",
+      "questionCount": "30"
+    }
+  ],
+  "messages": [],
+  "stdout": "positionId\tpositionName\tcategoryCount\tquestionCount\n5\tSERVIS\t10\t50\n6\tRESTORAN_YONETIMI\t8\t50\n7\tIZGARA_YONETICI\t10\t30\n8\tKASA\t10\t50\n90002\tIZGARA\t10\t30\n",
+  "stderr": "",
+  "execution_time_ms": 1655
+}

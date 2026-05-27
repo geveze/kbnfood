@@ -1,0 +1,15 @@
+{
+  "query": "SELECT id, username, passwordHash FROM users WHERE username = 'byvad';",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SELECT id, username, passwordHash FROM users WHERE username = 'byvad';",
+  "rows": [
+    {
+      "id": "900496",
+      "username": "byvad",
+      "passwordHash": "$2b$10$9i6ePu5BZA4x9BdP.y1AQea3KbQbdccEFXOca/lRzVrMlyh/fbiBG"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tusername\tpasswordHash\n900496\tbyvad\t$2b$10$9i6ePu5BZA4x9BdP.y1AQea3KbQbdccEFXOca/lRzVrMlyh/fbiBG\n",
+  "stderr": "",
+  "execution_time_ms": 1628
+}

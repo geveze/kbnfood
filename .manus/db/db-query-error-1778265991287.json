@@ -1,0 +1,8 @@
+{
+  "query": "ALTER TABLE `field_inspection_questions` ADD `isDeleted` boolean DEFAULT false;\nALTER TABLE `field_inspection_questions` ADD `deletedAt` timestamp;\nALTER TABLE `field_inspection_questions` ADD CONSTRAINT `field_inspection_questions_categoryId_field_inspection_categories_id_fk` FOREIGN KEY (`categoryId`) REFERENCES `field_inspection_categories`(`id`) ON DELETE restrict ON UPDATE no action;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute ALTER TABLE `field_inspection_questions` ADD `isDeleted` boolean DEFAULT false;\nALTER TABLE `field_inspection_questions` ADD `deletedAt` timestamp;\nALTER TABLE `field_inspection_questions` ADD CONSTRAINT `field_inspection_questions_categoryId_field_inspection_categories_id_fk` FOREIGN KEY (`categoryId`) REFERENCES `field_inspection_categories`(`id`) ON DELETE restrict ON UPDATE no action;",
+  "returncode": 1,
+  "logs": [
+    "ERROR 1059 (42000) at line 3: Identifier name 'field_inspection_questions_categoryId_field_inspection_categories_id_fk' is too long"
+  ]
+}

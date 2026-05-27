@@ -1,0 +1,8 @@
+{
+  "query": "INSERT INTO positions (name) VALUES ('IZGARA');",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute INSERT INTO positions (name) VALUES ('IZGARA');",
+  "returncode": 1,
+  "logs": [
+    "ERROR 1364 (HY000) at line 1: Field 'displayName' doesn't have a default value"
+  ]
+}

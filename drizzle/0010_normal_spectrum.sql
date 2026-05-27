@@ -1,0 +1,1 @@
+ALTER TABLE `kpi_target_cards_detail` DROP COLUMN `cariYapi`;

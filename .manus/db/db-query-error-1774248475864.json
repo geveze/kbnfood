@@ -1,0 +1,8 @@
+{
+  "query": "ALTER TABLE `performance_evaluations` DROP COLUMN `employeeRegistrationNumber`;\nALTER TABLE `performance_evaluations` ADD `continueEmploymentReason` text;\nALTER TABLE `performance_evaluations` ADD `managerOpinion` text;\nALTER TABLE `performance_evaluations` ADD `evaluatedByDate` varchar(50);\nALTER TABLE `performance_evaluations` ADD `evaluatedBySecondDate` varchar(50);\nALTER TABLE `performance_evaluations` ADD `hrReviewedByDate` varchar(50);\nALTER TABLE `performance_evaluations` MODIFY COLUMN `successPercentage` varchar(10);\nALTER TABLE `performance_evaluations` MODIFY COLUMN `createdByUserId` varchar(50);",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute ALTER TABLE `performance_evaluations` DROP COLUMN `employeeRegistrationNumber`;\nALTER TABLE `performance_evaluations` ADD `continueEmploymentReason` text;\nALTER TABLE `performance_evaluations` ADD `managerOpinion` text;\nALTER TABLE `performance_evaluations` ADD `evaluatedByDate` varchar(50);\nALTER TABLE `performance_evaluations` ADD `evaluatedBySecondDate` varchar(50);\nALTER TABLE `performance_evaluations` ADD `hrReviewedByDate` varchar(50);\nALTER TABLE `performance_evaluations` MODIFY COLUMN `successPercentage` varchar(10);\nALTER TABLE `performance_evaluations` MODIFY COLUMN `createdByUserId` varchar(50);",
+  "returncode": 1,
+  "logs": [
+    "ERROR 1060 (42S21) at line 3: Duplicate column name 'managerOpinion'"
+  ]
+}

@@ -1,0 +1,430 @@
+{
+  "query": "SELECT username, branchId, isActive FROM users WHERE role = 'branch_manager' ORDER BY username LIMIT 100;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SELECT username, branchId, isActive FROM users WHERE role = 'branch_manager' ORDER BY username LIMIT 100;",
+  "rows": [
+    {
+      "username": "beykent",
+      "branchId": "30021",
+      "isActive": "1"
+    },
+    {
+      "username": "by2",
+      "branchId": "1",
+      "isActive": "1"
+    },
+    {
+      "username": "byaaa",
+      "branchId": "30004",
+      "isActive": "1"
+    },
+    {
+      "username": "byaac",
+      "branchId": "30005",
+      "isActive": "1"
+    },
+    {
+      "username": "byafy",
+      "branchId": "30003",
+      "isActive": "1"
+    },
+    {
+      "username": "byaye",
+      "branchId": "30006",
+      "isActive": "1"
+    },
+    {
+      "username": "bybkm",
+      "branchId": "30007",
+      "isActive": "1"
+    },
+    {
+      "username": "byböz",
+      "branchId": "30008",
+      "isActive": "1"
+    },
+    {
+      "username": "bydfa",
+      "branchId": "30010",
+      "isActive": "1"
+    },
+    {
+      "username": "byesk",
+      "branchId": "30011",
+      "isActive": "1"
+    },
+    {
+      "username": "bygsa",
+      "branchId": "30012",
+      "isActive": "1"
+    },
+    {
+      "username": "byi̇af",
+      "branchId": "30014",
+      "isActive": "1"
+    },
+    {
+      "username": "byi̇ak",
+      "branchId": "30013",
+      "isActive": "1"
+    },
+    {
+      "username": "byi̇ar",
+      "branchId": "30015",
+      "isActive": "1"
+    },
+    {
+      "username": "byi̇aç",
+      "branchId": "30017",
+      "isActive": "1"
+    },
+    {
+      "username": "byi̇aü",
+      "branchId": "30016",
+      "isActive": "1"
+    },
+    {
+      "username": "byi̇ba",
+      "branchId": "30018",
+      "isActive": "1"
+    },
+    {
+      "username": "byi̇be",
+      "branchId": "30020",
+      "isActive": "1"
+    },
+    {
+      "username": "byi̇bey",
+      "branchId": "30021",
+      "isActive": "1"
+    },
+    {
+      "username": "byi̇bk",
+      "branchId": "30022",
+      "isActive": "1"
+    },
+    {
+      "username": "byi̇bş",
+      "branchId": "30019",
+      "isActive": "1"
+    },
+    {
+      "username": "byi̇ca",
+      "branchId": "30023",
+      "isActive": "1"
+    },
+    {
+      "username": "byi̇ce",
+      "branchId": "30024",
+      "isActive": "1"
+    },
+    {
+      "username": "byi̇cv",
+      "branchId": "30025",
+      "isActive": "1"
+    },
+    {
+      "username": "byi̇es",
+      "branchId": "30027",
+      "isActive": "1"
+    },
+    {
+      "username": "byi̇esy",
+      "branchId": "30028",
+      "isActive": "1"
+    },
+    {
+      "username": "byi̇fo",
+      "branchId": "30029",
+      "isActive": "1"
+    },
+    {
+      "username": "byi̇go",
+      "branchId": "30030",
+      "isActive": "1"
+    },
+    {
+      "username": "byi̇gü",
+      "branchId": "30031",
+      "isActive": "1"
+    },
+    {
+      "username": "byi̇hk",
+      "branchId": "30032",
+      "isActive": "1"
+    },
+    {
+      "username": "byi̇is",
+      "branchId": "30033",
+      "isActive": "1"
+    },
+    {
+      "username": "byi̇i̇f",
+      "branchId": "30034",
+      "isActive": "1"
+    },
+    {
+      "username": "byi̇ka",
+      "branchId": "30035",
+      "isActive": "1"
+    },
+    {
+      "username": "byi̇kar",
+      "branchId": "30037",
+      "isActive": "1"
+    },
+    {
+      "username": "byi̇kay",
+      "branchId": "30038",
+      "isActive": "1"
+    },
+    {
+      "username": "byi̇kmp",
+      "branchId": "30039",
+      "isActive": "1"
+    },
+    {
+      "username": "byi̇kğ",
+      "branchId": "30036",
+      "isActive": "1"
+    },
+    {
+      "username": "byi̇ma",
+      "branchId": "30040",
+      "isActive": "1"
+    },
+    {
+      "username": "byi̇mf",
+      "branchId": "30041",
+      "isActive": "1"
+    },
+    {
+      "username": "byi̇mp",
+      "branchId": "30042",
+      "isActive": "1"
+    },
+    {
+      "username": "byi̇mr1",
+      "branchId": "30043",
+      "isActive": "1"
+    },
+    {
+      "username": "byi̇mr2",
+      "branchId": "30044",
+      "isActive": "1"
+    },
+    {
+      "username": "byi̇oa",
+      "branchId": "30045",
+      "isActive": "1"
+    },
+    {
+      "username": "byi̇or",
+      "branchId": "30046",
+      "isActive": "1"
+    },
+    {
+      "username": "byi̇pe",
+      "branchId": "30047",
+      "isActive": "1"
+    },
+    {
+      "username": "byi̇pel",
+      "branchId": "30049",
+      "isActive": "1"
+    },
+    {
+      "username": "byi̇pen",
+      "branchId": "30048",
+      "isActive": "1"
+    },
+    {
+      "username": "byi̇sbc",
+      "branchId": "30051",
+      "isActive": "1"
+    },
+    {
+      "username": "byi̇se",
+      "branchId": "30050",
+      "isActive": "1"
+    },
+    {
+      "username": "byi̇su",
+      "branchId": "30052",
+      "isActive": "1"
+    },
+    {
+      "username": "byi̇ta",
+      "branchId": "30057",
+      "isActive": "1"
+    },
+    {
+      "username": "byi̇to",
+      "branchId": "30058",
+      "isActive": "1"
+    },
+    {
+      "username": "byi̇ve",
+      "branchId": "30062",
+      "isActive": "1"
+    },
+    {
+      "username": "byi̇vi̇a",
+      "branchId": "30063",
+      "isActive": "1"
+    },
+    {
+      "username": "byi̇vi̇m",
+      "branchId": "30064",
+      "isActive": "1"
+    },
+    {
+      "username": "byi̇vi̇p",
+      "branchId": "30065",
+      "isActive": "1"
+    },
+    {
+      "username": "byi̇ya",
+      "branchId": "30066",
+      "isActive": "1"
+    },
+    {
+      "username": "byi̇ze",
+      "branchId": "30067",
+      "isActive": "1"
+    },
+    {
+      "username": "byi̇zha",
+      "branchId": "30068",
+      "isActive": "1"
+    },
+    {
+      "username": "byi̇zhi̇",
+      "branchId": "30069",
+      "isActive": "1"
+    },
+    {
+      "username": "byi̇zkü",
+      "branchId": "30070",
+      "isActive": "1"
+    },
+    {
+      "username": "byi̇zop",
+      "branchId": "30071",
+      "isActive": "1"
+    },
+    {
+      "username": "byi̇ça",
+      "branchId": "30026",
+      "isActive": "1"
+    },
+    {
+      "username": "byi̇üm",
+      "branchId": "30059",
+      "isActive": "1"
+    },
+    {
+      "username": "byi̇üma",
+      "branchId": "30060",
+      "isActive": "1"
+    },
+    {
+      "username": "byi̇üs",
+      "branchId": "30061",
+      "isActive": "1"
+    },
+    {
+      "username": "byi̇şe",
+      "branchId": "30053",
+      "isActive": "1"
+    },
+    {
+      "username": "byi̇şi̇",
+      "branchId": "30054",
+      "isActive": "1"
+    },
+    {
+      "username": "byi̇şi̇m",
+      "branchId": "30055",
+      "isActive": "1"
+    },
+    {
+      "username": "byi̇şi̇ş",
+      "branchId": "30056",
+      "isActive": "1"
+    },
+    {
+      "username": "bykog",
+      "branchId": "30072",
+      "isActive": "1"
+    },
+    {
+      "username": "bykoi̇",
+      "branchId": "30073",
+      "isActive": "1"
+    },
+    {
+      "username": "bykoş",
+      "branchId": "30074",
+      "isActive": "1"
+    },
+    {
+      "username": "bymoi̇",
+      "branchId": "30075",
+      "isActive": "1"
+    },
+    {
+      "username": "bymuf",
+      "branchId": "30076",
+      "isActive": "1"
+    },
+    {
+      "username": "bymum",
+      "branchId": "30077",
+      "isActive": "1"
+    },
+    {
+      "username": "byor",
+      "branchId": "30002",
+      "isActive": "1"
+    },
+    {
+      "username": "byri̇z",
+      "branchId": "30078",
+      "isActive": "1"
+    },
+    {
+      "username": "bysak",
+      "branchId": "30079",
+      "isActive": "1"
+    },
+    {
+      "username": "byteç",
+      "branchId": "30080",
+      "isActive": "1"
+    },
+    {
+      "username": "byvad",
+      "branchId": "30081",
+      "isActive": "1"
+    },
+    {
+      "username": "byçba",
+      "branchId": "30009",
+      "isActive": "1"
+    },
+    {
+      "username": "ordunovada",
+      "branchId": "30002",
+      "isActive": "1"
+    },
+    {
+      "username": "veli.kaya",
+      "branchId": "30002",
+      "isActive": "1"
+    }
+  ],
+  "messages": [],
+  "stdout": "username\tbranchId\tisActive\nbeykent\t30021\t1\nby2\t1\t1\nbyaaa\t30004\t1\nbyaac\t30005\t1\nbyafy\t30003\t1\nbyaye\t30006\t1\nbybkm\t30007\t1\nbyböz\t30008\t1\nbydfa\t30010\t1\nbyesk\t30011\t1\nbygsa\t30012\t1\nbyi̇af\t30014\t1\nbyi̇ak\t30013\t1\nbyi̇ar\t30015\t1\nbyi̇aç\t30017\t1\nbyi̇aü\t30016\t1\nbyi̇ba\t30018\t1\nbyi̇be\t30020\t1\nbyi̇bey\t30021\t1\nbyi̇bk\t30022\t1\nbyi̇bş\t30019\t1\nbyi̇ca\t30023\t1\nbyi̇ce\t30024\t1\nbyi̇cv\t30025\t1\nbyi̇es\t30027\t1\nbyi̇esy\t30028\t1\nbyi̇fo\t30029\t1\nbyi̇go\t30030\t1\nbyi̇gü\t30031\t1\nbyi̇hk\t30032\t1\nbyi̇is\t30033\t1\nbyi̇i̇f\t30034\t1\nbyi̇ka\t30035\t1\nbyi̇kar\t30037\t1\nbyi̇kay\t30038\t1\nbyi̇kmp\t30039\t1\nbyi̇kğ\t30036\t1\nbyi̇ma\t30040\t1\nbyi̇mf\t30041\t1\nbyi̇mp\t30042\t1\nbyi̇mr1\t30043\t1\nbyi̇mr2\t30044\t1\nbyi̇oa\t30045\t1\nbyi̇or\t30046\t1\nbyi̇pe\t30047\t1\nbyi̇pel\t30049\t1\nbyi̇pen\t30048\t1\nbyi̇sbc\t30051\t1\nbyi̇se\t30050\t1\nbyi̇su\t30052\t1\nbyi̇ta\t30057\t1\nbyi̇to\t30058\t1\nbyi̇ve\t30062\t1\nbyi̇vi̇a\t30063\t1\nbyi̇vi̇m\t30064\t1\nbyi̇vi̇p\t30065\t1\nbyi̇ya\t30066\t1\nbyi̇ze\t30067\t1\nbyi̇zha\t30068\t1\nbyi̇zhi̇\t30069\t1\nbyi̇zkü\t30070\t1\nbyi̇zop\t30071\t1\nbyi̇ça\t30026\t1\nbyi̇üm\t30059\t1\nbyi̇üma\t30060\t1\nbyi̇üs\t30061\t1\nbyi̇şe\t30053\t1\nbyi̇şi̇\t30054\t1\nbyi̇şi̇m\t30055\t1\nbyi̇şi̇ş\t30056\t1\nbykog\t30072\t1\nbykoi̇\t30073\t1\nbykoş\t30074\t1\nbymoi̇\t30075\t1\nbymuf\t30076\t1\nbymum\t30077\t1\nbyor\t30002\t1\nbyri̇z\t30078\t1\nbysak\t30079\t1\nbyteç\t30080\t1\nbyvad\t30081\t1\nbyçba\t30009\t1\nordunovada\t30002\t1\nveli.kaya\t30002\t1\n",
+  "stderr": "",
+  "execution_time_ms": 1494
+}

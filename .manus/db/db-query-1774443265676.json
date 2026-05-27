@@ -1,0 +1,9 @@
+{
+  "query": "UPDATE users SET branchName = 'Merkez' WHERE username = 'veli.kaya' AND role = 'branch_manager';\nUPDATE users SET branchName = 'Ordu' WHERE username = 'ordunovada' AND role = 'branch_manager';\nUPDATE users SET branchName = 'İSTANBUL AVCILAR ÇARŞı' WHERE username = 'beykent' AND role = 'branch_manager';",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute UPDATE users SET branchName = 'Merkez' WHERE username = 'veli.kaya' AND role = 'branch_manager';\nUPDATE users SET branchName = 'Ordu' WHERE username = 'ordunovada' AND role = 'branch_manager';\nUPDATE users SET branchName = 'İSTANBUL AVCILAR ÇARŞı' WHERE username = 'beykent' AND role = 'branch_manager';",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 2079
+}

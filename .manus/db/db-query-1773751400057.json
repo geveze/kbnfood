@@ -1,0 +1,13 @@
+{
+  "query": "SELECT COUNT(*) as total_questions FROM performance_evaluation_items;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SELECT COUNT(*) as total_questions FROM performance_evaluation_items;",
+  "rows": [
+    {
+      "total_questions": "0"
+    }
+  ],
+  "messages": [],
+  "stdout": "total_questions\n0\n",
+  "stderr": "",
+  "execution_time_ms": 1543
+}

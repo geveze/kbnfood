@@ -1,0 +1,26 @@
+{
+  "query": "SELECT pc.positionId, COUNT(pq.id) as question_count FROM position_categories pc LEFT JOIN position_questions pq ON pc.id = pq.categoryId GROUP BY pc.positionId ORDER BY pc.positionId;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SELECT pc.positionId, COUNT(pq.id) as question_count FROM position_categories pc LEFT JOIN position_questions pq ON pc.id = pq.categoryId GROUP BY pc.positionId ORDER BY pc.positionId;",
+  "rows": [
+    {
+      "positionId": "1",
+      "question_count": "0"
+    },
+    {
+      "positionId": "2",
+      "question_count": "0"
+    },
+    {
+      "positionId": "3",
+      "question_count": "0"
+    },
+    {
+      "positionId": "4",
+      "question_count": "0"
+    }
+  ],
+  "messages": [],
+  "stdout": "positionId\tquestion_count\n1\t0\n2\t0\n3\t0\n4\t0\n",
+  "stderr": "",
+  "execution_time_ms": 1586
+}

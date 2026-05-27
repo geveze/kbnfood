@@ -1,0 +1,31 @@
+{
+  "query": "SELECT COUNT(*) as total FROM position_categories; SELECT * FROM position_categories LIMIT 5;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SELECT COUNT(*) as total FROM position_categories; SELECT * FROM position_categories LIMIT 5;",
+  "rows": [
+    {
+      "total": "52"
+    },
+    {
+      "total": "id\tpositionId\tname\torder\tcreatedAt\tupdatedAt"
+    },
+    {
+      "total": "90053\t8\tGörev Bilinci\t1\t2026-03-18 05:12:33\t2026-03-18 05:12:33"
+    },
+    {
+      "total": "90054\t8\tİletişim Becerisi\t2\t2026-03-18 05:12:33\t2026-03-18 05:12:33"
+    },
+    {
+      "total": "90055\t8\tAnalitik Düşünme ve Problem Çözme\t3\t2026-03-18 05:12:33\t2026-03-18 05:12:33"
+    },
+    {
+      "total": "90056\t8\tKalite Odaklılık\t4\t2026-03-18 05:12:33\t2026-03-18 05:12:33"
+    },
+    {
+      "total": "90057\t8\tTakım Çalışması ve İşbirliği\t5\t2026-03-18 05:12:33\t2026-03-18 05:12:33"
+    }
+  ],
+  "messages": [],
+  "stdout": "total\n52\nid\tpositionId\tname\torder\tcreatedAt\tupdatedAt\n90053\t8\tGörev Bilinci\t1\t2026-03-18 05:12:33\t2026-03-18 05:12:33\n90054\t8\tİletişim Becerisi\t2\t2026-03-18 05:12:33\t2026-03-18 05:12:33\n90055\t8\tAnalitik Düşünme ve Problem Çözme\t3\t2026-03-18 05:12:33\t2026-03-18 05:12:33\n90056\t8\tKalite Odaklılık\t4\t2026-03-18 05:12:33\t2026-03-18 05:12:33\n90057\t8\tTakım Çalışması ve İşbirliği\t5\t2026-03-18 05:12:33\t2026-03-18 05:12:33\n",
+  "stderr": "",
+  "execution_time_ms": 1804
+}

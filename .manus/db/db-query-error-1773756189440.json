@@ -1,0 +1,8 @@
+{
+  "query": "SELECT \n  pc.id as category_id,\n  pc.name as category_name,\n  COUNT(pq.id) as question_count\nFROM position_categories pc\nLEFT JOIN position_questions pq ON pc.id = pq.categoryId\nWHERE pc.position_id = 8\nGROUP BY pc.id, pc.name\nORDER BY pc.id;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SELECT \n  pc.id as category_id,\n  pc.name as category_name,\n  COUNT(pq.id) as question_count\nFROM position_categories pc\nLEFT JOIN position_questions pq ON pc.id = pq.categoryId\nWHERE pc.position_id = 8\nGROUP BY pc.id, pc.name\nORDER BY pc.id;",
+  "returncode": 1,
+  "logs": [
+    "ERROR 1054 (42S22) at line 1: Unknown column 'pc.position_id' in 'where clause'"
+  ]
+}

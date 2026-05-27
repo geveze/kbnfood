@@ -1,0 +1,9 @@
+{
+  "query": "INSERT INTO kpi_target_cards_detail (period, branchName, branchManager, dimension, target, targetDescription, unit, source, frequency, weight, targetType, lowerLimit, targetValue, upperLimit, actualValue, createdAt, updatedAt) VALUES ('2026/3', 'TEST', 'TEST', 'TEST', 'TEST', 'TEST', 'TEST', 'TEST', 'TEST', 0, 'TEST', '0', '0', '0', NULL, NOW(), NOW());",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute INSERT INTO kpi_target_cards_detail (period, branchName, branchManager, dimension, target, targetDescription, unit, source, frequency, weight, targetType, lowerLimit, targetValue, upperLimit, actualValue, createdAt, updatedAt) VALUES ('2026/3', 'TEST', 'TEST', 'TEST', 'TEST', 'TEST', 'TEST', 'TEST', 'TEST', 0, 'TEST', '0', '0', '0', NULL, NOW(), NOW());",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 1568
+}

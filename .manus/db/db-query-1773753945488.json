@@ -1,0 +1,88 @@
+{
+  "query": "SELECT pq.categoryId, COUNT(*) as count, pc.name, pc.positionId FROM position_questions pq LEFT JOIN position_categories pc ON pq.categoryId = pc.id GROUP BY pq.categoryId ORDER BY pq.categoryId;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SELECT pq.categoryId, COUNT(*) as count, pc.name, pc.positionId FROM position_questions pq LEFT JOIN position_categories pc ON pq.categoryId = pc.id GROUP BY pq.categoryId ORDER BY pq.categoryId;",
+  "rows": [
+    {
+      "categoryId": "1",
+      "count": "16",
+      "name": "NULL",
+      "positionId": "NULL"
+    },
+    {
+      "categoryId": "2",
+      "count": "16",
+      "name": "NULL",
+      "positionId": "NULL"
+    },
+    {
+      "categoryId": "3",
+      "count": "4",
+      "name": "NULL",
+      "positionId": "NULL"
+    },
+    {
+      "categoryId": "4",
+      "count": "4",
+      "name": "NULL",
+      "positionId": "NULL"
+    },
+    {
+      "categoryId": "5",
+      "count": "4",
+      "name": "NULL",
+      "positionId": "NULL"
+    },
+    {
+      "categoryId": "6",
+      "count": "4",
+      "name": "NULL",
+      "positionId": "NULL"
+    },
+    {
+      "categoryId": "7",
+      "count": "6",
+      "name": "NULL",
+      "positionId": "NULL"
+    },
+    {
+      "categoryId": "8",
+      "count": "22",
+      "name": "NULL",
+      "positionId": "NULL"
+    },
+    {
+      "categoryId": "9",
+      "count": "6",
+      "name": "NULL",
+      "positionId": "NULL"
+    },
+    {
+      "categoryId": "10",
+      "count": "29",
+      "name": "NULL",
+      "positionId": "NULL"
+    },
+    {
+      "categoryId": "11",
+      "count": "7",
+      "name": "NULL",
+      "positionId": "NULL"
+    },
+    {
+      "categoryId": "12",
+      "count": "6",
+      "name": "NULL",
+      "positionId": "NULL"
+    },
+    {
+      "categoryId": "13",
+      "count": "3",
+      "name": "NULL",
+      "positionId": "NULL"
+    }
+  ],
+  "messages": [],
+  "stdout": "categoryId\tcount\tname\tpositionId\n1\t16\tNULL\tNULL\n2\t16\tNULL\tNULL\n3\t4\tNULL\tNULL\n4\t4\tNULL\tNULL\n5\t4\tNULL\tNULL\n6\t4\tNULL\tNULL\n7\t6\tNULL\tNULL\n8\t22\tNULL\tNULL\n9\t6\tNULL\tNULL\n10\t29\tNULL\tNULL\n11\t7\tNULL\tNULL\n12\t6\tNULL\tNULL\n13\t3\tNULL\tNULL\n",
+  "stderr": "",
+  "execution_time_ms": 1643
+}

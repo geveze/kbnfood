@@ -1,0 +1,19 @@
+{
+  "query": "SELECT COUNT(*) as category_count FROM field_inspection_categories; SELECT COUNT(*) as question_count FROM field_inspection_questions;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SELECT COUNT(*) as category_count FROM field_inspection_categories; SELECT COUNT(*) as question_count FROM field_inspection_questions;",
+  "rows": [
+    {
+      "category_count": "10"
+    },
+    {
+      "category_count": "question_count"
+    },
+    {
+      "category_count": "117"
+    }
+  ],
+  "messages": [],
+  "stdout": "category_count\n10\nquestion_count\n117\n",
+  "stderr": "",
+  "execution_time_ms": 2126
+}

@@ -1,0 +1,23 @@
+{
+  "extends": ["react-app"],
+  "plugins": ["react"],
+  "rules": {
+    "react/jsx-key": [
+      "error",
+      {
+        "checkFragmentShorthand": true,
+        "checkKeyMustBeforeSpread": true
+      }
+    ],
+    "react/no-array-index-key": "warn",
+    "react/jsx-no-useless-fragment": "warn"
+  },
+  "overrides": [
+    {
+      "files": ["*.tsx", "*.ts"],
+      "rules": {
+        "react/jsx-key": "error"
+      }
+    }
+  ]
+}

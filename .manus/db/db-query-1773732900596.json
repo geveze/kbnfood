@@ -1,0 +1,46 @@
+{
+  "query": "SELECT DISTINCT category FROM performance_evaluation_items WHERE evaluationId = (SELECT id FROM performance_evaluations WHERE totalScore = '99' LIMIT 1);",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SELECT DISTINCT category FROM performance_evaluation_items WHERE evaluationId = (SELECT id FROM performance_evaluations WHERE totalScore = '99' LIMIT 1);",
+  "rows": [
+    {
+      "category": "Kalite Odaklılık"
+    },
+    {
+      "category": "Görev Bilinci"
+    },
+    {
+      "category": "Gıda Güvenliği ve Hijyen"
+    },
+    {
+      "category": "Duygularını Kontrol Etme ve Yönetme"
+    },
+    {
+      "category": "İstasyon Yönetimi"
+    },
+    {
+      "category": "İletişim Becerisi"
+    },
+    {
+      "category": "Analitik Düşünme ve Problem Çözme"
+    },
+    {
+      "category": "Ürün Kalitesi ve Standartlara Uyum"
+    },
+    {
+      "category": "Takım Çalışması ve İşbirliği"
+    },
+    {
+      "category": "Detay Odaklılık"
+    },
+    {
+      "category": "Sonuç Odaklılık"
+    },
+    {
+      "category": "İş Disiplini ve Tutum"
+    }
+  ],
+  "messages": [],
+  "stdout": "category\nKalite Odaklılık\nGörev Bilinci\nGıda Güvenliği ve Hijyen\nDuygularını Kontrol Etme ve Yönetme\nİstasyon Yönetimi\nİletişim Becerisi\nAnalitik Düşünme ve Problem Çözme\nÜrün Kalitesi ve Standartlara Uyum\nTakım Çalışması ve İşbirliği\nDetay Odaklılık\nSonuç Odaklılık\nİş Disiplini ve Tutum\n",
+  "stderr": "",
+  "execution_time_ms": 1654
+}

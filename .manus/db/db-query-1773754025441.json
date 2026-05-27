@@ -1,0 +1,22 @@
+{
+  "query": "SELECT DISTINCT positionId FROM position_categories ORDER BY positionId;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SELECT DISTINCT positionId FROM position_categories ORDER BY positionId;",
+  "rows": [
+    {
+      "positionId": "5"
+    },
+    {
+      "positionId": "6"
+    },
+    {
+      "positionId": "7"
+    },
+    {
+      "positionId": "8"
+    }
+  ],
+  "messages": [],
+  "stdout": "positionId\n5\n6\n7\n8\n",
+  "stderr": "",
+  "execution_time_ms": 1657
+}

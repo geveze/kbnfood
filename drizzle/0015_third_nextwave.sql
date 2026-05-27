@@ -1,0 +1,1 @@
+ALTER TABLE `field_inspections` MODIFY COLUMN `pdfUrl` varchar(500) DEFAULT '';

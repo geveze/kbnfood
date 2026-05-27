@@ -1,0 +1,60 @@
+{
+  "query": "SELECT pc.id, pc.name, COUNT(pq.id) as question_count FROM position_categories pc LEFT JOIN position_questions pq ON pc.id = pq.categoryId WHERE pc.positionId = 8 GROUP BY pc.id, pc.name ORDER BY pc.id",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SELECT pc.id, pc.name, COUNT(pq.id) as question_count FROM position_categories pc LEFT JOIN position_questions pq ON pc.id = pq.categoryId WHERE pc.positionId = 8 GROUP BY pc.id, pc.name ORDER BY pc.id",
+  "rows": [
+    {
+      "id": "60145",
+      "name": "Görev Bilinci",
+      "question_count": "0"
+    },
+    {
+      "id": "60146",
+      "name": "İletişim Becerisi",
+      "question_count": "0"
+    },
+    {
+      "id": "60147",
+      "name": "Analitik Düşünme ve Problem Çözme",
+      "question_count": "0"
+    },
+    {
+      "id": "60148",
+      "name": "Kalite Odaklılık",
+      "question_count": "0"
+    },
+    {
+      "id": "60149",
+      "name": "Takım Çalışması ve İşbirliği",
+      "question_count": "0"
+    },
+    {
+      "id": "60150",
+      "name": "Müşteri Odaklılık",
+      "question_count": "0"
+    },
+    {
+      "id": "60151",
+      "name": "Ticari Bakış",
+      "question_count": "0"
+    },
+    {
+      "id": "60152",
+      "name": "Planlama ve Organize Etme",
+      "question_count": "0"
+    },
+    {
+      "id": "60153",
+      "name": "İş Disiplini ve Tutum",
+      "question_count": "0"
+    },
+    {
+      "id": "60154",
+      "name": "Kasa",
+      "question_count": "0"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tname\tquestion_count\n60145\tGörev Bilinci\t0\n60146\tİletişim Becerisi\t0\n60147\tAnalitik Düşünme ve Problem Çözme\t0\n60148\tKalite Odaklılık\t0\n60149\tTakım Çalışması ve İşbirliği\t0\n60150\tMüşteri Odaklılık\t0\n60151\tTicari Bakış\t0\n60152\tPlanlama ve Organize Etme\t0\n60153\tİş Disiplini ve Tutum\t0\n60154\tKasa\t0\n",
+  "stderr": "",
+  "execution_time_ms": 1629
+}

@@ -1,0 +1,9 @@
+{
+  "query": "UPDATE position_questions SET categoryId = CASE \n  WHEN categoryId = 1 THEN 32\n  WHEN categoryId = 2 THEN 33\n  WHEN categoryId = 3 THEN 34\n  WHEN categoryId = 4 THEN 35\n  WHEN categoryId = 5 THEN 36\n  WHEN categoryId = 6 THEN 37\n  WHEN categoryId = 7 THEN 38\n  WHEN categoryId = 8 THEN 39\n  WHEN categoryId = 9 THEN 40\n  WHEN categoryId = 10 THEN 41\n  ELSE categoryId\nEND WHERE categoryId IN (1, 2, 3, 4, 5, 6, 7, 8, 9, 10)",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute UPDATE position_questions SET categoryId = CASE \n  WHEN categoryId = 1 THEN 32\n  WHEN categoryId = 2 THEN 33\n  WHEN categoryId = 3 THEN 34\n  WHEN categoryId = 4 THEN 35\n  WHEN categoryId = 5 THEN 36\n  WHEN categoryId = 6 THEN 37\n  WHEN categoryId = 7 THEN 38\n  WHEN categoryId = 8 THEN 39\n  WHEN categoryId = 9 THEN 40\n  WHEN categoryId = 10 THEN 41\n  ELSE categoryId\nEND WHERE categoryId IN (1, 2, 3, 4, 5, 6, 7, 8, 9, 10)",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 1621
+}

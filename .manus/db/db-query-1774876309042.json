@@ -1,0 +1,260 @@
+{
+  "query": "SELECT \n  pc.name as category,\n  pq.questionNumber,\n  pq.questionText\nFROM position_categories pc\nJOIN position_questions pq ON pc.id = pq.categoryId\nWHERE pc.positionId = 7\nORDER BY pc.id, pq.id\nLIMIT 50;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SELECT \n  pc.name as category,\n  pq.questionNumber,\n  pq.questionText\nFROM position_categories pc\nJOIN position_questions pq ON pc.id = pq.categoryId\nWHERE pc.positionId = 7\nORDER BY pc.id, pq.id\nLIMIT 50;",
+  "rows": [
+    {
+      "category": "Analitik Düşünme ve Problem Çözme",
+      "questionNumber": "1",
+      "questionText": "Gelişmekte olan problemleri görür, önleyici davranış geliştirir."
+    },
+    {
+      "category": "Analitik Düşünme ve Problem Çözme",
+      "questionNumber": "2",
+      "questionText": "Durum ve problem karşısında alacağı hareketin sonucunu bilir. "
+    },
+    {
+      "category": "Analitik Düşünme ve Problem Çözme",
+      "questionNumber": "3",
+      "questionText": "Mevcut sorunu gidermek için alternatif çözüm yolları geliştirir."
+    },
+    {
+      "category": "Analitik Düşünme ve Problem Çözme",
+      "questionNumber": "4",
+      "questionText": "Benzer sorunlar arasında ilişki kurar; geçmişteki deneyimlerden faydalanır."
+    },
+    {
+      "category": "Detay Odaklılık",
+      "questionNumber": "1",
+      "questionText": "İşlerin hatasız tamamlanması için çaba sarf eder. "
+    },
+    {
+      "category": "Detay Odaklılık",
+      "questionNumber": "2",
+      "questionText": "Küçük detaylara dikkat eder. "
+    },
+    {
+      "category": "Detay Odaklılık",
+      "questionNumber": "3",
+      "questionText": "İşin inceliklerini öğrenmek ve işin bütününe hâkim olabilmek için sürekli gözlem yapar."
+    },
+    {
+      "category": "Detay Odaklılık",
+      "questionNumber": "4",
+      "questionText": "Hataları, iş çıktıları paylaşılmadan fark eder."
+    },
+    {
+      "category": "Duygularını Kontrol Etme ve Yönetme",
+      "questionNumber": "1",
+      "questionText": "İş ortamında; kızgınlık, korku, kaygı, üzüntü, depresyon, vb. duygularını kontrol eder. "
+    },
+    {
+      "category": "Duygularını Kontrol Etme ve Yönetme",
+      "questionNumber": "2",
+      "questionText": "Özel hayatında yaşadığı sıkıntıları, iş ortamına en az ölçüde yansıtır."
+    },
+    {
+      "category": "Duygularını Kontrol Etme ve Yönetme",
+      "questionNumber": "3",
+      "questionText": "Zor çalışma koşullarında ve yoğun mesaide bile başarılı sonuçlar elde edebilir."
+    },
+    {
+      "category": "Görev Bilinci",
+      "questionNumber": "1",
+      "questionText": "Yaptığı işi en iyi şekilde yapar. İş disiplini ve görev bilinci yüksektir."
+    },
+    {
+      "category": "Görev Bilinci",
+      "questionNumber": "2",
+      "questionText": "Sorumluluğundaki işleri, şirket kural ve prosedürlerine uygun bir biçimde gerçekleştirir."
+    },
+    {
+      "category": "Görev Bilinci",
+      "questionNumber": "3",
+      "questionText": "İşine, kuruma ve kendisine sunulan kaynaklara zarar verecek hiçbir davranış sergilemez."
+    },
+    {
+      "category": "Görev Bilinci",
+      "questionNumber": "4",
+      "questionText": "Ahlaki ve etik değerlere uygun davranır."
+    },
+    {
+      "category": "Gıda Güvenliği ve Hijyen",
+      "questionNumber": "1",
+      "questionText": "Ürünlerin son kullanma tarihine dikkat eder. Zayii olmasına izin vermez. (FIFO-İlk Giren İlk Çıkar)"
+    },
+    {
+      "category": "Gıda Güvenliği ve Hijyen",
+      "questionNumber": "2",
+      "questionText": "Sebzeleri standartlara uygun şekilde yıkar."
+    },
+    {
+      "category": "Gıda Güvenliği ve Hijyen",
+      "questionNumber": "3",
+      "questionText": "Küçük ekipmanların hijyenini standartlara uygun olarak sağlar."
+    },
+    {
+      "category": "Gıda Güvenliği ve Hijyen",
+      "questionNumber": "4",
+      "questionText": "Gıda güvenliği ve operasyonel prosedür ve talimatları bilir, bunlara uygun hareket eder."
+    },
+    {
+      "category": "Gıda Güvenliği ve Hijyen",
+      "questionNumber": "5",
+      "questionText": "Temizlik kimyasallarını İSG kurallarına uygun şekilde kullanır."
+    },
+    {
+      "category": "Gıda Güvenliği ve Hijyen",
+      "questionNumber": "6",
+      "questionText": "Çalışma süresince İSG kurallarına uygun hareket eder."
+    },
+    {
+      "category": "Kalite Odaklılık",
+      "questionNumber": "1",
+      "questionText": "Mevcut düzen ve iş yapma yöntemine uygun çalışır. "
+    },
+    {
+      "category": "Kalite Odaklılık",
+      "questionNumber": "2",
+      "questionText": "Kaliteyi belirlenen standartlara göre uyarlar."
+    },
+    {
+      "category": "Kalite Odaklılık",
+      "questionNumber": "3",
+      "questionText": "Yapılan işin kalitesini sürekli geliştirmek yönünde çalışır."
+    },
+    {
+      "category": "Kalite Odaklılık",
+      "questionNumber": "4",
+      "questionText": "İş yapma yöntemine ilişkin akış ve prosedürlerdeki yeniliklere adapte olur."
+    },
+    {
+      "category": "Sonuç Odaklılık",
+      "questionNumber": "1",
+      "questionText": "Mesleki motivasyonu yüksektir ve işini severek yapar."
+    },
+    {
+      "category": "Sonuç Odaklılık",
+      "questionNumber": "2",
+      "questionText": "Kendisine verilen işleri takip eder, doğru, eksiksiz ve zamanında sonuçlandırır."
+    },
+    {
+      "category": "Sonuç Odaklılık",
+      "questionNumber": "3",
+      "questionText": "Her zaman daha iyisini yapmak adına kendisini sürekli geliştirir."
+    },
+    {
+      "category": "Takım Çalışması ve İşbirliği",
+      "questionNumber": "1",
+      "questionText": "Çalışma ortamında iyi ilişkiler kurar ve korur. "
+    },
+    {
+      "category": "Takım Çalışması ve İşbirliği",
+      "questionNumber": "2",
+      "questionText": "Takım arkadaşlarının yardıma ihtiyacı olduğunda gerekli destekte bulunur."
+    },
+    {
+      "category": "Takım Çalışması ve İşbirliği",
+      "questionNumber": "3",
+      "questionText": "Takım ruhuna uyumlu yaklaşımda bulunur."
+    },
+    {
+      "category": "Takım Çalışması ve İşbirliği",
+      "questionNumber": "4",
+      "questionText": "Takımdaki farklı görüşlere karşı toleranslıdır ve destekleyicidir."
+    },
+    {
+      "category": "Ürün Kalitesi ve Standartlara Uyum",
+      "questionNumber": "1",
+      "questionText": "Ürünleri reçetelere uygun hazırlar. Ürünlerin her seferinde aynı kalite ve tatta olmasını sağlar."
+    },
+    {
+      "category": "Ürün Kalitesi ve Standartlara Uyum",
+      "questionNumber": "2",
+      "questionText": "Et pişirme tekniklerine hakimdir. Şirket standartlarına uygun pişirme yapar."
+    },
+    {
+      "category": "Ürün Kalitesi ve Standartlara Uyum",
+      "questionNumber": "3",
+      "questionText": "Patates kızartma standartlarını bilir, doğru şekilde uygular."
+    },
+    {
+      "category": "Ürün Kalitesi ve Standartlara Uyum",
+      "questionNumber": "4",
+      "questionText": "Peynir çubukları, soğan halkası, nugget vb. ürünleri doğru sürede uygun sıcaklıkta pişirir."
+    },
+    {
+      "category": "Ürün Kalitesi ve Standartlara Uyum",
+      "questionNumber": "5",
+      "questionText": "Ekmek kesimini ve burger süslemesini standartlara uygun olarak yapar."
+    },
+    {
+      "category": "Ürün Kalitesi ve Standartlara Uyum",
+      "questionNumber": "6",
+      "questionText": "Kızartma yağı TPM ölçümünü doğru olarak yapar.İç ısı standardını sağlar."
+    },
+    {
+      "category": "Ürün Kalitesi ve Standartlara Uyum",
+      "questionNumber": "7",
+      "questionText": "Yağ filtre işlemini standartlara uygun olarak yapar. Koruyucu materyalleri kullanır."
+    },
+    {
+      "category": "İletişim Becerisi",
+      "questionNumber": "1",
+      "questionText": "Karşındakini dinler ve verilmek istenen mesajı doğru bir şekilde anlar."
+    },
+    {
+      "category": "İletişim Becerisi",
+      "questionNumber": "2",
+      "questionText": "Söylemek istediklerini, açık, kısa ve net bir biçimde karşı tarafa aktarır. "
+    },
+    {
+      "category": "İletişim Becerisi",
+      "questionNumber": "3",
+      "questionText": "İşle ilgili konularla ilgili bilgiyi zamanında aktarır ve paylaşır."
+    },
+    {
+      "category": "İletişim Becerisi",
+      "questionNumber": "4",
+      "questionText": "Her türlü iletişimde empati kurmaya özen gösterir."
+    },
+    {
+      "category": "İstasyon Yönetimi",
+      "questionNumber": "1",
+      "questionText": "İstasyonlarda doğru ürün miktarının bulunmasına özen gösterir."
+    },
+    {
+      "category": "İstasyon Yönetimi",
+      "questionNumber": "2",
+      "questionText": "Çalıştığı istasyonların temizliğini ve düzenini sağlar."
+    },
+    {
+      "category": "İstasyon Yönetimi",
+      "questionNumber": "3",
+      "questionText": "Çalıştığı ekipmanları özenli ve titiz kullanır. Temizliğini yapar."
+    },
+    {
+      "category": "İş Disiplini ve Tutum",
+      "questionNumber": "1",
+      "questionText": "Dış görünüşüne, saçına, sakalına, kişisel hijyenine dikkat eder. Eldiven, bone kullanır."
+    },
+    {
+      "category": "İş Disiplini ve Tutum",
+      "questionNumber": "2",
+      "questionText": "Şirketin eğitimlerine aktif olarak katılır, atanmış eğitimlerini tamamlar."
+    },
+    {
+      "category": "İş Disiplini ve Tutum",
+      "questionNumber": "3",
+      "questionText": "Restoran hedeflerinden haberdardır, hedef için elinden gelen gayreti gösterir."
+    },
+    {
+      "category": "İş Disiplini ve Tutum",
+      "questionNumber": "4",
+      "questionText": "Mazeret bildirmeden işe gelmemezlik yapmaz. Vardiya ve mola düzenine uyar."
+    }
+  ],
+  "messages": [],
+  "stdout": "category\tquestionNumber\tquestionText\nAnalitik Düşünme ve Problem Çözme\t1\tGelişmekte olan problemleri görür, önleyici davranış geliştirir.\nAnalitik Düşünme ve Problem Çözme\t2\tDurum ve problem karşısında alacağı hareketin sonucunu bilir. \nAnalitik Düşünme ve Problem Çözme\t3\tMevcut sorunu gidermek için alternatif çözüm yolları geliştirir.\nAnalitik Düşünme ve Problem Çözme\t4\tBenzer sorunlar arasında ilişki kurar; geçmişteki deneyimlerden faydalanır.\nDetay Odaklılık\t1\tİşlerin hatasız tamamlanması için çaba sarf eder. \nDetay Odaklılık\t2\tKüçük detaylara dikkat eder. \nDetay Odaklılık\t3\tİşin inceliklerini öğrenmek ve işin bütününe hâkim olabilmek için sürekli gözlem yapar.\nDetay Odaklılık\t4\tHataları, iş çıktıları paylaşılmadan fark eder.\nDuygularını Kontrol Etme ve Yönetme\t1\tİş ortamında; kızgınlık, korku, kaygı, üzüntü, depresyon, vb. duygularını kontrol eder. \nDuygularını Kontrol Etme ve Yönetme\t2\tÖzel hayatında yaşadığı sıkıntıları, iş ortamına en az ölçüde yansıtır.\nDuygularını Kontrol Etme ve Yönetme\t3\tZor çalışma koşullarında ve yoğun mesaide bile başarılı sonuçlar elde edebilir.\nGörev Bilinci\t1\tYaptığı işi en iyi şekilde yapar. İş disiplini ve görev bilinci yüksektir.\nGörev Bilinci\t2\tSorumluluğundaki işleri, şirket kural ve prosedürlerine uygun bir biçimde gerçekleştirir.\nGörev Bilinci\t3\tİşine, kuruma ve kendisine sunulan kaynaklara zarar verecek hiçbir davranış sergilemez.\nGörev Bilinci\t4\tAhlaki ve etik değerlere uygun davranır.\nGıda Güvenliği ve Hijyen\t1\tÜrünlerin son kullanma tarihine dikkat eder. Zayii olmasına izin vermez. (FIFO-İlk Giren İlk Çıkar)\nGıda Güvenliği ve Hijyen\t2\tSebzeleri standartlara uygun şekilde yıkar.\nGıda Güvenliği ve Hijyen\t3\tKüçük ekipmanların hijyenini standartlara uygun olarak sağlar.\nGıda Güvenliği ve Hijyen\t4\tGıda güvenliği ve operasyonel prosedür ve talimatları bilir, bunlara uygun hareket eder.\nGıda Güvenliği ve Hijyen\t5\tTemizlik kimyasallarını İSG kurallarına uygun şekilde kullanır.\nGıda Güvenliği ve Hijyen\t6\tÇalışma süresince İSG kurallarına uygun hareket eder.\nKalite Odaklılık\t1\tMevcut düzen ve iş yapma yöntemine uygun çalışır. \nKalite Odaklılık\t2\tKaliteyi belirlenen standartlara göre uyarlar.\nKalite Odaklılık\t3\tYapılan işin kalitesini sürekli geliştirmek yönünde çalışır.\nKalite Odaklılık\t4\tİş yapma yöntemine ilişkin akış ve prosedürlerdeki yeniliklere adapte olur.\nSonuç Odaklılık\t1\tMesleki motivasyonu yüksektir ve işini severek yapar.\nSonuç Odaklılık\t2\tKendisine verilen işleri takip eder, doğru, eksiksiz ve zamanında sonuçlandırır.\nSonuç Odaklılık\t3\tHer zaman daha iyisini yapmak adına kendisini sürekli geliştirir.\nTakım Çalışması ve İşbirliği\t1\tÇalışma ortamında iyi ilişkiler kurar ve korur. \nTakım Çalışması ve İşbirliği\t2\tTakım arkadaşlarının yardıma ihtiyacı olduğunda gerekli destekte bulunur.\nTakım Çalışması ve İşbirliği\t3\tTakım ruhuna uyumlu yaklaşımda bulunur.\nTakım Çalışması ve İşbirliği\t4\tTakımdaki farklı görüşlere karşı toleranslıdır ve destekleyicidir.\nÜrün Kalitesi ve Standartlara Uyum\t1\tÜrünleri reçetelere uygun hazırlar. Ürünlerin her seferinde aynı kalite ve tatta olmasını sağlar.\nÜrün Kalitesi ve Standartlara Uyum\t2\tEt pişirme tekniklerine hakimdir. Şirket standartlarına uygun pişirme yapar.\nÜrün Kalitesi ve Standartlara Uyum\t3\tPatates kızartma standartlarını bilir, doğru şekilde uygular.\nÜrün Kalitesi ve Standartlara Uyum\t4\tPeynir çubukları, soğan halkası, nugget vb. ürünleri doğru sürede uygun sıcaklıkta pişirir.\nÜrün Kalitesi ve Standartlara Uyum\t5\tEkmek kesimini ve burger süslemesini standartlara uygun olarak yapar.\nÜrün Kalitesi ve Standartlara Uyum\t6\tKızartma yağı TPM ölçümünü doğru olarak yapar.İç ısı standardını sağlar.\nÜrün Kalitesi ve Standartlara Uyum\t7\tYağ filtre işlemini standartlara uygun olarak yapar. Koruyucu materyalleri kullanır.\nİletişim Becerisi\t1\tKarşındakini dinler ve verilmek istenen mesajı doğru bir şekilde anlar.\nİletişim Becerisi\t2\tSöylemek istediklerini, açık, kısa ve net bir biçimde karşı tarafa aktarır. \nİletişim Becerisi\t3\tİşle ilgili konularla ilgili bilgiyi zamanında aktarır ve paylaşır.\nİletişim Becerisi\t4\tHer türlü iletişimde empati kurmaya özen gösterir.\nİstasyon Yönetimi\t1\tİstasyonlarda doğru ürün miktarının bulunmasına özen gösterir.\nİstasyon Yönetimi\t2\tÇalıştığı istasyonların temizliğini ve düzenini sağlar.\nİstasyon Yönetimi\t3\tÇalıştığı ekipmanları özenli ve titiz kullanır. Temizliğini yapar.\nİş Disiplini ve Tutum\t1\tDış görünüşüne, saçına, sakalına, kişisel hijyenine dikkat eder. Eldiven, bone kullanır.\nİş Disiplini ve Tutum\t2\tŞirketin eğitimlerine aktif olarak katılır, atanmış eğitimlerini tamamlar.\nİş Disiplini ve Tutum\t3\tRestoran hedeflerinden haberdardır, hedef için elinden gelen gayreti gösterir.\nİş Disiplini ve Tutum\t4\tMazeret bildirmeden işe gelmemezlik yapmaz. Vardiya ve mola düzenine uyar.\n",
+  "stderr": "",
+  "execution_time_ms": 1614
+}

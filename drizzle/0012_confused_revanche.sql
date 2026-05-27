@@ -1,0 +1,1 @@
+ALTER TABLE `field_inspection_questions` ADD `penaltyPoints` int DEFAULT 0;

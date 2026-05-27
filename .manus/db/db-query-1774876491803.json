@@ -1,0 +1,70 @@
+{
+  "query": "SELECT \n  pc.positionId,\n  pc.id,\n  pc.name as category\nFROM position_categories pc\nWHERE pc.positionId = 7\nORDER BY pc.id;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SELECT \n  pc.positionId,\n  pc.id,\n  pc.name as category\nFROM position_categories pc\nWHERE pc.positionId = 7\nORDER BY pc.id;",
+  "rows": [
+    {
+      "positionId": "7",
+      "id": "180027",
+      "category": "Görev Bilinci"
+    },
+    {
+      "positionId": "7",
+      "id": "180028",
+      "category": "İletişim Becerisi"
+    },
+    {
+      "positionId": "7",
+      "id": "180029",
+      "category": "Analitik Düşünme ve Problem Çözme"
+    },
+    {
+      "positionId": "7",
+      "id": "180030",
+      "category": "Kalite Odaklılık"
+    },
+    {
+      "positionId": "7",
+      "id": "180031",
+      "category": "Takım Çalışması ve İşbirliği"
+    },
+    {
+      "positionId": "7",
+      "id": "180032",
+      "category": "Detay Odaklılık"
+    },
+    {
+      "positionId": "7",
+      "id": "180033",
+      "category": "Duygularını Kontrol Etme ve Yönetme"
+    },
+    {
+      "positionId": "7",
+      "id": "180034",
+      "category": "Sonuç Odaklılık"
+    },
+    {
+      "positionId": "7",
+      "id": "180035",
+      "category": "İş Disiplini ve Tutum"
+    },
+    {
+      "positionId": "7",
+      "id": "180036",
+      "category": "Ürün Kalitesi ve Standartlara Uyum"
+    },
+    {
+      "positionId": "7",
+      "id": "180037",
+      "category": "Gıda Güvenliği ve Hijyen"
+    },
+    {
+      "positionId": "7",
+      "id": "180038",
+      "category": "İstasyon Yönetimi"
+    }
+  ],
+  "messages": [],
+  "stdout": "positionId\tid\tcategory\n7\t180027\tGörev Bilinci\n7\t180028\tİletişim Becerisi\n7\t180029\tAnalitik Düşünme ve Problem Çözme\n7\t180030\tKalite Odaklılık\n7\t180031\tTakım Çalışması ve İşbirliği\n7\t180032\tDetay Odaklılık\n7\t180033\tDuygularını Kontrol Etme ve Yönetme\n7\t180034\tSonuç Odaklılık\n7\t180035\tİş Disiplini ve Tutum\n7\t180036\tÜrün Kalitesi ve Standartlara Uyum\n7\t180037\tGıda Güvenliği ve Hijyen\n7\t180038\tİstasyon Yönetimi\n",
+  "stderr": "",
+  "execution_time_ms": 1569
+}

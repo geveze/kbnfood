@@ -1,0 +1,54 @@
+{
+  "query": "SELECT DISTINCT categoryId, COUNT(*) as count FROM position_questions GROUP BY categoryId ORDER BY categoryId;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SELECT DISTINCT categoryId, COUNT(*) as count FROM position_questions GROUP BY categoryId ORDER BY categoryId;",
+  "rows": [
+    {
+      "categoryId": "11",
+      "count": "7"
+    },
+    {
+      "categoryId": "12",
+      "count": "6"
+    },
+    {
+      "categoryId": "13",
+      "count": "2"
+    },
+    {
+      "categoryId": "31",
+      "count": "4"
+    },
+    {
+      "categoryId": "32",
+      "count": "4"
+    },
+    {
+      "categoryId": "35",
+      "count": "3"
+    },
+    {
+      "categoryId": "36",
+      "count": "4"
+    },
+    {
+      "categoryId": "37",
+      "count": "6"
+    },
+    {
+      "categoryId": "38",
+      "count": "14"
+    },
+    {
+      "categoryId": "39",
+      "count": "4"
+    },
+    {
+      "categoryId": "40",
+      "count": "14"
+    }
+  ],
+  "messages": [],
+  "stdout": "categoryId\tcount\n11\t7\n12\t6\n13\t2\n31\t4\n32\t4\n35\t3\n36\t4\n37\t6\n38\t14\n39\t4\n40\t14\n",
+  "stderr": "",
+  "execution_time_ms": 1612
+}

@@ -1,0 +1,1 @@
+ALTER TABLE `performance_evaluation_items` ADD `positionCode` varchar(50) NOT NULL;

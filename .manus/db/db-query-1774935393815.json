@@ -1,0 +1,65 @@
+{
+  "query": "SELECT \n  pc.id,\n  pc.name as category,\n  COUNT(pq.id) as questionCount\nFROM position_categories pc\nLEFT JOIN position_questions pq ON pc.id = pq.categoryId\nWHERE pc.positionId = 7\nGROUP BY pc.id, pc.name\nORDER BY pc.id;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SELECT \n  pc.id,\n  pc.name as category,\n  COUNT(pq.id) as questionCount\nFROM position_categories pc\nLEFT JOIN position_questions pq ON pc.id = pq.categoryId\nWHERE pc.positionId = 7\nGROUP BY pc.id, pc.name\nORDER BY pc.id;",
+  "rows": [
+    {
+      "id": "210002",
+      "category": "Görev Bilinci",
+      "questionCount": "4"
+    },
+    {
+      "id": "210003",
+      "category": "İletişim Becerisi",
+      "questionCount": "4"
+    },
+    {
+      "id": "210004",
+      "category": "Analitik Düşünme ve Problem Çözme",
+      "questionCount": "4"
+    },
+    {
+      "id": "210005",
+      "category": "Kalite Odaklılık",
+      "questionCount": "4"
+    },
+    {
+      "id": "210006",
+      "category": "Takım Çalışması ve İşbirliği",
+      "questionCount": "4"
+    },
+    {
+      "id": "210007",
+      "category": "Detay Odaklılık",
+      "questionCount": "4"
+    },
+    {
+      "id": "210008",
+      "category": "Yönetim Becerileri",
+      "questionCount": "4"
+    },
+    {
+      "id": "210009",
+      "category": "İş Disiplini ve Tutum",
+      "questionCount": "4"
+    },
+    {
+      "id": "210010",
+      "category": "Ürün Kalitesi ve Standartlara Uyum",
+      "questionCount": "7"
+    },
+    {
+      "id": "210011",
+      "category": "Gıda Güvenliği ve Hijyen",
+      "questionCount": "6"
+    },
+    {
+      "id": "210012",
+      "category": "İstasyon Yönetimi",
+      "questionCount": "3"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tcategory\tquestionCount\n210002\tGörev Bilinci\t4\n210003\tİletişim Becerisi\t4\n210004\tAnalitik Düşünme ve Problem Çözme\t4\n210005\tKalite Odaklılık\t4\n210006\tTakım Çalışması ve İşbirliği\t4\n210007\tDetay Odaklılık\t4\n210008\tYönetim Becerileri\t4\n210009\tİş Disiplini ve Tutum\t4\n210010\tÜrün Kalitesi ve Standartlara Uyum\t7\n210011\tGıda Güvenliği ve Hijyen\t6\n210012\tİstasyon Yönetimi\t3\n",
+  "stderr": "",
+  "execution_time_ms": 360
+}

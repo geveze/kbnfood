@@ -1,0 +1,17 @@
+{
+  "query": "SELECT * FROM periods LIMIT 5;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SELECT * FROM periods LIMIT 5;",
+  "rows": [
+    {
+      "id": "1",
+      "period": "2026/3",
+      "startDate": "NULL",
+      "endDate": "NULL",
+      "createdAt": "2026-03-11 05:30:20"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tperiod\tstartDate\tendDate\tcreatedAt\n1\t2026/3\tNULL\tNULL\t2026-03-11 05:30:20\n",
+  "stderr": "",
+  "execution_time_ms": 1538
+}

@@ -1,0 +1,2 @@
+ALTER TABLE `probation_evaluations` MODIFY COLUMN `evaluationType` enum('on_hire','1.5_months','5.5_months') NOT NULL;--> statement-breakpoint
+ALTER TABLE `probation_evaluations` ADD `employeeRegistrationNumber` varchar(50);

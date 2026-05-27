@@ -1,0 +1,60 @@
+{
+  "query": "SELECT id, positionId, name FROM position_categories WHERE positionId = 8 LIMIT 10;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SELECT id, positionId, name FROM position_categories WHERE positionId = 8 LIMIT 10;",
+  "rows": [
+    {
+      "id": "90053",
+      "positionId": "8",
+      "name": "Görev Bilinci"
+    },
+    {
+      "id": "90054",
+      "positionId": "8",
+      "name": "İletişim Becerisi"
+    },
+    {
+      "id": "90055",
+      "positionId": "8",
+      "name": "Analitik Düşünme ve Problem Çözme"
+    },
+    {
+      "id": "90056",
+      "positionId": "8",
+      "name": "Kalite Odaklılık"
+    },
+    {
+      "id": "90057",
+      "positionId": "8",
+      "name": "Takım Çalışması ve İşbirliği"
+    },
+    {
+      "id": "90058",
+      "positionId": "8",
+      "name": "Müşteri Odaklılık"
+    },
+    {
+      "id": "90059",
+      "positionId": "8",
+      "name": "Ticari Bakış"
+    },
+    {
+      "id": "90060",
+      "positionId": "8",
+      "name": "Planlama ve Organize Etme"
+    },
+    {
+      "id": "90061",
+      "positionId": "8",
+      "name": "İş Disiplini ve Tutum"
+    },
+    {
+      "id": "90062",
+      "positionId": "8",
+      "name": "Kasa"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tpositionId\tname\n90053\t8\tGörev Bilinci\n90054\t8\tİletişim Becerisi\n90055\t8\tAnalitik Düşünme ve Problem Çözme\n90056\t8\tKalite Odaklılık\n90057\t8\tTakım Çalışması ve İşbirliği\n90058\t8\tMüşteri Odaklılık\n90059\t8\tTicari Bakış\n90060\t8\tPlanlama ve Organize Etme\n90061\t8\tİş Disiplini ve Tutum\n90062\t8\tKasa\n",
+  "stderr": "",
+  "execution_time_ms": 1563
+}

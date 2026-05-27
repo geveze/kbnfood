@@ -1,0 +1,346 @@
+{
+  "query": "SELECT id, username FROM users WHERE role = 'branch_manager' ORDER BY id;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SELECT id, username FROM users WHERE role = 'branch_manager' ORDER BY id;",
+  "rows": [
+    {
+      "id": "150025",
+      "username": "veli.kaya"
+    },
+    {
+      "id": "210535",
+      "username": "ordunovada"
+    },
+    {
+      "id": "900118",
+      "username": "beykent"
+    },
+    {
+      "id": "900413",
+      "username": "by2"
+    },
+    {
+      "id": "900414",
+      "username": "byor"
+    },
+    {
+      "id": "900415",
+      "username": "byafy"
+    },
+    {
+      "id": "900416",
+      "username": "byaaa"
+    },
+    {
+      "id": "900417",
+      "username": "byaac"
+    },
+    {
+      "id": "900418",
+      "username": "byaye"
+    },
+    {
+      "id": "900419",
+      "username": "bybkm"
+    },
+    {
+      "id": "900420",
+      "username": "byböz"
+    },
+    {
+      "id": "900421",
+      "username": "byçba"
+    },
+    {
+      "id": "900422",
+      "username": "bydfa"
+    },
+    {
+      "id": "900423",
+      "username": "byesk"
+    },
+    {
+      "id": "900424",
+      "username": "bygsa"
+    },
+    {
+      "id": "900425",
+      "username": "byi̇ak"
+    },
+    {
+      "id": "900426",
+      "username": "byi̇af"
+    },
+    {
+      "id": "900427",
+      "username": "byi̇ar"
+    },
+    {
+      "id": "900428",
+      "username": "byi̇aü"
+    },
+    {
+      "id": "900429",
+      "username": "byi̇aç"
+    },
+    {
+      "id": "900430",
+      "username": "byi̇ba"
+    },
+    {
+      "id": "900431",
+      "username": "byi̇bş"
+    },
+    {
+      "id": "900432",
+      "username": "byi̇be"
+    },
+    {
+      "id": "900433",
+      "username": "byi̇bey"
+    },
+    {
+      "id": "900434",
+      "username": "byi̇bk"
+    },
+    {
+      "id": "900435",
+      "username": "byi̇ca"
+    },
+    {
+      "id": "900436",
+      "username": "byi̇ce"
+    },
+    {
+      "id": "900437",
+      "username": "byi̇cv"
+    },
+    {
+      "id": "900438",
+      "username": "byi̇ça"
+    },
+    {
+      "id": "900439",
+      "username": "byi̇es"
+    },
+    {
+      "id": "900440",
+      "username": "byi̇esy"
+    },
+    {
+      "id": "900441",
+      "username": "byi̇fo"
+    },
+    {
+      "id": "900442",
+      "username": "byi̇go"
+    },
+    {
+      "id": "900443",
+      "username": "byi̇gü"
+    },
+    {
+      "id": "900444",
+      "username": "byi̇hk"
+    },
+    {
+      "id": "900445",
+      "username": "byi̇is"
+    },
+    {
+      "id": "900446",
+      "username": "byi̇i̇f"
+    },
+    {
+      "id": "900447",
+      "username": "byi̇ka"
+    },
+    {
+      "id": "900448",
+      "username": "byi̇kğ"
+    },
+    {
+      "id": "900449",
+      "username": "byi̇kar"
+    },
+    {
+      "id": "900450",
+      "username": "byi̇kay"
+    },
+    {
+      "id": "900452",
+      "username": "byi̇kmp"
+    },
+    {
+      "id": "900453",
+      "username": "byi̇ma"
+    },
+    {
+      "id": "900454",
+      "username": "byi̇mf"
+    },
+    {
+      "id": "900455",
+      "username": "byi̇mp"
+    },
+    {
+      "id": "900457",
+      "username": "byi̇mr1"
+    },
+    {
+      "id": "900458",
+      "username": "byi̇mr2"
+    },
+    {
+      "id": "900459",
+      "username": "byi̇oa"
+    },
+    {
+      "id": "900460",
+      "username": "byi̇or"
+    },
+    {
+      "id": "900461",
+      "username": "byi̇pe"
+    },
+    {
+      "id": "900462",
+      "username": "byi̇pen"
+    },
+    {
+      "id": "900463",
+      "username": "byi̇pel"
+    },
+    {
+      "id": "900464",
+      "username": "byi̇se"
+    },
+    {
+      "id": "900465",
+      "username": "byi̇sbc"
+    },
+    {
+      "id": "900466",
+      "username": "byi̇su"
+    },
+    {
+      "id": "900467",
+      "username": "byi̇şe"
+    },
+    {
+      "id": "900468",
+      "username": "byi̇şi̇"
+    },
+    {
+      "id": "900469",
+      "username": "byi̇şi̇m"
+    },
+    {
+      "id": "900470",
+      "username": "byi̇şi̇ş"
+    },
+    {
+      "id": "900471",
+      "username": "byi̇ta"
+    },
+    {
+      "id": "900472",
+      "username": "byi̇to"
+    },
+    {
+      "id": "900473",
+      "username": "byi̇üm"
+    },
+    {
+      "id": "900474",
+      "username": "byi̇üma"
+    },
+    {
+      "id": "900475",
+      "username": "byi̇üs"
+    },
+    {
+      "id": "900476",
+      "username": "byi̇ve"
+    },
+    {
+      "id": "900477",
+      "username": "byi̇vi̇a"
+    },
+    {
+      "id": "900479",
+      "username": "byi̇vi̇m"
+    },
+    {
+      "id": "900480",
+      "username": "byi̇vi̇p"
+    },
+    {
+      "id": "900481",
+      "username": "byi̇ya"
+    },
+    {
+      "id": "900482",
+      "username": "byi̇ze"
+    },
+    {
+      "id": "900483",
+      "username": "byi̇zha"
+    },
+    {
+      "id": "900484",
+      "username": "byi̇zhi̇"
+    },
+    {
+      "id": "900485",
+      "username": "byi̇zkü"
+    },
+    {
+      "id": "900486",
+      "username": "byi̇zop"
+    },
+    {
+      "id": "900487",
+      "username": "bykog"
+    },
+    {
+      "id": "900488",
+      "username": "bykoi̇"
+    },
+    {
+      "id": "900489",
+      "username": "bykoş"
+    },
+    {
+      "id": "900490",
+      "username": "bymoi̇"
+    },
+    {
+      "id": "900491",
+      "username": "bymuf"
+    },
+    {
+      "id": "900492",
+      "username": "bymum"
+    },
+    {
+      "id": "900493",
+      "username": "byri̇z"
+    },
+    {
+      "id": "900494",
+      "username": "bysak"
+    },
+    {
+      "id": "900495",
+      "username": "byteç"
+    },
+    {
+      "id": "900496",
+      "username": "byvad"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tusername\n150025\tveli.kaya\n210535\tordunovada\n900118\tbeykent\n900413\tby2\n900414\tbyor\n900415\tbyafy\n900416\tbyaaa\n900417\tbyaac\n900418\tbyaye\n900419\tbybkm\n900420\tbyböz\n900421\tbyçba\n900422\tbydfa\n900423\tbyesk\n900424\tbygsa\n900425\tbyi̇ak\n900426\tbyi̇af\n900427\tbyi̇ar\n900428\tbyi̇aü\n900429\tbyi̇aç\n900430\tbyi̇ba\n900431\tbyi̇bş\n900432\tbyi̇be\n900433\tbyi̇bey\n900434\tbyi̇bk\n900435\tbyi̇ca\n900436\tbyi̇ce\n900437\tbyi̇cv\n900438\tbyi̇ça\n900439\tbyi̇es\n900440\tbyi̇esy\n900441\tbyi̇fo\n900442\tbyi̇go\n900443\tbyi̇gü\n900444\tbyi̇hk\n900445\tbyi̇is\n900446\tbyi̇i̇f\n900447\tbyi̇ka\n900448\tbyi̇kğ\n900449\tbyi̇kar\n900450\tbyi̇kay\n900452\tbyi̇kmp\n900453\tbyi̇ma\n900454\tbyi̇mf\n900455\tbyi̇mp\n900457\tbyi̇mr1\n900458\tbyi̇mr2\n900459\tbyi̇oa\n900460\tbyi̇or\n900461\tbyi̇pe\n900462\tbyi̇pen\n900463\tbyi̇pel\n900464\tbyi̇se\n900465\tbyi̇sbc\n900466\tbyi̇su\n900467\tbyi̇şe\n900468\tbyi̇şi̇\n900469\tbyi̇şi̇m\n900470\tbyi̇şi̇ş\n900471\tbyi̇ta\n900472\tbyi̇to\n900473\tbyi̇üm\n900474\tbyi̇üma\n900475\tbyi̇üs\n900476\tbyi̇ve\n900477\tbyi̇vi̇a\n900479\tbyi̇vi̇m\n900480\tbyi̇vi̇p\n900481\tbyi̇ya\n900482\tbyi̇ze\n900483\tbyi̇zha\n900484\tbyi̇zhi̇\n900485\tbyi̇zkü\n900486\tbyi̇zop\n900487\tbykog\n900488\tbykoi̇\n900489\tbykoş\n900490\tbymoi̇\n900491\tbymuf\n900492\tbymum\n900493\tbyri̇z\n900494\tbysak\n900495\tbyteç\n900496\tbyvad\n",
+  "stderr": "",
+  "execution_time_ms": 1534
+}

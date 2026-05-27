@@ -1,0 +1,14 @@
+{
+  "query": "SELECT branchName, COUNT(*) as kpi_count FROM kpi_target_cards_detail GROUP BY branchName ORDER BY branchName;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SELECT branchName, COUNT(*) as kpi_count FROM kpi_target_cards_detail GROUP BY branchName ORDER BY branchName;",
+  "rows": [
+    {
+      "branchName": "BY ORDU NOVADA AVM",
+      "kpi_count": "10"
+    }
+  ],
+  "messages": [],
+  "stdout": "branchName\tkpi_count\nBY ORDU NOVADA AVM\t10\n",
+  "stderr": "",
+  "execution_time_ms": 1569
+}

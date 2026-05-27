@@ -1,0 +1,65 @@
+{
+  "query": "SELECT * FROM performance_evaluation_items LIMIT 5;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SELECT * FROM performance_evaluation_items LIMIT 5;",
+  "rows": [
+    {
+      "id": "1",
+      "evaluationId": "90007",
+      "category": "DAVRANIŞSAL",
+      "subcategory": "Görev Bilinci",
+      "itemNumber": "1",
+      "itemDescription": "Yaptığı işi en iyi şekilde yapar. İş disiplini ve görev bilinci yüksektir.",
+      "score": "4",
+      "createdAt": "2026-03-16 05:23:14",
+      "updatedAt": "2026-03-16 05:23:14"
+    },
+    {
+      "id": "2",
+      "evaluationId": "90007",
+      "category": "DAVRANIŞSAL",
+      "subcategory": "Görev Bilinci",
+      "itemNumber": "2",
+      "itemDescription": "Sorumluluğundaki işleri, şirket kural ve prosedürlerine uygun bir biçimde gerçekleştirir.",
+      "score": "4",
+      "createdAt": "2026-03-16 05:23:14",
+      "updatedAt": "2026-03-16 05:23:14"
+    },
+    {
+      "id": "3",
+      "evaluationId": "90007",
+      "category": "DAVRANIŞSAL",
+      "subcategory": "Görev Bilinci",
+      "itemNumber": "3",
+      "itemDescription": "İşine, kuruma ve kendisine sunulan kaynaklara zarar verecek hiçbir davranış sergilemez.",
+      "score": "3",
+      "createdAt": "2026-03-16 05:23:15",
+      "updatedAt": "2026-03-16 05:23:15"
+    },
+    {
+      "id": "4",
+      "evaluationId": "90007",
+      "category": "DAVRANIŞSAL",
+      "subcategory": "Görev Bilinci",
+      "itemNumber": "4",
+      "itemDescription": "Ahlaki ve etik değerlere uygun davranır. Davranışlarının sorumluluğunu üstlenir.",
+      "score": "4",
+      "createdAt": "2026-03-16 05:23:15",
+      "updatedAt": "2026-03-16 05:23:15"
+    },
+    {
+      "id": "5",
+      "evaluationId": "90007",
+      "category": "DAVRANIŞSAL",
+      "subcategory": "İletişim Becerisi",
+      "itemNumber": "5",
+      "itemDescription": "Karşındakini dinler ve verilmek istenen mesajı doğru bir şekilde anlar.",
+      "score": "4",
+      "createdAt": "2026-03-16 05:23:15",
+      "updatedAt": "2026-03-16 05:23:15"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tevaluationId\tcategory\tsubcategory\titemNumber\titemDescription\tscore\tcreatedAt\tupdatedAt\n1\t90007\tDAVRANIŞSAL\tGörev Bilinci\t1\tYaptığı işi en iyi şekilde yapar. İş disiplini ve görev bilinci yüksektir.\t4\t2026-03-16 05:23:14\t2026-03-16 05:23:14\n2\t90007\tDAVRANIŞSAL\tGörev Bilinci\t2\tSorumluluğundaki işleri, şirket kural ve prosedürlerine uygun bir biçimde gerçekleştirir.\t4\t2026-03-16 05:23:14\t2026-03-16 05:23:14\n3\t90007\tDAVRANIŞSAL\tGörev Bilinci\t3\tİşine, kuruma ve kendisine sunulan kaynaklara zarar verecek hiçbir davranış sergilemez.\t3\t2026-03-16 05:23:15\t2026-03-16 05:23:15\n4\t90007\tDAVRANIŞSAL\tGörev Bilinci\t4\tAhlaki ve etik değerlere uygun davranır. Davranışlarının sorumluluğunu üstlenir.\t4\t2026-03-16 05:23:15\t2026-03-16 05:23:15\n5\t90007\tDAVRANIŞSAL\tİletişim Becerisi\t5\tKarşındakini dinler ve verilmek istenen mesajı doğru bir şekilde anlar.\t4\t2026-03-16 05:23:15\t2026-03-16 05:23:15\n",
+  "stderr": "",
+  "execution_time_ms": 1635
+}

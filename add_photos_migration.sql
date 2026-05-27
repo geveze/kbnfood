@@ -1,0 +1,1 @@
+ALTER TABLE `field_inspection_answers` ADD COLUMN IF NOT EXISTS `photoUrls` json;

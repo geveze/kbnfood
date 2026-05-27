@@ -1,0 +1,64 @@
+{
+  "query": "SELECT COUNT(*) as total_kpi_targets FROM kpi_targets;\nSELECT COUNT(DISTINCT branchId) as branch_count FROM kpi_targets;\nSELECT dimension, COUNT(*) as count FROM kpi_targets GROUP BY dimension;\nSELECT b.name, COUNT(kt.id) as target_count FROM branches b LEFT JOIN kpi_targets kt ON b.id = kt.branchId GROUP BY b.id, b.name ORDER BY target_count DESC LIMIT 10;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SELECT COUNT(*) as total_kpi_targets FROM kpi_targets;\nSELECT COUNT(DISTINCT branchId) as branch_count FROM kpi_targets;\nSELECT dimension, COUNT(*) as count FROM kpi_targets GROUP BY dimension;\nSELECT b.name, COUNT(kt.id) as target_count FROM branches b LEFT JOIN kpi_targets kt ON b.id = kt.branchId GROUP BY b.id, b.name ORDER BY target_count DESC LIMIT 10;",
+  "rows": [
+    {
+      "total_kpi_targets": "10"
+    },
+    {
+      "total_kpi_targets": "branch_count"
+    },
+    {
+      "total_kpi_targets": "1"
+    },
+    {
+      "total_kpi_targets": "dimension\tcount"
+    },
+    {
+      "total_kpi_targets": "Müşteri\t2"
+    },
+    {
+      "total_kpi_targets": "İnsan\t3"
+    },
+    {
+      "total_kpi_targets": "Finans\t5"
+    },
+    {
+      "total_kpi_targets": "name\ttarget_count"
+    },
+    {
+      "total_kpi_targets": "İSTANBUL SEFAKÖY\t10"
+    },
+    {
+      "total_kpi_targets": "İSTANBUL ŞİŞLİ\t0"
+    },
+    {
+      "total_kpi_targets": "İSTANBUL KOCA MUSTAFA PAŞA\t0"
+    },
+    {
+      "total_kpi_targets": "İSTANBUL BEYLİKDÜZÜ KAVAKLI\t0"
+    },
+    {
+      "total_kpi_targets": "İZMİR HATAY\t0"
+    },
+    {
+      "total_kpi_targets": "İSTANBUL SUADİYE- BAĞDAT CADDESİ\t0"
+    },
+    {
+      "total_kpi_targets": "İSTANBUL VİAPORT\t0"
+    },
+    {
+      "total_kpi_targets": "İSTANBUL AKSARAY\t0"
+    },
+    {
+      "total_kpi_targets": "İSTANBUL MARMARA FORUM\t0"
+    },
+    {
+      "total_kpi_targets": "İSTANBUL PENDİK LENS\t0"
+    }
+  ],
+  "messages": [],
+  "stdout": "total_kpi_targets\n10\nbranch_count\n1\ndimension\tcount\nMüşteri\t2\nİnsan\t3\nFinans\t5\nname\ttarget_count\nİSTANBUL SEFAKÖY\t10\nİSTANBUL ŞİŞLİ\t0\nİSTANBUL KOCA MUSTAFA PAŞA\t0\nİSTANBUL BEYLİKDÜZÜ KAVAKLI\t0\nİZMİR HATAY\t0\nİSTANBUL SUADİYE- BAĞDAT CADDESİ\t0\nİSTANBUL VİAPORT\t0\nİSTANBUL AKSARAY\t0\nİSTANBUL MARMARA FORUM\t0\nİSTANBUL PENDİK LENS\t0\n",
+  "stderr": "",
+  "execution_time_ms": 2258
+}

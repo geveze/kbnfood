@@ -1,0 +1,50 @@
+{
+  "query": "SELECT pc.id, pc.name, COUNT(pq.id) as question_count \nFROM position_categories pc \nLEFT JOIN position_questions pq ON pc.id = pq.categoryId \nWHERE pc.positionId = 8 \nGROUP BY pc.id, pc.name;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SELECT pc.id, pc.name, COUNT(pq.id) as question_count \nFROM position_categories pc \nLEFT JOIN position_questions pq ON pc.id = pq.categoryId \nWHERE pc.positionId = 8 \nGROUP BY pc.id, pc.name;",
+  "rows": [
+    {
+      "id": "60060",
+      "name": "Görev Bilinci",
+      "question_count": "0"
+    },
+    {
+      "id": "60065",
+      "name": "Müşteri Odaklılık",
+      "question_count": "0"
+    },
+    {
+      "id": "60062",
+      "name": "Analitik Düşünme ve Problem Çözme",
+      "question_count": "0"
+    },
+    {
+      "id": "60066",
+      "name": "Ticari Bakış",
+      "question_count": "0"
+    },
+    {
+      "id": "60061",
+      "name": "İletişim Becerisi",
+      "question_count": "0"
+    },
+    {
+      "id": "60063",
+      "name": "Kalite Odaklılık",
+      "question_count": "0"
+    },
+    {
+      "id": "60064",
+      "name": "Takım Çalışması ve İşbirliği",
+      "question_count": "0"
+    },
+    {
+      "id": "60067",
+      "name": "Planlama ve Organize Etme",
+      "question_count": "0"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tname\tquestion_count\n60060\tGörev Bilinci\t0\n60065\tMüşteri Odaklılık\t0\n60062\tAnalitik Düşünme ve Problem Çözme\t0\n60066\tTicari Bakış\t0\n60061\tİletişim Becerisi\t0\n60063\tKalite Odaklılık\t0\n60064\tTakım Çalışması ve İşbirliği\t0\n60067\tPlanlama ve Organize Etme\t0\n",
+  "stderr": "",
+  "execution_time_ms": 1586
+}

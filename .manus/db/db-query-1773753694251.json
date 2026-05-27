@@ -1,0 +1,16 @@
+{
+  "query": "SELECT \n  p.id, p.name,\n  pc.id as category_id, pc.name as category_name\nFROM positions p\nLEFT JOIN position_categories pc ON p.id = pc.positionId\nWHERE p.id IN (1, 2, 3, 4, 5, 6, 7, 8)\nORDER BY p.id, pc.id\nLIMIT 10;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SELECT \n  p.id, p.name,\n  pc.id as category_id, pc.name as category_name\nFROM positions p\nLEFT JOIN position_categories pc ON p.id = pc.positionId\nWHERE p.id IN (1, 2, 3, 4, 5, 6, 7, 8)\nORDER BY p.id, pc.id\nLIMIT 10;",
+  "rows": [
+    {
+      "id": "8",
+      "name": "Kasa",
+      "category_id": "NULL",
+      "category_name": "NULL"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tname\tcategory_id\tcategory_name\n8\tKasa\tNULL\tNULL\n",
+  "stderr": "",
+  "execution_time_ms": 1564
+}

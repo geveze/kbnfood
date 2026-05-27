@@ -1,0 +1,20 @@
+{
+  "query": "SELECT id, branchId, inspectionDate, restaurantManagerName, totalScore FROM field_inspections ORDER BY id DESC LIMIT 1; SELECT COUNT(*) as answer_count FROM field_inspection_answers WHERE inspectionId = (SELECT id FROM field_inspections ORDER BY id DESC LIMIT 1);",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SELECT id, branchId, inspectionDate, restaurantManagerName, totalScore FROM field_inspections ORDER BY id DESC LIMIT 1; SELECT COUNT(*) as answer_count FROM field_inspection_answers WHERE inspectionId = (SELECT id FROM field_inspections ORDER BY id DESC LIMIT 1);",
+  "rows": [
+    {
+      "id": "1290001",
+      "branchId": "30004",
+      "inspectionDate": "2026-05-06 14:31:05",
+      "restaurantManagerName": "Test Manager",
+      "totalScore": "50.00"
+    }
+  ],
+  "messages": [
+    "answer_count",
+    "0"
+  ],
+  "stdout": "id\tbranchId\tinspectionDate\trestaurantManagerName\ttotalScore\n1290001\t30004\t2026-05-06 14:31:05\tTest Manager\t50.00\nanswer_count\n0\n",
+  "stderr": "",
+  "execution_time_ms": 1972
+}

@@ -1,0 +1,9 @@
+{
+  "query": "ALTER TABLE `performance_evaluations` MODIFY COLUMN `successPercentage` varchar(10);\nALTER TABLE `performance_evaluations` MODIFY COLUMN `createdByUserId` varchar(50);",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute ALTER TABLE `performance_evaluations` MODIFY COLUMN `successPercentage` varchar(10);\nALTER TABLE `performance_evaluations` MODIFY COLUMN `createdByUserId` varchar(50);",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 3750
+}

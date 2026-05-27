@@ -1,0 +1,18 @@
+{
+  "query": "SELECT pc.id, pc.name FROM position_categories pc WHERE pc.positionId = 5 ORDER BY pc.id;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SELECT pc.id, pc.name FROM position_categories pc WHERE pc.positionId = 5 ORDER BY pc.id;",
+  "rows": [
+    {
+      "id": "60003",
+      "name": "Görev Bilinci"
+    },
+    {
+      "id": "60004",
+      "name": "İletişim Becerisi"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tname\n60003\tGörev Bilinci\n60004\tİletişim Becerisi\n",
+  "stderr": "",
+  "execution_time_ms": 1585
+}

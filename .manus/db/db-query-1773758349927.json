@@ -1,0 +1,9 @@
+{
+  "query": "UPDATE position_questions SET categoryId = CASE \n  WHEN categoryId = 32 THEN 60145\n  WHEN categoryId = 33 THEN 60146\n  WHEN categoryId = 34 THEN 60147\n  WHEN categoryId = 35 THEN 60148\n  WHEN categoryId = 36 THEN 60149\n  WHEN categoryId = 37 THEN 60150\n  WHEN categoryId = 38 THEN 60151\n  WHEN categoryId = 39 THEN 60152\n  WHEN categoryId = 40 THEN 60153\n  WHEN categoryId = 41 THEN 60154\nEND WHERE categoryId IN (32, 33, 34, 35, 36, 37, 38, 39, 40, 41)",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute UPDATE position_questions SET categoryId = CASE \n  WHEN categoryId = 32 THEN 60145\n  WHEN categoryId = 33 THEN 60146\n  WHEN categoryId = 34 THEN 60147\n  WHEN categoryId = 35 THEN 60148\n  WHEN categoryId = 36 THEN 60149\n  WHEN categoryId = 37 THEN 60150\n  WHEN categoryId = 38 THEN 60151\n  WHEN categoryId = 39 THEN 60152\n  WHEN categoryId = 40 THEN 60153\n  WHEN categoryId = 41 THEN 60154\nEND WHERE categoryId IN (32, 33, 34, 35, 36, 37, 38, 39, 40, 41)",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 1548
+}

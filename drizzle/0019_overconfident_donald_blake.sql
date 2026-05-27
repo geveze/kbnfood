@@ -1,0 +1,3 @@
+ALTER TABLE `field_inspection_questions` ADD `isDeleted` boolean DEFAULT false;--> statement-breakpoint
+ALTER TABLE `field_inspection_questions` ADD `deletedAt` timestamp;--> statement-breakpoint
+ALTER TABLE `field_inspection_questions` ADD CONSTRAINT `field_inspection_questions_categoryId_field_inspection_categories_id_fk` FOREIGN KEY (`categoryId`) REFERENCES `field_inspection_categories`(`id`) ON DELETE restrict ON UPDATE no action;

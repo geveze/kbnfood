@@ -1,0 +1,9 @@
+{
+  "query": "INSERT INTO position_categories (positionId, name, `order`) VALUES\n(90002, 'Görev Bilinci', 1),\n(90002, 'İletişim Becerisi', 2),\n(90002, 'Analitik Düşünme ve Problem Çözme', 3),\n(90002, 'Kalite Odaklılık', 4),\n(90002, 'Takım Çalışması ve İşbirliği', 5),\n(90002, 'Detay Odaklılık', 6),\n(90002, 'Duygularını Kontrol Etme ve Yönetme', 7),\n(90002, 'Sonuç Odaklılık', 8),\n(90002, 'İş Disiplini ve Tutum', 9),\n(90002, 'Ürün Kalitesi ve Standartlara Uyum', 10),\n(90002, 'Gıda Güvenliği ve Hijyen', 11),\n(90002, 'İstasyon Yönetimi', 12);",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute INSERT INTO position_categories (positionId, name, `order`) VALUES\n(90002, 'Görev Bilinci', 1),\n(90002, 'İletişim Becerisi', 2),\n(90002, 'Analitik Düşünme ve Problem Çözme', 3),\n(90002, 'Kalite Odaklılık', 4),\n(90002, 'Takım Çalışması ve İşbirliği', 5),\n(90002, 'Detay Odaklılık', 6),\n(90002, 'Duygularını Kontrol Etme ve Yönetme', 7),\n(90002, 'Sonuç Odaklılık', 8),\n(90002, 'İş Disiplini ve Tutum', 9),\n(90002, 'Ürün Kalitesi ve Standartlara Uyum', 10),\n(90002, 'Gıda Güvenliği ve Hijyen', 11),\n(90002, 'İstasyon Yönetimi', 12);",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 1592
+}

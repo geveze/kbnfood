@@ -1,0 +1,60 @@
+{
+  "query": "SELECT id, categoryId, questionText FROM position_questions LIMIT 10",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SELECT id, categoryId, questionText FROM position_questions LIMIT 10",
+  "rows": [
+    {
+      "id": "60387",
+      "categoryId": "32",
+      "questionText": "Yaptığı işi en iyi şekilde yapar. İş disiplini ve görev bilinci yüksektir."
+    },
+    {
+      "id": "60388",
+      "categoryId": "32",
+      "questionText": "Sorumluluğundaki işleri, şirket kural ve prosedürlerine uygun bir biçimde gerçekleştirir."
+    },
+    {
+      "id": "60389",
+      "categoryId": "32",
+      "questionText": "İşine, kuruma ve kendisine sunulan kaynaklara zarar verecek hiçbir davranış sergilemez."
+    },
+    {
+      "id": "60390",
+      "categoryId": "32",
+      "questionText": "Ahlaki ve etik değerlere uygun davranır."
+    },
+    {
+      "id": "60391",
+      "categoryId": "33",
+      "questionText": "Karşındakini dinler ve verilmek istenen mesajı doğru bir şekilde anlar."
+    },
+    {
+      "id": "60392",
+      "categoryId": "33",
+      "questionText": "Söylemek istediklerini, açık, kısa ve net bir biçimde karşı tarafa aktarır."
+    },
+    {
+      "id": "60393",
+      "categoryId": "33",
+      "questionText": "İşle ilgili konularla ilgili bilgiyi zamanında aktarır ve paylaşır."
+    },
+    {
+      "id": "60394",
+      "categoryId": "33",
+      "questionText": "Her türlü iletişimde empati kurmaya özen gösterir."
+    },
+    {
+      "id": "60395",
+      "categoryId": "41",
+      "questionText": "Operasyonel prosedür ve talimatları bilir, bunlara uygun hareket eder."
+    },
+    {
+      "id": "60396",
+      "categoryId": "41",
+      "questionText": "Menü fiyatları ve pormosyonlarla ilgili bilgilidir."
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tcategoryId\tquestionText\n60387\t32\tYaptığı işi en iyi şekilde yapar. İş disiplini ve görev bilinci yüksektir.\n60388\t32\tSorumluluğundaki işleri, şirket kural ve prosedürlerine uygun bir biçimde gerçekleştirir.\n60389\t32\tİşine, kuruma ve kendisine sunulan kaynaklara zarar verecek hiçbir davranış sergilemez.\n60390\t32\tAhlaki ve etik değerlere uygun davranır.\n60391\t33\tKarşındakini dinler ve verilmek istenen mesajı doğru bir şekilde anlar.\n60392\t33\tSöylemek istediklerini, açık, kısa ve net bir biçimde karşı tarafa aktarır.\n60393\t33\tİşle ilgili konularla ilgili bilgiyi zamanında aktarır ve paylaşır.\n60394\t33\tHer türlü iletişimde empati kurmaya özen gösterir.\n60395\t41\tOperasyonel prosedür ve talimatları bilir, bunlara uygun hareket eder.\n60396\t41\tMenü fiyatları ve pormosyonlarla ilgili bilgilidir.\n",
+  "stderr": "",
+  "execution_time_ms": 1562
+}

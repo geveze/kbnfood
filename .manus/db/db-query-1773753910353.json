@@ -1,0 +1,49 @@
+{
+  "query": "SELECT DISTINCT categoryId FROM position_questions ORDER BY categoryId LIMIT 30;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SELECT DISTINCT categoryId FROM position_questions ORDER BY categoryId LIMIT 30;",
+  "rows": [
+    {
+      "categoryId": "1"
+    },
+    {
+      "categoryId": "2"
+    },
+    {
+      "categoryId": "3"
+    },
+    {
+      "categoryId": "4"
+    },
+    {
+      "categoryId": "5"
+    },
+    {
+      "categoryId": "6"
+    },
+    {
+      "categoryId": "7"
+    },
+    {
+      "categoryId": "8"
+    },
+    {
+      "categoryId": "9"
+    },
+    {
+      "categoryId": "10"
+    },
+    {
+      "categoryId": "11"
+    },
+    {
+      "categoryId": "12"
+    },
+    {
+      "categoryId": "13"
+    }
+  ],
+  "messages": [],
+  "stdout": "categoryId\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n",
+  "stderr": "",
+  "execution_time_ms": 1632
+}

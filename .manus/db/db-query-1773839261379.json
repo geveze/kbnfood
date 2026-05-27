@@ -1,0 +1,26 @@
+{
+  "query": "SELECT COUNT(*) as total_count, COUNT(DISTINCT branchId) as branch_count FROM kpi_targets LIMIT 1;\nSELECT branchId, dimension, COUNT(*) as count FROM kpi_targets GROUP BY branchId, dimension LIMIT 10;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SELECT COUNT(*) as total_count, COUNT(DISTINCT branchId) as branch_count FROM kpi_targets LIMIT 1;\nSELECT branchId, dimension, COUNT(*) as count FROM kpi_targets GROUP BY branchId, dimension LIMIT 10;",
+  "rows": [
+    {
+      "total_count": "10",
+      "branch_count": "10"
+    }
+  ],
+  "messages": [
+    "branchId\tdimension\tcount",
+    "10\tHR\t1",
+    "2\tFINANCE\t1",
+    "3\tFINANCE\t1",
+    "4\tFINANCE\t1",
+    "9\tHR\t1",
+    "5\tFINANCE\t1",
+    "8\tHR\t1",
+    "7\tCUSTOMER\t1",
+    "1\tFINANCE\t1",
+    "6\tCUSTOMER\t1"
+  ],
+  "stdout": "total_count\tbranch_count\n10\t10\nbranchId\tdimension\tcount\n10\tHR\t1\n2\tFINANCE\t1\n3\tFINANCE\t1\n4\tFINANCE\t1\n9\tHR\t1\n5\tFINANCE\t1\n8\tHR\t1\n7\tCUSTOMER\t1\n1\tFINANCE\t1\n6\tCUSTOMER\t1\n",
+  "stderr": "",
+  "execution_time_ms": 1815
+}

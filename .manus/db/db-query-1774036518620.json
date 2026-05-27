@@ -1,0 +1,20 @@
+{
+  "query": "SELECT period, COUNT(*) as count, COUNT(DISTINCT score) as score_count FROM kpi_target_cards_detail GROUP BY period ORDER BY period;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SELECT period, COUNT(*) as count, COUNT(DISTINCT score) as score_count FROM kpi_target_cards_detail GROUP BY period ORDER BY period;",
+  "rows": [
+    {
+      "period": "2026/1",
+      "count": "820",
+      "score_count": "17"
+    },
+    {
+      "period": "2026/3",
+      "count": "682",
+      "score_count": "682"
+    }
+  ],
+  "messages": [],
+  "stdout": "period\tcount\tscore_count\n2026/1\t820\t17\n2026/3\t682\t682\n",
+  "stderr": "",
+  "execution_time_ms": 1640
+}

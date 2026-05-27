@@ -1,0 +1,19 @@
+{
+  "query": "SHOW TABLES LIKE '%kpi%';",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SHOW TABLES LIKE '%kpi%';",
+  "rows": [
+    {
+      "Tables_in_6XmnMHSGkmqmcvGw6sxZ3M (%kpi%)": "kpiTargetCards"
+    },
+    {
+      "Tables_in_6XmnMHSGkmqmcvGw6sxZ3M (%kpi%)": "kpi_target_cards_detail"
+    },
+    {
+      "Tables_in_6XmnMHSGkmqmcvGw6sxZ3M (%kpi%)": "kpi_targets"
+    }
+  ],
+  "messages": [],
+  "stdout": "Tables_in_6XmnMHSGkmqmcvGw6sxZ3M (%kpi%)\nkpiTargetCards\nkpi_target_cards_detail\nkpi_targets\n",
+  "stderr": "",
+  "execution_time_ms": 1620
+}

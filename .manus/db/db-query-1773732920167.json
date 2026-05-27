@@ -1,0 +1,58 @@
+{
+  "query": "SELECT DISTINCT category FROM performance_evaluation_items LIMIT 20;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SELECT DISTINCT category FROM performance_evaluation_items LIMIT 20;",
+  "rows": [
+    {
+      "category": "Takım Çalışması ve İşbirliği"
+    },
+    {
+      "category": "Sonuç Odaklılık"
+    },
+    {
+      "category": "DAVRANIŞSAL"
+    },
+    {
+      "category": "İş Disiplini ve Tutum"
+    },
+    {
+      "category": "Detay Odaklılık"
+    },
+    {
+      "category": "Gıda Güvenliği ve Hijyen"
+    },
+    {
+      "category": "Yönetim Becerileri"
+    },
+    {
+      "category": "İletişim Becerisi"
+    },
+    {
+      "category": "Ürün Kalitesi ve Standartlara Uyum"
+    },
+    {
+      "category": "Analitik Düşünme ve Problem Çözme"
+    },
+    {
+      "category": "İstasyon Yönetimi"
+    },
+    {
+      "category": "Duygularını Kontrol Etme ve Yönetme"
+    },
+    {
+      "category": "MESLEKI_TEKNIK"
+    },
+    {
+      "category": "Restoran Yönetimi"
+    },
+    {
+      "category": "Görev Bilinci"
+    },
+    {
+      "category": "Kalite Odaklılık"
+    }
+  ],
+  "messages": [],
+  "stdout": "category\nTakım Çalışması ve İşbirliği\nSonuç Odaklılık\nDAVRANIŞSAL\nİş Disiplini ve Tutum\nDetay Odaklılık\nGıda Güvenliği ve Hijyen\nYönetim Becerileri\nİletişim Becerisi\nÜrün Kalitesi ve Standartlara Uyum\nAnalitik Düşünme ve Problem Çözme\nİstasyon Yönetimi\nDuygularını Kontrol Etme ve Yönetme\nMESLEKI_TEKNIK\nRestoran Yönetimi\nGörev Bilinci\nKalite Odaklılık\n",
+  "stderr": "",
+  "execution_time_ms": 1525
+}

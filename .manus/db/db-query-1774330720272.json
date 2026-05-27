@@ -1,0 +1,20 @@
+{
+  "query": "SELECT \n  p.name as unvan,\n  COUNT(DISTINCT pc.id) as kategori_sayisi,\n  COUNT(pq.id) as soru_sayisi\nFROM positions p\nLEFT JOIN position_categories pc ON p.id = pc.positionId\nLEFT JOIN position_questions pq ON pc.id = pq.categoryId\nWHERE p.id IN (1, 3, 4, 5, 6)\nGROUP BY p.id, p.name\nORDER BY p.id",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SELECT \n  p.name as unvan,\n  COUNT(DISTINCT pc.id) as kategori_sayisi,\n  COUNT(pq.id) as soru_sayisi\nFROM positions p\nLEFT JOIN position_categories pc ON p.id = pc.positionId\nLEFT JOIN position_questions pq ON pc.id = pq.categoryId\nWHERE p.id IN (1, 3, 4, 5, 6)\nGROUP BY p.id, p.name\nORDER BY p.id",
+  "rows": [
+    {
+      "unvan": "SERVIS",
+      "kategori_sayisi": "0",
+      "soru_sayisi": "0"
+    },
+    {
+      "unvan": "RESTORAN_YONETIMI",
+      "kategori_sayisi": "2",
+      "soru_sayisi": "8"
+    }
+  ],
+  "messages": [],
+  "stdout": "unvan\tkategori_sayisi\tsoru_sayisi\nSERVIS\t0\t0\nRESTORAN_YONETIMI\t2\t8\n",
+  "stderr": "",
+  "execution_time_ms": 1656
+}

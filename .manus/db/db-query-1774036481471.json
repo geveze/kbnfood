@@ -1,0 +1,9 @@
+{
+  "query": "UPDATE kpi_target_cards_detail \nSET score = CAST(RAND() * 50 + 50 AS CHAR),\n    weightedScore = CAST((RAND() * 50 + 50) * weight / 100 AS CHAR)\nWHERE period = '2026/3' AND (score IS NULL OR score = '');",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute UPDATE kpi_target_cards_detail \nSET score = CAST(RAND() * 50 + 50 AS CHAR),\n    weightedScore = CAST((RAND() * 50 + 50) * weight / 100 AS CHAR)\nWHERE period = '2026/3' AND (score IS NULL OR score = '');",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 1636
+}

@@ -1,0 +1,17 @@
+{
+  "query": "SELECT id, username, email, role, isActive FROM users WHERE username = 'byi̇aç';",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SELECT id, username, email, role, isActive FROM users WHERE username = 'byi̇aç';",
+  "rows": [
+    {
+      "id": "900429",
+      "username": "byi̇aç",
+      "email": "byi̇aç@kebanfood.com",
+      "role": "branch_manager",
+      "isActive": "1"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tusername\temail\trole\tisActive\n900429\tbyi̇aç\tbyi̇aç@kebanfood.com\tbranch_manager\t1\n",
+  "stderr": "",
+  "execution_time_ms": 1646
+}

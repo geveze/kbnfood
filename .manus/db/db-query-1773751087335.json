@@ -1,0 +1,70 @@
+{
+  "query": "SELECT id, positionCode, itemNumber, itemDescription FROM performance_evaluation_items WHERE positionCode = 'KASA' ORDER BY itemNumber LIMIT 10;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SELECT id, positionCode, itemNumber, itemDescription FROM performance_evaluation_items WHERE positionCode = 'KASA' ORDER BY itemNumber LIMIT 10;",
+  "rows": [
+    {
+      "id": "120106",
+      "positionCode": "KASA",
+      "itemNumber": "1",
+      "itemDescription": "Yaptığı işi en iyi şekilde yapar. İş disiplini ve görev bilinci yüksektir."
+    },
+    {
+      "id": "120107",
+      "positionCode": "KASA",
+      "itemNumber": "2",
+      "itemDescription": "Sorumluluğundaki işleri, şirket kural ve prosedürlerine uygun bir biçimde gerçekleştirir."
+    },
+    {
+      "id": "120108",
+      "positionCode": "KASA",
+      "itemNumber": "3",
+      "itemDescription": "İşine, kuruma ve kendisine sunulan kaynaklara zarar verecek hiçbir davranış sergilemez."
+    },
+    {
+      "id": "120109",
+      "positionCode": "KASA",
+      "itemNumber": "4",
+      "itemDescription": "Ahlaki ve etik değerlere uygun davranır."
+    },
+    {
+      "id": "120110",
+      "positionCode": "KASA",
+      "itemNumber": "5",
+      "itemDescription": "Karşındakini dinler ve verilmek istenen mesajı doğru bir şekilde anlar."
+    },
+    {
+      "id": "120111",
+      "positionCode": "KASA",
+      "itemNumber": "6",
+      "itemDescription": "Söylemek istediklerini, açık, kısa ve net bir biçimde karşı tarafa aktarır."
+    },
+    {
+      "id": "120112",
+      "positionCode": "KASA",
+      "itemNumber": "7",
+      "itemDescription": "İşle ilgili konularla ilgili bilgiyi zamanında aktarır ve paylaşır."
+    },
+    {
+      "id": "120113",
+      "positionCode": "KASA",
+      "itemNumber": "8",
+      "itemDescription": "Her türlü iletişimde empati kurmaya özen gösterir."
+    },
+    {
+      "id": "120114",
+      "positionCode": "KASA",
+      "itemNumber": "9",
+      "itemDescription": "Gelişmekte olan problemleri görür, önleyici davranış geliştirir."
+    },
+    {
+      "id": "120115",
+      "positionCode": "KASA",
+      "itemNumber": "10",
+      "itemDescription": "Durum ve problem karşısında alacağı hareketin sonucunu bilir."
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tpositionCode\titemNumber\titemDescription\n120106\tKASA\t1\tYaptığı işi en iyi şekilde yapar. İş disiplini ve görev bilinci yüksektir.\n120107\tKASA\t2\tSorumluluğundaki işleri, şirket kural ve prosedürlerine uygun bir biçimde gerçekleştirir.\n120108\tKASA\t3\tİşine, kuruma ve kendisine sunulan kaynaklara zarar verecek hiçbir davranış sergilemez.\n120109\tKASA\t4\tAhlaki ve etik değerlere uygun davranır.\n120110\tKASA\t5\tKarşındakini dinler ve verilmek istenen mesajı doğru bir şekilde anlar.\n120111\tKASA\t6\tSöylemek istediklerini, açık, kısa ve net bir biçimde karşı tarafa aktarır.\n120112\tKASA\t7\tİşle ilgili konularla ilgili bilgiyi zamanında aktarır ve paylaşır.\n120113\tKASA\t8\tHer türlü iletişimde empati kurmaya özen gösterir.\n120114\tKASA\t9\tGelişmekte olan problemleri görür, önleyici davranış geliştirir.\n120115\tKASA\t10\tDurum ve problem karşısında alacağı hareketin sonucunu bilir.\n",
+  "stderr": "",
+  "execution_time_ms": 1539
+}

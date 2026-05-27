@@ -1,0 +1,37 @@
+{
+  "query": "SELECT COUNT(*) as category_count FROM position_categories WHERE positionId = 6;\nSELECT COUNT(*) as question_count FROM position_questions WHERE categoryId IN (SELECT id FROM position_categories WHERE positionId = 6);\nSELECT * FROM position_categories WHERE positionId = 6 LIMIT 5;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SELECT COUNT(*) as category_count FROM position_categories WHERE positionId = 6;\nSELECT COUNT(*) as question_count FROM position_questions WHERE categoryId IN (SELECT id FROM position_categories WHERE positionId = 6);\nSELECT * FROM position_categories WHERE positionId = 6 LIMIT 5;",
+  "rows": [
+    {
+      "category_count": "8"
+    },
+    {
+      "category_count": "question_count"
+    },
+    {
+      "category_count": "50"
+    },
+    {
+      "category_count": "id\tpositionId\tname\torder\tcreatedAt\tupdatedAt"
+    },
+    {
+      "category_count": "1\t6\tGörev Bilinci\t0\t2026-03-24 05:48:29\t2026-03-24 05:48:29"
+    },
+    {
+      "category_count": "2\t6\tİletişim Becerisi\t0\t2026-03-24 05:48:29\t2026-03-24 05:48:29"
+    },
+    {
+      "category_count": "3\t6\tAnalitik Düşünme ve Problem Çözme\t0\t2026-03-24 05:48:29\t2026-03-24 05:48:29"
+    },
+    {
+      "category_count": "4\t6\tKalite Odaklılık\t0\t2026-03-24 05:48:29\t2026-03-24 05:48:29"
+    },
+    {
+      "category_count": "5\t6\tTakım Çalışması ve İşbirliği\t0\t2026-03-24 05:48:30\t2026-03-24 05:48:30"
+    }
+  ],
+  "messages": [],
+  "stdout": "category_count\n8\nquestion_count\n50\nid\tpositionId\tname\torder\tcreatedAt\tupdatedAt\n1\t6\tGörev Bilinci\t0\t2026-03-24 05:48:29\t2026-03-24 05:48:29\n2\t6\tİletişim Becerisi\t0\t2026-03-24 05:48:29\t2026-03-24 05:48:29\n3\t6\tAnalitik Düşünme ve Problem Çözme\t0\t2026-03-24 05:48:29\t2026-03-24 05:48:29\n4\t6\tKalite Odaklılık\t0\t2026-03-24 05:48:29\t2026-03-24 05:48:29\n5\t6\tTakım Çalışması ve İşbirliği\t0\t2026-03-24 05:48:30\t2026-03-24 05:48:30\n",
+  "stderr": "",
+  "execution_time_ms": 2092
+}

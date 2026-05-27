@@ -1,0 +1,8 @@
+{
+  "query": "SELECT id, branchName, dimension, targetValue, weight FROM kpi_target_cards WHERE branchName LIKE '%Bakırköy%' LIMIT 10;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SELECT id, branchName, dimension, targetValue, weight FROM kpi_target_cards WHERE branchName LIKE '%Bakırköy%' LIMIT 10;",
+  "returncode": 1,
+  "logs": [
+    "ERROR 1146 (42S02) at line 1: Table '6xmnmhsgkmqmcvgw6sxz3m.kpi_target_cards' doesn't exist"
+  ]
+}

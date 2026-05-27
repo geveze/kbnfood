@@ -1,0 +1,262 @@
+{
+  "query": "SELECT DISTINCT branchName FROM kpi_target_cards_detail ORDER BY branchName;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SELECT DISTINCT branchName FROM kpi_target_cards_detail ORDER BY branchName;",
+  "rows": [
+    {
+      "branchName": "AFYON WATERMALL"
+    },
+    {
+      "branchName": "ANTALYA ALANYA AKDENİZ AVM"
+    },
+    {
+      "branchName": "ANTALYA ALANYA CADDE"
+    },
+    {
+      "branchName": "AYDIN EFELER"
+    },
+    {
+      "branchName": "BURSA KENT MEYDANI AVM"
+    },
+    {
+      "branchName": "BURSA ÖZLÜCE"
+    },
+    {
+      "branchName": "BY ORDU NOVADA AVM"
+    },
+    {
+      "branchName": "BY İSTANBUL BAKIRKÖY "
+    },
+    {
+      "branchName": "BY İSTANBUL SEFAKÖY"
+    },
+    {
+      "branchName": "BY İSTANBUL ÜMRANİYE"
+    },
+    {
+      "branchName": "BY İZMİR HİLLTOWN AVM"
+    },
+    {
+      "branchName": "DENİZLİ FORUM AVM"
+    },
+    {
+      "branchName": "ESKİŞEHİR"
+    },
+    {
+      "branchName": "GAZİANTEP SANKO AVM"
+    },
+    {
+      "branchName": "KOCAELİ GEBZE"
+    },
+    {
+      "branchName": "KOCAELİ İZMİT"
+    },
+    {
+      "branchName": "KOCAELİ ŞEKERPINAR"
+    },
+    {
+      "branchName": "MALL OF İSTANBUL"
+    },
+    {
+      "branchName": "MUĞLA FETHİYE"
+    },
+    {
+      "branchName": "MUĞLA MARMARİS"
+    },
+    {
+      "branchName": "RİZE"
+    },
+    {
+      "branchName": "SAKARYA 54 AVM"
+    },
+    {
+      "branchName": "TEKİRDAĞ ÇORLU"
+    },
+    {
+      "branchName": "VADİ İSTANBUL AVM"
+    },
+    {
+      "branchName": "ÇANAKKALE 17 BURDA AVM"
+    },
+    {
+      "branchName": "İSTANBUL AKSARAY"
+    },
+    {
+      "branchName": "İSTANBUL AQUA FLORYA"
+    },
+    {
+      "branchName": "İSTANBUL ARENAPARK AVM"
+    },
+    {
+      "branchName": "İSTANBUL ATLAS ÜNİVERSİTESİ"
+    },
+    {
+      "branchName": "İSTANBUL AVCILAR ÇARŞI"
+    },
+    {
+      "branchName": "İSTANBUL BAĞCILAR"
+    },
+    {
+      "branchName": "İSTANBUL BAŞAKŞEHİR"
+    },
+    {
+      "branchName": "İSTANBUL BEYKENT"
+    },
+    {
+      "branchName": "İSTANBUL BEYLİKDÜZÜ KAVAKLI"
+    },
+    {
+      "branchName": "İSTANBUL BEŞİKTAŞ"
+    },
+    {
+      "branchName": "İSTANBUL CADDEBOSTAN"
+    },
+    {
+      "branchName": "İSTANBUL CENNET"
+    },
+    {
+      "branchName": "İSTANBUL CEVAHİR AVM"
+    },
+    {
+      "branchName": "İSTANBUL ESENLER"
+    },
+    {
+      "branchName": "İSTANBUL ESENYURT"
+    },
+    {
+      "branchName": "İSTANBUL FORUM İSTANBUL"
+    },
+    {
+      "branchName": "İSTANBUL GAZİOSMANPAŞA"
+    },
+    {
+      "branchName": "İSTANBUL GELİŞİM ÜNİVERSİTESİ"
+    },
+    {
+      "branchName": "İSTANBUL HL. KARGO TER"
+    },
+    {
+      "branchName": "İSTANBUL ISPARTAKULE"
+    },
+    {
+      "branchName": "İSTANBUL KADIKÖY"
+    },
+    {
+      "branchName": "İSTANBUL KARTAL CADDE"
+    },
+    {
+      "branchName": "İSTANBUL KAYAŞEHİR"
+    },
+    {
+      "branchName": "İSTANBUL KAĞITHANE"
+    },
+    {
+      "branchName": "İSTANBUL KOCA MUSTAFA PAŞA"
+    },
+    {
+      "branchName": "İSTANBUL MALTEPE"
+    },
+    {
+      "branchName": "İSTANBUL MARMARA FORUM"
+    },
+    {
+      "branchName": "İSTANBUL MARMARA PARK"
+    },
+    {
+      "branchName": "İSTANBUL MİRKELAM 1"
+    },
+    {
+      "branchName": "İSTANBUL MİRKELAM 2"
+    },
+    {
+      "branchName": "İSTANBUL OASİS AVM"
+    },
+    {
+      "branchName": "İSTANBUL ORTAKÖY"
+    },
+    {
+      "branchName": "İSTANBUL PELİCAN AVM"
+    },
+    {
+      "branchName": "İSTANBUL PENDİK"
+    },
+    {
+      "branchName": "İSTANBUL PENDİK LENS"
+    },
+    {
+      "branchName": "İSTANBUL SEFAKÖY"
+    },
+    {
+      "branchName": "İSTANBUL SUADİYE- BAĞDAT CADDESİ"
+    },
+    {
+      "branchName": "İSTANBUL SULTANGAZİ"
+    },
+    {
+      "branchName": "İSTANBUL TAKSİM"
+    },
+    {
+      "branchName": "İSTANBUL TORİUM AVM"
+    },
+    {
+      "branchName": "İSTANBUL VENEZİA AVM"
+    },
+    {
+      "branchName": "İSTANBUL VİALAND"
+    },
+    {
+      "branchName": "İSTANBUL VİAMARİNE"
+    },
+    {
+      "branchName": "İSTANBUL VİAPORT"
+    },
+    {
+      "branchName": "İSTANBUL YAYLA"
+    },
+    {
+      "branchName": "İSTANBUL ZEYTİNBURNU CADDE"
+    },
+    {
+      "branchName": "İSTANBUL ÇAPA"
+    },
+    {
+      "branchName": "İSTANBUL ÜMRANİYE"
+    },
+    {
+      "branchName": "İSTANBUL ÜMRANİYE MEYDAN AVM"
+    },
+    {
+      "branchName": "İSTANBUL ÜSKÜDAR"
+    },
+    {
+      "branchName": "İSTANBUL İFM AVM"
+    },
+    {
+      "branchName": "İSTANBUL ŞERİFALİ"
+    },
+    {
+      "branchName": "İSTANBUL ŞİRİNEVLER"
+    },
+    {
+      "branchName": "İSTANBUL ŞİRİNEVLER MEYDAN"
+    },
+    {
+      "branchName": "İSTANBUL ŞİŞLİ"
+    },
+    {
+      "branchName": "İZMİR HATAY"
+    },
+    {
+      "branchName": "İZMİR HİLLTOWN AVM"
+    },
+    {
+      "branchName": "İZMİR KÜÇÜKPARK"
+    },
+    {
+      "branchName": "İZMİR OPTİMUM"
+    }
+  ],
+  "messages": [],
+  "stdout": "branchName\nAFYON WATERMALL\nANTALYA ALANYA AKDENİZ AVM\nANTALYA ALANYA CADDE\nAYDIN EFELER\nBURSA KENT MEYDANI AVM\nBURSA ÖZLÜCE\nBY ORDU NOVADA AVM\nBY İSTANBUL BAKIRKÖY \nBY İSTANBUL SEFAKÖY\nBY İSTANBUL ÜMRANİYE\nBY İZMİR HİLLTOWN AVM\nDENİZLİ FORUM AVM\nESKİŞEHİR\nGAZİANTEP SANKO AVM\nKOCAELİ GEBZE\nKOCAELİ İZMİT\nKOCAELİ ŞEKERPINAR\nMALL OF İSTANBUL\nMUĞLA FETHİYE\nMUĞLA MARMARİS\nRİZE\nSAKARYA 54 AVM\nTEKİRDAĞ ÇORLU\nVADİ İSTANBUL AVM\nÇANAKKALE 17 BURDA AVM\nİSTANBUL AKSARAY\nİSTANBUL AQUA FLORYA\nİSTANBUL ARENAPARK AVM\nİSTANBUL ATLAS ÜNİVERSİTESİ\nİSTANBUL AVCILAR ÇARŞI\nİSTANBUL BAĞCILAR\nİSTANBUL BAŞAKŞEHİR\nİSTANBUL BEYKENT\nİSTANBUL BEYLİKDÜZÜ KAVAKLI\nİSTANBUL BEŞİKTAŞ\nİSTANBUL CADDEBOSTAN\nİSTANBUL CENNET\nİSTANBUL CEVAHİR AVM\nİSTANBUL ESENLER\nİSTANBUL ESENYURT\nİSTANBUL FORUM İSTANBUL\nİSTANBUL GAZİOSMANPAŞA\nİSTANBUL GELİŞİM ÜNİVERSİTESİ\nİSTANBUL HL. KARGO TER\nİSTANBUL ISPARTAKULE\nİSTANBUL KADIKÖY\nİSTANBUL KARTAL CADDE\nİSTANBUL KAYAŞEHİR\nİSTANBUL KAĞITHANE\nİSTANBUL KOCA MUSTAFA PAŞA\nİSTANBUL MALTEPE\nİSTANBUL MARMARA FORUM\nİSTANBUL MARMARA PARK\nİSTANBUL MİRKELAM 1\nİSTANBUL MİRKELAM 2\nİSTANBUL OASİS AVM\nİSTANBUL ORTAKÖY\nİSTANBUL PELİCAN AVM\nİSTANBUL PENDİK\nİSTANBUL PENDİK LENS\nİSTANBUL SEFAKÖY\nİSTANBUL SUADİYE- BAĞDAT CADDESİ\nİSTANBUL SULTANGAZİ\nİSTANBUL TAKSİM\nİSTANBUL TORİUM AVM\nİSTANBUL VENEZİA AVM\nİSTANBUL VİALAND\nİSTANBUL VİAMARİNE\nİSTANBUL VİAPORT\nİSTANBUL YAYLA\nİSTANBUL ZEYTİNBURNU CADDE\nİSTANBUL ÇAPA\nİSTANBUL ÜMRANİYE\nİSTANBUL ÜMRANİYE MEYDAN AVM\nİSTANBUL ÜSKÜDAR\nİSTANBUL İFM AVM\nİSTANBUL ŞERİFALİ\nİSTANBUL ŞİRİNEVLER\nİSTANBUL ŞİRİNEVLER MEYDAN\nİSTANBUL ŞİŞLİ\nİZMİR HATAY\nİZMİR HİLLTOWN AVM\nİZMİR KÜÇÜKPARK\nİZMİR OPTİMUM\n",
+  "stderr": "",
+  "execution_time_ms": 1579
+}

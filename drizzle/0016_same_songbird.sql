@@ -1,0 +1,1 @@
+ALTER TABLE `field_inspections` MODIFY COLUMN `inspectorId` int;

@@ -1,0 +1,40 @@
+{
+  "query": "SELECT id, username, role, branchName FROM users WHERE role='branch_manager' LIMIT 5;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SELECT id, username, role, branchName FROM users WHERE role='branch_manager' LIMIT 5;",
+  "rows": [
+    {
+      "id": "150025",
+      "username": "veli.kaya",
+      "role": "branch_manager",
+      "branchName": "NULL"
+    },
+    {
+      "id": "210535",
+      "username": "ordunovada",
+      "role": "branch_manager",
+      "branchName": "NULL"
+    },
+    {
+      "id": "900118",
+      "username": "beykent",
+      "role": "branch_manager",
+      "branchName": "NULL"
+    },
+    {
+      "id": "1680174",
+      "username": "byvialand",
+      "role": "branch_manager",
+      "branchName": "NULL"
+    },
+    {
+      "id": "1680227",
+      "username": "byima",
+      "role": "branch_manager",
+      "branchName": "NULL"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tusername\trole\tbranchName\n150025\tveli.kaya\tbranch_manager\tNULL\n210535\tordunovada\tbranch_manager\tNULL\n900118\tbeykent\tbranch_manager\tNULL\n1680174\tbyvialand\tbranch_manager\tNULL\n1680227\tbyima\tbranch_manager\tNULL\n",
+  "stderr": "",
+  "execution_time_ms": 1570
+}

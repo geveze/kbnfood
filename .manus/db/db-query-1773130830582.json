@@ -1,0 +1,9 @@
+{
+  "query": "CREATE TABLE `kpi_target_cards_detail` (\n\t`id` int AUTO_INCREMENT NOT NULL,\n\t`period` varchar(20) NOT NULL,\n\t`branchName` varchar(255) NOT NULL,\n\t`branchManager` varchar(255) NOT NULL,\n\t`dimension` varchar(100) NOT NULL,\n\t`target` varchar(255) NOT NULL,\n\t`targetDescription` text,\n\t`unit` varchar(50),\n\t`source` varchar(100),\n\t`frequency` varchar(50),\n\t`weight` int DEFAULT 0,\n\t`targetType` varchar(20),\n\t`lowerLimit` varchar(50),\n\t`targetValue` varchar(50),\n\t`upperLimit` varchar(50),\n\t`actualValue` varchar(50),\n\t`score` varchar(50),\n\t`weightedScore` varchar(50),\n\t`createdAt` timestamp NOT NULL DEFAULT (now()),\n\t`updatedAt` timestamp NOT NULL DEFAULT (now()) ON UPDATE CURRENT_TIMESTAMP,\n\tCONSTRAINT `kpi_target_cards_detail_id` PRIMARY KEY(`id`)\n);",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute CREATE TABLE `kpi_target_cards_detail` (\n\t`id` int AUTO_INCREMENT NOT NULL,\n\t`period` varchar(20) NOT NULL,\n\t`branchName` varchar(255) NOT NULL,\n\t`branchManager` varchar(255) NOT NULL,\n\t`dimension` varchar(100) NOT NULL,\n\t`target` varchar(255) NOT NULL,\n\t`targetDescription` text,\n\t`unit` varchar(50),\n\t`source` varchar(100),\n\t`frequency` varchar(50),\n\t`weight` int DEFAULT 0,\n\t`targetType` varchar(20),\n\t`lowerLimit` varchar(50),\n\t`targetValue` varchar(50),\n\t`upperLimit` varchar(50),\n\t`actualValue` varchar(50),\n\t`score` varchar(50),\n\t`weightedScore` varchar(50),\n\t`createdAt` timestamp NOT NULL DEFAULT (now()),\n\t`updatedAt` timestamp NOT NULL DEFAULT (now()) ON UPDATE CURRENT_TIMESTAMP,\n\tCONSTRAINT `kpi_target_cards_detail_id` PRIMARY KEY(`id`)\n);",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 1610
+}

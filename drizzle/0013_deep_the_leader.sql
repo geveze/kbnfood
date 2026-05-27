@@ -1,0 +1,1 @@
+ALTER TABLE `kpi_targets` ADD `period` varchar(50) DEFAULT '2026/1' NOT NULL;

@@ -1,0 +1,29 @@
+{
+  "query": "SELECT positionId, COUNT(*) as category_count FROM position_categories GROUP BY positionId ORDER BY positionId;\nSELECT COUNT(*) as total_questions FROM position_questions;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SELECT positionId, COUNT(*) as category_count FROM position_categories GROUP BY positionId ORDER BY positionId;\nSELECT COUNT(*) as total_questions FROM position_questions;",
+  "rows": [
+    {
+      "positionId": "5",
+      "category_count": "12"
+    },
+    {
+      "positionId": "6",
+      "category_count": "10"
+    },
+    {
+      "positionId": "7",
+      "category_count": "12"
+    },
+    {
+      "positionId": "8",
+      "category_count": "8"
+    }
+  ],
+  "messages": [
+    "total_questions",
+    "54"
+  ],
+  "stdout": "positionId\tcategory_count\n5\t12\n6\t10\n7\t12\n8\t8\ntotal_questions\n54\n",
+  "stderr": "",
+  "execution_time_ms": 1765
+}

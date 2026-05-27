@@ -1,0 +1,14 @@
+{
+  "query": "SELECT id, name FROM positions WHERE name LIKE '%RESTORAN%' OR name LIKE '%restoran%';",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SELECT id, name FROM positions WHERE name LIKE '%RESTORAN%' OR name LIKE '%restoran%';",
+  "rows": [
+    {
+      "id": "6",
+      "name": "RESTORAN_YONETIMI"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tname\n6\tRESTORAN_YONETIMI\n",
+  "stderr": "",
+  "execution_time_ms": 2150
+}

@@ -1,0 +1,8 @@
+{
+  "query": "UPDATE position_questions SET categoryId = (SELECT id FROM position_categories WHERE position_categories.name = (SELECT name FROM position_categories WHERE id = position_questions.categoryId) AND position_categories.positionId IN (5, 6, 7, 8)) WHERE categoryId IN (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13);",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute UPDATE position_questions SET categoryId = (SELECT id FROM position_categories WHERE position_categories.name = (SELECT name FROM position_categories WHERE id = position_questions.categoryId) AND position_categories.positionId IN (5, 6, 7, 8)) WHERE categoryId IN (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13);",
+  "returncode": 1,
+  "logs": [
+    "ERROR 1048 (23000) at line 1: Column 'categoryId' cannot be null"
+  ]
+}

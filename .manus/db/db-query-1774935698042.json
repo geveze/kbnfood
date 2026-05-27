@@ -1,0 +1,9 @@
+{
+  "query": "-- 15. Soru: Kalite Odaklılık - Soru 3 (ID: 210004 kategorisinin 3. sorusu)\nUPDATE position_questions \nSET questionText = 'İş yapma yöntemini sürekli geliştirmeye, verimlilik ve etkililiği artırmaya odaklı çalışır.'\nWHERE categoryId = 210005 AND questionNumber = '3';\n\n-- 19. Soru: Takım Çalışması ve İşbirliği - Soru 3 (ID: 210006 kategorisinin 3. sorusu)\nUPDATE position_questions \nSET questionText = 'Takım arkadaşlarını, ortak başarı için heveslendirir, onları motive eder. \"Biz\" olgusunu yaygınlaştır.'\nWHERE categoryId = 210006 AND questionNumber = '3';",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute -- 15. Soru: Kalite Odaklılık - Soru 3 (ID: 210004 kategorisinin 3. sorusu)\nUPDATE position_questions \nSET questionText = 'İş yapma yöntemini sürekli geliştirmeye, verimlilik ve etkililiği artırmaya odaklı çalışır.'\nWHERE categoryId = 210005 AND questionNumber = '3';\n\n-- 19. Soru: Takım Çalışması ve İşbirliği - Soru 3 (ID: 210006 kategorisinin 3. sorusu)\nUPDATE position_questions \nSET questionText = 'Takım arkadaşlarını, ortak başarı için heveslendirir, onları motive eder. \"Biz\" olgusunu yaygınlaştır.'\nWHERE categoryId = 210006 AND questionNumber = '3';",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 457
+}

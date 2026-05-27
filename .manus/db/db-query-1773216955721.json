@@ -1,0 +1,90 @@
+{
+  "query": "SELECT branchName, COUNT(*) as kpi_count FROM kpi_target_cards_detail GROUP BY branchName ORDER BY branchName LIMIT 20;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SELECT branchName, COUNT(*) as kpi_count FROM kpi_target_cards_detail GROUP BY branchName ORDER BY branchName LIMIT 20;",
+  "rows": [
+    {
+      "branchName": "AFYON WATERMALL",
+      "kpi_count": "10"
+    },
+    {
+      "branchName": "ANTALYA ALANYA AKDENİZ AVM",
+      "kpi_count": "10"
+    },
+    {
+      "branchName": "ANTALYA ALANYA CADDE",
+      "kpi_count": "10"
+    },
+    {
+      "branchName": "AYDIN EFELER",
+      "kpi_count": "10"
+    },
+    {
+      "branchName": "BURSA KENT MEYDANI AVM",
+      "kpi_count": "10"
+    },
+    {
+      "branchName": "BURSA ÖZLÜCE",
+      "kpi_count": "10"
+    },
+    {
+      "branchName": "BY ORDU NOVADA AVM",
+      "kpi_count": "10"
+    },
+    {
+      "branchName": "BY İSTANBUL BAKIRKÖY ",
+      "kpi_count": "10"
+    },
+    {
+      "branchName": "DENİZLİ FORUM AVM",
+      "kpi_count": "10"
+    },
+    {
+      "branchName": "ESKİŞEHİR",
+      "kpi_count": "10"
+    },
+    {
+      "branchName": "GAZİANTEP SANKO AVM",
+      "kpi_count": "10"
+    },
+    {
+      "branchName": "KOCAELİ GEBZE",
+      "kpi_count": "10"
+    },
+    {
+      "branchName": "KOCAELİ İZMİT",
+      "kpi_count": "10"
+    },
+    {
+      "branchName": "KOCAELİ ŞEKERPINAR",
+      "kpi_count": "10"
+    },
+    {
+      "branchName": "MALL OF İSTANBUL",
+      "kpi_count": "10"
+    },
+    {
+      "branchName": "MUĞLA FETHİYE",
+      "kpi_count": "10"
+    },
+    {
+      "branchName": "MUĞLA MARMARİS",
+      "kpi_count": "10"
+    },
+    {
+      "branchName": "RİZE",
+      "kpi_count": "10"
+    },
+    {
+      "branchName": "SAKARYA 54 AVM",
+      "kpi_count": "10"
+    },
+    {
+      "branchName": "TEKİRDAĞ ÇORLU",
+      "kpi_count": "10"
+    }
+  ],
+  "messages": [],
+  "stdout": "branchName\tkpi_count\nAFYON WATERMALL\t10\nANTALYA ALANYA AKDENİZ AVM\t10\nANTALYA ALANYA CADDE\t10\nAYDIN EFELER\t10\nBURSA KENT MEYDANI AVM\t10\nBURSA ÖZLÜCE\t10\nBY ORDU NOVADA AVM\t10\nBY İSTANBUL BAKIRKÖY \t10\nDENİZLİ FORUM AVM\t10\nESKİŞEHİR\t10\nGAZİANTEP SANKO AVM\t10\nKOCAELİ GEBZE\t10\nKOCAELİ İZMİT\t10\nKOCAELİ ŞEKERPINAR\t10\nMALL OF İSTANBUL\t10\nMUĞLA FETHİYE\t10\nMUĞLA MARMARİS\t10\nRİZE\t10\nSAKARYA 54 AVM\t10\nTEKİRDAĞ ÇORLU\t10\n",
+  "stderr": "",
+  "execution_time_ms": 1582
+}

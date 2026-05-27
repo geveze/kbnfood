@@ -1,0 +1,199 @@
+{
+  "query": "SELECT id, username, email, role, isActive FROM users WHERE username LIKE 'by%a%' AND role = 'branch_manager' ORDER BY username;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SELECT id, username, email, role, isActive FROM users WHERE username LIKE 'by%a%' AND role = 'branch_manager' ORDER BY username;",
+  "rows": [
+    {
+      "id": "900416",
+      "username": "byaaa",
+      "email": "byaaa@kebanfood.com",
+      "role": "branch_manager",
+      "isActive": "1"
+    },
+    {
+      "id": "900417",
+      "username": "byaac",
+      "email": "byaac@kebanfood.com",
+      "role": "branch_manager",
+      "isActive": "1"
+    },
+    {
+      "id": "900415",
+      "username": "byafy",
+      "email": "byafy@kebanfood.com",
+      "role": "branch_manager",
+      "isActive": "1"
+    },
+    {
+      "id": "900418",
+      "username": "byaye",
+      "email": "byaye@kebanfood.com",
+      "role": "branch_manager",
+      "isActive": "1"
+    },
+    {
+      "id": "900422",
+      "username": "bydfa",
+      "email": "bydfa@kebanfood.com",
+      "role": "branch_manager",
+      "isActive": "1"
+    },
+    {
+      "id": "900424",
+      "username": "bygsa",
+      "email": "bygsa@kebanfood.com",
+      "role": "branch_manager",
+      "isActive": "1"
+    },
+    {
+      "id": "900426",
+      "username": "byi̇af",
+      "email": "byi̇af@kebanfood.com",
+      "role": "branch_manager",
+      "isActive": "1"
+    },
+    {
+      "id": "900425",
+      "username": "byi̇ak",
+      "email": "byi̇ak@kebanfood.com",
+      "role": "branch_manager",
+      "isActive": "1"
+    },
+    {
+      "id": "900427",
+      "username": "byi̇ar",
+      "email": "byi̇ar@kebanfood.com",
+      "role": "branch_manager",
+      "isActive": "1"
+    },
+    {
+      "id": "900429",
+      "username": "byi̇aç",
+      "email": "byi̇aç@kebanfood.com",
+      "role": "branch_manager",
+      "isActive": "1"
+    },
+    {
+      "id": "900428",
+      "username": "byi̇aü",
+      "email": "byi̇aü@kebanfood.com",
+      "role": "branch_manager",
+      "isActive": "1"
+    },
+    {
+      "id": "900430",
+      "username": "byi̇ba",
+      "email": "byi̇ba@kebanfood.com",
+      "role": "branch_manager",
+      "isActive": "1"
+    },
+    {
+      "id": "900435",
+      "username": "byi̇ca",
+      "email": "byi̇ca@kebanfood.com",
+      "role": "branch_manager",
+      "isActive": "1"
+    },
+    {
+      "id": "900447",
+      "username": "byi̇ka",
+      "email": "byi̇ka@kebanfood.com",
+      "role": "branch_manager",
+      "isActive": "1"
+    },
+    {
+      "id": "900449",
+      "username": "byi̇kar",
+      "email": "byi̇kar@kebanfood.com",
+      "role": "branch_manager",
+      "isActive": "1"
+    },
+    {
+      "id": "900450",
+      "username": "byi̇kay",
+      "email": "byi̇kay@kebanfood.com",
+      "role": "branch_manager",
+      "isActive": "1"
+    },
+    {
+      "id": "900453",
+      "username": "byi̇ma",
+      "email": "byi̇ma@kebanfood.com",
+      "role": "branch_manager",
+      "isActive": "1"
+    },
+    {
+      "id": "900459",
+      "username": "byi̇oa",
+      "email": "byi̇oa@kebanfood.com",
+      "role": "branch_manager",
+      "isActive": "1"
+    },
+    {
+      "id": "900471",
+      "username": "byi̇ta",
+      "email": "byi̇ta@kebanfood.com",
+      "role": "branch_manager",
+      "isActive": "1"
+    },
+    {
+      "id": "900477",
+      "username": "byi̇vi̇a",
+      "email": "byi̇vi̇a@kebanfood.com",
+      "role": "branch_manager",
+      "isActive": "1"
+    },
+    {
+      "id": "900481",
+      "username": "byi̇ya",
+      "email": "byi̇ya@kebanfood.com",
+      "role": "branch_manager",
+      "isActive": "1"
+    },
+    {
+      "id": "900483",
+      "username": "byi̇zha",
+      "email": "byi̇zha@kebanfood.com",
+      "role": "branch_manager",
+      "isActive": "1"
+    },
+    {
+      "id": "900438",
+      "username": "byi̇ça",
+      "email": "byi̇ça@kebanfood.com",
+      "role": "branch_manager",
+      "isActive": "1"
+    },
+    {
+      "id": "900474",
+      "username": "byi̇üma",
+      "email": "byi̇üma@kebanfood.com",
+      "role": "branch_manager",
+      "isActive": "1"
+    },
+    {
+      "id": "900494",
+      "username": "bysak",
+      "email": "bysak@kebanfood.com",
+      "role": "branch_manager",
+      "isActive": "1"
+    },
+    {
+      "id": "900496",
+      "username": "byvad",
+      "email": "byvad@kebanfood.com",
+      "role": "branch_manager",
+      "isActive": "1"
+    },
+    {
+      "id": "900421",
+      "username": "byçba",
+      "email": "byçba@kebanfood.com",
+      "role": "branch_manager",
+      "isActive": "1"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tusername\temail\trole\tisActive\n900416\tbyaaa\tbyaaa@kebanfood.com\tbranch_manager\t1\n900417\tbyaac\tbyaac@kebanfood.com\tbranch_manager\t1\n900415\tbyafy\tbyafy@kebanfood.com\tbranch_manager\t1\n900418\tbyaye\tbyaye@kebanfood.com\tbranch_manager\t1\n900422\tbydfa\tbydfa@kebanfood.com\tbranch_manager\t1\n900424\tbygsa\tbygsa@kebanfood.com\tbranch_manager\t1\n900426\tbyi̇af\tbyi̇af@kebanfood.com\tbranch_manager\t1\n900425\tbyi̇ak\tbyi̇ak@kebanfood.com\tbranch_manager\t1\n900427\tbyi̇ar\tbyi̇ar@kebanfood.com\tbranch_manager\t1\n900429\tbyi̇aç\tbyi̇aç@kebanfood.com\tbranch_manager\t1\n900428\tbyi̇aü\tbyi̇aü@kebanfood.com\tbranch_manager\t1\n900430\tbyi̇ba\tbyi̇ba@kebanfood.com\tbranch_manager\t1\n900435\tbyi̇ca\tbyi̇ca@kebanfood.com\tbranch_manager\t1\n900447\tbyi̇ka\tbyi̇ka@kebanfood.com\tbranch_manager\t1\n900449\tbyi̇kar\tbyi̇kar@kebanfood.com\tbranch_manager\t1\n900450\tbyi̇kay\tbyi̇kay@kebanfood.com\tbranch_manager\t1\n900453\tbyi̇ma\tbyi̇ma@kebanfood.com\tbranch_manager\t1\n900459\tbyi̇oa\tbyi̇oa@kebanfood.com\tbranch_manager\t1\n900471\tbyi̇ta\tbyi̇ta@kebanfood.com\tbranch_manager\t1\n900477\tbyi̇vi̇a\tbyi̇vi̇a@kebanfood.com\tbranch_manager\t1\n900481\tbyi̇ya\tbyi̇ya@kebanfood.com\tbranch_manager\t1\n900483\tbyi̇zha\tbyi̇zha@kebanfood.com\tbranch_manager\t1\n900438\tbyi̇ça\tbyi̇ça@kebanfood.com\tbranch_manager\t1\n900474\tbyi̇üma\tbyi̇üma@kebanfood.com\tbranch_manager\t1\n900494\tbysak\tbysak@kebanfood.com\tbranch_manager\t1\n900496\tbyvad\tbyvad@kebanfood.com\tbranch_manager\t1\n900421\tbyçba\tbyçba@kebanfood.com\tbranch_manager\t1\n",
+  "stderr": "",
+  "execution_time_ms": 1522
+}

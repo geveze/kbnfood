@@ -1,0 +1,9 @@
+{
+  "query": "-- Eski categoryId -> Yeni categoryId eşleştirmesi\n-- Pozisyon 5 (Servis): Eski 5,6,7,8,9,10 -> Yeni 1,2,3,4,5,6\n-- Pozisyon 6 (Restoran Yönetimi): Eski 5,6,7,8,9,10 -> Yeni 7,8,9,10,11,12\n-- Pozisyon 7 (Izgara Yöneticisi): Eski 5,6,7,8,9,10,11,12,13 -> Yeni 13,14,15,16,17,18,19,20,21\n-- Pozisyon 8 (Kasa): Eski 5,6,7,8,9,10 -> Yeni 22,23,24,25,26,27\n\n-- Önce tüm soruları sil ve yeniden yükle\nDELETE FROM position_questions;\nDELETE FROM position_categories;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute -- Eski categoryId -> Yeni categoryId eşleştirmesi\n-- Pozisyon 5 (Servis): Eski 5,6,7,8,9,10 -> Yeni 1,2,3,4,5,6\n-- Pozisyon 6 (Restoran Yönetimi): Eski 5,6,7,8,9,10 -> Yeni 7,8,9,10,11,12\n-- Pozisyon 7 (Izgara Yöneticisi): Eski 5,6,7,8,9,10,11,12,13 -> Yeni 13,14,15,16,17,18,19,20,21\n-- Pozisyon 8 (Kasa): Eski 5,6,7,8,9,10 -> Yeni 22,23,24,25,26,27\n\n-- Önce tüm soruları sil ve yeniden yükle\nDELETE FROM position_questions;\nDELETE FROM position_categories;",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 1879
+}

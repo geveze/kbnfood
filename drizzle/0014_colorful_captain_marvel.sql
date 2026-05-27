@@ -1,0 +1,1 @@
+ALTER TABLE `users` ADD `branchManager` varchar(255);

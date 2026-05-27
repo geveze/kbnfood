@@ -1,0 +1,125 @@
+{
+  "query": "SELECT pc.id, pc.name, pc.positionId FROM position_categories pc WHERE pc.positionId IN (5, 6, 7, 8) ORDER BY pc.positionId, pc.id;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SELECT pc.id, pc.name, pc.positionId FROM position_categories pc WHERE pc.positionId IN (5, 6, 7, 8) ORDER BY pc.positionId, pc.id;",
+  "rows": [
+    {
+      "id": "60003",
+      "name": "Görev Bilinci",
+      "positionId": "5"
+    },
+    {
+      "id": "60004",
+      "name": "İletişim Becerisi",
+      "positionId": "5"
+    },
+    {
+      "id": "60005",
+      "name": "Görev Bilinci",
+      "positionId": "6"
+    },
+    {
+      "id": "60006",
+      "name": "İletişim Becerisi",
+      "positionId": "6"
+    },
+    {
+      "id": "60007",
+      "name": "Restoran Yönetimi",
+      "positionId": "6"
+    },
+    {
+      "id": "60013",
+      "name": "Görev Bilinci",
+      "positionId": "7"
+    },
+    {
+      "id": "60014",
+      "name": "İletişim Becerisi",
+      "positionId": "7"
+    },
+    {
+      "id": "60015",
+      "name": "Analitik Düşünme ve Problem Çözme",
+      "positionId": "7"
+    },
+    {
+      "id": "60016",
+      "name": "Kalite Odaklılık",
+      "positionId": "7"
+    },
+    {
+      "id": "60017",
+      "name": "Takım Çalışması ve İşbirliği",
+      "positionId": "7"
+    },
+    {
+      "id": "60018",
+      "name": "Detay Odaklılık",
+      "positionId": "7"
+    },
+    {
+      "id": "60019",
+      "name": "Duygularını Kontrol Etme ve Yönetme",
+      "positionId": "7"
+    },
+    {
+      "id": "60020",
+      "name": "Sonuç Odaklılık",
+      "positionId": "7"
+    },
+    {
+      "id": "60021",
+      "name": "Bölüm 2",
+      "positionId": "7"
+    },
+    {
+      "id": "60022",
+      "name": "İş Disiplini ve Tutum",
+      "positionId": "7"
+    },
+    {
+      "id": "60023",
+      "name": "Ürün Kalitesi ve Standartlara Uyum",
+      "positionId": "7"
+    },
+    {
+      "id": "60024",
+      "name": "Gıda Güvenliği ve Hijyen",
+      "positionId": "7"
+    },
+    {
+      "id": "60025",
+      "name": "İstasyon Yönetimi",
+      "positionId": "7"
+    },
+    {
+      "id": "60008",
+      "name": "Görev Bilinci",
+      "positionId": "8"
+    },
+    {
+      "id": "60009",
+      "name": "İletişim Becerisi",
+      "positionId": "8"
+    },
+    {
+      "id": "60010",
+      "name": "Planlama ve Organize Etme",
+      "positionId": "8"
+    },
+    {
+      "id": "60011",
+      "name": "İş Disiplini ve Tutum",
+      "positionId": "8"
+    },
+    {
+      "id": "60012",
+      "name": "Kasa",
+      "positionId": "8"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tname\tpositionId\n60003\tGörev Bilinci\t5\n60004\tİletişim Becerisi\t5\n60005\tGörev Bilinci\t6\n60006\tİletişim Becerisi\t6\n60007\tRestoran Yönetimi\t6\n60013\tGörev Bilinci\t7\n60014\tİletişim Becerisi\t7\n60015\tAnalitik Düşünme ve Problem Çözme\t7\n60016\tKalite Odaklılık\t7\n60017\tTakım Çalışması ve İşbirliği\t7\n60018\tDetay Odaklılık\t7\n60019\tDuygularını Kontrol Etme ve Yönetme\t7\n60020\tSonuç Odaklılık\t7\n60021\tBölüm 2\t7\n60022\tİş Disiplini ve Tutum\t7\n60023\tÜrün Kalitesi ve Standartlara Uyum\t7\n60024\tGıda Güvenliği ve Hijyen\t7\n60025\tİstasyon Yönetimi\t7\n60008\tGörev Bilinci\t8\n60009\tİletişim Becerisi\t8\n60010\tPlanlama ve Organize Etme\t8\n60011\tİş Disiplini ve Tutum\t8\n60012\tKasa\t8\n",
+  "stderr": "",
+  "execution_time_ms": 1564
+}

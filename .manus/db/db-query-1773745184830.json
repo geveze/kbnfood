@@ -1,0 +1,70 @@
+{
+  "query": "SELECT id, branchName, target, lowerLimit, targetValue, upperLimit, weight, actualValue, score, weightedScore FROM kpi_target_cards_detail LIMIT 5",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SELECT id, branchName, target, lowerLimit, targetValue, upperLimit, weight, actualValue, score, weightedScore FROM kpi_target_cards_detail LIMIT 5",
+  "rows": [
+    {
+      "id": "30001",
+      "branchName": "BY ORDU NOVADA AVM",
+      "target": "Ciro /Hamburger Adedi",
+      "lowerLimit": "2090000",
+      "targetValue": "2.200.000",
+      "upperLimit": "2.530.000",
+      "weight": "15",
+      "actualValue": "2.319.036",
+      "score": "0.00",
+      "weightedScore": "0.00"
+    },
+    {
+      "id": "30002",
+      "branchName": "BY ORDU NOVADA AVM",
+      "target": "Karlılık",
+      "lowerLimit": "10",
+      "targetValue": "12",
+      "upperLimit": "13",
+      "weight": "15",
+      "actualValue": "18",
+      "score": "120",
+      "weightedScore": "18"
+    },
+    {
+      "id": "30003",
+      "branchName": "BY ORDU NOVADA AVM",
+      "target": "Yan Ürün Satışı",
+      "lowerLimit": "0.034",
+      "targetValue": "0.04",
+      "upperLimit": "0.044",
+      "weight": "10",
+      "actualValue": "2.9",
+      "score": "",
+      "weightedScore": ""
+    },
+    {
+      "id": "30004",
+      "branchName": "BY ORDU NOVADA AVM",
+      "target": "Enerji ve Bakım Onarım Gideri",
+      "lowerLimit": "0.033",
+      "targetValue": "0.03",
+      "upperLimit": "0.025",
+      "weight": "0",
+      "actualValue": "19.97",
+      "score": "",
+      "weightedScore": ""
+    },
+    {
+      "id": "30005",
+      "branchName": "BY ORDU NOVADA AVM",
+      "target": "Gıda/ Malzeme Maliyeti",
+      "lowerLimit": "0.5",
+      "targetValue": "0.45",
+      "upperLimit": "0.4",
+      "weight": "10",
+      "actualValue": "54.84",
+      "score": "",
+      "weightedScore": ""
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tbranchName\ttarget\tlowerLimit\ttargetValue\tupperLimit\tweight\tactualValue\tscore\tweightedScore\n30001\tBY ORDU NOVADA AVM\tCiro /Hamburger Adedi\t2090000\t2.200.000\t2.530.000\t15\t2.319.036\t0.00\t0.00\n30002\tBY ORDU NOVADA AVM\tKarlılık\t10\t12\t13\t15\t18\t120\t18\n30003\tBY ORDU NOVADA AVM\tYan Ürün Satışı\t0.034\t0.04\t0.044\t10\t2.9\t\t\n30004\tBY ORDU NOVADA AVM\tEnerji ve Bakım Onarım Gideri\t0.033\t0.03\t0.025\t0\t19.97\t\t\n30005\tBY ORDU NOVADA AVM\tGıda/ Malzeme Maliyeti\t0.5\t0.45\t0.4\t10\t54.84\t\t\n",
+  "stderr": "",
+  "execution_time_ms": 1683
+}

@@ -1,0 +1,9 @@
+{
+  "query": "DELETE FROM field_inspection_questions; DELETE FROM field_inspection_categories; INSERT INTO field_inspection_categories (id, name, weight, `order`) VALUES (30001, 'IZGARA / PİŞİRNE', 42.5, 1); INSERT INTO field_inspection_categories (id, name, weight, `order`) VALUES (30002, 'KASA - PAKET / PAZARYERİ', 12.5, 2); INSERT INTO field_inspection_categories (id, name, weight, `order`) VALUES (30003, 'RESTORAN TEMİZLİK VE DÜZEN', 12.5, 3); INSERT INTO field_inspection_categories (id, name, weight, `order`) VALUES (30004, 'EKİPMAN BAKIMLARI, GEREKLİ EVRAKLAR VE GIDA GÜVENLİĞİ', 15, 4); INSERT INTO field_inspection_categories (id, name, weight, `order`) VALUES (30005, 'RESTORAN HİZMET VE KALİTE STANDARTLARI', 17.5, 5);",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute DELETE FROM field_inspection_questions; DELETE FROM field_inspection_categories; INSERT INTO field_inspection_categories (id, name, weight, `order`) VALUES (30001, 'IZGARA / PİŞİRNE', 42.5, 1); INSERT INTO field_inspection_categories (id, name, weight, `order`) VALUES (30002, 'KASA - PAKET / PAZARYERİ', 12.5, 2); INSERT INTO field_inspection_categories (id, name, weight, `order`) VALUES (30003, 'RESTORAN TEMİZLİK VE DÜZEN', 12.5, 3); INSERT INTO field_inspection_categories (id, name, weight, `order`) VALUES (30004, 'EKİPMAN BAKIMLARI, GEREKLİ EVRAKLAR VE GIDA GÜVENLİĞİ', 15, 4); INSERT INTO field_inspection_categories (id, name, weight, `order`) VALUES (30005, 'RESTORAN HİZMET VE KALİTE STANDARTLARI', 17.5, 5);",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 3236
+}

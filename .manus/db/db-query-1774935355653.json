@@ -1,0 +1,70 @@
+{
+  "query": "SELECT \n  pc.id,\n  pc.name as category,\n  COUNT(pq.id) as questionCount\nFROM position_categories pc\nLEFT JOIN position_questions pq ON pc.id = pq.categoryId\nWHERE pc.positionId = 7\nGROUP BY pc.id, pc.name\nORDER BY pc.id;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SELECT \n  pc.id,\n  pc.name as category,\n  COUNT(pq.id) as questionCount\nFROM position_categories pc\nLEFT JOIN position_questions pq ON pc.id = pq.categoryId\nWHERE pc.positionId = 7\nGROUP BY pc.id, pc.name\nORDER BY pc.id;",
+  "rows": [
+    {
+      "id": "180027",
+      "category": "Görev Bilinci",
+      "questionCount": "4"
+    },
+    {
+      "id": "180028",
+      "category": "İletişim Becerisi",
+      "questionCount": "4"
+    },
+    {
+      "id": "180029",
+      "category": "Analitik Düşünme ve Problem Çözme",
+      "questionCount": "4"
+    },
+    {
+      "id": "180030",
+      "category": "Kalite Odaklılık",
+      "questionCount": "4"
+    },
+    {
+      "id": "180031",
+      "category": "Takım Çalışması ve İşbirliği",
+      "questionCount": "4"
+    },
+    {
+      "id": "180032",
+      "category": "Detay Odaklılık",
+      "questionCount": "4"
+    },
+    {
+      "id": "180033",
+      "category": "Duygularını Kontrol Etme ve Yönetme",
+      "questionCount": "3"
+    },
+    {
+      "id": "180034",
+      "category": "Sonuç Odaklılık",
+      "questionCount": "3"
+    },
+    {
+      "id": "180035",
+      "category": "İş Disiplini ve Tutum",
+      "questionCount": "4"
+    },
+    {
+      "id": "180036",
+      "category": "Ürün Kalitesi ve Standartlara Uyum",
+      "questionCount": "7"
+    },
+    {
+      "id": "180037",
+      "category": "Gıda Güvenliği ve Hijyen",
+      "questionCount": "6"
+    },
+    {
+      "id": "180038",
+      "category": "İstasyon Yönetimi",
+      "questionCount": "3"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tcategory\tquestionCount\n180027\tGörev Bilinci\t4\n180028\tİletişim Becerisi\t4\n180029\tAnalitik Düşünme ve Problem Çözme\t4\n180030\tKalite Odaklılık\t4\n180031\tTakım Çalışması ve İşbirliği\t4\n180032\tDetay Odaklılık\t4\n180033\tDuygularını Kontrol Etme ve Yönetme\t3\n180034\tSonuç Odaklılık\t3\n180035\tİş Disiplini ve Tutum\t4\n180036\tÜrün Kalitesi ve Standartlara Uyum\t7\n180037\tGıda Güvenliği ve Hijyen\t6\n180038\tİstasyon Yönetimi\t3\n",
+  "stderr": "",
+  "execution_time_ms": 400
+}

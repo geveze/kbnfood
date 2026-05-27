@@ -1,0 +1,178 @@
+{
+  "query": "SELECT \n  p.id,\n  p.name as positionName,\n  pc.name as categoryName,\n  COUNT(pq.id) as questionCount\nFROM positions p\nLEFT JOIN position_categories pc ON p.id = pc.positionId\nLEFT JOIN position_questions pq ON pc.id = pq.categoryId\nWHERE p.id IN (5, 6, 8)\nGROUP BY p.id, pc.id, pc.name\nORDER BY p.id, pc.id;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SELECT \n  p.id,\n  p.name as positionName,\n  pc.name as categoryName,\n  COUNT(pq.id) as questionCount\nFROM positions p\nLEFT JOIN position_categories pc ON p.id = pc.positionId\nLEFT JOIN position_questions pq ON pc.id = pq.categoryId\nWHERE p.id IN (5, 6, 8)\nGROUP BY p.id, pc.id, pc.name\nORDER BY p.id, pc.id;",
+  "rows": [
+    {
+      "id": "5",
+      "positionName": "SERVIS",
+      "categoryName": "Görev Bilinci",
+      "questionCount": "4"
+    },
+    {
+      "id": "5",
+      "positionName": "SERVIS",
+      "categoryName": "İletişim Becerisi",
+      "questionCount": "4"
+    },
+    {
+      "id": "5",
+      "positionName": "SERVIS",
+      "categoryName": "Analitik Düşünme ve Problem Çözme",
+      "questionCount": "4"
+    },
+    {
+      "id": "5",
+      "positionName": "SERVIS",
+      "categoryName": "Kalite Odaklılık",
+      "questionCount": "4"
+    },
+    {
+      "id": "5",
+      "positionName": "SERVIS",
+      "categoryName": "Takım Çalışması ve İşbirliği",
+      "questionCount": "4"
+    },
+    {
+      "id": "5",
+      "positionName": "SERVIS",
+      "categoryName": "Müşteri Odaklılık",
+      "questionCount": "4"
+    },
+    {
+      "id": "5",
+      "positionName": "SERVIS",
+      "categoryName": "Ticari Bakış",
+      "questionCount": "3"
+    },
+    {
+      "id": "5",
+      "positionName": "SERVIS",
+      "categoryName": "Planlama ve Organize Etme",
+      "questionCount": "3"
+    },
+    {
+      "id": "5",
+      "positionName": "SERVIS",
+      "categoryName": "İş Disiplini ve Tutum",
+      "questionCount": "5"
+    },
+    {
+      "id": "5",
+      "positionName": "SERVIS",
+      "categoryName": "Servis ",
+      "questionCount": "15"
+    },
+    {
+      "id": "6",
+      "positionName": "RESTORAN_YONETIMI",
+      "categoryName": "Görev Bilinci",
+      "questionCount": "4"
+    },
+    {
+      "id": "6",
+      "positionName": "RESTORAN_YONETIMI",
+      "categoryName": "İletişim Becerisi",
+      "questionCount": "4"
+    },
+    {
+      "id": "6",
+      "positionName": "RESTORAN_YONETIMI",
+      "categoryName": "Analitik Düşünme ve Problem Çözme",
+      "questionCount": "4"
+    },
+    {
+      "id": "6",
+      "positionName": "RESTORAN_YONETIMI",
+      "categoryName": "Kalite Odaklılık",
+      "questionCount": "4"
+    },
+    {
+      "id": "6",
+      "positionName": "RESTORAN_YONETIMI",
+      "categoryName": "Takım Çalışması ve İşbirliği",
+      "questionCount": "4"
+    },
+    {
+      "id": "6",
+      "positionName": "RESTORAN_YONETIMI",
+      "categoryName": "Yönetim Becerileri",
+      "questionCount": "10"
+    },
+    {
+      "id": "6",
+      "positionName": "RESTORAN_YONETIMI",
+      "categoryName": "İş Disiplini ve Tutum",
+      "questionCount": "4"
+    },
+    {
+      "id": "6",
+      "positionName": "RESTORAN_YONETIMI",
+      "categoryName": "Restoran Yönetimi",
+      "questionCount": "16"
+    },
+    {
+      "id": "8",
+      "positionName": "KASA",
+      "categoryName": "Görev Bilinci",
+      "questionCount": "4"
+    },
+    {
+      "id": "8",
+      "positionName": "KASA",
+      "categoryName": "İletişim Becerisi",
+      "questionCount": "4"
+    },
+    {
+      "id": "8",
+      "positionName": "KASA",
+      "categoryName": "Analitik Düşünme ve Problem Çözme",
+      "questionCount": "4"
+    },
+    {
+      "id": "8",
+      "positionName": "KASA",
+      "categoryName": "Kalite Odaklılık",
+      "questionCount": "4"
+    },
+    {
+      "id": "8",
+      "positionName": "KASA",
+      "categoryName": "Takım Çalışması ve İşbirliği",
+      "questionCount": "4"
+    },
+    {
+      "id": "8",
+      "positionName": "KASA",
+      "categoryName": "Müşteri Odaklılık",
+      "questionCount": "4"
+    },
+    {
+      "id": "8",
+      "positionName": "KASA",
+      "categoryName": "Ticari Bakış",
+      "questionCount": "3"
+    },
+    {
+      "id": "8",
+      "positionName": "KASA",
+      "categoryName": "Planlama ve Organize Etme",
+      "questionCount": "3"
+    },
+    {
+      "id": "8",
+      "positionName": "KASA",
+      "categoryName": "İş Disiplini ve Tutum",
+      "questionCount": "5"
+    },
+    {
+      "id": "8",
+      "positionName": "KASA",
+      "categoryName": "Kasa",
+      "questionCount": "15"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tpositionName\tcategoryName\tquestionCount\n5\tSERVIS\tGörev Bilinci\t4\n5\tSERVIS\tİletişim Becerisi\t4\n5\tSERVIS\tAnalitik Düşünme ve Problem Çözme\t4\n5\tSERVIS\tKalite Odaklılık\t4\n5\tSERVIS\tTakım Çalışması ve İşbirliği\t4\n5\tSERVIS\tMüşteri Odaklılık\t4\n5\tSERVIS\tTicari Bakış\t3\n5\tSERVIS\tPlanlama ve Organize Etme\t3\n5\tSERVIS\tİş Disiplini ve Tutum\t5\n5\tSERVIS\tServis \t15\n6\tRESTORAN_YONETIMI\tGörev Bilinci\t4\n6\tRESTORAN_YONETIMI\tİletişim Becerisi\t4\n6\tRESTORAN_YONETIMI\tAnalitik Düşünme ve Problem Çözme\t4\n6\tRESTORAN_YONETIMI\tKalite Odaklılık\t4\n6\tRESTORAN_YONETIMI\tTakım Çalışması ve İşbirliği\t4\n6\tRESTORAN_YONETIMI\tYönetim Becerileri\t10\n6\tRESTORAN_YONETIMI\tİş Disiplini ve Tutum\t4\n6\tRESTORAN_YONETIMI\tRestoran Yönetimi\t16\n8\tKASA\tGörev Bilinci\t4\n8\tKASA\tİletişim Becerisi\t4\n8\tKASA\tAnalitik Düşünme ve Problem Çözme\t4\n8\tKASA\tKalite Odaklılık\t4\n8\tKASA\tTakım Çalışması ve İşbirliği\t4\n8\tKASA\tMüşteri Odaklılık\t4\n8\tKASA\tTicari Bakış\t3\n8\tKASA\tPlanlama ve Organize Etme\t3\n8\tKASA\tİş Disiplini ve Tutum\t5\n8\tKASA\tKasa\t15\n",
+  "stderr": "",
+  "execution_time_ms": 353
+}

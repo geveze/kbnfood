@@ -1,0 +1,106 @@
+{
+  "query": "SELECT pc.id, pc.positionId, pc.name, COUNT(pq.id) as question_count\nFROM position_categories pc\nLEFT JOIN position_questions pq ON pc.id = pq.categoryId\nWHERE pc.positionId = 8\nGROUP BY pc.id, pc.positionId, pc.name\nORDER BY pc.id;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SELECT pc.id, pc.positionId, pc.name, COUNT(pq.id) as question_count\nFROM position_categories pc\nLEFT JOIN position_questions pq ON pc.id = pq.categoryId\nWHERE pc.positionId = 8\nGROUP BY pc.id, pc.positionId, pc.name\nORDER BY pc.id;",
+  "rows": [
+    {
+      "id": "60060",
+      "positionId": "8",
+      "name": "Görev Bilinci",
+      "question_count": "0"
+    },
+    {
+      "id": "60061",
+      "positionId": "8",
+      "name": "İletişim Becerisi",
+      "question_count": "0"
+    },
+    {
+      "id": "60062",
+      "positionId": "8",
+      "name": "Analitik Düşünme ve Problem Çözme",
+      "question_count": "0"
+    },
+    {
+      "id": "60063",
+      "positionId": "8",
+      "name": "Kalite Odaklılık",
+      "question_count": "0"
+    },
+    {
+      "id": "60064",
+      "positionId": "8",
+      "name": "Takım Çalışması ve İşbirliği",
+      "question_count": "0"
+    },
+    {
+      "id": "60065",
+      "positionId": "8",
+      "name": "Müşteri Odaklılık",
+      "question_count": "0"
+    },
+    {
+      "id": "60066",
+      "positionId": "8",
+      "name": "Ticari Bakış",
+      "question_count": "0"
+    },
+    {
+      "id": "60067",
+      "positionId": "8",
+      "name": "Planlama ve Organize Etme",
+      "question_count": "0"
+    },
+    {
+      "id": "60086",
+      "positionId": "8",
+      "name": "Görev Bilinci",
+      "question_count": "0"
+    },
+    {
+      "id": "60087",
+      "positionId": "8",
+      "name": "İletişim Becerisi",
+      "question_count": "0"
+    },
+    {
+      "id": "60088",
+      "positionId": "8",
+      "name": "Analitik Düşünme ve Problem Çözme",
+      "question_count": "0"
+    },
+    {
+      "id": "60089",
+      "positionId": "8",
+      "name": "Kalite Odaklılık",
+      "question_count": "0"
+    },
+    {
+      "id": "60090",
+      "positionId": "8",
+      "name": "Takım Çalışması ve İşbirliği",
+      "question_count": "0"
+    },
+    {
+      "id": "60091",
+      "positionId": "8",
+      "name": "Müşteri Odaklılık",
+      "question_count": "0"
+    },
+    {
+      "id": "60092",
+      "positionId": "8",
+      "name": "Ticari Bakış",
+      "question_count": "0"
+    },
+    {
+      "id": "60093",
+      "positionId": "8",
+      "name": "Planlama ve Organize Etme",
+      "question_count": "0"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tpositionId\tname\tquestion_count\n60060\t8\tGörev Bilinci\t0\n60061\t8\tİletişim Becerisi\t0\n60062\t8\tAnalitik Düşünme ve Problem Çözme\t0\n60063\t8\tKalite Odaklılık\t0\n60064\t8\tTakım Çalışması ve İşbirliği\t0\n60065\t8\tMüşteri Odaklılık\t0\n60066\t8\tTicari Bakış\t0\n60067\t8\tPlanlama ve Organize Etme\t0\n60086\t8\tGörev Bilinci\t0\n60087\t8\tİletişim Becerisi\t0\n60088\t8\tAnalitik Düşünme ve Problem Çözme\t0\n60089\t8\tKalite Odaklılık\t0\n60090\t8\tTakım Çalışması ve İşbirliği\t0\n60091\t8\tMüşteri Odaklılık\t0\n60092\t8\tTicari Bakış\t0\n60093\t8\tPlanlama ve Organize Etme\t0\n",
+  "stderr": "",
+  "execution_time_ms": 1643
+}

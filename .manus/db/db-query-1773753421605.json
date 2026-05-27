@@ -1,0 +1,35 @@
+{
+  "query": "SELECT pc.id, pc.name, COUNT(pq.id) as question_count FROM position_categories pc LEFT JOIN position_questions pq ON pc.id = pq.categoryId WHERE pc.positionId = 3 GROUP BY pc.id, pc.name ORDER BY pc.`order`;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SELECT pc.id, pc.name, COUNT(pq.id) as question_count FROM position_categories pc LEFT JOIN position_questions pq ON pc.id = pq.categoryId WHERE pc.positionId = 3 GROUP BY pc.id, pc.name ORDER BY pc.`order`;",
+  "rows": [
+    {
+      "id": "60008",
+      "name": "Görev Bilinci",
+      "question_count": "0"
+    },
+    {
+      "id": "60009",
+      "name": "İletişim Becerisi",
+      "question_count": "0"
+    },
+    {
+      "id": "60010",
+      "name": "Planlama ve Organize Etme",
+      "question_count": "0"
+    },
+    {
+      "id": "60011",
+      "name": "İş Disiplini ve Tutum",
+      "question_count": "0"
+    },
+    {
+      "id": "60012",
+      "name": "Kasa",
+      "question_count": "0"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tname\tquestion_count\n60008\tGörev Bilinci\t0\n60009\tİletişim Becerisi\t0\n60010\tPlanlama ve Organize Etme\t0\n60011\tİş Disiplini ve Tutum\t0\n60012\tKasa\t0\n",
+  "stderr": "",
+  "execution_time_ms": 1621
+}

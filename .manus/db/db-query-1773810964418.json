@@ -1,0 +1,60 @@
+{
+  "query": "SELECT \n  pc.id as categoryId, \n  pc.name as categoryName,\n  COUNT(pq.id) as questionCount\nFROM position_categories pc\nLEFT JOIN position_questions pq ON pc.id = pq.categoryId\nWHERE pc.positionId = 8\nGROUP BY pc.id, pc.name\nORDER BY pc.`order`;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SELECT \n  pc.id as categoryId, \n  pc.name as categoryName,\n  COUNT(pq.id) as questionCount\nFROM position_categories pc\nLEFT JOIN position_questions pq ON pc.id = pq.categoryId\nWHERE pc.positionId = 8\nGROUP BY pc.id, pc.name\nORDER BY pc.`order`;",
+  "rows": [
+    {
+      "categoryId": "90053",
+      "categoryName": "Görev Bilinci",
+      "questionCount": "4"
+    },
+    {
+      "categoryId": "90054",
+      "categoryName": "İletişim Becerisi",
+      "questionCount": "4"
+    },
+    {
+      "categoryId": "90055",
+      "categoryName": "Analitik Düşünme ve Problem Çözme",
+      "questionCount": "4"
+    },
+    {
+      "categoryId": "90056",
+      "categoryName": "Kalite Odaklılık",
+      "questionCount": "4"
+    },
+    {
+      "categoryId": "90057",
+      "categoryName": "Takım Çalışması ve İşbirliği",
+      "questionCount": "4"
+    },
+    {
+      "categoryId": "90058",
+      "categoryName": "Müşteri Odaklılık",
+      "questionCount": "4"
+    },
+    {
+      "categoryId": "90059",
+      "categoryName": "Ticari Bakış",
+      "questionCount": "3"
+    },
+    {
+      "categoryId": "90060",
+      "categoryName": "Planlama ve Organize Etme",
+      "questionCount": "3"
+    },
+    {
+      "categoryId": "90061",
+      "categoryName": "İş Disiplini ve Tutum",
+      "questionCount": "5"
+    },
+    {
+      "categoryId": "90062",
+      "categoryName": "Kasa",
+      "questionCount": "15"
+    }
+  ],
+  "messages": [],
+  "stdout": "categoryId\tcategoryName\tquestionCount\n90053\tGörev Bilinci\t4\n90054\tİletişim Becerisi\t4\n90055\tAnalitik Düşünme ve Problem Çözme\t4\n90056\tKalite Odaklılık\t4\n90057\tTakım Çalışması ve İşbirliği\t4\n90058\tMüşteri Odaklılık\t4\n90059\tTicari Bakış\t3\n90060\tPlanlama ve Organize Etme\t3\n90061\tİş Disiplini ve Tutum\t5\n90062\tKasa\t15\n",
+  "stderr": "",
+  "execution_time_ms": 1508
+}

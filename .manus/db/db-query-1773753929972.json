@@ -1,0 +1,50 @@
+{
+  "query": "SELECT pc.id, pc.name, pc.positionId FROM position_categories pc WHERE pc.name LIKE '%Görev%' OR pc.name LIKE '%İletişim%' ORDER BY pc.id;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SELECT pc.id, pc.name, pc.positionId FROM position_categories pc WHERE pc.name LIKE '%Görev%' OR pc.name LIKE '%İletişim%' ORDER BY pc.id;",
+  "rows": [
+    {
+      "id": "60003",
+      "name": "Görev Bilinci",
+      "positionId": "5"
+    },
+    {
+      "id": "60004",
+      "name": "İletişim Becerisi",
+      "positionId": "5"
+    },
+    {
+      "id": "60005",
+      "name": "Görev Bilinci",
+      "positionId": "6"
+    },
+    {
+      "id": "60006",
+      "name": "İletişim Becerisi",
+      "positionId": "6"
+    },
+    {
+      "id": "60008",
+      "name": "Görev Bilinci",
+      "positionId": "8"
+    },
+    {
+      "id": "60009",
+      "name": "İletişim Becerisi",
+      "positionId": "8"
+    },
+    {
+      "id": "60013",
+      "name": "Görev Bilinci",
+      "positionId": "7"
+    },
+    {
+      "id": "60014",
+      "name": "İletişim Becerisi",
+      "positionId": "7"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tname\tpositionId\n60003\tGörev Bilinci\t5\n60004\tİletişim Becerisi\t5\n60005\tGörev Bilinci\t6\n60006\tİletişim Becerisi\t6\n60008\tGörev Bilinci\t8\n60009\tİletişim Becerisi\t8\n60013\tGörev Bilinci\t7\n60014\tİletişim Becerisi\t7\n",
+  "stderr": "",
+  "execution_time_ms": 1574
+}

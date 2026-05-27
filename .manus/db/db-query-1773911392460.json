@@ -1,0 +1,16 @@
+{
+  "query": "\n-- Test değerlendirmesi kaydı ekle\nINSERT INTO performance_evaluations (\n  branchId,\n  employeeName,\n  employeePosition,\n  employeeIdNumber,\n  hireDate,\n  evaluationDate,\n  evaluationPeriod,\n  evaluatedByManager,\n  managerOpinion,\n  totalScore,\n  evaluationScale,\n  createdByUserId,\n  createdAt,\n  updatedAt\n) VALUES (\n  1,\n  'Test Personeli',\n  'SERVIS',\n  '12345',\n  '2023-01-15',\n  NOW(),\n  '3. ay',\n  'Test Yönetici',\n  'Test yönetici görüşü',\n  75,\n  'İyi',\n  1,\n  NOW(),\n  NOW()\n);\n\n-- Kontrol: Eklenen kayıtları göster\nSELECT id, employeeName, employeePosition, totalScore FROM performance_evaluations WHERE employeeName = 'Test Personeli';\n",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute \n-- Test değerlendirmesi kaydı ekle\nINSERT INTO performance_evaluations (\n  branchId,\n  employeeName,\n  employeePosition,\n  employeeIdNumber,\n  hireDate,\n  evaluationDate,\n  evaluationPeriod,\n  evaluatedByManager,\n  managerOpinion,\n  totalScore,\n  evaluationScale,\n  createdByUserId,\n  createdAt,\n  updatedAt\n) VALUES (\n  1,\n  'Test Personeli',\n  'SERVIS',\n  '12345',\n  '2023-01-15',\n  NOW(),\n  '3. ay',\n  'Test Yönetici',\n  'Test yönetici görüşü',\n  75,\n  'İyi',\n  1,\n  NOW(),\n  NOW()\n);\n\n-- Kontrol: Eklenen kayıtları göster\nSELECT id, employeeName, employeePosition, totalScore FROM performance_evaluations WHERE employeeName = 'Test Personeli';\n",
+  "rows": [
+    {
+      "id": "480003",
+      "employeeName": "Test Personeli",
+      "employeePosition": "SERVIS",
+      "totalScore": "75.00"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\temployeeName\temployeePosition\ttotalScore\n480003\tTest Personeli\tSERVIS\t75.00\n",
+  "stderr": "",
+  "execution_time_ms": 1898
+}

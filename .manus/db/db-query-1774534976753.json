@@ -1,0 +1,15 @@
+{
+  "query": "SELECT id, employeeName, managerOpinion FROM openPifEvaluations WHERE managerOpinion IS NOT NULL AND managerOpinion != '' LIMIT 1;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SELECT id, employeeName, managerOpinion FROM openPifEvaluations WHERE managerOpinion IS NOT NULL AND managerOpinion != '' LIMIT 1;",
+  "rows": [
+    {
+      "id": "60001",
+      "employeeName": "Tuanna Çelik",
+      "managerOpinion": "Gelecek vaad den genç bir personel, mental gelişimi ilerledikçe çok daha başarılı olacağını düşünüyorum."
+    }
+  ],
+  "messages": [],
+  "stdout": "id\temployeeName\tmanagerOpinion\n60001\tTuanna Çelik\tGelecek vaad den genç bir personel, mental gelişimi ilerledikçe çok daha başarılı olacağını düşünüyorum.\n",
+  "stderr": "",
+  "execution_time_ms": 1646
+}

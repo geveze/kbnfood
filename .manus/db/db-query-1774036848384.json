@@ -1,0 +1,80 @@
+{
+  "query": "SELECT id, username, name, role, branchId FROM users WHERE role IN ('branch_manager', 'region_manager') LIMIT 10;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SELECT id, username, name, role, branchId FROM users WHERE role IN ('branch_manager', 'region_manager') LIMIT 10;",
+  "rows": [
+    {
+      "id": "115",
+      "username": "bolge_muduru",
+      "name": "Bölge Operasyon Müdürü",
+      "role": "region_manager",
+      "branchId": "NULL"
+    },
+    {
+      "id": "30094",
+      "username": "bolge_muduru2",
+      "name": "bolge_muduru2",
+      "role": "region_manager",
+      "branchId": "NULL"
+    },
+    {
+      "id": "150025",
+      "username": "veli.kaya",
+      "name": "veli kaya",
+      "role": "branch_manager",
+      "branchId": "30002"
+    },
+    {
+      "id": "210535",
+      "username": "ordunovada",
+      "name": "ordu novada avm",
+      "role": "branch_manager",
+      "branchId": "30002"
+    },
+    {
+      "id": "900118",
+      "username": "beykent",
+      "name": "beykent",
+      "role": "branch_manager",
+      "branchId": "30021"
+    },
+    {
+      "id": "900413",
+      "username": "by2",
+      "name": "BY İSTANBUL BAKIRKÖY  Yöneticisi",
+      "role": "branch_manager",
+      "branchId": "1"
+    },
+    {
+      "id": "900414",
+      "username": "byor",
+      "name": "BY ORDU NOVADA AVM Yöneticisi",
+      "role": "branch_manager",
+      "branchId": "30002"
+    },
+    {
+      "id": "900415",
+      "username": "byafy",
+      "name": "AFYON WATERMALL Yöneticisi",
+      "role": "branch_manager",
+      "branchId": "30003"
+    },
+    {
+      "id": "900416",
+      "username": "byaaa",
+      "name": "ANTALYA ALANYA AKDENİZ AVM Yöneticisi",
+      "role": "branch_manager",
+      "branchId": "30004"
+    },
+    {
+      "id": "900417",
+      "username": "byaac",
+      "name": "ANTALYA ALANYA CADDE Yöneticisi",
+      "role": "branch_manager",
+      "branchId": "30005"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tusername\tname\trole\tbranchId\n115\tbolge_muduru\tBölge Operasyon Müdürü\tregion_manager\tNULL\n30094\tbolge_muduru2\tbolge_muduru2\tregion_manager\tNULL\n150025\tveli.kaya\tveli kaya\tbranch_manager\t30002\n210535\tordunovada\tordu novada avm\tbranch_manager\t30002\n900118\tbeykent\tbeykent\tbranch_manager\t30021\n900413\tby2\tBY İSTANBUL BAKIRKÖY  Yöneticisi\tbranch_manager\t1\n900414\tbyor\tBY ORDU NOVADA AVM Yöneticisi\tbranch_manager\t30002\n900415\tbyafy\tAFYON WATERMALL Yöneticisi\tbranch_manager\t30003\n900416\tbyaaa\tANTALYA ALANYA AKDENİZ AVM Yöneticisi\tbranch_manager\t30004\n900417\tbyaac\tANTALYA ALANYA CADDE Yöneticisi\tbranch_manager\t30005\n",
+  "stderr": "",
+  "execution_time_ms": 1604
+}

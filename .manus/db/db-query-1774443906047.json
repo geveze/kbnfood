@@ -1,0 +1,16 @@
+{
+  "query": "SELECT DISTINCT period FROM kpi_target_cards_detail ORDER BY period DESC;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SELECT DISTINCT period FROM kpi_target_cards_detail ORDER BY period DESC;",
+  "rows": [
+    {
+      "period": "2026/3"
+    },
+    {
+      "period": "2026/1"
+    }
+  ],
+  "messages": [],
+  "stdout": "period\n2026/3\n2026/1\n",
+  "stderr": "",
+  "execution_time_ms": 1545
+}

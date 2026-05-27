@@ -1,0 +1,9 @@
+{
+  "query": "-- Batch 2-7 SQL dosyasını yükle\n-- Dosya: /home/ubuntu/batch_2_to_7.sql\n-- Bu dosya batch_2.sql, batch_3.sql, batch_4.sql, batch_5.sql, batch_6.sql, batch_7.sql'i içerir\n-- Toplam 658 KPI hedef kartı yüklenir",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute -- Batch 2-7 SQL dosyasını yükle\n-- Dosya: /home/ubuntu/batch_2_to_7.sql\n-- Bu dosya batch_2.sql, batch_3.sql, batch_4.sql, batch_5.sql, batch_6.sql, batch_7.sql'i içerir\n-- Toplam 658 KPI hedef kartı yüklenir",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 1323
+}

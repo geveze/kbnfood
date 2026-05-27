@@ -1,0 +1,1025 @@
+{
+  "Izgara": {
+    "position_name": "Izgara",
+    "categories": {
+      "Görevi": [],
+      "Görev Bilinci": [
+        {
+          "number": "1",
+          "text": "Yaptığı işi en iyi şekilde yapar. İş disiplini ve görev bilinci yüksektir."
+        },
+        {
+          "number": "2",
+          "text": "Sorumluluğundaki işleri, şirket kural ve prosedürlerine uygun bir biçimde gerçekleştirir."
+        },
+        {
+          "number": "3",
+          "text": "İşine, kuruma ve kendisine sunulan kaynaklara zarar verecek hiçbir davranış sergilemez."
+        },
+        {
+          "number": "4",
+          "text": "Ahlaki ve etik değerlere uygun davranır."
+        }
+      ],
+      "İletişim Becerisi": [
+        {
+          "number": "5",
+          "text": "Karşındakini dinler ve verilmek istenen mesajı doğru bir şekilde anlar."
+        },
+        {
+          "number": "6",
+          "text": "Söylemek istediklerini, açık, kısa ve net bir biçimde karşı tarafa aktarır."
+        },
+        {
+          "number": "7",
+          "text": "İşle ilgili konularla ilgili bilgiyi zamanında aktarır ve paylaşır."
+        },
+        {
+          "number": "8",
+          "text": "Her türlü iletişimde empati kurmaya özen gösterir."
+        }
+      ],
+      "Analitik Düşünme ve Problem Çözme": [
+        {
+          "number": "9",
+          "text": "Gelişmekte olan problemleri görür, önleyici davranış geliştirir."
+        },
+        {
+          "number": "10",
+          "text": "Durum ve problem karşısında alacağı hareketin sonucunu bilir."
+        },
+        {
+          "number": "11",
+          "text": "Mevcut sorunu gidermek için alternatif çözüm yolları geliştirir."
+        },
+        {
+          "number": "12",
+          "text": "Benzer sorunlar arasında ilişki kurar; geçmişteki deneyimlerden faydalanır."
+        }
+      ],
+      "Kalite Odaklılık": [
+        {
+          "number": "13",
+          "text": "Mevcut düzen ve iş yapma yöntemine uygun çalışır."
+        },
+        {
+          "number": "14",
+          "text": "Kaliteyi belirlenen standartlara göre uyarlar."
+        },
+        {
+          "number": "15",
+          "text": "Yapılan işin kalitesini sürekli geliştirmek yönünde çalışır."
+        },
+        {
+          "number": "16",
+          "text": "İş yapma yöntemine ilişkin akış ve prosedürlerdeki yeniliklere adapte olur."
+        }
+      ],
+      "Takım Çalışması ve İşbirliği": [
+        {
+          "number": "17",
+          "text": "Çalışma ortamında iyi ilişkiler kurar ve korur."
+        },
+        {
+          "number": "18",
+          "text": "Takım arkadaşlarının yardıma ihtiyacı olduğunda gerekli destekte bulunur."
+        },
+        {
+          "number": "19",
+          "text": "Takım ruhuna uyumlu yaklaşımda bulunur."
+        },
+        {
+          "number": "20",
+          "text": "Takımdaki farklı görüşlere karşı toleranslıdır ve destekleyicidir."
+        }
+      ],
+      "Detay Odaklılık": [
+        {
+          "number": "21",
+          "text": "İşlerin hatasız tamamlanması için çaba sarf eder."
+        },
+        {
+          "number": "22",
+          "text": "Küçük detaylara dikkat eder."
+        },
+        {
+          "number": "23",
+          "text": "İşin inceliklerini öğrenmek ve işin bütününe hâkim olabilmek için sürekli gözlem yapar."
+        },
+        {
+          "number": "24",
+          "text": "Hataları, iş çıktıları paylaşılmadan fark eder."
+        }
+      ],
+      "Duygularını Kontrol Etme ve Yönetme": [
+        {
+          "number": "25",
+          "text": "İş ortamında; kızgınlık, korku, kaygı, üzüntü, depresyon, vb. duygularını kontrol eder."
+        },
+        {
+          "number": "26",
+          "text": "Özel hayatında yaşadığı sıkıntıları, iş ortamına en az ölçüde yansıtır."
+        },
+        {
+          "number": "27",
+          "text": "Zor çalışma koşullarında ve yoğun mesaide bile başarılı sonuçlar elde edebilir."
+        }
+      ],
+      "Sonuç Odaklılık": [
+        {
+          "number": "28",
+          "text": "Mesleki motivasyonu yüksektir ve işini severek yapar."
+        },
+        {
+          "number": "29",
+          "text": "Kendisine verilen işleri takip eder, doğru, eksiksiz ve zamanında sonuçlandırır."
+        },
+        {
+          "number": "30",
+          "text": "Her zaman daha iyisini yapmak adına kendisini sürekli geliştirir."
+        }
+      ],
+      "İş Disiplini ve Tutum": [
+        {
+          "number": "1",
+          "text": "Dış görünüşüne, saçına, sakalına, kişisel hijyenine dikkat eder. Eldiven, bone kullanır."
+        },
+        {
+          "number": "2",
+          "text": "Şirketin eğitimlerine aktif olarak katılır, atanmış eğitimlerini tamamlar."
+        },
+        {
+          "number": "3",
+          "text": "Restoran hedeflerinden haberdardır, hedef için elinden gelen gayreti gösterir."
+        },
+        {
+          "number": "4",
+          "text": "Mazeret bildirmeden işe gelmemezlik yapmaz. Vardiya ve mola düzenine uyar."
+        }
+      ],
+      "Ürün Kalitesi ve Standartlara Uyum": [
+        {
+          "number": "5",
+          "text": "Ürünleri reçetelere uygun hazırlar. Ürünlerin her seferinde aynı kalite ve tatta olmasını sağlar."
+        },
+        {
+          "number": "6",
+          "text": "Et pişirme tekniklerine hakimdir. Şirket standartlarına uygun pişirme yapar."
+        },
+        {
+          "number": "7",
+          "text": "Patates kızartma standartlarını bilir, doğru şekilde uygular."
+        },
+        {
+          "number": "8",
+          "text": "Peynir çubukları, soğan halkası, nugget vb. ürünleri doğru sürede uygun sıcaklıkta pişirir."
+        },
+        {
+          "number": "9",
+          "text": "Ekmek kesimini ve burger süslemesini standartlara uygun olarak yapar."
+        },
+        {
+          "number": "10",
+          "text": "Kızartma yağı TPM ölçümünü doğru olarak yapar.İç ısı standardını sağlar."
+        },
+        {
+          "number": "11",
+          "text": "Yağ filtre işlemini standartlara uygun olarak yapar. Koruyucu materyalleri kullanır."
+        }
+      ],
+      "Gıda Güvenliği ve Hijyen": [
+        {
+          "number": "12",
+          "text": "Ürünlerin son kullanma tarihine dikkat eder. Zayii olmasına izin vermez. (FIFO-İlk Giren İlk Çıkar)"
+        },
+        {
+          "number": "13",
+          "text": "Sebzeleri standartlara uygun şekilde yıkar."
+        },
+        {
+          "number": "14",
+          "text": "Küçük ekipmanların hijyenini standartlara uygun olarak sağlar."
+        },
+        {
+          "number": "15",
+          "text": "Gıda güvenliği ve operasyonel prosedür ve talimatları bilir, bunlara uygun hareket eder."
+        },
+        {
+          "number": "16",
+          "text": "Temizlik kimyasallarını İSG kurallarına uygun şekilde kullanır."
+        },
+        {
+          "number": "17",
+          "text": "Çalışma süresince İSG kurallarına uygun hareket eder."
+        }
+      ],
+      "İstasyon Yönetimi": [
+        {
+          "number": "18",
+          "text": "İstasyonlarda doğru ürün miktarının bulunmasına özen gösterir."
+        },
+        {
+          "number": "19",
+          "text": "Çalıştığı istasyonların temizliğini ve düzenini sağlar."
+        },
+        {
+          "number": "20",
+          "text": "Çalıştığı ekipmanları özenli ve titiz kullanır. Temizliğini yapar."
+        }
+      ],
+      "İlgili / Restoran Yöneticisi": []
+    }
+  },
+  "Izgara Yöneticisi": {
+    "position_name": "Izgara Yöneticisi",
+    "categories": {
+      "Görevi": [],
+      "Görev Bilinci": [
+        {
+          "number": "1",
+          "text": "Yaptığı işi en iyi şekilde yapar. İş disiplini ve görev bilinci yüksektir."
+        },
+        {
+          "number": "2",
+          "text": "Sorumluluğundaki işleri, şirket kural ve prosedürlerine uygun bir biçimde gerçekleştirir."
+        },
+        {
+          "number": "3",
+          "text": "İşine, kuruma ve kendisine sunulan kaynaklara zarar verecek hiçbir davranış sergilemez."
+        },
+        {
+          "number": "4",
+          "text": "Ahlaki ve etik değerlere uygun davranır. Davranışlarının sorumluluğunu üstlenir."
+        }
+      ],
+      "İletişim Becerisi": [
+        {
+          "number": "5",
+          "text": "Karşındakini dinler ve verilmek istenen mesajı doğru bir şekilde anlar."
+        },
+        {
+          "number": "6",
+          "text": "Söylemek istediklerini, açık, kısa ve net bir biçimde karşı tarafa aktarır."
+        },
+        {
+          "number": "7",
+          "text": "İşle ilgili konularla ilgili bilgiyi zamanında aktarır ve paylaşır."
+        },
+        {
+          "number": "8",
+          "text": "Her türlü iletişimde empati kurmaya özen gösterir. Gerektiğinde iletişim tarzını değiştirebilir."
+        }
+      ],
+      "Analitik Düşünme ve Problem Çözme": [
+        {
+          "number": "9",
+          "text": "Gelişmekte olan problemleri görür, önleyici davranış geliştirir."
+        },
+        {
+          "number": "10",
+          "text": "Durum ve problem karşısında alacağı hareketin sonucunu bilir."
+        },
+        {
+          "number": "11",
+          "text": "Mevcut sorunu gidermek için alternatif çözüm yolları geliştirir."
+        },
+        {
+          "number": "12",
+          "text": "Benzer sorunlar arasında ilişki kurar; geçmişteki deneyimlerden faydalanır."
+        }
+      ],
+      "Kalite Odaklılık": [
+        {
+          "number": "13",
+          "text": "Mevcut düzen ve iş yapma yöntemine uygun çalışır."
+        },
+        {
+          "number": "14",
+          "text": "Kaliteyi belirlenen standartlara göre uyarlar."
+        },
+        {
+          "number": "15",
+          "text": "İş yapma yöntemini sürekli geliştirmeye, verimlilik ve etkililiği artırmaya odaklı çalışır."
+        },
+        {
+          "number": "16",
+          "text": "İş yapma yöntemine ilişkin akış ve prosedürlerdeki yeniliklere adapte olur."
+        }
+      ],
+      "Takım Çalışması ve İşbirliği": [
+        {
+          "number": "17",
+          "text": "Çalışma ortamında iyi ilişkiler kurar ve korur."
+        },
+        {
+          "number": "18",
+          "text": "Takım arkadaşlarının yardıma ihtiyacı olduğunda gerekli destekte bulunur."
+        },
+        {
+          "number": "19",
+          "text": "Takım arkadaşlarını, ortak başarı için heveslendirir, onları motive eder. “Biz” olgusunu yaygınlaştır."
+        },
+        {
+          "number": "20",
+          "text": "Takımdaki farklı görüşlere karşı toleranslıdır ve destekleyicidir."
+        }
+      ],
+      "Yönetim Becerileri": [
+        {
+          "number": "21",
+          "text": "Doğru insanları belirleyerek ihtiyaçlar doğrultusunda görev dağılımını net bir şekilde yapar."
+        },
+        {
+          "number": "22",
+          "text": "Ekibine mentorluk yapar, yapıcı geri bildirimlerde bulunur ve yönlendirir."
+        },
+        {
+          "number": "23",
+          "text": "Ekibini motive eder, olumsuzluk yaratacak durumların önüne geçmek için çaba sarf eder."
+        },
+        {
+          "number": "24",
+          "text": "Ekip içindeki anlaşmazlıkları kişiselleştirmeden şirket yararını gözeterek yönetir."
+        },
+        {
+          "number": "25",
+          "text": "İnsanların yeteneklerini keşfeder ve doğru şekilde değerlendirir."
+        },
+        {
+          "number": "26",
+          "text": "Görevlerin yerine getirilebilmesi için gerekli olan kaynakları belirler ve organize eder."
+        },
+        {
+          "number": "27",
+          "text": "Aldığı kararların arkasındadır ve bu kararların sorumluluğunu üstlenir."
+        },
+        {
+          "number": "28",
+          "text": "Zor durumlarda ve baskı altında en etkili kararı verir."
+        },
+        {
+          "number": "29",
+          "text": "Çalışanların gelişimi için öğrenme ortamı yaratır. Ekibini ve kendini sürekli geliştirir."
+        },
+        {
+          "number": "30",
+          "text": "Davranışları ile ekibe örnek olur. Söyledikleri ile yaptıkları tutarlıdır."
+        }
+      ],
+      "İş Disiplini ve Tutum": [
+        {
+          "number": "1",
+          "text": "Dış görünüşüne, saçına, sakalına, kişisel hijyenine dikkat eder. Eldiven, bone kullanır."
+        },
+        {
+          "number": "2",
+          "text": "Şirketin eğitimlerine aktif olarak katılır, atanmış eğitimlerini tamamlar."
+        },
+        {
+          "number": "3",
+          "text": "Restoran hedeflerinden haberdardır, hedef için elinden gelen gayreti gösterir."
+        },
+        {
+          "number": "4",
+          "text": "Mazeret bildirmeden işe gelmemezlik yapmaz. Vardiya ve mola düzenine uyar."
+        }
+      ],
+      "Ürün Kalitesi ve Standartlara Uyum": [
+        {
+          "number": "5",
+          "text": "Ürünleri reçetelere uygun hazırlar. Ürünlerin her seferinde aynı kalite ve tatta olmasını sağlar."
+        },
+        {
+          "number": "6",
+          "text": "Et pişirme tekniklerine hakimdir. Şirket standartlarına uygun pişirme yapar."
+        },
+        {
+          "number": "7",
+          "text": "Patates kızartma standartlarını bilir, doğru şekilde uygular."
+        },
+        {
+          "number": "8",
+          "text": "Peynir çubukları, soğan halkası, nugget vb. ürünleri doğru sürede uygun sıcaklıkta pişirir."
+        },
+        {
+          "number": "9",
+          "text": "Ekmek kesimini ve burger süslemesini standartlara uygun olarak yapar."
+        },
+        {
+          "number": "10",
+          "text": "Kızartma yağı TPM ölçümünü doğru olarak yapar.İç ısı standardını sağlar."
+        },
+        {
+          "number": "11",
+          "text": "Yağ filtre işlemini standartlara uygun olarak yapar. Koruyucu materyalleri kullanır."
+        }
+      ],
+      "Gıda Güvenliği ve Hijyen": [
+        {
+          "number": "12",
+          "text": "Ürünlerin son kullanma tarihine dikkat eder. Zayii olmasına izin vermez. (FIFO-İlk Giren İlk Çıkar)"
+        },
+        {
+          "number": "13",
+          "text": "Sebzeleri standartlara uygun şekilde yıkar."
+        },
+        {
+          "number": "14",
+          "text": "Küçük ekipmanların hijyenini standartlara uygun olarak sağlar."
+        },
+        {
+          "number": "15",
+          "text": "Gıda güvenliği ve operasyonel prosedür ve talimatları bilir, bunlara uygun hareket eder."
+        },
+        {
+          "number": "16",
+          "text": "Temizlik kimyasallarını İSG kurallarına uygun şekilde kullanır."
+        },
+        {
+          "number": "17",
+          "text": "Çalışma süresince İSG kurallarına uygun hareket eder."
+        }
+      ],
+      "İstasyon Yönetimi": [
+        {
+          "number": "18",
+          "text": "İstasyonlarda doğru ürün miktarının bulunmasına özen gösterir."
+        },
+        {
+          "number": "19",
+          "text": "Çalıştığı istasyonların temizliğini ve düzenini sağlar."
+        },
+        {
+          "number": "20",
+          "text": "Çalıştığı ekipmanları özenli ve titiz kullanır. Temizliğini yapar."
+        }
+      ],
+      "İlgili / Restoran Yöneticisi": []
+    }
+  },
+  "Servis": {
+    "position_name": "Servis",
+    "categories": {
+      "Görevi": [],
+      "Görev Bilinci": [
+        {
+          "number": "1",
+          "text": "Yaptığı işi en iyi şekilde yapar. İş disiplini ve görev bilinci yüksektir."
+        },
+        {
+          "number": "2",
+          "text": "Sorumluluğundaki işleri, şirket kural ve prosedürlerine uygun bir biçimde gerçekleştirir."
+        },
+        {
+          "number": "3",
+          "text": "İşine, kuruma ve kendisine sunulan kaynaklara zarar verecek hiçbir davranış sergilemez."
+        },
+        {
+          "number": "4",
+          "text": "Ahlaki ve etik değerlere uygun davranır."
+        }
+      ],
+      "İletişim Becerisi": [
+        {
+          "number": "5",
+          "text": "Karşındakini dinler ve verilmek istenen mesajı doğru bir şekilde anlar."
+        },
+        {
+          "number": "6",
+          "text": "Söylemek istediklerini, açık, kısa ve net bir biçimde karşı tarafa aktarır."
+        },
+        {
+          "number": "7",
+          "text": "İşle ilgili konularla ilgili bilgiyi zamanında aktarır ve paylaşır."
+        },
+        {
+          "number": "8",
+          "text": "Her türlü iletişimde empati kurmaya özen gösterir."
+        }
+      ],
+      "Analitik Düşünme ve Problem Çözme": [
+        {
+          "number": "9",
+          "text": "Gelişmekte olan problemleri görür, önleyici davranış geliştirir."
+        },
+        {
+          "number": "10",
+          "text": "Durum ve problem karşısında alacağı hareketin sonucunu bilir."
+        },
+        {
+          "number": "11",
+          "text": "Mevcut sorunu gidermek için alternatif çözüm yolları geliştirir."
+        },
+        {
+          "number": "12",
+          "text": "Benzer sorunlar arasında ilişki kurar; geçmişteki deneyimlerden faydalanır."
+        }
+      ],
+      "Kalite Odaklılık": [
+        {
+          "number": "13",
+          "text": "Mevcut düzen ve iş yapma yöntemine uygun çalışır."
+        },
+        {
+          "number": "14",
+          "text": "Kaliteyi belirlenen standartlara göre uyarlar."
+        },
+        {
+          "number": "15",
+          "text": "Yapılan işin kalitesini sürekli geliştirmek yönünde çalışır."
+        },
+        {
+          "number": "16",
+          "text": "İş yapma yöntemine ilişkin akış ve prosedürlerdeki yeniliklere adapte olur."
+        }
+      ],
+      "Takım Çalışması ve İşbirliği": [
+        {
+          "number": "17",
+          "text": "Çalışma ortamında iyi ilişkiler kurar ve korur."
+        },
+        {
+          "number": "18",
+          "text": "Takım arkadaşlarının yardıma ihtiyacı olduğunda gerekli destekte bulunur."
+        },
+        {
+          "number": "19",
+          "text": "Takım ruhuna uyumlu yaklaşımda bulunur."
+        },
+        {
+          "number": "20",
+          "text": "Takımdaki farklı görüşlere karşı toleranslıdır ve destekleyicidir."
+        }
+      ],
+      "Müşteri Odaklılık": [
+        {
+          "number": "21",
+          "text": "Müşteri ihtiyaçlarını anlar ve bu ihtiyaçları doğru şekilde tanımlar."
+        },
+        {
+          "number": "22",
+          "text": "Müşteri sorunlarına hızlı ve etkili çözümler bulur."
+        },
+        {
+          "number": "23",
+          "text": "Müşterisine karşı anlayışlı, sabırlı ve saygılı bir iletişim tarzı benimser."
+        },
+        {
+          "number": "24",
+          "text": "Müşteri memnuniyeti artırmaya yönelik çalışmalara katkıda bulunur."
+        }
+      ],
+      "Ticari Bakış": [
+        {
+          "number": "25",
+          "text": "Yaptığı işin sonuçlarının kurumun beklediği ticari sonuçlar ile paralel olmasını gözetir."
+        },
+        {
+          "number": "26",
+          "text": "Uygun durumlarda, satış fırsatlarını geliştirecek alternatif yaklaşımlar tavsiye eder."
+        },
+        {
+          "number": "27",
+          "text": "Kurumun müşteri sayısını geliştirmeye yönelik çalışmalarda bulunur."
+        }
+      ],
+      "Planlama ve Organize Etme": [
+        {
+          "number": "28",
+          "text": "Görevlerini sahip olduğu zamanı dikkate alarak gereken sürede tamamlar."
+        },
+        {
+          "number": "29",
+          "text": "Birden fazla işe odaklanarak bunları eş zamanlı yürütebilir."
+        },
+        {
+          "number": "30",
+          "text": "Planlama ile ilgili öncelikleri saptar, yetki sınırları içinde doğru sıralamayı gerçekleştirir."
+        }
+      ],
+      "İş Disiplini ve Tutum": [
+        {
+          "number": "1",
+          "text": "Dış görünüşüne, saçına, sakalına, kişisel hijyenine dikkat eder."
+        },
+        {
+          "number": "2",
+          "text": "Şirketin eğitimlerine aktif olarak katılır, atanmış eğitimlerini tamamlar."
+        },
+        {
+          "number": "3",
+          "text": "Restoran hedeflerinden haberdardır, hedef için elinden gelen gayreti gösterir."
+        },
+        {
+          "number": "4",
+          "text": "İnsan Kaynakları tarafından yayınlanan Şirket Davranış Talimatına uygun hareket eder."
+        },
+        {
+          "number": "5",
+          "text": "Mazeret bildirmeden işe gelmemezlik yapmaz. Vardiya ve mola düzenine uyar."
+        }
+      ],
+      "Servis": [
+        {
+          "number": "20",
+          "text": "Yöneticisinin verdiği talimatlara uyar."
+        }
+      ],
+      "İlgili / Restoran Yöneticisi": []
+    }
+  },
+  "Kasa": {
+    "position_name": "Kasa",
+    "categories": {
+      "Görevi": [],
+      "Görev Bilinci": [
+        {
+          "number": "1",
+          "text": "Yaptığı işi en iyi şekilde yapar. İş disiplini ve görev bilinci yüksektir."
+        },
+        {
+          "number": "2",
+          "text": "Sorumluluğundaki işleri, şirket kural ve prosedürlerine uygun bir biçimde gerçekleştirir."
+        },
+        {
+          "number": "3",
+          "text": "İşine, kuruma ve kendisine sunulan kaynaklara zarar verecek hiçbir davranış sergilemez."
+        },
+        {
+          "number": "4",
+          "text": "Ahlaki ve etik değerlere uygun davranır."
+        }
+      ],
+      "İletişim Becerisi": [
+        {
+          "number": "5",
+          "text": "Karşındakini dinler ve verilmek istenen mesajı doğru bir şekilde anlar."
+        },
+        {
+          "number": "6",
+          "text": "Söylemek istediklerini, açık, kısa ve net bir biçimde karşı tarafa aktarır."
+        },
+        {
+          "number": "7",
+          "text": "İşle ilgili konularla ilgili bilgiyi zamanında aktarır ve paylaşır."
+        },
+        {
+          "number": "8",
+          "text": "Her türlü iletişimde empati kurmaya özen gösterir."
+        }
+      ],
+      "Analitik Düşünme ve Problem Çözme": [
+        {
+          "number": "9",
+          "text": "Gelişmekte olan problemleri görür, önleyici davranış geliştirir."
+        },
+        {
+          "number": "10",
+          "text": "Durum ve problem karşısında alacağı hareketin sonucunu bilir."
+        },
+        {
+          "number": "11",
+          "text": "Mevcut sorunu gidermek için alternatif çözüm yolları geliştirir."
+        },
+        {
+          "number": "12",
+          "text": "Benzer sorunlar arasında ilişki kurar; geçmişteki deneyimlerden faydalanır."
+        }
+      ],
+      "Kalite Odaklılık": [
+        {
+          "number": "13",
+          "text": "Mevcut düzen ve iş yapma yöntemine uygun çalışır."
+        },
+        {
+          "number": "14",
+          "text": "Kaliteyi belirlenen standartlara göre uyarlar."
+        },
+        {
+          "number": "15",
+          "text": "Yapılan işin kalitesini sürekli geliştirmek yönünde çalışır."
+        },
+        {
+          "number": "16",
+          "text": "İş yapma yöntemine ilişkin akış ve prosedürlerdeki yeniliklere adapte olur."
+        }
+      ],
+      "Takım Çalışması ve İşbirliği": [
+        {
+          "number": "17",
+          "text": "Çalışma ortamında iyi ilişkiler kurar ve korur."
+        },
+        {
+          "number": "18",
+          "text": "Takım arkadaşlarının yardıma ihtiyacı olduğunda gerekli destekte bulunur."
+        },
+        {
+          "number": "19",
+          "text": "Takım ruhuna uyumlu yaklaşımda bulunur."
+        },
+        {
+          "number": "20",
+          "text": "Takımdaki farklı görüşlere karşı toleranslıdır ve destekleyicidir."
+        }
+      ],
+      "Müşteri Odaklılık": [
+        {
+          "number": "21",
+          "text": "Müşteri ihtiyaçlarını anlar ve bu ihtiyaçları doğru şekilde tanımlar."
+        },
+        {
+          "number": "22",
+          "text": "Müşteri sorunlarına hızlı ve etkili çözümler bulur."
+        },
+        {
+          "number": "23",
+          "text": "Müşterisine karşı anlayışlı, sabırlı ve saygılı bir iletişim tarzı benimser."
+        },
+        {
+          "number": "24",
+          "text": "Müşteri memnuniyeti artırmaya yönelik çalışmalara katkıda bulunur."
+        }
+      ],
+      "Ticari Bakış": [
+        {
+          "number": "25",
+          "text": "Yaptığı işin sonuçlarının kurumun beklediği ticari sonuçlar ile paralel olmasını gözetir."
+        },
+        {
+          "number": "26",
+          "text": "Uygun durumlarda, satış fırsatlarını geliştirecek alternatif yaklaşımlar tavsiye eder."
+        },
+        {
+          "number": "27",
+          "text": "Kurumun müşteri sayısını geliştirmeye yönelik çalışmalarda bulunur."
+        }
+      ],
+      "Planlama ve Organize Etme": [
+        {
+          "number": "28",
+          "text": "Görevlerini sahip olduğu zamanı dikkate alarak gereken sürede tamamlar."
+        },
+        {
+          "number": "29",
+          "text": "Birden fazla işe odaklanarak bunları eş zamanlı yürütebilir."
+        },
+        {
+          "number": "30",
+          "text": "Planlama ile ilgili öncelikleri saptar, yetki sınırları içinde doğru sıralamayı gerçekleştirir."
+        }
+      ],
+      "İş Disiplini ve Tutum": [
+        {
+          "number": "1",
+          "text": "Dış görünüşüne, saçına, sakalına, kişisel hijyenine dikkat eder."
+        },
+        {
+          "number": "2",
+          "text": "Şirketin eğitimlerine aktif olarak katılır, atanmış eğitimlerini tamamlar."
+        },
+        {
+          "number": "3",
+          "text": "Restoran hedeflerinden haberdardır, hedef için elinden gelen gayreti gösterir."
+        },
+        {
+          "number": "4",
+          "text": "İnsan Kaynakları tarafından yayınlanan Şirket Davranış Talimatına uygun hareket eder."
+        },
+        {
+          "number": "5",
+          "text": "Mazeret bildirmeden işe gelmemezlik yapmaz. Vardiya ve mola düzenine uyar."
+        }
+      ],
+      "Kasa": [
+        {
+          "number": "20",
+          "text": "Yöneticisinin verdiği talimatlara uyar."
+        }
+      ],
+      "İlgili / Restoran Yöneticisi": []
+    }
+  },
+  "Restoran Yönetimi": {
+    "position_name": "Restoran Yönetimi",
+    "categories": {
+      "Görevi": [],
+      "Görev Bilinci": [
+        {
+          "number": "1",
+          "text": "Yaptığı işi en iyi şekilde yapar. İş disiplini ve görev bilinci yüksektir."
+        },
+        {
+          "number": "2",
+          "text": "Sorumluluğundaki işleri, şirket kural ve prosedürlerine uygun bir biçimde gerçekleştirir."
+        },
+        {
+          "number": "3",
+          "text": "İşine, kuruma ve kendisine sunulan kaynaklara zarar verecek hiçbir davranış sergilemez."
+        },
+        {
+          "number": "4",
+          "text": "Ahlaki ve etik değerlere uygun davranır. Davranışlarının sorumluluğunu üstlenir."
+        }
+      ],
+      "İletişim Becerisi": [
+        {
+          "number": "5",
+          "text": "Karşındakini dinler ve verilmek istenen mesajı doğru bir şekilde anlar."
+        },
+        {
+          "number": "6",
+          "text": "Söylemek istediklerini, açık, kısa ve net bir biçimde karşı tarafa aktarır."
+        },
+        {
+          "number": "7",
+          "text": "İşle ilgili konularla ilgili bilgiyi zamanında aktarır ve paylaşır."
+        },
+        {
+          "number": "8",
+          "text": "Her türlü iletişimde empati kurmaya özen gösterir.Gerektiğinde iletişim tarzını değiştirebilir."
+        }
+      ],
+      "Analitik Düşünme ve Problem Çözme": [
+        {
+          "number": "9",
+          "text": "Gelişmekte olan problemleri görür, önleyici davranış geliştirir."
+        },
+        {
+          "number": "10",
+          "text": "Durum ve problem karşısında alacağı hareketin sonucunu bilir."
+        },
+        {
+          "number": "11",
+          "text": "Mevcut sorunu gidermek için alternatif çözüm yolları geliştirir."
+        },
+        {
+          "number": "12",
+          "text": "Benzer sorunlar arasında ilişki kurar; geçmişteki deneyimlerden faydalanır."
+        }
+      ],
+      "Kalite Odaklılık": [
+        {
+          "number": "13",
+          "text": "Mevcut düzen ve iş yapma yöntemine uygun çalışır."
+        },
+        {
+          "number": "14",
+          "text": "Kaliteyi belirlenen standartlara göre uyarlar."
+        },
+        {
+          "number": "15",
+          "text": "İş yapma yöntemini sürekli geliştirmeye, verimlilik ve etkililiği artırmaya odaklı çalışır."
+        },
+        {
+          "number": "16",
+          "text": "İş yapma yöntemine ilişkin akış ve prosedürlerdeki yeniliklere adapte olur."
+        }
+      ],
+      "Takım Çalışması ve İşbirliği": [
+        {
+          "number": "17",
+          "text": "Çalışma ortamında iyi ilişkiler kurar ve korur."
+        },
+        {
+          "number": "18",
+          "text": "Takım arkadaşlarının yardıma ihtiyacı olduğunda gerekli destekte bulunur."
+        },
+        {
+          "number": "19",
+          "text": "Takım arkadaşlarını, ortak başarı için heveslendirir, onları motive eder. “Biz” olgusunu yaygınlaştır."
+        },
+        {
+          "number": "20",
+          "text": "Takımdaki farklı görüşlere karşı toleranslıdır ve destekleyicidir."
+        }
+      ],
+      "Yönetim Becerileri": [
+        {
+          "number": "21",
+          "text": "Doğru insanları belirleyerek ihtiyaçlar doğrultusunda görev dağılımını net bir şekilde yapar."
+        },
+        {
+          "number": "22",
+          "text": "Ekibine mentorluk yapar, yapıcı geri bildirimlerde bulunur ve yönlendirir."
+        },
+        {
+          "number": "23",
+          "text": "Ekibini motive eder, olumsuzluk yaratacak durumların önüne geçmek için çaba sarf eder."
+        },
+        {
+          "number": "24",
+          "text": "Ekip içindeki anlaşmazlıkları kişiselleştirmeden şirket yararını gözeterek yönetir."
+        },
+        {
+          "number": "25",
+          "text": "İnsanların yeteneklerini keşfeder ve doğru şekilde değerlendirir."
+        },
+        {
+          "number": "26",
+          "text": "Görevlerin yerine getirilebilmesi için gerekli olan kaynakları belirler ve organize eder."
+        },
+        {
+          "number": "27",
+          "text": "Aldığı kararların arkasındadır ve bu kararların sorumluluğunu üstlenir."
+        },
+        {
+          "number": "28",
+          "text": "Zor durumlarda ve baskı altında en etkili kararı verir."
+        },
+        {
+          "number": "29",
+          "text": "Çalışanların gelişimi için öğrenme ortamı yaratır. Ekibini ve kendini sürekli geliştirir."
+        },
+        {
+          "number": "30",
+          "text": "Davranışları ile ekibe örnek olur. Söyledikleri ile yaptıkları tutarlıdır."
+        }
+      ],
+      "İş Disiplini ve Tutum": [
+        {
+          "number": "1",
+          "text": "Dış görünüşüne dikkat eder. Kurumu ve markayı başarıyla temsil eder."
+        },
+        {
+          "number": "2",
+          "text": "Şirketin eğitimlerine aktif olarak katılır, çalışanların katılımını sağlar. Eğitim etkinliğini takip eder."
+        },
+        {
+          "number": "3",
+          "text": "Restoranın KPI'larını bilir, bu hedefleri gerçekleştirmek için gerekli planlamaları yapar."
+        },
+        {
+          "number": "4",
+          "text": "Mazeret bildirmeden işe gelmemezlik yapmaz."
+        }
+      ],
+      "Restoran Yönetimi": [
+        {
+          "number": "5",
+          "text": "Ekibine ve müşterilere karşı güleryüzlü ve naziktir."
+        },
+        {
+          "number": "6",
+          "text": "İnsan Kaynakları ve operasyonel prosedür ve talimatları bilir, uygulanmasını sağlar."
+        },
+        {
+          "number": "7",
+          "text": "Vardiya planlamalarını verimli bir şekilde yapar."
+        },
+        {
+          "number": "8",
+          "text": "Restoranın nakit ve avans yönetimini hatasız bir şekilde yapar. Prosedürlere uygun hareket eder."
+        },
+        {
+          "number": "9",
+          "text": "Restoranın stok ve sipariş yönetimini etkin bir şekilde yapar. Fire ve/veya satış kaybına sebep olmaz."
+        },
+        {
+          "number": "10",
+          "text": "Müşteri şikayetlerini prosedürler çerçevesinde müşteri kaybına yol açmayacak şekilde yönetir."
+        },
+        {
+          "number": "11",
+          "text": "Menü fiyatları, pormosyon ve kampanyalarla ilgili bilgilidir. Gerektiği gibi uygulamasını yapar."
+        },
+        {
+          "number": "12",
+          "text": "Ürünlerle ve içerikleri ile ilgili bilgilidir."
+        },
+        {
+          "number": "13",
+          "text": "Çalışma süresince Gıda Güvenliği ve İSG kurallarına uygun hareket edilmesini sağlar."
+        },
+        {
+          "number": "14",
+          "text": "Tüm şube ekipmanlarının özenli ve titiz kullanılmasını sağlar. Temizliklerini yaptırır."
+        },
+        {
+          "number": "15",
+          "text": "Restoran düzenini sağlar, dağınık ve kirli bir görüntü verilmesine izin vermez."
+        },
+        {
+          "number": "16",
+          "text": "Zor müşteriler ile iletişim kurabilir, gerekli aksiyonu alır."
+        },
+        {
+          "number": "17",
+          "text": "Fire ve israfı önler, gerekli önlemleri alır."
+        },
+        {
+          "number": "18",
+          "text": "Tüm çalışma alanlarının (servis, ızgara, kasa, depo) temizliğini ve hijyenini sağlar."
+        },
+        {
+          "number": "19",
+          "text": "Bulunduğu şubeye özel satışı arttıracak alternatif öneriler sunar. Müşteri geri bildirimlerini paylaşır."
+        },
+        {
+          "number": "20",
+          "text": "Pazarlama departmanından gelen görsel ve kampanyaları doğru ve eksiksiz bir biçimde uygular."
+        }
+      ],
+      "İlgili / Restoran Yöneticisi": []
+    }
+  }
+}

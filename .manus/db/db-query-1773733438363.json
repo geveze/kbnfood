@@ -1,0 +1,415 @@
+{
+  "query": "SELECT id, name, code FROM branches ORDER BY id;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SELECT id, name, code FROM branches ORDER BY id;",
+  "rows": [
+    {
+      "id": "1",
+      "name": "BY İSTANBUL BAKIRKÖY ",
+      "code": "2"
+    },
+    {
+      "id": "30002",
+      "name": "BY ORDU NOVADA AVM",
+      "code": "OR"
+    },
+    {
+      "id": "30003",
+      "name": "AFYON WATERMALL",
+      "code": "AFY"
+    },
+    {
+      "id": "30004",
+      "name": "ANTALYA ALANYA AKDENİZ AVM",
+      "code": "AAA"
+    },
+    {
+      "id": "30005",
+      "name": "ANTALYA ALANYA CADDE",
+      "code": "AAC"
+    },
+    {
+      "id": "30006",
+      "name": "AYDIN EFELER",
+      "code": "AYE"
+    },
+    {
+      "id": "30007",
+      "name": "BURSA KENT MEYDANI AVM",
+      "code": "BKM"
+    },
+    {
+      "id": "30008",
+      "name": "BURSA ÖZLÜCE",
+      "code": "BÖZ"
+    },
+    {
+      "id": "30009",
+      "name": "ÇANAKKALE 17 BURDA AVM",
+      "code": "ÇBA"
+    },
+    {
+      "id": "30010",
+      "name": "DENİZLİ FORUM AVM",
+      "code": "DFA"
+    },
+    {
+      "id": "30011",
+      "name": "ESKİŞEHİR",
+      "code": "ESK"
+    },
+    {
+      "id": "30012",
+      "name": "GAZİANTEP SANKO AVM",
+      "code": "GSA"
+    },
+    {
+      "id": "30013",
+      "name": "İSTANBUL AKSARAY",
+      "code": "İAK"
+    },
+    {
+      "id": "30014",
+      "name": "İSTANBUL AQUA FLORYA",
+      "code": "İAF"
+    },
+    {
+      "id": "30015",
+      "name": "İSTANBUL ARENAPARK AVM",
+      "code": "İAR"
+    },
+    {
+      "id": "30016",
+      "name": "İSTANBUL ATLAS ÜNİVERSİTESİ",
+      "code": "İAÜ"
+    },
+    {
+      "id": "30017",
+      "name": "İSTANBUL AVCILAR ÇARŞI",
+      "code": "İAÇ"
+    },
+    {
+      "id": "30018",
+      "name": "İSTANBUL BAĞCILAR",
+      "code": "İBA"
+    },
+    {
+      "id": "30019",
+      "name": "İSTANBUL BAŞAKŞEHİR",
+      "code": "İBŞ"
+    },
+    {
+      "id": "30020",
+      "name": "İSTANBUL BEŞİKTAŞ",
+      "code": "İBE"
+    },
+    {
+      "id": "30021",
+      "name": "İSTANBUL BEYKENT",
+      "code": "İBEY"
+    },
+    {
+      "id": "30022",
+      "name": "İSTANBUL BEYLİKDÜZÜ KAVAKLI",
+      "code": "İBK"
+    },
+    {
+      "id": "30023",
+      "name": "İSTANBUL CADDEBOSTAN",
+      "code": "İCA"
+    },
+    {
+      "id": "30024",
+      "name": "İSTANBUL CENNET",
+      "code": "İCE"
+    },
+    {
+      "id": "30025",
+      "name": "İSTANBUL CEVAHİR AVM",
+      "code": "İCV"
+    },
+    {
+      "id": "30026",
+      "name": "İSTANBUL ÇAPA",
+      "code": "İÇA"
+    },
+    {
+      "id": "30027",
+      "name": "İSTANBUL ESENLER",
+      "code": "İES"
+    },
+    {
+      "id": "30028",
+      "name": "İSTANBUL ESENYURT",
+      "code": "İESY"
+    },
+    {
+      "id": "30029",
+      "name": "İSTANBUL FORUM İSTANBUL",
+      "code": "İFO"
+    },
+    {
+      "id": "30030",
+      "name": "İSTANBUL GAZİOSMANPAŞA",
+      "code": "İGO"
+    },
+    {
+      "id": "30031",
+      "name": "İSTANBUL GELİŞİM ÜNİVERSİTESİ",
+      "code": "İGÜ"
+    },
+    {
+      "id": "30032",
+      "name": "İSTANBUL HL. KARGO TER",
+      "code": "İHK"
+    },
+    {
+      "id": "30033",
+      "name": "İSTANBUL ISPARTAKULE",
+      "code": "İIS"
+    },
+    {
+      "id": "30034",
+      "name": "İSTANBUL İFM AVM",
+      "code": "İİF"
+    },
+    {
+      "id": "30035",
+      "name": "İSTANBUL KADIKÖY",
+      "code": "İKA"
+    },
+    {
+      "id": "30036",
+      "name": "İSTANBUL KAĞITHANE",
+      "code": "İKĞ"
+    },
+    {
+      "id": "30037",
+      "name": "İSTANBUL KARTAL CADDE",
+      "code": "İKAR"
+    },
+    {
+      "id": "30038",
+      "name": "İSTANBUL KAYAŞEHİR",
+      "code": "İKAY"
+    },
+    {
+      "id": "30039",
+      "name": "İSTANBUL KOCA MUSTAFA PAŞA",
+      "code": "İKMP"
+    },
+    {
+      "id": "30040",
+      "name": "İSTANBUL MALTEPE",
+      "code": "İMA"
+    },
+    {
+      "id": "30041",
+      "name": "İSTANBUL MARMARA FORUM",
+      "code": "İMF"
+    },
+    {
+      "id": "30042",
+      "name": "İSTANBUL MARMARA PARK",
+      "code": "İMP"
+    },
+    {
+      "id": "30043",
+      "name": "İSTANBUL MİRKELAM 1",
+      "code": "İMR1"
+    },
+    {
+      "id": "30044",
+      "name": "İSTANBUL MİRKELAM 2",
+      "code": "İMR2"
+    },
+    {
+      "id": "30045",
+      "name": "İSTANBUL OASİS AVM",
+      "code": "İOA"
+    },
+    {
+      "id": "30046",
+      "name": "İSTANBUL ORTAKÖY",
+      "code": "İOR"
+    },
+    {
+      "id": "30047",
+      "name": "İSTANBUL PELİCAN AVM",
+      "code": "İPE"
+    },
+    {
+      "id": "30048",
+      "name": "İSTANBUL PENDİK",
+      "code": "İPEN"
+    },
+    {
+      "id": "30049",
+      "name": "İSTANBUL PENDİK LENS",
+      "code": "İPEL"
+    },
+    {
+      "id": "30050",
+      "name": "İSTANBUL SEFAKÖY",
+      "code": "İSE"
+    },
+    {
+      "id": "30051",
+      "name": "İSTANBUL SUADİYE- BAĞDAT CADDESİ",
+      "code": "İSBC"
+    },
+    {
+      "id": "30052",
+      "name": "İSTANBUL SULTANGAZİ",
+      "code": "İSU"
+    },
+    {
+      "id": "30053",
+      "name": "İSTANBUL ŞERİFALİ",
+      "code": "İŞE"
+    },
+    {
+      "id": "30054",
+      "name": "İSTANBUL ŞİRİNEVLER",
+      "code": "İŞİ"
+    },
+    {
+      "id": "30055",
+      "name": "İSTANBUL ŞİRİNEVLER MEYDAN",
+      "code": "İŞİM"
+    },
+    {
+      "id": "30056",
+      "name": "İSTANBUL ŞİŞLİ",
+      "code": "İŞİŞ"
+    },
+    {
+      "id": "30057",
+      "name": "İSTANBUL TAKSİM",
+      "code": "İTA"
+    },
+    {
+      "id": "30058",
+      "name": "İSTANBUL TORİUM AVM",
+      "code": "İTO"
+    },
+    {
+      "id": "30059",
+      "name": "İSTANBUL ÜMRANİYE",
+      "code": "İÜM"
+    },
+    {
+      "id": "30060",
+      "name": "İSTANBUL ÜMRANİYE MEYDAN AVM",
+      "code": "İÜMA"
+    },
+    {
+      "id": "30061",
+      "name": "İSTANBUL ÜSKÜDAR",
+      "code": "İÜS"
+    },
+    {
+      "id": "30062",
+      "name": "İSTANBUL VENEZİA AVM",
+      "code": "İVE"
+    },
+    {
+      "id": "30063",
+      "name": "İSTANBUL VİALAND",
+      "code": "İVİA"
+    },
+    {
+      "id": "30064",
+      "name": "İSTANBUL VİAMARİNE",
+      "code": "İVİM"
+    },
+    {
+      "id": "30065",
+      "name": "İSTANBUL VİAPORT",
+      "code": "İVİP"
+    },
+    {
+      "id": "30066",
+      "name": "İSTANBUL YAYLA",
+      "code": "İYA"
+    },
+    {
+      "id": "30067",
+      "name": "İSTANBUL ZEYTİNBURNU CADDE",
+      "code": "İZE"
+    },
+    {
+      "id": "30068",
+      "name": "İZMİR HATAY",
+      "code": "İZHA"
+    },
+    {
+      "id": "30069",
+      "name": "İZMİR HİLLTOWN AVM",
+      "code": "İZHİ"
+    },
+    {
+      "id": "30070",
+      "name": "İZMİR KÜÇÜKPARK",
+      "code": "İZKÜ"
+    },
+    {
+      "id": "30071",
+      "name": "İZMİR OPTİMUM",
+      "code": "İZOP"
+    },
+    {
+      "id": "30072",
+      "name": "KOCAELİ GEBZE",
+      "code": "KOG"
+    },
+    {
+      "id": "30073",
+      "name": "KOCAELİ İZMİT",
+      "code": "KOİ"
+    },
+    {
+      "id": "30074",
+      "name": "KOCAELİ ŞEKERPINAR",
+      "code": "KOŞ"
+    },
+    {
+      "id": "30075",
+      "name": "MALL OF İSTANBUL",
+      "code": "MOİ"
+    },
+    {
+      "id": "30076",
+      "name": "MUĞLA FETHİYE",
+      "code": "MUF"
+    },
+    {
+      "id": "30077",
+      "name": "MUĞLA MARMARİS",
+      "code": "MUM"
+    },
+    {
+      "id": "30078",
+      "name": "RİZE",
+      "code": "RİZ"
+    },
+    {
+      "id": "30079",
+      "name": "SAKARYA 54 AVM",
+      "code": "SAK"
+    },
+    {
+      "id": "30080",
+      "name": "TEKİRDAĞ ÇORLU",
+      "code": "TEÇ"
+    },
+    {
+      "id": "30081",
+      "name": "VADİ İSTANBUL AVM",
+      "code": "VAD"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tname\tcode\n1\tBY İSTANBUL BAKIRKÖY \t2\n30002\tBY ORDU NOVADA AVM\tOR\n30003\tAFYON WATERMALL\tAFY\n30004\tANTALYA ALANYA AKDENİZ AVM\tAAA\n30005\tANTALYA ALANYA CADDE\tAAC\n30006\tAYDIN EFELER\tAYE\n30007\tBURSA KENT MEYDANI AVM\tBKM\n30008\tBURSA ÖZLÜCE\tBÖZ\n30009\tÇANAKKALE 17 BURDA AVM\tÇBA\n30010\tDENİZLİ FORUM AVM\tDFA\n30011\tESKİŞEHİR\tESK\n30012\tGAZİANTEP SANKO AVM\tGSA\n30013\tİSTANBUL AKSARAY\tİAK\n30014\tİSTANBUL AQUA FLORYA\tİAF\n30015\tİSTANBUL ARENAPARK AVM\tİAR\n30016\tİSTANBUL ATLAS ÜNİVERSİTESİ\tİAÜ\n30017\tİSTANBUL AVCILAR ÇARŞI\tİAÇ\n30018\tİSTANBUL BAĞCILAR\tİBA\n30019\tİSTANBUL BAŞAKŞEHİR\tİBŞ\n30020\tİSTANBUL BEŞİKTAŞ\tİBE\n30021\tİSTANBUL BEYKENT\tİBEY\n30022\tİSTANBUL BEYLİKDÜZÜ KAVAKLI\tİBK\n30023\tİSTANBUL CADDEBOSTAN\tİCA\n30024\tİSTANBUL CENNET\tİCE\n30025\tİSTANBUL CEVAHİR AVM\tİCV\n30026\tİSTANBUL ÇAPA\tİÇA\n30027\tİSTANBUL ESENLER\tİES\n30028\tİSTANBUL ESENYURT\tİESY\n30029\tİSTANBUL FORUM İSTANBUL\tİFO\n30030\tİSTANBUL GAZİOSMANPAŞA\tİGO\n30031\tİSTANBUL GELİŞİM ÜNİVERSİTESİ\tİGÜ\n30032\tİSTANBUL HL. KARGO TER\tİHK\n30033\tİSTANBUL ISPARTAKULE\tİIS\n30034\tİSTANBUL İFM AVM\tİİF\n30035\tİSTANBUL KADIKÖY\tİKA\n30036\tİSTANBUL KAĞITHANE\tİKĞ\n30037\tİSTANBUL KARTAL CADDE\tİKAR\n30038\tİSTANBUL KAYAŞEHİR\tİKAY\n30039\tİSTANBUL KOCA MUSTAFA PAŞA\tİKMP\n30040\tİSTANBUL MALTEPE\tİMA\n30041\tİSTANBUL MARMARA FORUM\tİMF\n30042\tİSTANBUL MARMARA PARK\tİMP\n30043\tİSTANBUL MİRKELAM 1\tİMR1\n30044\tİSTANBUL MİRKELAM 2\tİMR2\n30045\tİSTANBUL OASİS AVM\tİOA\n30046\tİSTANBUL ORTAKÖY\tİOR\n30047\tİSTANBUL PELİCAN AVM\tİPE\n30048\tİSTANBUL PENDİK\tİPEN\n30049\tİSTANBUL PENDİK LENS\tİPEL\n30050\tİSTANBUL SEFAKÖY\tİSE\n30051\tİSTANBUL SUADİYE- BAĞDAT CADDESİ\tİSBC\n30052\tİSTANBUL SULTANGAZİ\tİSU\n30053\tİSTANBUL ŞERİFALİ\tİŞE\n30054\tİSTANBUL ŞİRİNEVLER\tİŞİ\n30055\tİSTANBUL ŞİRİNEVLER MEYDAN\tİŞİM\n30056\tİSTANBUL ŞİŞLİ\tİŞİŞ\n30057\tİSTANBUL TAKSİM\tİTA\n30058\tİSTANBUL TORİUM AVM\tİTO\n30059\tİSTANBUL ÜMRANİYE\tİÜM\n30060\tİSTANBUL ÜMRANİYE MEYDAN AVM\tİÜMA\n30061\tİSTANBUL ÜSKÜDAR\tİÜS\n30062\tİSTANBUL VENEZİA AVM\tİVE\n30063\tİSTANBUL VİALAND\tİVİA\n30064\tİSTANBUL VİAMARİNE\tİVİM\n30065\tİSTANBUL VİAPORT\tİVİP\n30066\tİSTANBUL YAYLA\tİYA\n30067\tİSTANBUL ZEYTİNBURNU CADDE\tİZE\n30068\tİZMİR HATAY\tİZHA\n30069\tİZMİR HİLLTOWN AVM\tİZHİ\n30070\tİZMİR KÜÇÜKPARK\tİZKÜ\n30071\tİZMİR OPTİMUM\tİZOP\n30072\tKOCAELİ GEBZE\tKOG\n30073\tKOCAELİ İZMİT\tKOİ\n30074\tKOCAELİ ŞEKERPINAR\tKOŞ\n30075\tMALL OF İSTANBUL\tMOİ\n30076\tMUĞLA FETHİYE\tMUF\n30077\tMUĞLA MARMARİS\tMUM\n30078\tRİZE\tRİZ\n30079\tSAKARYA 54 AVM\tSAK\n30080\tTEKİRDAĞ ÇORLU\tTEÇ\n30081\tVADİ İSTANBUL AVM\tVAD\n",
+  "stderr": "",
+  "execution_time_ms": 1659
+}

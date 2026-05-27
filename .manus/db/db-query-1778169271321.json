@@ -1,0 +1,45 @@
+{
+  "query": "SELECT id, branchId, inspectionDate, restaurantManagerName, totalScore FROM field_inspections ORDER BY id DESC LIMIT 5;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SELECT id, branchId, inspectionDate, restaurantManagerName, totalScore FROM field_inspections ORDER BY id DESC LIMIT 5;",
+  "rows": [
+    {
+      "id": "1290001",
+      "branchId": "30004",
+      "inspectionDate": "2026-05-06 14:31:05",
+      "restaurantManagerName": "Test Manager",
+      "totalScore": "50.00"
+    },
+    {
+      "id": "1260004",
+      "branchId": "30078",
+      "inspectionDate": "2026-04-23 00:00:00",
+      "restaurantManagerName": "NULL",
+      "totalScore": "100.00"
+    },
+    {
+      "id": "1260003",
+      "branchId": "30066",
+      "inspectionDate": "2026-04-23 00:00:00",
+      "restaurantManagerName": "NULL",
+      "totalScore": "100.00"
+    },
+    {
+      "id": "1260002",
+      "branchId": "30063",
+      "inspectionDate": "2026-04-23 00:00:00",
+      "restaurantManagerName": "NULL",
+      "totalScore": "100.00"
+    },
+    {
+      "id": "1260001",
+      "branchId": "30029",
+      "inspectionDate": "2026-04-22 00:00:00",
+      "restaurantManagerName": "NULL",
+      "totalScore": "86.23"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tbranchId\tinspectionDate\trestaurantManagerName\ttotalScore\n1290001\t30004\t2026-05-06 14:31:05\tTest Manager\t50.00\n1260004\t30078\t2026-04-23 00:00:00\tNULL\t100.00\n1260003\t30066\t2026-04-23 00:00:00\tNULL\t100.00\n1260002\t30063\t2026-04-23 00:00:00\tNULL\t100.00\n1260001\t30029\t2026-04-22 00:00:00\tNULL\t86.23\n",
+  "stderr": "",
+  "execution_time_ms": 1569
+}

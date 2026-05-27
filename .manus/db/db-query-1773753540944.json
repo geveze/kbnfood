@@ -1,0 +1,55 @@
+{
+  "query": "SELECT * FROM positions;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SELECT * FROM positions;",
+  "rows": [
+    {
+      "id": "8",
+      "name": "Kasa",
+      "displayName": "Kasa",
+      "description": "Kasa pozisyonu",
+      "isActive": "1",
+      "createdAt": "2026-03-16 11:36:37",
+      "updatedAt": "2026-03-16 11:36:37"
+    },
+    {
+      "id": "11",
+      "name": "Izgara",
+      "displayName": "Izgara",
+      "description": "Izgara pozisyonu",
+      "isActive": "1",
+      "createdAt": "2026-03-16 11:48:16",
+      "updatedAt": "2026-03-16 11:48:16"
+    },
+    {
+      "id": "12",
+      "name": "Izgara Yöneticisi",
+      "displayName": "Izgara Yöneticisi",
+      "description": "Izgara Yöneticisi pozisyonu",
+      "isActive": "1",
+      "createdAt": "2026-03-16 11:48:17",
+      "updatedAt": "2026-03-16 11:48:17"
+    },
+    {
+      "id": "13",
+      "name": "Servis",
+      "displayName": "Servis",
+      "description": "Servis",
+      "isActive": "1",
+      "createdAt": "2026-03-16 12:32:22",
+      "updatedAt": "2026-03-16 12:32:22"
+    },
+    {
+      "id": "30002",
+      "name": "Restoran Yönetimi",
+      "displayName": "Restoran Yönetimi",
+      "description": "Restoran Yönetimi Ekibi",
+      "isActive": "1",
+      "createdAt": "2026-03-16 14:24:21",
+      "updatedAt": "2026-03-16 14:24:21"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tname\tdisplayName\tdescription\tisActive\tcreatedAt\tupdatedAt\n8\tKasa\tKasa\tKasa pozisyonu\t1\t2026-03-16 11:36:37\t2026-03-16 11:36:37\n11\tIzgara\tIzgara\tIzgara pozisyonu\t1\t2026-03-16 11:48:16\t2026-03-16 11:48:16\n12\tIzgara Yöneticisi\tIzgara Yöneticisi\tIzgara Yöneticisi pozisyonu\t1\t2026-03-16 11:48:17\t2026-03-16 11:48:17\n13\tServis\tServis\tServis\t1\t2026-03-16 12:32:22\t2026-03-16 12:32:22\n30002\tRestoran Yönetimi\tRestoran Yönetimi\tRestoran Yönetimi Ekibi\t1\t2026-03-16 14:24:21\t2026-03-16 14:24:21\n",
+  "stderr": "",
+  "execution_time_ms": 1602
+}

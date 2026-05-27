@@ -1,0 +1,50 @@
+{
+  "query": "SELECT categoryId, COUNT(*) as count FROM position_questions GROUP BY categoryId LIMIT 20;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SELECT categoryId, COUNT(*) as count FROM position_questions GROUP BY categoryId LIMIT 20;",
+  "rows": [
+    {
+      "categoryId": "2",
+      "count": "4"
+    },
+    {
+      "categoryId": "9",
+      "count": "5"
+    },
+    {
+      "categoryId": "7",
+      "count": "3"
+    },
+    {
+      "categoryId": "8",
+      "count": "3"
+    },
+    {
+      "categoryId": "6",
+      "count": "4"
+    },
+    {
+      "categoryId": "3",
+      "count": "4"
+    },
+    {
+      "categoryId": "10",
+      "count": "15"
+    },
+    {
+      "categoryId": "5",
+      "count": "4"
+    },
+    {
+      "categoryId": "4",
+      "count": "4"
+    },
+    {
+      "categoryId": "1",
+      "count": "4"
+    }
+  ],
+  "messages": [],
+  "stdout": "categoryId\tcount\n2\t4\n9\t5\n7\t3\n8\t3\n6\t4\n3\t4\n10\t15\n5\t4\n4\t4\n1\t4\n",
+  "stderr": "",
+  "execution_time_ms": 1518
+}

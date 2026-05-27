@@ -1,0 +1,544 @@
+{
+  "query": "SELECT id, username, name, email FROM users ORDER BY id;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SELECT id, username, name, email FROM users ORDER BY id;",
+  "rows": [
+    {
+      "id": "1",
+      "username": "NULL",
+      "name": "Abdullah",
+      "email": "abdullah.er@kebanet.com"
+    },
+    {
+      "id": "114",
+      "username": "admin",
+      "name": "Sistem Yöneticisi",
+      "email": "admin@kebanfood.com"
+    },
+    {
+      "id": "115",
+      "username": "bolge_muduru",
+      "name": "Bölge Operasyon Müdürü",
+      "email": "bolge@kebanfood.com"
+    },
+    {
+      "id": "30094",
+      "username": "bolge_muduru2",
+      "name": "bolge_muduru2",
+      "email": "deneme@deneme.com"
+    },
+    {
+      "id": "150025",
+      "username": "veli.kaya",
+      "name": "veli kaya",
+      "email": "denk.den@gmail.com"
+    },
+    {
+      "id": "210535",
+      "username": "ordunovada",
+      "name": "ordu novada avm",
+      "email": "abdullah.er@kebanet.com"
+    },
+    {
+      "id": "240003",
+      "username": "korhan.kalyoncu",
+      "name": "Korhan Kalyoncu",
+      "email": "korhan.kalyoncu@kebanet.com"
+    },
+    {
+      "id": "900118",
+      "username": "beykent",
+      "name": "beykent",
+      "email": "beykent@kebanet.com"
+    },
+    {
+      "id": "900413",
+      "username": "by2",
+      "name": "BY İSTANBUL BAKIRKÖY  Yöneticisi",
+      "email": "by2@kebanfood.com"
+    },
+    {
+      "id": "900414",
+      "username": "byor",
+      "name": "BY ORDU NOVADA AVM Yöneticisi",
+      "email": "byor@kebanfood.com"
+    },
+    {
+      "id": "900415",
+      "username": "byafy",
+      "name": "AFYON WATERMALL Yöneticisi",
+      "email": "byafy@kebanfood.com"
+    },
+    {
+      "id": "900416",
+      "username": "byaaa",
+      "name": "ANTALYA ALANYA AKDENİZ AVM Yöneticisi",
+      "email": "byaaa@kebanfood.com"
+    },
+    {
+      "id": "900417",
+      "username": "byaac",
+      "name": "ANTALYA ALANYA CADDE Yöneticisi",
+      "email": "byaac@kebanfood.com"
+    },
+    {
+      "id": "900418",
+      "username": "byaye",
+      "name": "AYDIN EFELER Yöneticisi",
+      "email": "byaye@kebanfood.com"
+    },
+    {
+      "id": "900419",
+      "username": "bybkm",
+      "name": "BURSA KENT MEYDANI AVM Yöneticisi",
+      "email": "bybkm@kebanfood.com"
+    },
+    {
+      "id": "900420",
+      "username": "byböz",
+      "name": "BURSA ÖZLÜCE Yöneticisi",
+      "email": "byböz@kebanfood.com"
+    },
+    {
+      "id": "900421",
+      "username": "byçba",
+      "name": "ÇANAKKALE 17 BURDA AVM Yöneticisi",
+      "email": "byçba@kebanfood.com"
+    },
+    {
+      "id": "900422",
+      "username": "bydfa",
+      "name": "DENİZLİ FORUM AVM Yöneticisi",
+      "email": "bydfa@kebanfood.com"
+    },
+    {
+      "id": "900423",
+      "username": "byesk",
+      "name": "ESKİŞEHİR Yöneticisi",
+      "email": "byesk@kebanfood.com"
+    },
+    {
+      "id": "900424",
+      "username": "bygsa",
+      "name": "GAZİANTEP SANKO AVM Yöneticisi",
+      "email": "bygsa@kebanfood.com"
+    },
+    {
+      "id": "900425",
+      "username": "byi̇ak",
+      "name": "İSTANBUL AKSARAY Yöneticisi",
+      "email": "byi̇ak@kebanfood.com"
+    },
+    {
+      "id": "900426",
+      "username": "byi̇af",
+      "name": "İSTANBUL AQUA FLORYA Yöneticisi",
+      "email": "byi̇af@kebanfood.com"
+    },
+    {
+      "id": "900427",
+      "username": "byi̇ar",
+      "name": "İSTANBUL ARENAPARK AVM Yöneticisi",
+      "email": "byi̇ar@kebanfood.com"
+    },
+    {
+      "id": "900428",
+      "username": "byi̇aü",
+      "name": "İSTANBUL ATLAS ÜNİVERSİTESİ Yöneticisi",
+      "email": "byi̇aü@kebanfood.com"
+    },
+    {
+      "id": "900429",
+      "username": "byi̇aç",
+      "name": "İSTANBUL AVCILAR ÇARŞI Yöneticisi",
+      "email": "byi̇aç@kebanfood.com"
+    },
+    {
+      "id": "900430",
+      "username": "byi̇ba",
+      "name": "İSTANBUL BAĞCILAR Yöneticisi",
+      "email": "byi̇ba@kebanfood.com"
+    },
+    {
+      "id": "900431",
+      "username": "byi̇bş",
+      "name": "İSTANBUL BAŞAKŞEHİR Yöneticisi",
+      "email": "byi̇bş@kebanfood.com"
+    },
+    {
+      "id": "900432",
+      "username": "byi̇be",
+      "name": "İSTANBUL BEŞİKTAŞ Yöneticisi",
+      "email": "byi̇be@kebanfood.com"
+    },
+    {
+      "id": "900433",
+      "username": "byi̇bey",
+      "name": "İSTANBUL BEYKENT Yöneticisi",
+      "email": "byi̇bey@kebanfood.com"
+    },
+    {
+      "id": "900434",
+      "username": "byi̇bk",
+      "name": "İSTANBUL BEYLİKDÜZÜ KAVAKLI Yöneticisi",
+      "email": "byi̇bk@kebanfood.com"
+    },
+    {
+      "id": "900435",
+      "username": "byi̇ca",
+      "name": "İSTANBUL CADDEBOSTAN Yöneticisi",
+      "email": "byi̇ca@kebanfood.com"
+    },
+    {
+      "id": "900436",
+      "username": "byi̇ce",
+      "name": "İSTANBUL CENNET Yöneticisi",
+      "email": "byi̇ce@kebanfood.com"
+    },
+    {
+      "id": "900437",
+      "username": "byi̇cv",
+      "name": "İSTANBUL CEVAHİR AVM Yöneticisi",
+      "email": "byi̇cv@kebanfood.com"
+    },
+    {
+      "id": "900438",
+      "username": "byi̇ça",
+      "name": "İSTANBUL ÇAPA Yöneticisi",
+      "email": "byi̇ça@kebanfood.com"
+    },
+    {
+      "id": "900439",
+      "username": "byi̇es",
+      "name": "İSTANBUL ESENLER Yöneticisi",
+      "email": "byi̇es@kebanfood.com"
+    },
+    {
+      "id": "900440",
+      "username": "byi̇esy",
+      "name": "İSTANBUL ESENYURT Yöneticisi",
+      "email": "byi̇esy@kebanfood.com"
+    },
+    {
+      "id": "900441",
+      "username": "byi̇fo",
+      "name": "İSTANBUL FORUM İSTANBUL Yöneticisi",
+      "email": "byi̇fo@kebanfood.com"
+    },
+    {
+      "id": "900442",
+      "username": "byi̇go",
+      "name": "İSTANBUL GAZİOSMANPAŞA Yöneticisi",
+      "email": "byi̇go@kebanfood.com"
+    },
+    {
+      "id": "900443",
+      "username": "byi̇gü",
+      "name": "İSTANBUL GELİŞİM ÜNİVERSİTESİ Yöneticisi",
+      "email": "byi̇gü@kebanfood.com"
+    },
+    {
+      "id": "900444",
+      "username": "byi̇hk",
+      "name": "İSTANBUL HL. KARGO TER Yöneticisi",
+      "email": "byi̇hk@kebanfood.com"
+    },
+    {
+      "id": "900445",
+      "username": "byi̇is",
+      "name": "İSTANBUL ISPARTAKULE Yöneticisi",
+      "email": "byi̇is@kebanfood.com"
+    },
+    {
+      "id": "900446",
+      "username": "byi̇i̇f",
+      "name": "İSTANBUL İFM AVM Yöneticisi",
+      "email": "byi̇i̇f@kebanfood.com"
+    },
+    {
+      "id": "900447",
+      "username": "byi̇ka",
+      "name": "İSTANBUL KADIKÖY Yöneticisi",
+      "email": "byi̇ka@kebanfood.com"
+    },
+    {
+      "id": "900448",
+      "username": "byi̇kğ",
+      "name": "İSTANBUL KAĞITHANE Yöneticisi",
+      "email": "byi̇kğ@kebanfood.com"
+    },
+    {
+      "id": "900449",
+      "username": "byi̇kar",
+      "name": "İSTANBUL KARTAL CADDE Yöneticisi",
+      "email": "byi̇kar@kebanfood.com"
+    },
+    {
+      "id": "900450",
+      "username": "byi̇kay",
+      "name": "İSTANBUL KAYAŞEHİR Yöneticisi",
+      "email": "byi̇kay@kebanfood.com"
+    },
+    {
+      "id": "900452",
+      "username": "byi̇kmp",
+      "name": "İSTANBUL KOCA MUSTAFA PAŞA Yöneticisi",
+      "email": "byi̇kmp@kebanfood.com"
+    },
+    {
+      "id": "900453",
+      "username": "byi̇ma",
+      "name": "İSTANBUL MALTEPE Yöneticisi",
+      "email": "byi̇ma@kebanfood.com"
+    },
+    {
+      "id": "900454",
+      "username": "byi̇mf",
+      "name": "İSTANBUL MARMARA FORUM Yöneticisi",
+      "email": "byi̇mf@kebanfood.com"
+    },
+    {
+      "id": "900455",
+      "username": "byi̇mp",
+      "name": "İSTANBUL MARMARA PARK Yöneticisi",
+      "email": "byi̇mp@kebanfood.com"
+    },
+    {
+      "id": "900457",
+      "username": "byi̇mr1",
+      "name": "İSTANBUL MİRKELAM 1 Yöneticisi",
+      "email": "byi̇mr1@kebanfood.com"
+    },
+    {
+      "id": "900458",
+      "username": "byi̇mr2",
+      "name": "İSTANBUL MİRKELAM 2 Yöneticisi",
+      "email": "byi̇mr2@kebanfood.com"
+    },
+    {
+      "id": "900459",
+      "username": "byi̇oa",
+      "name": "İSTANBUL OASİS AVM Yöneticisi",
+      "email": "byi̇oa@kebanfood.com"
+    },
+    {
+      "id": "900460",
+      "username": "byi̇or",
+      "name": "İSTANBUL ORTAKÖY Yöneticisi",
+      "email": "byi̇or@kebanfood.com"
+    },
+    {
+      "id": "900461",
+      "username": "byi̇pe",
+      "name": "İSTANBUL PELİCAN AVM Yöneticisi",
+      "email": "byi̇pe@kebanfood.com"
+    },
+    {
+      "id": "900462",
+      "username": "byi̇pen",
+      "name": "İSTANBUL PENDİK Yöneticisi",
+      "email": "byi̇pen@kebanfood.com"
+    },
+    {
+      "id": "900463",
+      "username": "byi̇pel",
+      "name": "İSTANBUL PENDİK LENS Yöneticisi",
+      "email": "byi̇pel@kebanfood.com"
+    },
+    {
+      "id": "900464",
+      "username": "byi̇se",
+      "name": "İSTANBUL SEFAKÖY Yöneticisi",
+      "email": "byi̇se@kebanfood.com"
+    },
+    {
+      "id": "900465",
+      "username": "byi̇sbc",
+      "name": "İSTANBUL SUADİYE- BAĞDAT CADDESİ Yöneticisi",
+      "email": "byi̇sbc@kebanfood.com"
+    },
+    {
+      "id": "900466",
+      "username": "byi̇su",
+      "name": "İSTANBUL SULTANGAZİ Yöneticisi",
+      "email": "byi̇su@kebanfood.com"
+    },
+    {
+      "id": "900467",
+      "username": "byi̇şe",
+      "name": "İSTANBUL ŞERİFALİ Yöneticisi",
+      "email": "byi̇şe@kebanfood.com"
+    },
+    {
+      "id": "900468",
+      "username": "byi̇şi̇",
+      "name": "İSTANBUL ŞİRİNEVLER Yöneticisi",
+      "email": "byi̇şi̇@kebanfood.com"
+    },
+    {
+      "id": "900469",
+      "username": "byi̇şi̇m",
+      "name": "İSTANBUL ŞİRİNEVLER MEYDAN Yöneticisi",
+      "email": "byi̇şi̇m@kebanfood.com"
+    },
+    {
+      "id": "900470",
+      "username": "byi̇şi̇ş",
+      "name": "İSTANBUL ŞİŞLİ Yöneticisi",
+      "email": "byi̇şi̇ş@kebanfood.com"
+    },
+    {
+      "id": "900471",
+      "username": "byi̇ta",
+      "name": "İSTANBUL TAKSİM Yöneticisi",
+      "email": "byi̇ta@kebanfood.com"
+    },
+    {
+      "id": "900472",
+      "username": "byi̇to",
+      "name": "İSTANBUL TORİUM AVM Yöneticisi",
+      "email": "byi̇to@kebanfood.com"
+    },
+    {
+      "id": "900473",
+      "username": "byi̇üm",
+      "name": "İSTANBUL ÜMRANİYE Yöneticisi",
+      "email": "byi̇üm@kebanfood.com"
+    },
+    {
+      "id": "900474",
+      "username": "byi̇üma",
+      "name": "İSTANBUL ÜMRANİYE MEYDAN AVM Yöneticisi",
+      "email": "byi̇üma@kebanfood.com"
+    },
+    {
+      "id": "900475",
+      "username": "byi̇üs",
+      "name": "İSTANBUL ÜSKÜDAR Yöneticisi",
+      "email": "byi̇üs@kebanfood.com"
+    },
+    {
+      "id": "900476",
+      "username": "byi̇ve",
+      "name": "İSTANBUL VENEZİA AVM Yöneticisi",
+      "email": "byi̇ve@kebanfood.com"
+    },
+    {
+      "id": "900477",
+      "username": "byi̇vi̇a",
+      "name": "İSTANBUL VİALAND Yöneticisi",
+      "email": "byi̇vi̇a@kebanfood.com"
+    },
+    {
+      "id": "900479",
+      "username": "byi̇vi̇m",
+      "name": "İSTANBUL VİAMARİNE Yöneticisi",
+      "email": "byi̇vi̇m@kebanfood.com"
+    },
+    {
+      "id": "900480",
+      "username": "byi̇vi̇p",
+      "name": "İSTANBUL VİAPORT Yöneticisi",
+      "email": "byi̇vi̇p@kebanfood.com"
+    },
+    {
+      "id": "900481",
+      "username": "byi̇ya",
+      "name": "İSTANBUL YAYLA Yöneticisi",
+      "email": "byi̇ya@kebanfood.com"
+    },
+    {
+      "id": "900482",
+      "username": "byi̇ze",
+      "name": "İSTANBUL ZEYTİNBURNU CADDE Yöneticisi",
+      "email": "byi̇ze@kebanfood.com"
+    },
+    {
+      "id": "900483",
+      "username": "byi̇zha",
+      "name": "İZMİR HATAY Yöneticisi",
+      "email": "byi̇zha@kebanfood.com"
+    },
+    {
+      "id": "900484",
+      "username": "byi̇zhi̇",
+      "name": "İZMİR HİLLTOWN AVM Yöneticisi",
+      "email": "byi̇zhi̇@kebanfood.com"
+    },
+    {
+      "id": "900485",
+      "username": "byi̇zkü",
+      "name": "İZMİR KÜÇÜKPARK Yöneticisi",
+      "email": "byi̇zkü@kebanfood.com"
+    },
+    {
+      "id": "900486",
+      "username": "byi̇zop",
+      "name": "İZMİR OPTİMUM Yöneticisi",
+      "email": "byi̇zop@kebanfood.com"
+    },
+    {
+      "id": "900487",
+      "username": "bykog",
+      "name": "KOCAELİ GEBZE Yöneticisi",
+      "email": "bykog@kebanfood.com"
+    },
+    {
+      "id": "900488",
+      "username": "bykoi̇",
+      "name": "KOCAELİ İZMİT Yöneticisi",
+      "email": "bykoi̇@kebanfood.com"
+    },
+    {
+      "id": "900489",
+      "username": "bykoş",
+      "name": "KOCAELİ ŞEKERPINAR Yöneticisi",
+      "email": "bykoş@kebanfood.com"
+    },
+    {
+      "id": "900490",
+      "username": "bymoi̇",
+      "name": "MALL OF İSTANBUL Yöneticisi",
+      "email": "bymoi̇@kebanfood.com"
+    },
+    {
+      "id": "900491",
+      "username": "bymuf",
+      "name": "MUĞLA FETHİYE Yöneticisi",
+      "email": "bymuf@kebanfood.com"
+    },
+    {
+      "id": "900492",
+      "username": "bymum",
+      "name": "MUĞLA MARMARİS Yöneticisi",
+      "email": "bymum@kebanfood.com"
+    },
+    {
+      "id": "900493",
+      "username": "byri̇z",
+      "name": "RİZE Yöneticisi",
+      "email": "byri̇z@kebanfood.com"
+    },
+    {
+      "id": "900494",
+      "username": "bysak",
+      "name": "SAKARYA 54 AVM Yöneticisi",
+      "email": "bysak@kebanfood.com"
+    },
+    {
+      "id": "900495",
+      "username": "byteç",
+      "name": "TEKİRDAĞ ÇORLU Yöneticisi",
+      "email": "byteç@kebanfood.com"
+    },
+    {
+      "id": "900496",
+      "username": "byvad",
+      "name": "VADİ İSTANBUL AVM Yöneticisi",
+      "email": "byvad@kebanfood.com"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tusername\tname\temail\n1\tNULL\tAbdullah\tabdullah.er@kebanet.com\n114\tadmin\tSistem Yöneticisi\tadmin@kebanfood.com\n115\tbolge_muduru\tBölge Operasyon Müdürü\tbolge@kebanfood.com\n30094\tbolge_muduru2\tbolge_muduru2\tdeneme@deneme.com\n150025\tveli.kaya\tveli kaya\tdenk.den@gmail.com\n210535\tordunovada\tordu novada avm\tabdullah.er@kebanet.com\n240003\tkorhan.kalyoncu\tKorhan Kalyoncu\tkorhan.kalyoncu@kebanet.com\n900118\tbeykent\tbeykent\tbeykent@kebanet.com\n900413\tby2\tBY İSTANBUL BAKIRKÖY  Yöneticisi\tby2@kebanfood.com\n900414\tbyor\tBY ORDU NOVADA AVM Yöneticisi\tbyor@kebanfood.com\n900415\tbyafy\tAFYON WATERMALL Yöneticisi\tbyafy@kebanfood.com\n900416\tbyaaa\tANTALYA ALANYA AKDENİZ AVM Yöneticisi\tbyaaa@kebanfood.com\n900417\tbyaac\tANTALYA ALANYA CADDE Yöneticisi\tbyaac@kebanfood.com\n900418\tbyaye\tAYDIN EFELER Yöneticisi\tbyaye@kebanfood.com\n900419\tbybkm\tBURSA KENT MEYDANI AVM Yöneticisi\tbybkm@kebanfood.com\n900420\tbyböz\tBURSA ÖZLÜCE Yöneticisi\tbyböz@kebanfood.com\n900421\tbyçba\tÇANAKKALE 17 BURDA AVM Yöneticisi\tbyçba@kebanfood.com\n900422\tbydfa\tDENİZLİ FORUM AVM Yöneticisi\tbydfa@kebanfood.com\n900423\tbyesk\tESKİŞEHİR Yöneticisi\tbyesk@kebanfood.com\n900424\tbygsa\tGAZİANTEP SANKO AVM Yöneticisi\tbygsa@kebanfood.com\n900425\tbyi̇ak\tİSTANBUL AKSARAY Yöneticisi\tbyi̇ak@kebanfood.com\n900426\tbyi̇af\tİSTANBUL AQUA FLORYA Yöneticisi\tbyi̇af@kebanfood.com\n900427\tbyi̇ar\tİSTANBUL ARENAPARK AVM Yöneticisi\tbyi̇ar@kebanfood.com\n900428\tbyi̇aü\tİSTANBUL ATLAS ÜNİVERSİTESİ Yöneticisi\tbyi̇aü@kebanfood.com\n900429\tbyi̇aç\tİSTANBUL AVCILAR ÇARŞI Yöneticisi\tbyi̇aç@kebanfood.com\n900430\tbyi̇ba\tİSTANBUL BAĞCILAR Yöneticisi\tbyi̇ba@kebanfood.com\n900431\tbyi̇bş\tİSTANBUL BAŞAKŞEHİR Yöneticisi\tbyi̇bş@kebanfood.com\n900432\tbyi̇be\tİSTANBUL BEŞİKTAŞ Yöneticisi\tbyi̇be@kebanfood.com\n900433\tbyi̇bey\tİSTANBUL BEYKENT Yöneticisi\tbyi̇bey@kebanfood.com\n900434\tbyi̇bk\tİSTANBUL BEYLİKDÜZÜ KAVAKLI Yöneticisi\tbyi̇bk@kebanfood.com\n900435\tbyi̇ca\tİSTANBUL CADDEBOSTAN Yöneticisi\tbyi̇ca@kebanfood.com\n900436\tbyi̇ce\tİSTANBUL CENNET Yöneticisi\tbyi̇ce@kebanfood.com\n900437\tbyi̇cv\tİSTANBUL CEVAHİR AVM Yöneticisi\tbyi̇cv@kebanfood.com\n900438\tbyi̇ça\tİSTANBUL ÇAPA Yöneticisi\tbyi̇ça@kebanfood.com\n900439\tbyi̇es\tİSTANBUL ESENLER Yöneticisi\tbyi̇es@kebanfood.com\n900440\tbyi̇esy\tİSTANBUL ESENYURT Yöneticisi\tbyi̇esy@kebanfood.com\n900441\tbyi̇fo\tİSTANBUL FORUM İSTANBUL Yöneticisi\tbyi̇fo@kebanfood.com\n900442\tbyi̇go\tİSTANBUL GAZİOSMANPAŞA Yöneticisi\tbyi̇go@kebanfood.com\n900443\tbyi̇gü\tİSTANBUL GELİŞİM ÜNİVERSİTESİ Yöneticisi\tbyi̇gü@kebanfood.com\n900444\tbyi̇hk\tİSTANBUL HL. KARGO TER Yöneticisi\tbyi̇hk@kebanfood.com\n900445\tbyi̇is\tİSTANBUL ISPARTAKULE Yöneticisi\tbyi̇is@kebanfood.com\n900446\tbyi̇i̇f\tİSTANBUL İFM AVM Yöneticisi\tbyi̇i̇f@kebanfood.com\n900447\tbyi̇ka\tİSTANBUL KADIKÖY Yöneticisi\tbyi̇ka@kebanfood.com\n900448\tbyi̇kğ\tİSTANBUL KAĞITHANE Yöneticisi\tbyi̇kğ@kebanfood.com\n900449\tbyi̇kar\tİSTANBUL KARTAL CADDE Yöneticisi\tbyi̇kar@kebanfood.com\n900450\tbyi̇kay\tİSTANBUL KAYAŞEHİR Yöneticisi\tbyi̇kay@kebanfood.com\n900452\tbyi̇kmp\tİSTANBUL KOCA MUSTAFA PAŞA Yöneticisi\tbyi̇kmp@kebanfood.com\n900453\tbyi̇ma\tİSTANBUL MALTEPE Yöneticisi\tbyi̇ma@kebanfood.com\n900454\tbyi̇mf\tİSTANBUL MARMARA FORUM Yöneticisi\tbyi̇mf@kebanfood.com\n900455\tbyi̇mp\tİSTANBUL MARMARA PARK Yöneticisi\tbyi̇mp@kebanfood.com\n900457\tbyi̇mr1\tİSTANBUL MİRKELAM 1 Yöneticisi\tbyi̇mr1@kebanfood.com\n900458\tbyi̇mr2\tİSTANBUL MİRKELAM 2 Yöneticisi\tbyi̇mr2@kebanfood.com\n900459\tbyi̇oa\tİSTANBUL OASİS AVM Yöneticisi\tbyi̇oa@kebanfood.com\n900460\tbyi̇or\tİSTANBUL ORTAKÖY Yöneticisi\tbyi̇or@kebanfood.com\n900461\tbyi̇pe\tİSTANBUL PELİCAN AVM Yöneticisi\tbyi̇pe@kebanfood.com\n900462\tbyi̇pen\tİSTANBUL PENDİK Yöneticisi\tbyi̇pen@kebanfood.com\n900463\tbyi̇pel\tİSTANBUL PENDİK LENS Yöneticisi\tbyi̇pel@kebanfood.com\n900464\tbyi̇se\tİSTANBUL SEFAKÖY Yöneticisi\tbyi̇se@kebanfood.com\n900465\tbyi̇sbc\tİSTANBUL SUADİYE- BAĞDAT CADDESİ Yöneticisi\tbyi̇sbc@kebanfood.com\n900466\tbyi̇su\tİSTANBUL SULTANGAZİ Yöneticisi\tbyi̇su@kebanfood.com\n900467\tbyi̇şe\tİSTANBUL ŞERİFALİ Yöneticisi\tbyi̇şe@kebanfood.com\n900468\tbyi̇şi̇\tİSTANBUL ŞİRİNEVLER Yöneticisi\tbyi̇şi̇@kebanfood.com\n900469\tbyi̇şi̇m\tİSTANBUL ŞİRİNEVLER MEYDAN Yöneticisi\tbyi̇şi̇m@kebanfood.com\n900470\tbyi̇şi̇ş\tİSTANBUL ŞİŞLİ Yöneticisi\tbyi̇şi̇ş@kebanfood.com\n900471\tbyi̇ta\tİSTANBUL TAKSİM Yöneticisi\tbyi̇ta@kebanfood.com\n900472\tbyi̇to\tİSTANBUL TORİUM AVM Yöneticisi\tbyi̇to@kebanfood.com\n900473\tbyi̇üm\tİSTANBUL ÜMRANİYE Yöneticisi\tbyi̇üm@kebanfood.com\n900474\tbyi̇üma\tİSTANBUL ÜMRANİYE MEYDAN AVM Yöneticisi\tbyi̇üma@kebanfood.com\n900475\tbyi̇üs\tİSTANBUL ÜSKÜDAR Yöneticisi\tbyi̇üs@kebanfood.com\n900476\tbyi̇ve\tİSTANBUL VENEZİA AVM Yöneticisi\tbyi̇ve@kebanfood.com\n900477\tbyi̇vi̇a\tİSTANBUL VİALAND Yöneticisi\tbyi̇vi̇a@kebanfood.com\n900479\tbyi̇vi̇m\tİSTANBUL VİAMARİNE Yöneticisi\tbyi̇vi̇m@kebanfood.com\n900480\tbyi̇vi̇p\tİSTANBUL VİAPORT Yöneticisi\tbyi̇vi̇p@kebanfood.com\n900481\tbyi̇ya\tİSTANBUL YAYLA Yöneticisi\tbyi̇ya@kebanfood.com\n900482\tbyi̇ze\tİSTANBUL ZEYTİNBURNU CADDE Yöneticisi\tbyi̇ze@kebanfood.com\n900483\tbyi̇zha\tİZMİR HATAY Yöneticisi\tbyi̇zha@kebanfood.com\n900484\tbyi̇zhi̇\tİZMİR HİLLTOWN AVM Yöneticisi\tbyi̇zhi̇@kebanfood.com\n900485\tbyi̇zkü\tİZMİR KÜÇÜKPARK Yöneticisi\tbyi̇zkü@kebanfood.com\n900486\tbyi̇zop\tİZMİR OPTİMUM Yöneticisi\tbyi̇zop@kebanfood.com\n900487\tbykog\tKOCAELİ GEBZE Yöneticisi\tbykog@kebanfood.com\n900488\tbykoi̇\tKOCAELİ İZMİT Yöneticisi\tbykoi̇@kebanfood.com\n900489\tbykoş\tKOCAELİ ŞEKERPINAR Yöneticisi\tbykoş@kebanfood.com\n900490\tbymoi̇\tMALL OF İSTANBUL Yöneticisi\tbymoi̇@kebanfood.com\n900491\tbymuf\tMUĞLA FETHİYE Yöneticisi\tbymuf@kebanfood.com\n900492\tbymum\tMUĞLA MARMARİS Yöneticisi\tbymum@kebanfood.com\n900493\tbyri̇z\tRİZE Yöneticisi\tbyri̇z@kebanfood.com\n900494\tbysak\tSAKARYA 54 AVM Yöneticisi\tbysak@kebanfood.com\n900495\tbyteç\tTEKİRDAĞ ÇORLU Yöneticisi\tbyteç@kebanfood.com\n900496\tbyvad\tVADİ İSTANBUL AVM Yöneticisi\tbyvad@kebanfood.com\n",
+  "stderr": "",
+  "execution_time_ms": 1790
+}

@@ -1,0 +1,55 @@
+{
+  "query": "SELECT * FROM positions;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SELECT * FROM positions;",
+  "rows": [
+    {
+      "id": "5",
+      "name": "SERVIS",
+      "displayName": "Servis",
+      "description": "NULL",
+      "isActive": "1",
+      "createdAt": "2026-03-17 14:17:48",
+      "updatedAt": "2026-03-17 14:17:48"
+    },
+    {
+      "id": "6",
+      "name": "RESTORAN_YONETIMI",
+      "displayName": "Restoran Yönetimi",
+      "description": "NULL",
+      "isActive": "1",
+      "createdAt": "2026-03-17 14:17:48",
+      "updatedAt": "2026-03-17 14:17:48"
+    },
+    {
+      "id": "7",
+      "name": "IZGARA_YONETICI",
+      "displayName": "Izgara Yöneticisi",
+      "description": "NULL",
+      "isActive": "1",
+      "createdAt": "2026-03-17 14:17:48",
+      "updatedAt": "2026-03-17 14:17:48"
+    },
+    {
+      "id": "8",
+      "name": "KASA",
+      "displayName": "Kasa",
+      "description": "NULL",
+      "isActive": "1",
+      "createdAt": "2026-03-17 14:17:48",
+      "updatedAt": "2026-03-17 14:17:48"
+    },
+    {
+      "id": "90002",
+      "name": "IZGARA",
+      "displayName": "IZGARA",
+      "description": "NULL",
+      "isActive": "1",
+      "createdAt": "2026-03-18 05:21:19",
+      "updatedAt": "2026-03-18 05:21:19"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tname\tdisplayName\tdescription\tisActive\tcreatedAt\tupdatedAt\n5\tSERVIS\tServis\tNULL\t1\t2026-03-17 14:17:48\t2026-03-17 14:17:48\n6\tRESTORAN_YONETIMI\tRestoran Yönetimi\tNULL\t1\t2026-03-17 14:17:48\t2026-03-17 14:17:48\n7\tIZGARA_YONETICI\tIzgara Yöneticisi\tNULL\t1\t2026-03-17 14:17:48\t2026-03-17 14:17:48\n8\tKASA\tKasa\tNULL\t1\t2026-03-17 14:17:48\t2026-03-17 14:17:48\n90002\tIZGARA\tIZGARA\tNULL\t1\t2026-03-18 05:21:19\t2026-03-18 05:21:19\n",
+  "stderr": "",
+  "execution_time_ms": 1552
+}

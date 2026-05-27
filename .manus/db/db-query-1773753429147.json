@@ -1,0 +1,40 @@
+{
+  "query": "SELECT pc.id, pc.name, pq.id as question_id, pq.questionText FROM position_categories pc LEFT JOIN position_questions pq ON pc.id = pq.categoryId WHERE pc.positionId = 3 ORDER BY pc.`order`, pq.`order` LIMIT 20;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SELECT pc.id, pc.name, pq.id as question_id, pq.questionText FROM position_categories pc LEFT JOIN position_questions pq ON pc.id = pq.categoryId WHERE pc.positionId = 3 ORDER BY pc.`order`, pq.`order` LIMIT 20;",
+  "rows": [
+    {
+      "id": "60008",
+      "name": "Görev Bilinci",
+      "question_id": "NULL",
+      "questionText": "NULL"
+    },
+    {
+      "id": "60009",
+      "name": "İletişim Becerisi",
+      "question_id": "NULL",
+      "questionText": "NULL"
+    },
+    {
+      "id": "60010",
+      "name": "Planlama ve Organize Etme",
+      "question_id": "NULL",
+      "questionText": "NULL"
+    },
+    {
+      "id": "60011",
+      "name": "İş Disiplini ve Tutum",
+      "question_id": "NULL",
+      "questionText": "NULL"
+    },
+    {
+      "id": "60012",
+      "name": "Kasa",
+      "question_id": "NULL",
+      "questionText": "NULL"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tname\tquestion_id\tquestionText\n60008\tGörev Bilinci\tNULL\tNULL\n60009\tİletişim Becerisi\tNULL\tNULL\n60010\tPlanlama ve Organize Etme\tNULL\tNULL\n60011\tİş Disiplini ve Tutum\tNULL\tNULL\n60012\tKasa\tNULL\tNULL\n",
+  "stderr": "",
+  "execution_time_ms": 1586
+}

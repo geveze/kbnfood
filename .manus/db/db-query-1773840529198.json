@@ -1,0 +1,37 @@
+{
+  "query": "SELECT DISTINCT dimension, COUNT(*) as count FROM kpi_targets GROUP BY dimension;\nSELECT branchId, COUNT(*) as count FROM kpi_targets GROUP BY branchId;\nSELECT * FROM kpi_targets LIMIT 5;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SELECT DISTINCT dimension, COUNT(*) as count FROM kpi_targets GROUP BY dimension;\nSELECT branchId, COUNT(*) as count FROM kpi_targets GROUP BY branchId;\nSELECT * FROM kpi_targets LIMIT 5;",
+  "rows": [
+    {
+      "dimension": "İnsan",
+      "count": "3"
+    },
+    {
+      "dimension": "Finans",
+      "count": "5"
+    },
+    {
+      "dimension": "Müşteri",
+      "count": "2"
+    },
+    {
+      "dimension": "branchId",
+      "count": "count"
+    },
+    {
+      "dimension": "30050",
+      "count": "10"
+    }
+  ],
+  "messages": [
+    "id\tbranchId\tdimension\ttarget\tdescription\tunit\tfrequency\tweight\tlowerLimit\ttargetValue\tupperLimit\tcreatedAt\tupdatedAt",
+    "30042\t30050\tFinans\tCiro /Hamburger Adedi\tAylık Restoran Cirosu / Satılan Hamburger Adedi\tTL\tAylık\t15.00\t6460000.00\t6800000.00\t7820000.00\t2026-03-18 13:24:25\t2026-03-18 13:24:25",
+    "30043\t30050\tFinans\tKarlılık\tAylık Net Kar %si - Kira ve sabit giderlerden arındırılmış\t%\tAylık\t15.00\t0.00\t0.00\t0.00\t2026-03-18 13:24:25\t2026-03-18 13:24:25",
+    "30044\t30050\tFinans\tYan Ürün Satışı\t100 Burger Başına Satış /  Yan Ürün Satışı\t%\tAylık\t10.00\t0.05\t0.06\t0.06\t2026-03-18 13:24:25\t2026-03-18 13:24:25",
+    "30045\t30050\tFinans\tEnerji ve Bakım Onarım Gideri\tEnerji ve Sabit Giderler / Toplam Ciro\t%\tAylık\t0.00\t0.03\t0.03\t0.03\t2026-03-18 13:24:26\t2026-03-18 13:24:26",
+    "30046\t30050\tFinans\tGıda/ Malzeme Maliyeti\tMalzeme Gideri / Toplam Gider\t%\tAylık\t10.00\t0.50\t0.45\t0.40\t2026-03-18 13:24:26\t2026-03-18 13:24:26"
+  ],
+  "stdout": "dimension\tcount\nİnsan\t3\nFinans\t5\nMüşteri\t2\nbranchId\tcount\n30050\t10\nid\tbranchId\tdimension\ttarget\tdescription\tunit\tfrequency\tweight\tlowerLimit\ttargetValue\tupperLimit\tcreatedAt\tupdatedAt\n30042\t30050\tFinans\tCiro /Hamburger Adedi\tAylık Restoran Cirosu / Satılan Hamburger Adedi\tTL\tAylık\t15.00\t6460000.00\t6800000.00\t7820000.00\t2026-03-18 13:24:25\t2026-03-18 13:24:25\n30043\t30050\tFinans\tKarlılık\tAylık Net Kar %si - Kira ve sabit giderlerden arındırılmış\t%\tAylık\t15.00\t0.00\t0.00\t0.00\t2026-03-18 13:24:25\t2026-03-18 13:24:25\n30044\t30050\tFinans\tYan Ürün Satışı\t100 Burger Başına Satış /  Yan Ürün Satışı\t%\tAylık\t10.00\t0.05\t0.06\t0.06\t2026-03-18 13:24:25\t2026-03-18 13:24:25\n30045\t30050\tFinans\tEnerji ve Bakım Onarım Gideri\tEnerji ve Sabit Giderler / Toplam Ciro\t%\tAylık\t0.00\t0.03\t0.03\t0.03\t2026-03-18 13:24:26\t2026-03-18 13:24:26\n30046\t30050\tFinans\tGıda/ Malzeme Maliyeti\tMalzeme Gideri / Toplam Gider\t%\tAylık\t10.00\t0.50\t0.45\t0.40\t2026-03-18 13:24:26\t2026-03-18 13:24:26\n",
+  "stderr": "",
+  "execution_time_ms": 2093
+}

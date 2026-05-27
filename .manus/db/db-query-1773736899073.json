@@ -1,0 +1,90 @@
+{
+  "query": "SELECT id, username FROM users WHERE role = 'branch_manager' ORDER BY username LIMIT 20;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SELECT id, username FROM users WHERE role = 'branch_manager' ORDER BY username LIMIT 20;",
+  "rows": [
+    {
+      "id": "900118",
+      "username": "beykent"
+    },
+    {
+      "id": "900413",
+      "username": "by2"
+    },
+    {
+      "id": "900416",
+      "username": "byaaa"
+    },
+    {
+      "id": "900417",
+      "username": "byaac"
+    },
+    {
+      "id": "900415",
+      "username": "byafy"
+    },
+    {
+      "id": "900418",
+      "username": "byaye"
+    },
+    {
+      "id": "900419",
+      "username": "bybkm"
+    },
+    {
+      "id": "900420",
+      "username": "byböz"
+    },
+    {
+      "id": "900422",
+      "username": "bydfa"
+    },
+    {
+      "id": "900423",
+      "username": "byesk"
+    },
+    {
+      "id": "900424",
+      "username": "bygsa"
+    },
+    {
+      "id": "900426",
+      "username": "byi̇af"
+    },
+    {
+      "id": "900425",
+      "username": "byi̇ak"
+    },
+    {
+      "id": "900427",
+      "username": "byi̇ar"
+    },
+    {
+      "id": "900429",
+      "username": "byi̇aç"
+    },
+    {
+      "id": "900428",
+      "username": "byi̇aü"
+    },
+    {
+      "id": "900430",
+      "username": "byi̇ba"
+    },
+    {
+      "id": "900432",
+      "username": "byi̇be"
+    },
+    {
+      "id": "900433",
+      "username": "byi̇bey"
+    },
+    {
+      "id": "900434",
+      "username": "byi̇bk"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tusername\n900118\tbeykent\n900413\tby2\n900416\tbyaaa\n900417\tbyaac\n900415\tbyafy\n900418\tbyaye\n900419\tbybkm\n900420\tbyböz\n900422\tbydfa\n900423\tbyesk\n900424\tbygsa\n900426\tbyi̇af\n900425\tbyi̇ak\n900427\tbyi̇ar\n900429\tbyi̇aç\n900428\tbyi̇aü\n900430\tbyi̇ba\n900432\tbyi̇be\n900433\tbyi̇bey\n900434\tbyi̇bk\n",
+  "stderr": "",
+  "execution_time_ms": 1520
+}

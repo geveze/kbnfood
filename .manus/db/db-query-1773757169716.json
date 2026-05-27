@@ -1,0 +1,20 @@
+{
+  "query": "SELECT pc.id, pc.name, COUNT(pq.id) as questionCount FROM position_categories pc LEFT JOIN position_questions pq ON pc.id = pq.categoryId WHERE pc.positionId = 8 GROUP BY pc.id, pc.name",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SELECT pc.id, pc.name, COUNT(pq.id) as questionCount FROM position_categories pc LEFT JOIN position_questions pq ON pc.id = pq.categoryId WHERE pc.positionId = 8 GROUP BY pc.id, pc.name",
+  "rows": [
+    {
+      "id": "60121",
+      "name": "İş Disiplini ve Tutum",
+      "questionCount": "0"
+    },
+    {
+      "id": "60120",
+      "name": "Planlama ve Organize Etme",
+      "questionCount": "0"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tname\tquestionCount\n60121\tİş Disiplini ve Tutum\t0\n60120\tPlanlama ve Organize Etme\t0\n",
+  "stderr": "",
+  "execution_time_ms": 1574
+}

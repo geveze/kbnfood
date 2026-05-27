@@ -1,0 +1,153 @@
+import mysql from 'mysql2/promise';
+
+async function setup() {
+  let sysConn, appConn;
+  try {
+    console.log('📡 TiDB Cloud sys database\'e bağlanıyor...');
+    sysConn = await mysql.createConnection({
+      host: 'gateway01.eu-central-1.prod.aws.tidbcloud.com',
+      port: 4000,
+      user: '2UkMMcfEvYMQNtS.root',
+      password: 'pRancyW9vAymmp8c',
+      database: 'sys',
+      ssl: { rejectUnauthorized: false, minVersion: 'TLSv1.2' }
+    });
+    console.log('✓ sys database\'e bağlantı başarılı');
+    
+    console.log('\n📦 keban_app database oluşturuluyor...');
+    await sysConn.execute('CREATE DATABASE IF NOT EXISTS keban_app');
+    console.log('✓ keban_app database oluşturuldu');
+    await sysConn.end();
+    
+    console.log('\n📡 keban_app database\'e bağlanıyor...');
+    appConn = await mysql.createConnection({
+      host: 'gateway01.eu-central-1.prod.aws.tidbcloud.com',
+      port: 4000,
+      user: '2UkMMcfEvYMQNtS.root',
+      password: 'pRancyW9vAymmp8c',
+      database: 'keban_app',
+      ssl: { rejectUnauthorized: false, minVersion: 'TLSv1.2' }
+    });
+    console.log('✓ keban_app database\'e bağlantı başarılı');
+    
+    console.log('\n📋 Tablolar oluşturuluyor...');
+    await appConn.execute(`
+      CREATE TABLE IF NOT EXISTS field_inspection_categories (
+        id INT AUTO_INCREMENT PRIMARY KEY,
+        name VARCHAR(255) NOT NULL UNIQUE,
+        description TEXT,
+        weight DECIMAL(5, 2) DEFAULT 0,
+        \`order\` INT DEFAULT 0,
+        createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+        updatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+      )
+    `);
+    console.log('✓ field_inspection_categories tablosu oluşturuldu');
+    
+    await appConn.execute(`
+      CREATE TABLE IF NOT EXISTS field_inspection_questions (
+        id INT AUTO_INCREMENT PRIMARY KEY,
+        categoryId INT NOT NULL,
+        questionText TEXT NOT NULL,
+        points INT DEFAULT 1,
+        maxScore INT DEFAULT 5,
+        isCritical BOOLEAN DEFAULT FALSE,
+        pointDeduction INT DEFAULT 0,
+        description TEXT,
+        \`order\` INT DEFAULT 0,
+        createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+        updatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+        FOREIGN KEY (categoryId) REFERENCES field_inspection_categories(id)
+      )
+    `);
+    console.log('✓ field_inspection_questions tablosu oluşturuldu');
+    
+    console.log('\n📝 Kategoriler ekleniyor...');
+    const categories = [
+      ['IZGARA / PİŞİRNE', 'Izgara ve pişirme alanı standartları'],
+      ['KASA - PAKET / PAZARYERİ', 'Kasa ve paket alanı standartları'],
+      ['RESTORAN TEMİZLİK VE DÜZEN', 'Restoran temizlik ve düzen standartları'],
+      ['EKİPMAN BAKIMLARI, GEREKLİ EVRAKLAR VE GIDA GÜVENLİĞİ', 'Ekipman bakımı ve gıda güvenliği'],
+      ['RESTORAN HİZMET VE KALİTE STANDARTLARI', 'Restoran hizmet ve kalite standartları']
+    ];
+    
+    for (const [name, desc] of categories) {
+      await appConn.execute(
+        'INSERT IGNORE INTO field_inspection_categories (name, description) VALUES (?, ?)',
+        [name, desc]
+      );
+    }
+    console.log(`✓ ${categories.length} kategori eklendi`);
+    
+    console.log('\n📝 Sorular ekleniyor...');
+    const questions = [
+      { cat: 'IZGARA / PİŞİRNE', text: 'SOĞUTUCU DOLAPLARIN İÇ VE DIŞ TEMİZLİKLERİ YETERLİ Mİ ?', points: 2, critical: 0 },
+      { cat: 'IZGARA / PİŞİRNE', text: 'IZGARDA KULLANILAN KÜÇÜK EKİPMAN TEMİZLİĞİ YETERLİ Mİ ?', points: 3, critical: 0 },
+      { cat: 'IZGARA / PİŞİRNE', text: 'ÇÖP KOVALARI PEDALLİ , TEMİZ VE AĞZI KAPALI', points: 2, critical: 0 },
+      { cat: 'IZGARA / PİŞİRNE', text: 'ET ÜRÜNLERINDE STANDARTLARA UYGUN MÜHÜRLEME', points: 3, critical: 1 },
+      { cat: 'IZGARA / PİŞİRNE', text: 'PLATE SICAKLIĞI ( 180 - 210 ) ARASINDA MI?', points: 3, critical: 1 },
+      { cat: 'IZGARA / PİŞİRNE', text: 'EZME ( KARAMALIZE ) İŞLEMİ UYGUN BİR ŞEKİLDE YAPILIYOR MU?', points: 2, critical: 0 },
+      { cat: 'IZGARA / PİŞİRNE', text: 'SMASH PİŞİRME İŞLEMİNDE ÇİĞ TARAFA TUZ, PİŞMİŞ TARAFA KARABIBER SERPİLİP YAĞ SÜZDÜRÜLÜYOR MÜ?', points: 5, critical: 0 },
+      { cat: 'IZGARA / PİŞİRNE', text: 'SMASH PİŞİRME İŞLEMİ TEMİZ İZGARADA YAPILIYOR MU ?', points: 5, critical: 0 },
+      { cat: 'IZGARA / PİŞİRNE', text: 'KARAMELIZE SOĞAN VE MANTAR REÇETEYE UYGUN HAZIRLANMIŞ MI?', points: 2, critical: 0 },
+      { cat: 'IZGARA / PİŞİRNE', text: 'EKMEK AÇMA TEZGAHINDA TÜM ÜRÜNLER VE SOSLAR MEVCUT', points: 3, critical: 0 },
+      { cat: 'IZGARA / PİŞİRNE', text: 'EKMEK SOSLAMA İÇİN UYGUN FİŞEKLER KULLANILIYOR MU?', points: 3, critical: 0 },
+      { cat: 'IZGARA / PİŞİRNE', text: 'EKMEK SKT KULLANIMA UYGUN YERİ TEMAS EDEN EKMEK KASASI YOK', points: 3, critical: 0 },
+      { cat: 'IZGARA / PİŞİRNE', text: 'EKMEKLER KESME APARATININ İÇERİSİNDE EŞİT BİR ŞEKİLDE KESİLİP, KARAMELIZE EDİLİYOR MU?', points: 3, critical: 0 },
+      { cat: 'IZGARA / PİŞİRNE', text: 'EKMEK SOSLAMA VE GARNİTÜR KULLANIMI REÇETEYE UYGUN MU?', points: 3, critical: 0 },
+      { cat: 'IZGARA / PİŞİRNE', text: 'TOASTER TEMİZLİĞİ YETERLİ, TEFLON KULLANIMA UYGUN', points: 3, critical: 0 },
+      { cat: 'IZGARA / PİŞİRNE', text: 'FRİTÖZ YAĞ SEVİYESİ YETERLİ Mİ ( İKİ ÇİZGİ ARASI )', points: 2, critical: 1 },
+      { cat: 'IZGARA / PİŞİRNE', text: 'BURGERLER SERVİS EDIRKEN BAYRAK KULLANILIYOR MU ?', points: 3, critical: 0 },
+      { cat: 'IZGARA / PİŞİRNE', text: 'PATATES PİŞİRME SÜRELERİNE DİKKAT EDİLİYOR MU ? ( 4 DK )', points: 3, critical: 1 },
+      { cat: 'IZGARA / PİŞİRNE', text: 'PATATES PİŞİRME İŞLEMİ SİPARİŞE GÖRE YAPILIYOR MU ?', points: 3, critical: 0 },
+      { cat: 'IZGARA / PİŞİRNE', text: 'PATATES PIŞIRME SÜRELERİ KONTROL ALTINDA MI?', points: 2, critical: 0 },
+      { cat: 'KASA - PAKET / PAZARYERİ', text: 'KASA ALANINDA TEMİZLİK VE DÜZEN YETERLİ Mİ?', points: 3, critical: 0 },
+      { cat: 'KASA - PAKET / PAZARYERİ', text: 'PAKET MALZEMELERİ UYGUN ŞEKİLDE SAKLANMIŞ MI?', points: 2, critical: 0 },
+      { cat: 'KASA - PAKET / PAZARYERİ', text: 'PAZARYERİ ÜRÜNLERI UYGUN KOŞULLARDA SAKLANMIŞ MI?', points: 3, critical: 0 },
+      { cat: 'RESTORAN TEMİZLİK VE DÜZEN', text: 'RESTORAN ALANINDA GENEL TEMİZLİK YETERLİ Mİ?', points: 3, critical: 0 },
+      { cat: 'RESTORAN TEMİZLİK VE DÜZEN', text: 'MASA VE SANDALYELER TEMİZ VE DÜZENLI Mİ?', points: 2, critical: 0 },
+      { cat: 'RESTORAN TEMİZLİK VE DÜZEN', text: 'ZEMIN TEMİZ VE KAYGAN DEĞİL Mİ?', points: 3, critical: 0 },
+      { cat: 'EKİPMAN BAKIMLARI, GEREKLİ EVRAKLAR VE GIDA GÜVENLİĞİ', text: 'EKİPMANLAR DÜZENLI OLARAK BAKIM YAPILIYOR MU?', points: 3, critical: 0 },
+      { cat: 'EKİPMAN BAKIMLARI, GEREKLİ EVRAKLAR VE GIDA GÜVENLİĞİ', text: 'GIDA GÜVENLİĞİ SERTIFIKASI MEVCUT MU?', points: 2, critical: 1 },
+      { cat: 'EKİPMAN BAKIMLARI, GEREKLİ EVRAKLAR VE GIDA GÜVENLİĞİ', text: 'GEREKLI YASAL EVRAKLAR HAZIR MI?', points: 2, critical: 0 },
+      { cat: 'RESTORAN HİZMET VE KALİTE STANDARTLARI', text: 'PERSONEL ÜNIFORMASI TEMİZ VE UYGUN MU?', points: 2, critical: 0 },
+      { cat: 'RESTORAN HİZMET VE KALİTE STANDARTLARI', text: 'HİZMET KALİTESİ YETERLİ MU?', points: 3, critical: 0 },
+      { cat: 'RESTORAN HİZMET VE KALİTE STANDARTLARI', text: 'MÜŞTERI MEMNUNİYETİ YETERLİ MU?', points: 3, critical: 0 }
+    ];
+    
+    for (const q of questions) {
+      const [catResult] = await appConn.execute(
+        'SELECT id FROM field_inspection_categories WHERE name = ?',
+        [q.cat]
+      );
+      
+      if (catResult.length > 0) {
+        await appConn.execute(
+          'INSERT IGNORE INTO field_inspection_questions (categoryId, questionText, points, isCritical) VALUES (?, ?, ?, ?)',
+          [catResult[0].id, q.text, q.points, q.critical]
+        );
+      }
+    }
+    console.log(`✓ ${questions.length} soru eklendi`);
+    
+    const [[{ total: totalQuestions }]] = await appConn.execute('SELECT COUNT(*) as total FROM field_inspection_questions');
+    const [[{ total: totalCategories }]] = await appConn.execute('SELECT COUNT(*) as total FROM field_inspection_categories');
+    const [[{ total: criticalQuestions }]] = await appConn.execute('SELECT COUNT(*) as total FROM field_inspection_questions WHERE isCritical = 1');
+    
+    console.log(`\n✅ BAŞARILI!`);
+    console.log(`📊 Toplam Sorular: ${totalQuestions}`);
+    console.log(`📂 Toplam Kategoriler: ${totalCategories}`);
+    console.log(`🔴 Kritik Sorular: ${criticalQuestions}`);
+    console.log(`\n📝 DATABASE_URL: mysql://2UkMMcfEvYMQNtS.root:pRancyW9vAymmp8c@gateway01.eu-central-1.prod.aws.tidbcloud.com:4000/keban_app`);
+    
+    await appConn.end();
+    process.exit(0);
+  } catch (error) {
+    console.error('❌ Hata:', error.message);
+    if (sysConn) await sysConn.end();
+    if (appConn) await appConn.end();
+    process.exit(1);
+  }
+}
+
+setup();

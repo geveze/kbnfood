@@ -1,0 +1,9 @@
+{
+  "query": "SET FOREIGN_KEY_CHECKS=0; DROP TABLE IF EXISTS periods; CREATE TABLE periods (\n  id INT AUTO_INCREMENT PRIMARY KEY,\n  name VARCHAR(50) NOT NULL UNIQUE,\n  year INT NOT NULL,\n  month INT NOT NULL,\n  startDate TIMESTAMP NOT NULL,\n  endDate TIMESTAMP NOT NULL,\n  isActive BOOLEAN NOT NULL DEFAULT true,\n  createdAt TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,\n  updatedAt TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP\n); SET FOREIGN_KEY_CHECKS=1;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SET FOREIGN_KEY_CHECKS=0; DROP TABLE IF EXISTS periods; CREATE TABLE periods (\n  id INT AUTO_INCREMENT PRIMARY KEY,\n  name VARCHAR(50) NOT NULL UNIQUE,\n  year INT NOT NULL,\n  month INT NOT NULL,\n  startDate TIMESTAMP NOT NULL,\n  endDate TIMESTAMP NOT NULL,\n  isActive BOOLEAN NOT NULL DEFAULT true,\n  createdAt TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,\n  updatedAt TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP\n); SET FOREIGN_KEY_CHECKS=1;",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 2454
+}

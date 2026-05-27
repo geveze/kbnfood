@@ -1,0 +1,35 @@
+{
+  "query": "SELECT id, positionId, name FROM position_categories WHERE positionId = 5 ORDER BY id LIMIT 5;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SELECT id, positionId, name FROM position_categories WHERE positionId = 5 ORDER BY id LIMIT 5;",
+  "rows": [
+    {
+      "id": "90063",
+      "positionId": "5",
+      "name": "Görev Bilinci"
+    },
+    {
+      "id": "90064",
+      "positionId": "5",
+      "name": "İletişim Becerisi"
+    },
+    {
+      "id": "90065",
+      "positionId": "5",
+      "name": "Analitik Düşünme ve Problem Çözme"
+    },
+    {
+      "id": "90066",
+      "positionId": "5",
+      "name": "Kalite Odaklılık"
+    },
+    {
+      "id": "90067",
+      "positionId": "5",
+      "name": "Takım Çalışması ve İşbirliği"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tpositionId\tname\n90063\t5\tGörev Bilinci\n90064\t5\tİletişim Becerisi\n90065\t5\tAnalitik Düşünme ve Problem Çözme\n90066\t5\tKalite Odaklılık\n90067\t5\tTakım Çalışması ve İşbirliği\n",
+  "stderr": "",
+  "execution_time_ms": 1582
+}

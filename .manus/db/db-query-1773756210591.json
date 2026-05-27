@@ -1,0 +1,60 @@
+{
+  "query": "SELECT \n  pc.id as category_id,\n  pc.name as category_name,\n  COUNT(pq.id) as question_count\nFROM position_categories pc\nLEFT JOIN position_questions pq ON pc.id = pq.categoryId\nWHERE pc.positionId = 8\nGROUP BY pc.id, pc.name\nORDER BY pc.id;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SELECT \n  pc.id as category_id,\n  pc.name as category_name,\n  COUNT(pq.id) as question_count\nFROM position_categories pc\nLEFT JOIN position_questions pq ON pc.id = pq.categoryId\nWHERE pc.positionId = 8\nGROUP BY pc.id, pc.name\nORDER BY pc.id;",
+  "rows": [
+    {
+      "category_id": "60094",
+      "category_name": "Görev Bilinci",
+      "question_count": "4"
+    },
+    {
+      "category_id": "60095",
+      "category_name": "İletişim Becerisi",
+      "question_count": "4"
+    },
+    {
+      "category_id": "60096",
+      "category_name": "Analitik Düşünme ve Problem Çözme",
+      "question_count": "4"
+    },
+    {
+      "category_id": "60097",
+      "category_name": "Kalite Odaklılık",
+      "question_count": "4"
+    },
+    {
+      "category_id": "60098",
+      "category_name": "Takım Çalışması ve İşbirliği",
+      "question_count": "4"
+    },
+    {
+      "category_id": "60099",
+      "category_name": "Müşteri Odaklılık",
+      "question_count": "4"
+    },
+    {
+      "category_id": "60100",
+      "category_name": "Ticari Bakış",
+      "question_count": "3"
+    },
+    {
+      "category_id": "60101",
+      "category_name": "Planlama ve Organize Etme",
+      "question_count": "3"
+    },
+    {
+      "category_id": "60102",
+      "category_name": "İş Disiplini ve Tutum",
+      "question_count": "4"
+    },
+    {
+      "category_id": "60103",
+      "category_name": "Kasa",
+      "question_count": "6"
+    }
+  ],
+  "messages": [],
+  "stdout": "category_id\tcategory_name\tquestion_count\n60094\tGörev Bilinci\t4\n60095\tİletişim Becerisi\t4\n60096\tAnalitik Düşünme ve Problem Çözme\t4\n60097\tKalite Odaklılık\t4\n60098\tTakım Çalışması ve İşbirliği\t4\n60099\tMüşteri Odaklılık\t4\n60100\tTicari Bakış\t3\n60101\tPlanlama ve Organize Etme\t3\n60102\tİş Disiplini ve Tutum\t4\n60103\tKasa\t6\n",
+  "stderr": "",
+  "execution_time_ms": 1497
+}

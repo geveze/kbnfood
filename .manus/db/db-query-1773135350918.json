@@ -1,0 +1,4024 @@
+{
+  "query": "-- Çift KPI maddelerini tespit et\nSELECT \n  `period`, \n  `branchName`, \n  `target`, \n  COUNT(*) as count\nFROM `kpi_target_cards_detail`\nGROUP BY `period`, `branchName`, `target`\nHAVING COUNT(*) > 1\nORDER BY count DESC;\n\n-- Çift KPI maddelerini teke düşür - her grup için ilk kaydı tut, diğerlerini sil\nDELETE FROM `kpi_target_cards_detail`\nWHERE `id` NOT IN (\n  SELECT MIN(`id`)\n  FROM (\n    SELECT MIN(`id`) as `id`\n    FROM `kpi_target_cards_detail`\n    GROUP BY `period`, `branchName`, `target`\n  ) as keep_ids\n);",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute -- Çift KPI maddelerini tespit et\nSELECT \n  `period`, \n  `branchName`, \n  `target`, \n  COUNT(*) as count\nFROM `kpi_target_cards_detail`\nGROUP BY `period`, `branchName`, `target`\nHAVING COUNT(*) > 1\nORDER BY count DESC;\n\n-- Çift KPI maddelerini teke düşür - her grup için ilk kaydı tut, diğerlerini sil\nDELETE FROM `kpi_target_cards_detail`\nWHERE `id` NOT IN (\n  SELECT MIN(`id`)\n  FROM (\n    SELECT MIN(`id`) as `id`\n    FROM `kpi_target_cards_detail`\n    GROUP BY `period`, `branchName`, `target`\n  ) as keep_ids\n);",
+  "rows": [
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL VİAMARİNE",
+      "target": "Şube Denetim",
+      "count": "4"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL CADDEBOSTAN",
+      "target": "Şube Denetim",
+      "count": "4"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ISPARTAKULE",
+      "target": "Norm Kadro Doluluk Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ŞİRİNEVLER  MEYDAN",
+      "target": "Eğitim Performans Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY MUĞLA FETHİYE",
+      "target": "Eğitim Performans Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL MİRKELAM 2",
+      "target": "Şube Denetim",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY ANTALYA ALANYA CADDE",
+      "target": "Müşteri Şikayet Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL GAZİOSMANPAŞA",
+      "target": "Müşteri Şikayet Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ATLAS ÜNİVERSİTESİ",
+      "target": "Google/Pazar Yerleri Puanı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ŞİRİNEVLER ",
+      "target": "İşgücü Devir Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY SAKARYA 54 AVM",
+      "target": "Müşteri Şikayet Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL BEYLİKDÜZÜ KAVAKLI ",
+      "target": "İşgücü Devir Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL KOCA MUSTAFA PAŞA",
+      "target": "Google/Pazar Yerleri Puanı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL BEŞİKTAŞ",
+      "target": "Karlılık",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ŞİRİNEVLER  MEYDAN",
+      "target": "Karlılık",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL AKSARAY ",
+      "target": "Personel Maliyeti",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL VENEZİA AVM",
+      "target": "Ciro /Hamburger Adedi",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL GELİŞİM ÜNİVERSİTESİ",
+      "target": "Eğitim Performans Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL MARMARA FORUM",
+      "target": "Yan Ürün Satışı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ÜMRANİYE MEYDAN AVM",
+      "target": "Gıda/ Malzeme Maliyeti",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY ANTALYA ALANYA AKDENİZ AVM",
+      "target": "Google/Pazar Yerleri Puanı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL OASİS AVM",
+      "target": "Şube Denetim",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL KAĞITHANE",
+      "target": "Yan Ürün Satışı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY KOCAELİ ŞEKERPINAR",
+      "target": "Yan Ürün Satışı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY MUĞLA FETHİYE",
+      "target": "Norm Kadro Doluluk Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY MUĞLA MARMARİS",
+      "target": "Eğitim Performans Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY VADİ İSTANBUL AVM",
+      "target": "Gıda/ Malzeme Maliyeti",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL BEYKENT",
+      "target": "Şube Denetim",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY VADİ İSTANBUL AVM",
+      "target": "İşgücü Devir Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ISPARTAKULE",
+      "target": "Müşteri Şikayet Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL BAĞCILAR",
+      "target": "Norm Kadro Doluluk Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL VİAMARİNE",
+      "target": "Eğitim Performans Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ÜMRANİYE",
+      "target": "Google/Pazar Yerleri Puanı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY KOCAELİ GEBZE",
+      "target": "Eğitim Performans Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY AFYON WATERMALL",
+      "target": "Müşteri Şikayet Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL VENEZİA AVM",
+      "target": "Yan Ürün Satışı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL İFM AVM",
+      "target": "Ciro /Hamburger Adedi",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL SEFAKÖY ",
+      "target": "Personel Maliyeti",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL TORİUM AVM",
+      "target": "Enerji ve Bakım Onarım Gideri",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY AYDIN EFELER ",
+      "target": "Şube Denetim",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ÜMRANİYE MEYDAN AVM",
+      "target": "Karlılık",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ATLAS ÜNİVERSİTESİ",
+      "target": "Ciro /Hamburger Adedi",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ÇAPA",
+      "target": "Müşteri Şikayet Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL MİRKELAM 1",
+      "target": "Müşteri Şikayet Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY KOCAELİ ŞEKERPINAR",
+      "target": "Ciro /Hamburger Adedi",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY ÇANAKKALE 17 BURDA AVM",
+      "target": "Eğitim Performans Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY AFYON WATERMALL",
+      "target": "Google/Pazar Yerleri Puanı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY AFYON WATERMALL",
+      "target": "Norm Kadro Doluluk Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL KARTAL CADDE",
+      "target": "Yan Ürün Satışı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY TEKİRDAĞ ÇORLU",
+      "target": "Eğitim Performans Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ÜMRANİYE",
+      "target": "Enerji ve Bakım Onarım Gideri",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL VİALAND",
+      "target": "Yan Ürün Satışı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL BEŞİKTAŞ",
+      "target": "Gıda/ Malzeme Maliyeti",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL BAKIRKÖY ",
+      "target": "Yan Ürün Satışı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İZMİR KÜÇÜKPARK",
+      "target": "Eğitim Performans Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL KARTAL CADDE",
+      "target": "Ciro /Hamburger Adedi",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL SEFAKÖY ",
+      "target": "Yan Ürün Satışı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL AQUA FLORYA",
+      "target": "Müşteri Şikayet Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL AVCILAR ÇARŞI",
+      "target": "Ciro /Hamburger Adedi",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ESENYURT",
+      "target": "Personel Maliyeti",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY BURSA ÖZLÜCE",
+      "target": "Google/Pazar Yerleri Puanı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY MALL OF İSTANBUL",
+      "target": "Google/Pazar Yerleri Puanı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL GAZİOSMANPAŞA",
+      "target": "Yan Ürün Satışı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ZEYTİNBURNU CADDE",
+      "target": "Müşteri Şikayet Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İZMİR HİLLTOWN AVM",
+      "target": "Enerji ve Bakım Onarım Gideri",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İZMİR HİLLTOWN AVM",
+      "target": "Yan Ürün Satışı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL MİRKELAM 2",
+      "target": "Eğitim Performans Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY BURSA KENT MEYDANI AVM",
+      "target": "Personel Maliyeti",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İZMİR HATAY ",
+      "target": "Enerji ve Bakım Onarım Gideri",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY GAZİANTEP SANKO AVM",
+      "target": "Müşteri Şikayet Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ESENYURT",
+      "target": "İşgücü Devir Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL BAKIRKÖY ",
+      "target": "İşgücü Devir Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY MUĞLA MARMARİS",
+      "target": "Gıda/ Malzeme Maliyeti",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL MİRKELAM 1",
+      "target": "Şube Denetim",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İZMİR HİLLTOWN AVM",
+      "target": "Ciro /Hamburger Adedi",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY DENİZLİ FORUM AVM",
+      "target": "Enerji ve Bakım Onarım Gideri",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL CEVAHİR AVM ",
+      "target": "Eğitim Performans Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL SULTANGAZİ",
+      "target": "Google/Pazar Yerleri Puanı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL BAKIRKÖY ",
+      "target": "Personel Maliyeti",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL VİAPORT",
+      "target": "Ciro /Hamburger Adedi",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ŞİRİNEVLER ",
+      "target": "Gıda/ Malzeme Maliyeti",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL HL. KARGO TER",
+      "target": "Şube Denetim",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY BURSA KENT MEYDANI AVM",
+      "target": "Ciro /Hamburger Adedi",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İZMİR HATAY ",
+      "target": "Google/Pazar Yerleri Puanı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL MALTEPE",
+      "target": "Karlılık",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL İFM AVM",
+      "target": "Müşteri Şikayet Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL MALTEPE",
+      "target": "Google/Pazar Yerleri Puanı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ZEYTİNBURNU CADDE",
+      "target": "Şube Denetim",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL VİAPORT",
+      "target": "Eğitim Performans Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL BAĞCILAR",
+      "target": "Ciro /Hamburger Adedi",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL BEYKENT",
+      "target": "Google/Pazar Yerleri Puanı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY ORDU NOVADA AVM",
+      "target": "Karlılık",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ŞİRİNEVLER  MEYDAN",
+      "target": "Enerji ve Bakım Onarım Gideri",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ATLAS ÜNİVERSİTESİ",
+      "target": "Norm Kadro Doluluk Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY DENİZLİ FORUM AVM",
+      "target": "Yan Ürün Satışı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL SUADİYE- BAĞDAT CADDESİ",
+      "target": "Google/Pazar Yerleri Puanı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL CENNET",
+      "target": "Yan Ürün Satışı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL MARMARA FORUM",
+      "target": "Şube Denetim",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL AKSARAY ",
+      "target": "Gıda/ Malzeme Maliyeti",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL CENNET",
+      "target": "Ciro /Hamburger Adedi",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ORTAKÖY",
+      "target": "Yan Ürün Satışı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY ESKİŞEHİR",
+      "target": "Eğitim Performans Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL TAKSİM ",
+      "target": "Eğitim Performans Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY SAKARYA 54 AVM",
+      "target": "Norm Kadro Doluluk Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL İFM AVM",
+      "target": "Eğitim Performans Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ZEYTİNBURNU CADDE",
+      "target": "Yan Ürün Satışı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL PENDİK",
+      "target": "Personel Maliyeti",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL TORİUM AVM",
+      "target": "Google/Pazar Yerleri Puanı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL KAYAŞEHİR",
+      "target": "Yan Ürün Satışı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY MUĞLA FETHİYE",
+      "target": "Müşteri Şikayet Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY VADİ İSTANBUL AVM",
+      "target": "Eğitim Performans Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL MİRKELAM 1",
+      "target": "Eğitim Performans Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY KOCAELİ İZMİT",
+      "target": "Eğitim Performans Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL GELİŞİM ÜNİVERSİTESİ",
+      "target": "Norm Kadro Doluluk Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ESENYURT",
+      "target": "Google/Pazar Yerleri Puanı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY ANTALYA ALANYA AKDENİZ AVM",
+      "target": "Yan Ürün Satışı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY KOCAELİ GEBZE",
+      "target": "Gıda/ Malzeme Maliyeti",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY KOCAELİ İZMİT",
+      "target": "Müşteri Şikayet Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL SULTANGAZİ",
+      "target": "Eğitim Performans Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY KOCAELİ ŞEKERPINAR",
+      "target": "Müşteri Şikayet Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İZMİR OPTİMUM",
+      "target": "Gıda/ Malzeme Maliyeti",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL VİALAND",
+      "target": "Enerji ve Bakım Onarım Gideri",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL PENDİK LENS",
+      "target": "Eğitim Performans Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL PELİCAN AVM",
+      "target": "Ciro /Hamburger Adedi",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ORTAKÖY",
+      "target": "Personel Maliyeti",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ŞERİFALİ ",
+      "target": "Şube Denetim",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY VADİ İSTANBUL AVM",
+      "target": "Yan Ürün Satışı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL VİAMARİNE",
+      "target": "Norm Kadro Doluluk Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL VİAMARİNE",
+      "target": "Yan Ürün Satışı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL MALTEPE",
+      "target": "Personel Maliyeti",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL VENEZİA AVM",
+      "target": "Eğitim Performans Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ÜSKÜDAR",
+      "target": "Google/Pazar Yerleri Puanı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL PENDİK LENS",
+      "target": "Yan Ürün Satışı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY MUĞLA MARMARİS",
+      "target": "Google/Pazar Yerleri Puanı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ORTAKÖY",
+      "target": "Müşteri Şikayet Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY ORDU NOVADA AVM",
+      "target": "Personel Maliyeti",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ŞİRİNEVLER  MEYDAN",
+      "target": "Google/Pazar Yerleri Puanı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY GAZİANTEP SANKO AVM",
+      "target": "Eğitim Performans Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ÇAPA",
+      "target": "Google/Pazar Yerleri Puanı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ŞİRİNEVLER ",
+      "target": "Enerji ve Bakım Onarım Gideri",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL MARMARA PARK",
+      "target": "Müşteri Şikayet Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL TORİUM AVM",
+      "target": "Yan Ürün Satışı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ÜMRANİYE MEYDAN AVM",
+      "target": "İşgücü Devir Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL GAZİOSMANPAŞA",
+      "target": "Eğitim Performans Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ARENAPARK AVM",
+      "target": "Gıda/ Malzeme Maliyeti",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY KOCAELİ GEBZE",
+      "target": "Personel Maliyeti",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ŞERİFALİ ",
+      "target": "Müşteri Şikayet Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ŞİRİNEVLER",
+      "target": "Karlılık",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY ÇANAKKALE 17 BURDA AVM",
+      "target": "Enerji ve Bakım Onarım Gideri",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL CADDEBOSTAN",
+      "target": "Ciro /Hamburger Adedi",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ESENLER",
+      "target": "Yan Ürün Satışı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ISPARTAKULE",
+      "target": "Yan Ürün Satışı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL CEVAHİR AVM ",
+      "target": "İşgücü Devir Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY KOCAELİ GEBZE",
+      "target": "İşgücü Devir Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ŞERİFALİ ",
+      "target": "Google/Pazar Yerleri Puanı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY ESKİŞEHİR",
+      "target": "İşgücü Devir Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL AVCILAR ÇARŞI",
+      "target": "Eğitim Performans Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL BEYKENT",
+      "target": "Eğitim Performans Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY RİZE",
+      "target": "Şube Denetim",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY KOCAELİ GEBZE",
+      "target": "Ciro /Hamburger Adedi",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL VENEZİA AVM",
+      "target": "Karlılık",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ÜSKÜDAR",
+      "target": "Ciro /Hamburger Adedi",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İZMİR HATAY ",
+      "target": "İşgücü Devir Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ESENYURT",
+      "target": "Yan Ürün Satışı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL KOCA MUSTAFA PAŞA",
+      "target": "Yan Ürün Satışı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL CEVAHİR AVM ",
+      "target": "Google/Pazar Yerleri Puanı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL SEFAKÖY ",
+      "target": "Gıda/ Malzeme Maliyeti",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL VİALAND",
+      "target": "Eğitim Performans Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL CENNET",
+      "target": "Norm Kadro Doluluk Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL İFM AVM",
+      "target": "Yan Ürün Satışı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY ANTALYA ALANYA CADDE",
+      "target": "Ciro /Hamburger Adedi",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL AKSARAY ",
+      "target": "Eğitim Performans Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ARENAPARK AVM",
+      "target": "Yan Ürün Satışı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İZMİR OPTİMUM",
+      "target": "Ciro /Hamburger Adedi",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ISPARTAKULE",
+      "target": "Google/Pazar Yerleri Puanı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ŞİRİNEVLER ",
+      "target": "Eğitim Performans Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ATLAS ÜNİVERSİTESİ",
+      "target": "Müşteri Şikayet Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL GELİŞİM ÜNİVERSİTESİ",
+      "target": "Google/Pazar Yerleri Puanı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL MARMARA PARK",
+      "target": "Şube Denetim",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY KOCAELİ GEBZE",
+      "target": "Yan Ürün Satışı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY AFYON WATERMALL",
+      "target": "Yan Ürün Satışı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL GELİŞİM ÜNİVERSİTESİ",
+      "target": "Yan Ürün Satışı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY KOCAELİ İZMİT",
+      "target": "Şube Denetim",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ATLAS ÜNİVERSİTESİ",
+      "target": "Yan Ürün Satışı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ŞİŞLİ ",
+      "target": "Eğitim Performans Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL İFM AVM",
+      "target": "Google/Pazar Yerleri Puanı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ÜMRANİYE MEYDAN AVM",
+      "target": "Ciro /Hamburger Adedi",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL BEŞİKTAŞ",
+      "target": "Google/Pazar Yerleri Puanı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ÜSKÜDAR",
+      "target": "Müşteri Şikayet Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL PENDİK",
+      "target": "Enerji ve Bakım Onarım Gideri",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ISPARTAKULE",
+      "target": "Şube Denetim",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY DENİZLİ FORUM AVM",
+      "target": "Google/Pazar Yerleri Puanı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ÜMRANİYE MEYDAN AVM",
+      "target": "Personel Maliyeti",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL SUADİYE- BAĞDAT CADDESİ",
+      "target": "Şube Denetim",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL HL. KARGO TER",
+      "target": "Yan Ürün Satışı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL PENDİK LENS",
+      "target": "Müşteri Şikayet Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY RİZE",
+      "target": "Yan Ürün Satışı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL KARTAL CADDE",
+      "target": "Şube Denetim",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL SUADİYE- BAĞDAT CADDESİ",
+      "target": "Yan Ürün Satışı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL GELİŞİM ÜNİVERSİTESİ",
+      "target": "Müşteri Şikayet Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL KOCA MUSTAFA PAŞA",
+      "target": "Enerji ve Bakım Onarım Gideri",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL KADIKÖY",
+      "target": "Eğitim Performans Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL AVCILAR ÇARŞI",
+      "target": "Yan Ürün Satışı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL MİRKELAM 2",
+      "target": "Google/Pazar Yerleri Puanı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ESENYURT",
+      "target": "Enerji ve Bakım Onarım Gideri",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL AQUA FLORYA",
+      "target": "Ciro /Hamburger Adedi",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ÜMRANİYE",
+      "target": "Karlılık",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ESENYURT",
+      "target": "Eğitim Performans Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL SUADİYE- BAĞDAT CADDESİ",
+      "target": "Ciro /Hamburger Adedi",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL BEYKENT",
+      "target": "Ciro /Hamburger Adedi",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY MALL OF İSTANBUL",
+      "target": "Eğitim Performans Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL KOCA MUSTAFA PAŞA",
+      "target": "Eğitim Performans Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL VİAPORT",
+      "target": "Google/Pazar Yerleri Puanı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İZMİR OPTİMUM",
+      "target": "Enerji ve Bakım Onarım Gideri",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY KOCAELİ GEBZE",
+      "target": "Google/Pazar Yerleri Puanı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY ÇANAKKALE 17 BURDA AVM",
+      "target": "Ciro /Hamburger Adedi",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL BEYLİKDÜZÜ KAVAKLI ",
+      "target": "Ciro /Hamburger Adedi",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL PENDİK",
+      "target": "Ciro /Hamburger Adedi",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL OASİS AVM",
+      "target": "Google/Pazar Yerleri Puanı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL AKSARAY ",
+      "target": "Google/Pazar Yerleri Puanı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL VENEZİA AVM",
+      "target": "İşgücü Devir Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL YAYLA ",
+      "target": "Müşteri Şikayet Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL KARTAL CADDE",
+      "target": "Google/Pazar Yerleri Puanı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ŞERİFALİ ",
+      "target": "Eğitim Performans Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ARENAPARK AVM",
+      "target": "Eğitim Performans Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İZMİR HİLLTOWN AVM",
+      "target": "Personel Maliyeti",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL SUADİYE- BAĞDAT CADDESİ",
+      "target": "Norm Kadro Doluluk Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ARENAPARK AVM",
+      "target": "İşgücü Devir Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL CEVAHİR AVM ",
+      "target": "Gıda/ Malzeme Maliyeti",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ORTAKÖY",
+      "target": "Google/Pazar Yerleri Puanı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ŞİŞLİ ",
+      "target": "Müşteri Şikayet Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İZMİR HİLLTOWN AVM",
+      "target": "Karlılık",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL AQUA FLORYA",
+      "target": "Google/Pazar Yerleri Puanı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL VİAPORT",
+      "target": "Müşteri Şikayet Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL BEYLİKDÜZÜ KAVAKLI ",
+      "target": "Google/Pazar Yerleri Puanı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL BEŞİKTAŞ",
+      "target": "İşgücü Devir Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL BEYLİKDÜZÜ KAVAKLI ",
+      "target": "Müşteri Şikayet Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ÜMRANİYE MEYDAN AVM",
+      "target": "Yan Ürün Satışı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY KOCAELİ ŞEKERPINAR",
+      "target": "Google/Pazar Yerleri Puanı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ŞERİFALİ ",
+      "target": "Ciro /Hamburger Adedi",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL CEVAHİR AVM ",
+      "target": "Müşteri Şikayet Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL MİRKELAM 1",
+      "target": "Ciro /Hamburger Adedi",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY DENİZLİ FORUM AVM",
+      "target": "Ciro /Hamburger Adedi",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL CEVAHİR AVM ",
+      "target": "Karlılık",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL BEYLİKDÜZÜ KAVAKLI ",
+      "target": "Enerji ve Bakım Onarım Gideri",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY BURSA KENT MEYDANI AVM",
+      "target": "Google/Pazar Yerleri Puanı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL VENEZİA AVM",
+      "target": "Google/Pazar Yerleri Puanı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL KOCA MUSTAFA PAŞA",
+      "target": "Gıda/ Malzeme Maliyeti",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL PENDİK LENS",
+      "target": "Ciro /Hamburger Adedi",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İZMİR HATAY ",
+      "target": "Müşteri Şikayet Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ÇAPA",
+      "target": "Eğitim Performans Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL VİAMARİNE",
+      "target": "Ciro /Hamburger Adedi",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY ESKİŞEHİR",
+      "target": "Personel Maliyeti",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL AKSARAY ",
+      "target": "Yan Ürün Satışı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL AVCILAR ÇARŞI",
+      "target": "İşgücü Devir Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL KAYAŞEHİR",
+      "target": "Müşteri Şikayet Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY BURSA KENT MEYDANI AVM",
+      "target": "Müşteri Şikayet Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL SULTANGAZİ",
+      "target": "Müşteri Şikayet Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL CADDEBOSTAN",
+      "target": "Müşteri Şikayet Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY MUĞLA MARMARİS",
+      "target": "Yan Ürün Satışı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY AFYON WATERMALL",
+      "target": "Şube Denetim",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY TEKİRDAĞ ÇORLU",
+      "target": "Google/Pazar Yerleri Puanı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İZMİR OPTİMUM",
+      "target": "Eğitim Performans Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL BAŞAKŞEHİR",
+      "target": "Müşteri Şikayet Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ÜMRANİYE",
+      "target": "Yan Ürün Satışı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL VİAPORT",
+      "target": "Yan Ürün Satışı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL MARMARA FORUM",
+      "target": "Müşteri Şikayet Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL TAKSİM ",
+      "target": "Ciro /Hamburger Adedi",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İZMİR OPTİMUM",
+      "target": "Google/Pazar Yerleri Puanı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL KAĞITHANE",
+      "target": "Norm Kadro Doluluk Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL HL. KARGO TER",
+      "target": "Müşteri Şikayet Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY SAKARYA 54 AVM",
+      "target": "Eğitim Performans Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL CENNET",
+      "target": "Şube Denetim",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL KAYAŞEHİR",
+      "target": "Şube Denetim",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL GAZİOSMANPAŞA",
+      "target": "Şube Denetim",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ARENAPARK AVM",
+      "target": "Ciro /Hamburger Adedi",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY ANTALYA ALANYA AKDENİZ AVM",
+      "target": "Şube Denetim",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ORTAKÖY",
+      "target": "Enerji ve Bakım Onarım Gideri",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL VİALAND",
+      "target": "Gıda/ Malzeme Maliyeti",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL HL. KARGO TER",
+      "target": "Eğitim Performans Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL MALTEPE",
+      "target": "Enerji ve Bakım Onarım Gideri",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ORTAKÖY",
+      "target": "Karlılık",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ESENLER",
+      "target": "Personel Maliyeti",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ÜMRANİYE MEYDAN AVM",
+      "target": "Eğitim Performans Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL CADDEBOSTAN",
+      "target": "Norm Kadro Doluluk Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ORTAKÖY",
+      "target": "Gıda/ Malzeme Maliyeti",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İZMİR HATAY ",
+      "target": "Ciro /Hamburger Adedi",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY SAKARYA 54 AVM",
+      "target": "Ciro /Hamburger Adedi",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL BAKIRKÖY ",
+      "target": "Karlılık",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ÜMRANİYE",
+      "target": "Ciro /Hamburger Adedi",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL KAĞITHANE",
+      "target": "Google/Pazar Yerleri Puanı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL MALTEPE",
+      "target": "İşgücü Devir Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL SULTANGAZİ",
+      "target": "Yan Ürün Satışı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL KOCA MUSTAFA PAŞA",
+      "target": "Karlılık",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL KAYAŞEHİR",
+      "target": "Google/Pazar Yerleri Puanı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY GAZİANTEP SANKO AVM",
+      "target": "Google/Pazar Yerleri Puanı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ESENYURT",
+      "target": "Müşteri Şikayet Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL CEVAHİR AVM ",
+      "target": "Yan Ürün Satışı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ŞİŞLİ ",
+      "target": "Enerji ve Bakım Onarım Gideri",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL YAYLA ",
+      "target": "Şube Denetim",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ŞİRİNEVLER ",
+      "target": "Google/Pazar Yerleri Puanı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL BEYLİKDÜZÜ KAVAKLI ",
+      "target": "Personel Maliyeti",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL MİRKELAM 2",
+      "target": "Müşteri Şikayet Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL MİRKELAM 1",
+      "target": "Yan Ürün Satışı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL FORUM İSTANBUL ",
+      "target": "Google/Pazar Yerleri Puanı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL BEŞİKTAŞ",
+      "target": "Personel Maliyeti",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY ÇANAKKALE 17 BURDA AVM",
+      "target": "Yan Ürün Satışı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İZMİR OPTİMUM",
+      "target": "Personel Maliyeti",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY KOCAELİ ŞEKERPINAR",
+      "target": "Eğitim Performans Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY DENİZLİ FORUM AVM",
+      "target": "Müşteri Şikayet Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ESENYURT",
+      "target": "Karlılık",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL SEFAKÖY ",
+      "target": "Eğitim Performans Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İZMİR HİLLTOWN AVM",
+      "target": "Eğitim Performans Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ÜMRANİYE",
+      "target": "Personel Maliyeti",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL CENNET",
+      "target": "Google/Pazar Yerleri Puanı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL AVCILAR ÇARŞI",
+      "target": "Enerji ve Bakım Onarım Gideri",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL OASİS AVM",
+      "target": "Norm Kadro Doluluk Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY BURSA ÖZLÜCE",
+      "target": "Eğitim Performans Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ZEYTİNBURNU CADDE",
+      "target": "Google/Pazar Yerleri Puanı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL TAKSİM ",
+      "target": "Şube Denetim",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY ESKİŞEHİR",
+      "target": "Müşteri Şikayet Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ZEYTİNBURNU CADDE",
+      "target": "Ciro /Hamburger Adedi",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ARENAPARK AVM",
+      "target": "Google/Pazar Yerleri Puanı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY DENİZLİ FORUM AVM",
+      "target": "İşgücü Devir Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ESENLER",
+      "target": "Gıda/ Malzeme Maliyeti",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL HL. KARGO TER",
+      "target": "Norm Kadro Doluluk Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY KOCAELİ GEBZE",
+      "target": "Enerji ve Bakım Onarım Gideri",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL KADIKÖY",
+      "target": "Yan Ürün Satışı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ŞİŞLİ ",
+      "target": "Personel Maliyeti",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL VENEZİA AVM",
+      "target": "Personel Maliyeti",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL VİAMARİNE",
+      "target": "Google/Pazar Yerleri Puanı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY KOCAELİ ŞEKERPINAR",
+      "target": "Şube Denetim",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY ÇANAKKALE 17 BURDA AVM",
+      "target": "İşgücü Devir Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL KAĞITHANE",
+      "target": "Ciro /Hamburger Adedi",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL VİALAND",
+      "target": "Google/Pazar Yerleri Puanı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL PELİCAN AVM",
+      "target": "Müşteri Şikayet Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ŞİRİNEVLER  MEYDAN",
+      "target": "Müşteri Şikayet Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL MARMARA PARK",
+      "target": "Yan Ürün Satışı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL KOCA MUSTAFA PAŞA",
+      "target": "Ciro /Hamburger Adedi",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL MALTEPE",
+      "target": "Yan Ürün Satışı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL KOCA MUSTAFA PAŞA",
+      "target": "Müşteri Şikayet Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY ANTALYA ALANYA CADDE",
+      "target": "Eğitim Performans Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY MUĞLA MARMARİS",
+      "target": "Müşteri Şikayet Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY ANTALYA ALANYA CADDE",
+      "target": "Yan Ürün Satışı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY ANTALYA ALANYA AKDENİZ AVM",
+      "target": "Norm Kadro Doluluk Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL VİALAND",
+      "target": "Personel Maliyeti",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL BAŞAKŞEHİR",
+      "target": "Şube Denetim",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İZMİR KÜÇÜKPARK",
+      "target": "Müşteri Şikayet Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY BURSA ÖZLÜCE",
+      "target": "Yan Ürün Satışı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL BEYKENT",
+      "target": "Müşteri Şikayet Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ESENLER",
+      "target": "Karlılık",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL PENDİK LENS",
+      "target": "Google/Pazar Yerleri Puanı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL TORİUM AVM",
+      "target": "Gıda/ Malzeme Maliyeti",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL KAYAŞEHİR",
+      "target": "Ciro /Hamburger Adedi",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL KARTAL CADDE",
+      "target": "Müşteri Şikayet Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İZMİR HATAY ",
+      "target": "Personel Maliyeti",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ŞİRİNEVLER  MEYDAN",
+      "target": "Yan Ürün Satışı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL MARMARA FORUM",
+      "target": "Ciro /Hamburger Adedi",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL MARMARA FORUM",
+      "target": "Google/Pazar Yerleri Puanı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ŞİŞLİ ",
+      "target": "Karlılık",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY ESKİŞEHİR",
+      "target": "Enerji ve Bakım Onarım Gideri",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ÜSKÜDAR",
+      "target": "Yan Ürün Satışı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL TORİUM AVM",
+      "target": "Eğitim Performans Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL TORİUM AVM",
+      "target": "Personel Maliyeti",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY ORDU NOVADA AVM",
+      "target": "Google/Pazar Yerleri Puanı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ŞİŞLİ ",
+      "target": "İşgücü Devir Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY KOCAELİ ŞEKERPINAR",
+      "target": "Norm Kadro Doluluk Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL BAKIRKÖY ",
+      "target": "Ciro /Hamburger Adedi",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İZMİR OPTİMUM",
+      "target": "Yan Ürün Satışı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY BURSA ÖZLÜCE",
+      "target": "Personel Maliyeti",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL PENDİK",
+      "target": "Müşteri Şikayet Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL FORUM İSTANBUL ",
+      "target": "Yan Ürün Satışı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL PENDİK",
+      "target": "Karlılık",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY ORDU NOVADA AVM",
+      "target": "Ciro /Hamburger Adedi",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL MARMARA PARK",
+      "target": "Norm Kadro Doluluk Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY SAKARYA 54 AVM",
+      "target": "Şube Denetim",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL KAĞITHANE",
+      "target": "Eğitim Performans Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY BURSA ÖZLÜCE",
+      "target": "Gıda/ Malzeme Maliyeti",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL VİALAND",
+      "target": "Ciro /Hamburger Adedi",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL KADIKÖY",
+      "target": "Müşteri Şikayet Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL VENEZİA AVM",
+      "target": "Müşteri Şikayet Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY MUĞLA FETHİYE",
+      "target": "Yan Ürün Satışı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY BURSA ÖZLÜCE",
+      "target": "Karlılık",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY ESKİŞEHİR",
+      "target": "Google/Pazar Yerleri Puanı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY ANTALYA ALANYA AKDENİZ AVM",
+      "target": "Eğitim Performans Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL MALTEPE",
+      "target": "Müşteri Şikayet Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ŞİŞLİ ",
+      "target": "Yan Ürün Satışı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL GELİŞİM ÜNİVERSİTESİ",
+      "target": "Ciro /Hamburger Adedi",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY ÇANAKKALE 17 BURDA AVM",
+      "target": "Karlılık",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL PENDİK",
+      "target": "Yan Ürün Satışı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL GAZİOSMANPAŞA",
+      "target": "Google/Pazar Yerleri Puanı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL KAYAŞEHİR",
+      "target": "Eğitim Performans Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL SULTANGAZİ",
+      "target": "Ciro /Hamburger Adedi",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL CEVAHİR AVM ",
+      "target": "Ciro /Hamburger Adedi",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL KARTAL CADDE",
+      "target": "Norm Kadro Doluluk Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ESENYURT",
+      "target": "Ciro /Hamburger Adedi",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL SEFAKÖY ",
+      "target": "Google/Pazar Yerleri Puanı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY ORDU NOVADA AVM",
+      "target": "Gıda/ Malzeme Maliyeti",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL BAKIRKÖY ",
+      "target": "Enerji ve Bakım Onarım Gideri",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL SUADİYE- BAĞDAT CADDESİ",
+      "target": "Eğitim Performans Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İZMİR HATAY ",
+      "target": "Eğitim Performans Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ÜSKÜDAR",
+      "target": "Norm Kadro Doluluk Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY KOCAELİ GEBZE",
+      "target": "Müşteri Şikayet Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY RİZE",
+      "target": "Google/Pazar Yerleri Puanı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL CADDEBOSTAN",
+      "target": "Google/Pazar Yerleri Puanı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL AVCILAR ÇARŞI",
+      "target": "Personel Maliyeti",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY VADİ İSTANBUL AVM",
+      "target": "Personel Maliyeti",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY ÇANAKKALE 17 BURDA AVM",
+      "target": "Google/Pazar Yerleri Puanı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL BAKIRKÖY ",
+      "target": "Müşteri Şikayet Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL KAĞITHANE",
+      "target": "Müşteri Şikayet Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL YAYLA ",
+      "target": "Yan Ürün Satışı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY TEKİRDAĞ ÇORLU",
+      "target": "Şube Denetim",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ZEYTİNBURNU CADDE",
+      "target": "Norm Kadro Doluluk Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL CADDEBOSTAN",
+      "target": "Yan Ürün Satışı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY BURSA KENT MEYDANI AVM",
+      "target": "Enerji ve Bakım Onarım Gideri",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL AVCILAR ÇARŞI",
+      "target": "Gıda/ Malzeme Maliyeti",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY DENİZLİ FORUM AVM",
+      "target": "Karlılık",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İZMİR HİLLTOWN AVM",
+      "target": "Gıda/ Malzeme Maliyeti",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL MALTEPE",
+      "target": "Gıda/ Malzeme Maliyeti",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL AVCILAR ÇARŞI",
+      "target": "Karlılık",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL KOCA MUSTAFA PAŞA",
+      "target": "Personel Maliyeti",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY MALL OF İSTANBUL",
+      "target": "Şube Denetim",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL SEFAKÖY ",
+      "target": "Enerji ve Bakım Onarım Gideri",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY VADİ İSTANBUL AVM",
+      "target": "Ciro /Hamburger Adedi",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL KAYAŞEHİR",
+      "target": "Norm Kadro Doluluk Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ŞİRİNEVLER  MEYDAN",
+      "target": "Ciro /Hamburger Adedi",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL YAYLA ",
+      "target": "Ciro /Hamburger Adedi",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İZMİR KÜÇÜKPARK",
+      "target": "Norm Kadro Doluluk Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY AFYON WATERMALL",
+      "target": "Eğitim Performans Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ÇAPA",
+      "target": "Norm Kadro Doluluk Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL MİRKELAM 1",
+      "target": "Google/Pazar Yerleri Puanı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY ANTALYA ALANYA AKDENİZ AVM",
+      "target": "Müşteri Şikayet Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY KOCAELİ İZMİT",
+      "target": "Google/Pazar Yerleri Puanı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL CENNET",
+      "target": "Eğitim Performans Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY ÇANAKKALE 17 BURDA AVM",
+      "target": "Gıda/ Malzeme Maliyeti",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ATLAS ÜNİVERSİTESİ",
+      "target": "Şube Denetim",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY RİZE",
+      "target": "Müşteri Şikayet Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ÜMRANİYE MEYDAN AVM",
+      "target": "Enerji ve Bakım Onarım Gideri",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ZEYTİNBURNU CADDE",
+      "target": "Eğitim Performans Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY GAZİANTEP SANKO AVM",
+      "target": "Norm Kadro Doluluk Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL GAZİOSMANPAŞA",
+      "target": "Norm Kadro Doluluk Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ORTAKÖY",
+      "target": "İşgücü Devir Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL BEYLİKDÜZÜ KAVAKLI ",
+      "target": "Gıda/ Malzeme Maliyeti",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY AYDIN EFELER ",
+      "target": "Eğitim Performans Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY ORDU NOVADA AVM",
+      "target": "Yan Ürün Satışı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İZMİR HATAY ",
+      "target": "Gıda/ Malzeme Maliyeti",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY KOCAELİ İZMİT",
+      "target": "Yan Ürün Satışı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY RİZE",
+      "target": "Ciro /Hamburger Adedi",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL BEYLİKDÜZÜ KAVAKLI ",
+      "target": "Yan Ürün Satışı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ŞİRİNEVLER  MEYDAN",
+      "target": "Gıda/ Malzeme Maliyeti",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL FORUM İSTANBUL ",
+      "target": "Norm Kadro Doluluk Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ŞİRİNEVLER ",
+      "target": "Müşteri Şikayet Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY ORDU NOVADA AVM",
+      "target": "İşgücü Devir Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY TEKİRDAĞ ÇORLU",
+      "target": "Yan Ürün Satışı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ŞERİFALİ ",
+      "target": "Norm Kadro Doluluk Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL MİRKELAM 1",
+      "target": "Norm Kadro Doluluk Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY MUĞLA FETHİYE",
+      "target": "Ciro /Hamburger Adedi",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL TAKSİM ",
+      "target": "Yan Ürün Satışı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL AVCILAR ÇARŞI",
+      "target": "Müşteri Şikayet Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL KADIKÖY",
+      "target": "Şube Denetim",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL PELİCAN AVM",
+      "target": "Google/Pazar Yerleri Puanı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY VADİ İSTANBUL AVM",
+      "target": "Karlılık",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL AQUA FLORYA",
+      "target": "Yan Ürün Satışı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY MUĞLA MARMARİS",
+      "target": "Enerji ve Bakım Onarım Gideri",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İZMİR KÜÇÜKPARK",
+      "target": "Yan Ürün Satışı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL BEYLİKDÜZÜ KAVAKLI ",
+      "target": "Karlılık",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL BAĞCILAR",
+      "target": "Müşteri Şikayet Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL BAŞAKŞEHİR",
+      "target": "Eğitim Performans Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY GAZİANTEP SANKO AVM",
+      "target": "Yan Ürün Satışı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL FORUM İSTANBUL ",
+      "target": "Şube Denetim",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY AYDIN EFELER ",
+      "target": "Müşteri Şikayet Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY BURSA KENT MEYDANI AVM",
+      "target": "Karlılık",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY ANTALYA ALANYA AKDENİZ AVM",
+      "target": "Ciro /Hamburger Adedi",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL GELİŞİM ÜNİVERSİTESİ",
+      "target": "Şube Denetim",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY MALL OF İSTANBUL",
+      "target": "Yan Ürün Satışı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ÇAPA",
+      "target": "Yan Ürün Satışı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL OASİS AVM",
+      "target": "Yan Ürün Satışı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL TAKSİM ",
+      "target": "Google/Pazar Yerleri Puanı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL SUADİYE- BAĞDAT CADDESİ",
+      "target": "Müşteri Şikayet Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ESENLER",
+      "target": "Müşteri Şikayet Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL VİALAND",
+      "target": "İşgücü Devir Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL YAYLA ",
+      "target": "Norm Kadro Doluluk Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY MUĞLA FETHİYE",
+      "target": "Şube Denetim",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL BEYLİKDÜZÜ KAVAKLI ",
+      "target": "Eğitim Performans Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY TEKİRDAĞ ÇORLU",
+      "target": "Norm Kadro Doluluk Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL MARMARA FORUM",
+      "target": "Norm Kadro Doluluk Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL OASİS AVM",
+      "target": "Eğitim Performans Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY RİZE",
+      "target": "Norm Kadro Doluluk Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL PELİCAN AVM",
+      "target": "Norm Kadro Doluluk Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL BAŞAKŞEHİR",
+      "target": "Norm Kadro Doluluk Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL AKSARAY ",
+      "target": "Müşteri Şikayet Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY AYDIN EFELER ",
+      "target": "Yan Ürün Satışı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İZMİR HİLLTOWN AVM",
+      "target": "İşgücü Devir Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ESENLER",
+      "target": "Ciro /Hamburger Adedi",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL CEVAHİR AVM ",
+      "target": "Personel Maliyeti",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ÜMRANİYE",
+      "target": "Gıda/ Malzeme Maliyeti",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL VENEZİA AVM",
+      "target": "Enerji ve Bakım Onarım Gideri",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY SAKARYA 54 AVM",
+      "target": "Google/Pazar Yerleri Puanı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY BURSA ÖZLÜCE",
+      "target": "Müşteri Şikayet Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY TEKİRDAĞ ÇORLU",
+      "target": "Ciro /Hamburger Adedi",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL VİAPORT",
+      "target": "Şube Denetim",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL MARMARA PARK",
+      "target": "Eğitim Performans Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL BAKIRKÖY ",
+      "target": "Google/Pazar Yerleri Puanı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL SEFAKÖY ",
+      "target": "Ciro /Hamburger Adedi",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL BEŞİKTAŞ",
+      "target": "Müşteri Şikayet Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL PELİCAN AVM",
+      "target": "Eğitim Performans Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL PENDİK",
+      "target": "Gıda/ Malzeme Maliyeti",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İZMİR KÜÇÜKPARK",
+      "target": "Google/Pazar Yerleri Puanı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ÇAPA",
+      "target": "Şube Denetim",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY KOCAELİ İZMİT",
+      "target": "Ciro /Hamburger Adedi",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL MARMARA PARK",
+      "target": "Google/Pazar Yerleri Puanı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY AFYON WATERMALL",
+      "target": "Ciro /Hamburger Adedi",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL GAZİOSMANPAŞA",
+      "target": "Ciro /Hamburger Adedi",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ARENAPARK AVM",
+      "target": "Enerji ve Bakım Onarım Gideri",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL PENDİK",
+      "target": "Google/Pazar Yerleri Puanı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL AKSARAY ",
+      "target": "Karlılık",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL PENDİK LENS",
+      "target": "Şube Denetim",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ÜMRANİYE",
+      "target": "İşgücü Devir Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY BURSA ÖZLÜCE",
+      "target": "İşgücü Devir Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL HL. KARGO TER",
+      "target": "Google/Pazar Yerleri Puanı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL BEYKENT",
+      "target": "Yan Ürün Satışı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL BAĞCILAR",
+      "target": "Eğitim Performans Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İZMİR OPTİMUM",
+      "target": "Karlılık",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY MALL OF İSTANBUL",
+      "target": "Norm Kadro Doluluk Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ÜSKÜDAR",
+      "target": "Eğitim Performans Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY BURSA ÖZLÜCE",
+      "target": "Enerji ve Bakım Onarım Gideri",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL VİAMARİNE",
+      "target": "Müşteri Şikayet Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL AQUA FLORYA",
+      "target": "Eğitim Performans Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ORTAKÖY",
+      "target": "Ciro /Hamburger Adedi",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İZMİR OPTİMUM",
+      "target": "Müşteri Şikayet Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ESENLER",
+      "target": "Eğitim Performans Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ÜMRANİYE MEYDAN AVM",
+      "target": "Müşteri Şikayet Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İZMİR KÜÇÜKPARK",
+      "target": "Şube Denetim",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İZMİR OPTİMUM",
+      "target": "İşgücü Devir Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL BAĞCILAR",
+      "target": "Şube Denetim",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY VADİ İSTANBUL AVM",
+      "target": "Enerji ve Bakım Onarım Gideri",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY ESKİŞEHİR",
+      "target": "Yan Ürün Satışı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL VİALAND",
+      "target": "Karlılık",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ÜMRANİYE",
+      "target": "Eğitim Performans Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ŞİRİNEVLER ",
+      "target": "Yan Ürün Satışı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ARENAPARK AVM",
+      "target": "Personel Maliyeti",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ESENYURT",
+      "target": "Gıda/ Malzeme Maliyeti",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY ANTALYA ALANYA CADDE",
+      "target": "Şube Denetim",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL BEŞİKTAŞ",
+      "target": "Ciro /Hamburger Adedi",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ŞİŞLİ ",
+      "target": "Gıda/ Malzeme Maliyeti",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ŞERİFALİ ",
+      "target": "Yan Ürün Satışı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL TORİUM AVM",
+      "target": "Ciro /Hamburger Adedi",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL SEFAKÖY ",
+      "target": "Müşteri Şikayet Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY DENİZLİ FORUM AVM",
+      "target": "Eğitim Performans Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY VADİ İSTANBUL AVM",
+      "target": "Müşteri Şikayet Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL PENDİK LENS",
+      "target": "Norm Kadro Doluluk Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ÜSKÜDAR",
+      "target": "Şube Denetim",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ISPARTAKULE",
+      "target": "Eğitim Performans Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL BAŞAKŞEHİR",
+      "target": "Ciro /Hamburger Adedi",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL SEFAKÖY ",
+      "target": "Karlılık",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL HL. KARGO TER",
+      "target": "Ciro /Hamburger Adedi",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY MALL OF İSTANBUL",
+      "target": "Ciro /Hamburger Adedi",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY ORDU NOVADA AVM",
+      "target": "Müşteri Şikayet Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY GAZİANTEP SANKO AVM",
+      "target": "Ciro /Hamburger Adedi",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL TAKSİM ",
+      "target": "Müşteri Şikayet Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ŞİŞLİ ",
+      "target": "Google/Pazar Yerleri Puanı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY ORDU NOVADA AVM",
+      "target": "Enerji ve Bakım Onarım Gideri",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İZMİR HATAY ",
+      "target": "Karlılık",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY ÇANAKKALE 17 BURDA AVM",
+      "target": "Müşteri Şikayet Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL KOCA MUSTAFA PAŞA",
+      "target": "İşgücü Devir Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL CADDEBOSTAN",
+      "target": "Eğitim Performans Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY KOCAELİ GEBZE",
+      "target": "Karlılık",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY ORDU NOVADA AVM",
+      "target": "Eğitim Performans Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY MALL OF İSTANBUL",
+      "target": "Müşteri Şikayet Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL BEŞİKTAŞ",
+      "target": "Enerji ve Bakım Onarım Gideri",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY MUĞLA MARMARİS",
+      "target": "Ciro /Hamburger Adedi",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL SULTANGAZİ",
+      "target": "Norm Kadro Doluluk Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY ANTALYA ALANYA CADDE",
+      "target": "Norm Kadro Doluluk Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İZMİR HATAY ",
+      "target": "Yan Ürün Satışı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL KADIKÖY",
+      "target": "Google/Pazar Yerleri Puanı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY SAKARYA 54 AVM",
+      "target": "Yan Ürün Satışı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ÜMRANİYE MEYDAN AVM",
+      "target": "Google/Pazar Yerleri Puanı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ORTAKÖY",
+      "target": "Eğitim Performans Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL MİRKELAM 2",
+      "target": "Norm Kadro Doluluk Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL SULTANGAZİ",
+      "target": "Şube Denetim",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY KOCAELİ İZMİT",
+      "target": "Norm Kadro Doluluk Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İZMİR KÜÇÜKPARK",
+      "target": "Ciro /Hamburger Adedi",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL MİRKELAM 2",
+      "target": "Yan Ürün Satışı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL VİAPORT",
+      "target": "Norm Kadro Doluluk Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL MARMARA PARK",
+      "target": "Ciro /Hamburger Adedi",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ŞİRİNEVLER ",
+      "target": "Personel Maliyeti",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ARENAPARK AVM",
+      "target": "Karlılık",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY BURSA KENT MEYDANI AVM",
+      "target": "Yan Ürün Satışı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL KARTAL CADDE",
+      "target": "Eğitim Performans Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL BAKIRKÖY ",
+      "target": "Eğitim Performans Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY BURSA ÖZLÜCE",
+      "target": "Ciro /Hamburger Adedi",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL FORUM İSTANBUL ",
+      "target": "Müşteri Şikayet Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL KADIKÖY",
+      "target": "Norm Kadro Doluluk Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY AYDIN EFELER ",
+      "target": "Norm Kadro Doluluk Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL BEŞİKTAŞ",
+      "target": "Eğitim Performans Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL FORUM İSTANBUL ",
+      "target": "Eğitim Performans Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL BEYKENT",
+      "target": "Norm Kadro Doluluk Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL TORİUM AVM",
+      "target": "Müşteri Şikayet Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ATLAS ÜNİVERSİTESİ",
+      "target": "Eğitim Performans Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL MALTEPE",
+      "target": "Eğitim Performans Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY ESKİŞEHİR",
+      "target": "Karlılık",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY GAZİANTEP SANKO AVM",
+      "target": "Şube Denetim",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL CENNET",
+      "target": "Müşteri Şikayet Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL BAŞAKŞEHİR",
+      "target": "Google/Pazar Yerleri Puanı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL KAĞITHANE",
+      "target": "Şube Denetim",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL YAYLA ",
+      "target": "Google/Pazar Yerleri Puanı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL MİRKELAM 2",
+      "target": "Ciro /Hamburger Adedi",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ÜMRANİYE",
+      "target": "Müşteri Şikayet Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL AKSARAY ",
+      "target": "Enerji ve Bakım Onarım Gideri",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL FORUM İSTANBUL ",
+      "target": "Ciro /Hamburger Adedi",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY ESKİŞEHİR",
+      "target": "Gıda/ Malzeme Maliyeti",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL VİALAND",
+      "target": "Müşteri Şikayet Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL CEVAHİR AVM ",
+      "target": "Enerji ve Bakım Onarım Gideri",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ARENAPARK AVM",
+      "target": "Müşteri Şikayet Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ESENLER",
+      "target": "İşgücü Devir Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ŞİRİNEVLER  MEYDAN",
+      "target": "İşgücü Devir Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL OASİS AVM",
+      "target": "Müşteri Şikayet Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL SEFAKÖY ",
+      "target": "İşgücü Devir Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY MUĞLA MARMARİS",
+      "target": "Personel Maliyeti",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İZMİR HİLLTOWN AVM",
+      "target": "Google/Pazar Yerleri Puanı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL YAYLA ",
+      "target": "Eğitim Performans Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL BAŞAKŞEHİR",
+      "target": "Yan Ürün Satışı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL İFM AVM",
+      "target": "Şube Denetim",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL BAĞCILAR",
+      "target": "Yan Ürün Satışı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY AYDIN EFELER ",
+      "target": "Ciro /Hamburger Adedi",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY DENİZLİ FORUM AVM",
+      "target": "Gıda/ Malzeme Maliyeti",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL TORİUM AVM",
+      "target": "İşgücü Devir Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL BAĞCILAR",
+      "target": "Google/Pazar Yerleri Puanı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL MARMARA FORUM",
+      "target": "Eğitim Performans Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ŞİRİNEVLER  MEYDAN",
+      "target": "Personel Maliyeti",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL AQUA FLORYA",
+      "target": "Norm Kadro Doluluk Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY DENİZLİ FORUM AVM",
+      "target": "Personel Maliyeti",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL PENDİK",
+      "target": "İşgücü Devir Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY ESKİŞEHİR",
+      "target": "Ciro /Hamburger Adedi",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL OASİS AVM",
+      "target": "Ciro /Hamburger Adedi",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL İFM AVM",
+      "target": "Norm Kadro Doluluk Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL PELİCAN AVM",
+      "target": "Şube Denetim",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL AKSARAY ",
+      "target": "İşgücü Devir Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL AKSARAY ",
+      "target": "Ciro /Hamburger Adedi",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ESENLER",
+      "target": "Enerji ve Bakım Onarım Gideri",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ŞİRİNEVLER ",
+      "target": "Ciro /Hamburger Adedi",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ŞİŞLİ ",
+      "target": "Ciro /Hamburger Adedi",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY RİZE",
+      "target": "Eğitim Performans Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY MUĞLA MARMARİS",
+      "target": "Karlılık",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL TAKSİM ",
+      "target": "Norm Kadro Doluluk Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL BAKIRKÖY ",
+      "target": "Gıda/ Malzeme Maliyeti",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL KADIKÖY",
+      "target": "Ciro /Hamburger Adedi",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY ÇANAKKALE 17 BURDA AVM",
+      "target": "Personel Maliyeti",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY VADİ İSTANBUL AVM",
+      "target": "Google/Pazar Yerleri Puanı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY BURSA KENT MEYDANI AVM",
+      "target": "Eğitim Performans Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY AYDIN EFELER ",
+      "target": "Google/Pazar Yerleri Puanı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL VENEZİA AVM",
+      "target": "Gıda/ Malzeme Maliyeti",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY ANTALYA ALANYA CADDE",
+      "target": "Google/Pazar Yerleri Puanı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY MUĞLA FETHİYE",
+      "target": "Google/Pazar Yerleri Puanı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL BEŞİKTAŞ",
+      "target": "Yan Ürün Satışı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ISPARTAKULE",
+      "target": "Ciro /Hamburger Adedi",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY MUĞLA MARMARİS",
+      "target": "İşgücü Devir Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL AQUA FLORYA",
+      "target": "Şube Denetim",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL TORİUM AVM",
+      "target": "Karlılık",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL PELİCAN AVM",
+      "target": "Yan Ürün Satışı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY BURSA KENT MEYDANI AVM",
+      "target": "İşgücü Devir Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ESENLER",
+      "target": "Google/Pazar Yerleri Puanı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL MALTEPE",
+      "target": "Ciro /Hamburger Adedi",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL PENDİK",
+      "target": "Eğitim Performans Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL ÇAPA",
+      "target": "Ciro /Hamburger Adedi",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İZMİR HİLLTOWN AVM",
+      "target": "Müşteri Şikayet Oranı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY BURSA KENT MEYDANI AVM",
+      "target": "Gıda/ Malzeme Maliyeti",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY İSTANBUL AVCILAR ÇARŞI",
+      "target": "Google/Pazar Yerleri Puanı",
+      "count": "2"
+    },
+    {
+      "period": "2026/3",
+      "branchName": "BY TEKİRDAĞ ÇORLU",
+      "target": "Müşteri Şikayet Oranı",
+      "count": "2"
+    }
+  ],
+  "messages": [],
+  "stdout": "period\tbranchName\ttarget\tcount\n2026/3\tBY İSTANBUL VİAMARİNE\tŞube Denetim\t4\n2026/3\tBY İSTANBUL CADDEBOSTAN\tŞube Denetim\t4\n2026/3\tBY İSTANBUL ISPARTAKULE\tNorm Kadro Doluluk Oranı\t2\n2026/3\tBY İSTANBUL ŞİRİNEVLER  MEYDAN\tEğitim Performans Oranı\t2\n2026/3\tBY MUĞLA FETHİYE\tEğitim Performans Oranı\t2\n2026/3\tBY İSTANBUL MİRKELAM 2\tŞube Denetim\t2\n2026/3\tBY ANTALYA ALANYA CADDE\tMüşteri Şikayet Oranı\t2\n2026/3\tBY İSTANBUL GAZİOSMANPAŞA\tMüşteri Şikayet Oranı\t2\n2026/3\tBY İSTANBUL ATLAS ÜNİVERSİTESİ\tGoogle/Pazar Yerleri Puanı\t2\n2026/3\tBY İSTANBUL ŞİRİNEVLER \tİşgücü Devir Oranı\t2\n2026/3\tBY SAKARYA 54 AVM\tMüşteri Şikayet Oranı\t2\n2026/3\tBY İSTANBUL BEYLİKDÜZÜ KAVAKLI \tİşgücü Devir Oranı\t2\n2026/3\tBY İSTANBUL KOCA MUSTAFA PAŞA\tGoogle/Pazar Yerleri Puanı\t2\n2026/3\tBY İSTANBUL BEŞİKTAŞ\tKarlılık\t2\n2026/3\tBY İSTANBUL ŞİRİNEVLER  MEYDAN\tKarlılık\t2\n2026/3\tBY İSTANBUL AKSARAY \tPersonel Maliyeti\t2\n2026/3\tBY İSTANBUL VENEZİA AVM\tCiro /Hamburger Adedi\t2\n2026/3\tBY İSTANBUL GELİŞİM ÜNİVERSİTESİ\tEğitim Performans Oranı\t2\n2026/3\tBY İSTANBUL MARMARA FORUM\tYan Ürün Satışı\t2\n2026/3\tBY İSTANBUL ÜMRANİYE MEYDAN AVM\tGıda/ Malzeme Maliyeti\t2\n2026/3\tBY ANTALYA ALANYA AKDENİZ AVM\tGoogle/Pazar Yerleri Puanı\t2\n2026/3\tBY İSTANBUL OASİS AVM\tŞube Denetim\t2\n2026/3\tBY İSTANBUL KAĞITHANE\tYan Ürün Satışı\t2\n2026/3\tBY KOCAELİ ŞEKERPINAR\tYan Ürün Satışı\t2\n2026/3\tBY MUĞLA FETHİYE\tNorm Kadro Doluluk Oranı\t2\n2026/3\tBY MUĞLA MARMARİS\tEğitim Performans Oranı\t2\n2026/3\tBY VADİ İSTANBUL AVM\tGıda/ Malzeme Maliyeti\t2\n2026/3\tBY İSTANBUL BEYKENT\tŞube Denetim\t2\n2026/3\tBY VADİ İSTANBUL AVM\tİşgücü Devir Oranı\t2\n2026/3\tBY İSTANBUL ISPARTAKULE\tMüşteri Şikayet Oranı\t2\n2026/3\tBY İSTANBUL BAĞCILAR\tNorm Kadro Doluluk Oranı\t2\n2026/3\tBY İSTANBUL VİAMARİNE\tEğitim Performans Oranı\t2\n2026/3\tBY İSTANBUL ÜMRANİYE\tGoogle/Pazar Yerleri Puanı\t2\n2026/3\tBY KOCAELİ GEBZE\tEğitim Performans Oranı\t2\n2026/3\tBY AFYON WATERMALL\tMüşteri Şikayet Oranı\t2\n2026/3\tBY İSTANBUL VENEZİA AVM\tYan Ürün Satışı\t2\n2026/3\tBY İSTANBUL İFM AVM\tCiro /Hamburger Adedi\t2\n2026/3\tBY İSTANBUL SEFAKÖY \tPersonel Maliyeti\t2\n2026/3\tBY İSTANBUL TORİUM AVM\tEnerji ve Bakım Onarım Gideri\t2\n2026/3\tBY AYDIN EFELER \tŞube Denetim\t2\n2026/3\tBY İSTANBUL ÜMRANİYE MEYDAN AVM\tKarlılık\t2\n2026/3\tBY İSTANBUL ATLAS ÜNİVERSİTESİ\tCiro /Hamburger Adedi\t2\n2026/3\tBY İSTANBUL ÇAPA\tMüşteri Şikayet Oranı\t2\n2026/3\tBY İSTANBUL MİRKELAM 1\tMüşteri Şikayet Oranı\t2\n2026/3\tBY KOCAELİ ŞEKERPINAR\tCiro /Hamburger Adedi\t2\n2026/3\tBY ÇANAKKALE 17 BURDA AVM\tEğitim Performans Oranı\t2\n2026/3\tBY AFYON WATERMALL\tGoogle/Pazar Yerleri Puanı\t2\n2026/3\tBY AFYON WATERMALL\tNorm Kadro Doluluk Oranı\t2\n2026/3\tBY İSTANBUL KARTAL CADDE\tYan Ürün Satışı\t2\n2026/3\tBY TEKİRDAĞ ÇORLU\tEğitim Performans Oranı\t2\n2026/3\tBY İSTANBUL ÜMRANİYE\tEnerji ve Bakım Onarım Gideri\t2\n2026/3\tBY İSTANBUL VİALAND\tYan Ürün Satışı\t2\n2026/3\tBY İSTANBUL BEŞİKTAŞ\tGıda/ Malzeme Maliyeti\t2\n2026/3\tBY İSTANBUL BAKIRKÖY \tYan Ürün Satışı\t2\n2026/3\tBY İZMİR KÜÇÜKPARK\tEğitim Performans Oranı\t2\n2026/3\tBY İSTANBUL KARTAL CADDE\tCiro /Hamburger Adedi\t2\n2026/3\tBY İSTANBUL SEFAKÖY \tYan Ürün Satışı\t2\n2026/3\tBY İSTANBUL AQUA FLORYA\tMüşteri Şikayet Oranı\t2\n2026/3\tBY İSTANBUL AVCILAR ÇARŞI\tCiro /Hamburger Adedi\t2\n2026/3\tBY İSTANBUL ESENYURT\tPersonel Maliyeti\t2\n2026/3\tBY BURSA ÖZLÜCE\tGoogle/Pazar Yerleri Puanı\t2\n2026/3\tBY MALL OF İSTANBUL\tGoogle/Pazar Yerleri Puanı\t2\n2026/3\tBY İSTANBUL GAZİOSMANPAŞA\tYan Ürün Satışı\t2\n2026/3\tBY İSTANBUL ZEYTİNBURNU CADDE\tMüşteri Şikayet Oranı\t2\n2026/3\tBY İZMİR HİLLTOWN AVM\tEnerji ve Bakım Onarım Gideri\t2\n2026/3\tBY İZMİR HİLLTOWN AVM\tYan Ürün Satışı\t2\n2026/3\tBY İSTANBUL MİRKELAM 2\tEğitim Performans Oranı\t2\n2026/3\tBY BURSA KENT MEYDANI AVM\tPersonel Maliyeti\t2\n2026/3\tBY İZMİR HATAY \tEnerji ve Bakım Onarım Gideri\t2\n2026/3\tBY GAZİANTEP SANKO AVM\tMüşteri Şikayet Oranı\t2\n2026/3\tBY İSTANBUL ESENYURT\tİşgücü Devir Oranı\t2\n2026/3\tBY İSTANBUL BAKIRKÖY \tİşgücü Devir Oranı\t2\n2026/3\tBY MUĞLA MARMARİS\tGıda/ Malzeme Maliyeti\t2\n2026/3\tBY İSTANBUL MİRKELAM 1\tŞube Denetim\t2\n2026/3\tBY İZMİR HİLLTOWN AVM\tCiro /Hamburger Adedi\t2\n2026/3\tBY DENİZLİ FORUM AVM\tEnerji ve Bakım Onarım Gideri\t2\n2026/3\tBY İSTANBUL CEVAHİR AVM \tEğitim Performans Oranı\t2\n2026/3\tBY İSTANBUL SULTANGAZİ\tGoogle/Pazar Yerleri Puanı\t2\n2026/3\tBY İSTANBUL BAKIRKÖY \tPersonel Maliyeti\t2\n2026/3\tBY İSTANBUL VİAPORT\tCiro /Hamburger Adedi\t2\n2026/3\tBY İSTANBUL ŞİRİNEVLER \tGıda/ Malzeme Maliyeti\t2\n2026/3\tBY İSTANBUL HL. KARGO TER\tŞube Denetim\t2\n2026/3\tBY BURSA KENT MEYDANI AVM\tCiro /Hamburger Adedi\t2\n2026/3\tBY İZMİR HATAY \tGoogle/Pazar Yerleri Puanı\t2\n2026/3\tBY İSTANBUL MALTEPE\tKarlılık\t2\n2026/3\tBY İSTANBUL İFM AVM\tMüşteri Şikayet Oranı\t2\n2026/3\tBY İSTANBUL MALTEPE\tGoogle/Pazar Yerleri Puanı\t2\n2026/3\tBY İSTANBUL ZEYTİNBURNU CADDE\tŞube Denetim\t2\n2026/3\tBY İSTANBUL VİAPORT\tEğitim Performans Oranı\t2\n2026/3\tBY İSTANBUL BAĞCILAR\tCiro /Hamburger Adedi\t2\n2026/3\tBY İSTANBUL BEYKENT\tGoogle/Pazar Yerleri Puanı\t2\n2026/3\tBY ORDU NOVADA AVM\tKarlılık\t2\n2026/3\tBY İSTANBUL ŞİRİNEVLER  MEYDAN\tEnerji ve Bakım Onarım Gideri\t2\n2026/3\tBY İSTANBUL ATLAS ÜNİVERSİTESİ\tNorm Kadro Doluluk Oranı\t2\n2026/3\tBY DENİZLİ FORUM AVM\tYan Ürün Satışı\t2\n2026/3\tBY İSTANBUL SUADİYE- BAĞDAT CADDESİ\tGoogle/Pazar Yerleri Puanı\t2\n2026/3\tBY İSTANBUL CENNET\tYan Ürün Satışı\t2\n2026/3\tBY İSTANBUL MARMARA FORUM\tŞube Denetim\t2\n2026/3\tBY İSTANBUL AKSARAY \tGıda/ Malzeme Maliyeti\t2\n2026/3\tBY İSTANBUL CENNET\tCiro /Hamburger Adedi\t2\n2026/3\tBY İSTANBUL ORTAKÖY\tYan Ürün Satışı\t2\n2026/3\tBY ESKİŞEHİR\tEğitim Performans Oranı\t2\n2026/3\tBY İSTANBUL TAKSİM \tEğitim Performans Oranı\t2\n2026/3\tBY SAKARYA 54 AVM\tNorm Kadro Doluluk Oranı\t2\n2026/3\tBY İSTANBUL İFM AVM\tEğitim Performans Oranı\t2\n2026/3\tBY İSTANBUL ZEYTİNBURNU CADDE\tYan Ürün Satışı\t2\n2026/3\tBY İSTANBUL PENDİK\tPersonel Maliyeti\t2\n2026/3\tBY İSTANBUL TORİUM AVM\tGoogle/Pazar Yerleri Puanı\t2\n2026/3\tBY İSTANBUL KAYAŞEHİR\tYan Ürün Satışı\t2\n2026/3\tBY MUĞLA FETHİYE\tMüşteri Şikayet Oranı\t2\n2026/3\tBY VADİ İSTANBUL AVM\tEğitim Performans Oranı\t2\n2026/3\tBY İSTANBUL MİRKELAM 1\tEğitim Performans Oranı\t2\n2026/3\tBY KOCAELİ İZMİT\tEğitim Performans Oranı\t2\n2026/3\tBY İSTANBUL GELİŞİM ÜNİVERSİTESİ\tNorm Kadro Doluluk Oranı\t2\n2026/3\tBY İSTANBUL ESENYURT\tGoogle/Pazar Yerleri Puanı\t2\n2026/3\tBY ANTALYA ALANYA AKDENİZ AVM\tYan Ürün Satışı\t2\n2026/3\tBY KOCAELİ GEBZE\tGıda/ Malzeme Maliyeti\t2\n2026/3\tBY KOCAELİ İZMİT\tMüşteri Şikayet Oranı\t2\n2026/3\tBY İSTANBUL SULTANGAZİ\tEğitim Performans Oranı\t2\n2026/3\tBY KOCAELİ ŞEKERPINAR\tMüşteri Şikayet Oranı\t2\n2026/3\tBY İZMİR OPTİMUM\tGıda/ Malzeme Maliyeti\t2\n2026/3\tBY İSTANBUL VİALAND\tEnerji ve Bakım Onarım Gideri\t2\n2026/3\tBY İSTANBUL PENDİK LENS\tEğitim Performans Oranı\t2\n2026/3\tBY İSTANBUL PELİCAN AVM\tCiro /Hamburger Adedi\t2\n2026/3\tBY İSTANBUL ORTAKÖY\tPersonel Maliyeti\t2\n2026/3\tBY İSTANBUL ŞERİFALİ \tŞube Denetim\t2\n2026/3\tBY VADİ İSTANBUL AVM\tYan Ürün Satışı\t2\n2026/3\tBY İSTANBUL VİAMARİNE\tNorm Kadro Doluluk Oranı\t2\n2026/3\tBY İSTANBUL VİAMARİNE\tYan Ürün Satışı\t2\n2026/3\tBY İSTANBUL MALTEPE\tPersonel Maliyeti\t2\n2026/3\tBY İSTANBUL VENEZİA AVM\tEğitim Performans Oranı\t2\n2026/3\tBY İSTANBUL ÜSKÜDAR\tGoogle/Pazar Yerleri Puanı\t2\n2026/3\tBY İSTANBUL PENDİK LENS\tYan Ürün Satışı\t2\n2026/3\tBY MUĞLA MARMARİS\tGoogle/Pazar Yerleri Puanı\t2\n2026/3\tBY İSTANBUL ORTAKÖY\tMüşteri Şikayet Oranı\t2\n2026/3\tBY ORDU NOVADA AVM\tPersonel Maliyeti\t2\n2026/3\tBY İSTANBUL ŞİRİNEVLER  MEYDAN\tGoogle/Pazar Yerleri Puanı\t2\n2026/3\tBY GAZİANTEP SANKO AVM\tEğitim Performans Oranı\t2\n2026/3\tBY İSTANBUL ÇAPA\tGoogle/Pazar Yerleri Puanı\t2\n2026/3\tBY İSTANBUL ŞİRİNEVLER \tEnerji ve Bakım Onarım Gideri\t2\n2026/3\tBY İSTANBUL MARMARA PARK\tMüşteri Şikayet Oranı\t2\n2026/3\tBY İSTANBUL TORİUM AVM\tYan Ürün Satışı\t2\n2026/3\tBY İSTANBUL ÜMRANİYE MEYDAN AVM\tİşgücü Devir Oranı\t2\n2026/3\tBY İSTANBUL GAZİOSMANPAŞA\tEğitim Performans Oranı\t2\n2026/3\tBY İSTANBUL ARENAPARK AVM\tGıda/ Malzeme Maliyeti\t2\n2026/3\tBY KOCAELİ GEBZE\tPersonel Maliyeti\t2\n2026/3\tBY İSTANBUL ŞERİFALİ \tMüşteri Şikayet Oranı\t2\n2026/3\tBY İSTANBUL ŞİRİNEVLER\tKarlılık\t2\n2026/3\tBY ÇANAKKALE 17 BURDA AVM\tEnerji ve Bakım Onarım Gideri\t2\n2026/3\tBY İSTANBUL CADDEBOSTAN\tCiro /Hamburger Adedi\t2\n2026/3\tBY İSTANBUL ESENLER\tYan Ürün Satışı\t2\n2026/3\tBY İSTANBUL ISPARTAKULE\tYan Ürün Satışı\t2\n2026/3\tBY İSTANBUL CEVAHİR AVM \tİşgücü Devir Oranı\t2\n2026/3\tBY KOCAELİ GEBZE\tİşgücü Devir Oranı\t2\n2026/3\tBY İSTANBUL ŞERİFALİ \tGoogle/Pazar Yerleri Puanı\t2\n2026/3\tBY ESKİŞEHİR\tİşgücü Devir Oranı\t2\n2026/3\tBY İSTANBUL AVCILAR ÇARŞI\tEğitim Performans Oranı\t2\n2026/3\tBY İSTANBUL BEYKENT\tEğitim Performans Oranı\t2\n2026/3\tBY RİZE\tŞube Denetim\t2\n2026/3\tBY KOCAELİ GEBZE\tCiro /Hamburger Adedi\t2\n2026/3\tBY İSTANBUL VENEZİA AVM\tKarlılık\t2\n2026/3\tBY İSTANBUL ÜSKÜDAR\tCiro /Hamburger Adedi\t2\n2026/3\tBY İZMİR HATAY \tİşgücü Devir Oranı\t2\n2026/3\tBY İSTANBUL ESENYURT\tYan Ürün Satışı\t2\n2026/3\tBY İSTANBUL KOCA MUSTAFA PAŞA\tYan Ürün Satışı\t2\n2026/3\tBY İSTANBUL CEVAHİR AVM \tGoogle/Pazar Yerleri Puanı\t2\n2026/3\tBY İSTANBUL SEFAKÖY \tGıda/ Malzeme Maliyeti\t2\n2026/3\tBY İSTANBUL VİALAND\tEğitim Performans Oranı\t2\n2026/3\tBY İSTANBUL CENNET\tNorm Kadro Doluluk Oranı\t2\n2026/3\tBY İSTANBUL İFM AVM\tYan Ürün Satışı\t2\n2026/3\tBY ANTALYA ALANYA CADDE\tCiro /Hamburger Adedi\t2\n2026/3\tBY İSTANBUL AKSARAY \tEğitim Performans Oranı\t2\n2026/3\tBY İSTANBUL ARENAPARK AVM\tYan Ürün Satışı\t2\n2026/3\tBY İZMİR OPTİMUM\tCiro /Hamburger Adedi\t2\n2026/3\tBY İSTANBUL ISPARTAKULE\tGoogle/Pazar Yerleri Puanı\t2\n2026/3\tBY İSTANBUL ŞİRİNEVLER \tEğitim Performans Oranı\t2\n2026/3\tBY İSTANBUL ATLAS ÜNİVERSİTESİ\tMüşteri Şikayet Oranı\t2\n2026/3\tBY İSTANBUL GELİŞİM ÜNİVERSİTESİ\tGoogle/Pazar Yerleri Puanı\t2\n2026/3\tBY İSTANBUL MARMARA PARK\tŞube Denetim\t2\n2026/3\tBY KOCAELİ GEBZE\tYan Ürün Satışı\t2\n2026/3\tBY AFYON WATERMALL\tYan Ürün Satışı\t2\n2026/3\tBY İSTANBUL GELİŞİM ÜNİVERSİTESİ\tYan Ürün Satışı\t2\n2026/3\tBY KOCAELİ İZMİT\tŞube Denetim\t2\n2026/3\tBY İSTANBUL ATLAS ÜNİVERSİTESİ\tYan Ürün Satışı\t2\n2026/3\tBY İSTANBUL ŞİŞLİ \tEğitim Performans Oranı\t2\n2026/3\tBY İSTANBUL İFM AVM\tGoogle/Pazar Yerleri Puanı\t2\n2026/3\tBY İSTANBUL ÜMRANİYE MEYDAN AVM\tCiro /Hamburger Adedi\t2\n2026/3\tBY İSTANBUL BEŞİKTAŞ\tGoogle/Pazar Yerleri Puanı\t2\n2026/3\tBY İSTANBUL ÜSKÜDAR\tMüşteri Şikayet Oranı\t2\n2026/3\tBY İSTANBUL PENDİK\tEnerji ve Bakım Onarım Gideri\t2\n2026/3\tBY İSTANBUL ISPARTAKULE\tŞube Denetim\t2\n2026/3\tBY DENİZLİ FORUM AVM\tGoogle/Pazar Yerleri Puanı\t2\n2026/3\tBY İSTANBUL ÜMRANİYE MEYDAN AVM\tPersonel Maliyeti\t2\n2026/3\tBY İSTANBUL SUADİYE- BAĞDAT CADDESİ\tŞube Denetim\t2\n2026/3\tBY İSTANBUL HL. KARGO TER\tYan Ürün Satışı\t2\n2026/3\tBY İSTANBUL PENDİK LENS\tMüşteri Şikayet Oranı\t2\n2026/3\tBY RİZE\tYan Ürün Satışı\t2\n2026/3\tBY İSTANBUL KARTAL CADDE\tŞube Denetim\t2\n2026/3\tBY İSTANBUL SUADİYE- BAĞDAT CADDESİ\tYan Ürün Satışı\t2\n2026/3\tBY İSTANBUL GELİŞİM ÜNİVERSİTESİ\tMüşteri Şikayet Oranı\t2\n2026/3\tBY İSTANBUL KOCA MUSTAFA PAŞA\tEnerji ve Bakım Onarım Gideri\t2\n2026/3\tBY İSTANBUL KADIKÖY\tEğitim Performans Oranı\t2\n2026/3\tBY İSTANBUL AVCILAR ÇARŞI\tYan Ürün Satışı\t2\n2026/3\tBY İSTANBUL MİRKELAM 2\tGoogle/Pazar Yerleri Puanı\t2\n2026/3\tBY İSTANBUL ESENYURT\tEnerji ve Bakım Onarım Gideri\t2\n2026/3\tBY İSTANBUL AQUA FLORYA\tCiro /Hamburger Adedi\t2\n2026/3\tBY İSTANBUL ÜMRANİYE\tKarlılık\t2\n2026/3\tBY İSTANBUL ESENYURT\tEğitim Performans Oranı\t2\n2026/3\tBY İSTANBUL SUADİYE- BAĞDAT CADDESİ\tCiro /Hamburger Adedi\t2\n2026/3\tBY İSTANBUL BEYKENT\tCiro /Hamburger Adedi\t2\n2026/3\tBY MALL OF İSTANBUL\tEğitim Performans Oranı\t2\n2026/3\tBY İSTANBUL KOCA MUSTAFA PAŞA\tEğitim Performans Oranı\t2\n2026/3\tBY İSTANBUL VİAPORT\tGoogle/Pazar Yerleri Puanı\t2\n2026/3\tBY İZMİR OPTİMUM\tEnerji ve Bakım Onarım Gideri\t2\n2026/3\tBY KOCAELİ GEBZE\tGoogle/Pazar Yerleri Puanı\t2\n2026/3\tBY ÇANAKKALE 17 BURDA AVM\tCiro /Hamburger Adedi\t2\n2026/3\tBY İSTANBUL BEYLİKDÜZÜ KAVAKLI \tCiro /Hamburger Adedi\t2\n2026/3\tBY İSTANBUL PENDİK\tCiro /Hamburger Adedi\t2\n2026/3\tBY İSTANBUL OASİS AVM\tGoogle/Pazar Yerleri Puanı\t2\n2026/3\tBY İSTANBUL AKSARAY \tGoogle/Pazar Yerleri Puanı\t2\n2026/3\tBY İSTANBUL VENEZİA AVM\tİşgücü Devir Oranı\t2\n2026/3\tBY İSTANBUL YAYLA \tMüşteri Şikayet Oranı\t2\n2026/3\tBY İSTANBUL KARTAL CADDE\tGoogle/Pazar Yerleri Puanı\t2\n2026/3\tBY İSTANBUL ŞERİFALİ \tEğitim Performans Oranı\t2\n2026/3\tBY İSTANBUL ARENAPARK AVM\tEğitim Performans Oranı\t2\n2026/3\tBY İZMİR HİLLTOWN AVM\tPersonel Maliyeti\t2\n2026/3\tBY İSTANBUL SUADİYE- BAĞDAT CADDESİ\tNorm Kadro Doluluk Oranı\t2\n2026/3\tBY İSTANBUL ARENAPARK AVM\tİşgücü Devir Oranı\t2\n2026/3\tBY İSTANBUL CEVAHİR AVM \tGıda/ Malzeme Maliyeti\t2\n2026/3\tBY İSTANBUL ORTAKÖY\tGoogle/Pazar Yerleri Puanı\t2\n2026/3\tBY İSTANBUL ŞİŞLİ \tMüşteri Şikayet Oranı\t2\n2026/3\tBY İZMİR HİLLTOWN AVM\tKarlılık\t2\n2026/3\tBY İSTANBUL AQUA FLORYA\tGoogle/Pazar Yerleri Puanı\t2\n2026/3\tBY İSTANBUL VİAPORT\tMüşteri Şikayet Oranı\t2\n2026/3\tBY İSTANBUL BEYLİKDÜZÜ KAVAKLI \tGoogle/Pazar Yerleri Puanı\t2\n2026/3\tBY İSTANBUL BEŞİKTAŞ\tİşgücü Devir Oranı\t2\n2026/3\tBY İSTANBUL BEYLİKDÜZÜ KAVAKLI \tMüşteri Şikayet Oranı\t2\n2026/3\tBY İSTANBUL ÜMRANİYE MEYDAN AVM\tYan Ürün Satışı\t2\n2026/3\tBY KOCAELİ ŞEKERPINAR\tGoogle/Pazar Yerleri Puanı\t2\n2026/3\tBY İSTANBUL ŞERİFALİ \tCiro /Hamburger Adedi\t2\n2026/3\tBY İSTANBUL CEVAHİR AVM \tMüşteri Şikayet Oranı\t2\n2026/3\tBY İSTANBUL MİRKELAM 1\tCiro /Hamburger Adedi\t2\n2026/3\tBY DENİZLİ FORUM AVM\tCiro /Hamburger Adedi\t2\n2026/3\tBY İSTANBUL CEVAHİR AVM \tKarlılık\t2\n2026/3\tBY İSTANBUL BEYLİKDÜZÜ KAVAKLI \tEnerji ve Bakım Onarım Gideri\t2\n2026/3\tBY BURSA KENT MEYDANI AVM\tGoogle/Pazar Yerleri Puanı\t2\n2026/3\tBY İSTANBUL VENEZİA AVM\tGoogle/Pazar Yerleri Puanı\t2\n2026/3\tBY İSTANBUL KOCA MUSTAFA PAŞA\tGıda/ Malzeme Maliyeti\t2\n2026/3\tBY İSTANBUL PENDİK LENS\tCiro /Hamburger Adedi\t2\n2026/3\tBY İZMİR HATAY \tMüşteri Şikayet Oranı\t2\n2026/3\tBY İSTANBUL ÇAPA\tEğitim Performans Oranı\t2\n2026/3\tBY İSTANBUL VİAMARİNE\tCiro /Hamburger Adedi\t2\n2026/3\tBY ESKİŞEHİR\tPersonel Maliyeti\t2\n2026/3\tBY İSTANBUL AKSARAY \tYan Ürün Satışı\t2\n2026/3\tBY İSTANBUL AVCILAR ÇARŞI\tİşgücü Devir Oranı\t2\n2026/3\tBY İSTANBUL KAYAŞEHİR\tMüşteri Şikayet Oranı\t2\n2026/3\tBY BURSA KENT MEYDANI AVM\tMüşteri Şikayet Oranı\t2\n2026/3\tBY İSTANBUL SULTANGAZİ\tMüşteri Şikayet Oranı\t2\n2026/3\tBY İSTANBUL CADDEBOSTAN\tMüşteri Şikayet Oranı\t2\n2026/3\tBY MUĞLA MARMARİS\tYan Ürün Satışı\t2\n2026/3\tBY AFYON WATERMALL\tŞube Denetim\t2\n2026/3\tBY TEKİRDAĞ ÇORLU\tGoogle/Pazar Yerleri Puanı\t2\n2026/3\tBY İZMİR OPTİMUM\tEğitim Performans Oranı\t2\n2026/3\tBY İSTANBUL BAŞAKŞEHİR\tMüşteri Şikayet Oranı\t2\n2026/3\tBY İSTANBUL ÜMRANİYE\tYan Ürün Satışı\t2\n2026/3\tBY İSTANBUL VİAPORT\tYan Ürün Satışı\t2\n2026/3\tBY İSTANBUL MARMARA FORUM\tMüşteri Şikayet Oranı\t2\n2026/3\tBY İSTANBUL TAKSİM \tCiro /Hamburger Adedi\t2\n2026/3\tBY İZMİR OPTİMUM\tGoogle/Pazar Yerleri Puanı\t2\n2026/3\tBY İSTANBUL KAĞITHANE\tNorm Kadro Doluluk Oranı\t2\n2026/3\tBY İSTANBUL HL. KARGO TER\tMüşteri Şikayet Oranı\t2\n2026/3\tBY SAKARYA 54 AVM\tEğitim Performans Oranı\t2\n2026/3\tBY İSTANBUL CENNET\tŞube Denetim\t2\n2026/3\tBY İSTANBUL KAYAŞEHİR\tŞube Denetim\t2\n2026/3\tBY İSTANBUL GAZİOSMANPAŞA\tŞube Denetim\t2\n2026/3\tBY İSTANBUL ARENAPARK AVM\tCiro /Hamburger Adedi\t2\n2026/3\tBY ANTALYA ALANYA AKDENİZ AVM\tŞube Denetim\t2\n2026/3\tBY İSTANBUL ORTAKÖY\tEnerji ve Bakım Onarım Gideri\t2\n2026/3\tBY İSTANBUL VİALAND\tGıda/ Malzeme Maliyeti\t2\n2026/3\tBY İSTANBUL HL. KARGO TER\tEğitim Performans Oranı\t2\n2026/3\tBY İSTANBUL MALTEPE\tEnerji ve Bakım Onarım Gideri\t2\n2026/3\tBY İSTANBUL ORTAKÖY\tKarlılık\t2\n2026/3\tBY İSTANBUL ESENLER\tPersonel Maliyeti\t2\n2026/3\tBY İSTANBUL ÜMRANİYE MEYDAN AVM\tEğitim Performans Oranı\t2\n2026/3\tBY İSTANBUL CADDEBOSTAN\tNorm Kadro Doluluk Oranı\t2\n2026/3\tBY İSTANBUL ORTAKÖY\tGıda/ Malzeme Maliyeti\t2\n2026/3\tBY İZMİR HATAY \tCiro /Hamburger Adedi\t2\n2026/3\tBY SAKARYA 54 AVM\tCiro /Hamburger Adedi\t2\n2026/3\tBY İSTANBUL BAKIRKÖY \tKarlılık\t2\n2026/3\tBY İSTANBUL ÜMRANİYE\tCiro /Hamburger Adedi\t2\n2026/3\tBY İSTANBUL KAĞITHANE\tGoogle/Pazar Yerleri Puanı\t2\n2026/3\tBY İSTANBUL MALTEPE\tİşgücü Devir Oranı\t2\n2026/3\tBY İSTANBUL SULTANGAZİ\tYan Ürün Satışı\t2\n2026/3\tBY İSTANBUL KOCA MUSTAFA PAŞA\tKarlılık\t2\n2026/3\tBY İSTANBUL KAYAŞEHİR\tGoogle/Pazar Yerleri Puanı\t2\n2026/3\tBY GAZİANTEP SANKO AVM\tGoogle/Pazar Yerleri Puanı\t2\n2026/3\tBY İSTANBUL ESENYURT\tMüşteri Şikayet Oranı\t2\n2026/3\tBY İSTANBUL CEVAHİR AVM \tYan Ürün Satışı\t2\n2026/3\tBY İSTANBUL ŞİŞLİ \tEnerji ve Bakım Onarım Gideri\t2\n2026/3\tBY İSTANBUL YAYLA \tŞube Denetim\t2\n2026/3\tBY İSTANBUL ŞİRİNEVLER \tGoogle/Pazar Yerleri Puanı\t2\n2026/3\tBY İSTANBUL BEYLİKDÜZÜ KAVAKLI \tPersonel Maliyeti\t2\n2026/3\tBY İSTANBUL MİRKELAM 2\tMüşteri Şikayet Oranı\t2\n2026/3\tBY İSTANBUL MİRKELAM 1\tYan Ürün Satışı\t2\n2026/3\tBY İSTANBUL FORUM İSTANBUL \tGoogle/Pazar Yerleri Puanı\t2\n2026/3\tBY İSTANBUL BEŞİKTAŞ\tPersonel Maliyeti\t2\n2026/3\tBY ÇANAKKALE 17 BURDA AVM\tYan Ürün Satışı\t2\n2026/3\tBY İZMİR OPTİMUM\tPersonel Maliyeti\t2\n2026/3\tBY KOCAELİ ŞEKERPINAR\tEğitim Performans Oranı\t2\n2026/3\tBY DENİZLİ FORUM AVM\tMüşteri Şikayet Oranı\t2\n2026/3\tBY İSTANBUL ESENYURT\tKarlılık\t2\n2026/3\tBY İSTANBUL SEFAKÖY \tEğitim Performans Oranı\t2\n2026/3\tBY İZMİR HİLLTOWN AVM\tEğitim Performans Oranı\t2\n2026/3\tBY İSTANBUL ÜMRANİYE\tPersonel Maliyeti\t2\n2026/3\tBY İSTANBUL CENNET\tGoogle/Pazar Yerleri Puanı\t2\n2026/3\tBY İSTANBUL AVCILAR ÇARŞI\tEnerji ve Bakım Onarım Gideri\t2\n2026/3\tBY İSTANBUL OASİS AVM\tNorm Kadro Doluluk Oranı\t2\n2026/3\tBY BURSA ÖZLÜCE\tEğitim Performans Oranı\t2\n2026/3\tBY İSTANBUL ZEYTİNBURNU CADDE\tGoogle/Pazar Yerleri Puanı\t2\n2026/3\tBY İSTANBUL TAKSİM \tŞube Denetim\t2\n2026/3\tBY ESKİŞEHİR\tMüşteri Şikayet Oranı\t2\n2026/3\tBY İSTANBUL ZEYTİNBURNU CADDE\tCiro /Hamburger Adedi\t2\n2026/3\tBY İSTANBUL ARENAPARK AVM\tGoogle/Pazar Yerleri Puanı\t2\n2026/3\tBY DENİZLİ FORUM AVM\tİşgücü Devir Oranı\t2\n2026/3\tBY İSTANBUL ESENLER\tGıda/ Malzeme Maliyeti\t2\n2026/3\tBY İSTANBUL HL. KARGO TER\tNorm Kadro Doluluk Oranı\t2\n2026/3\tBY KOCAELİ GEBZE\tEnerji ve Bakım Onarım Gideri\t2\n2026/3\tBY İSTANBUL KADIKÖY\tYan Ürün Satışı\t2\n2026/3\tBY İSTANBUL ŞİŞLİ \tPersonel Maliyeti\t2\n2026/3\tBY İSTANBUL VENEZİA AVM\tPersonel Maliyeti\t2\n2026/3\tBY İSTANBUL VİAMARİNE\tGoogle/Pazar Yerleri Puanı\t2\n2026/3\tBY KOCAELİ ŞEKERPINAR\tŞube Denetim\t2\n2026/3\tBY ÇANAKKALE 17 BURDA AVM\tİşgücü Devir Oranı\t2\n2026/3\tBY İSTANBUL KAĞITHANE\tCiro /Hamburger Adedi\t2\n2026/3\tBY İSTANBUL VİALAND\tGoogle/Pazar Yerleri Puanı\t2\n2026/3\tBY İSTANBUL PELİCAN AVM\tMüşteri Şikayet Oranı\t2\n2026/3\tBY İSTANBUL ŞİRİNEVLER  MEYDAN\tMüşteri Şikayet Oranı\t2\n2026/3\tBY İSTANBUL MARMARA PARK\tYan Ürün Satışı\t2\n2026/3\tBY İSTANBUL KOCA MUSTAFA PAŞA\tCiro /Hamburger Adedi\t2\n2026/3\tBY İSTANBUL MALTEPE\tYan Ürün Satışı\t2\n2026/3\tBY İSTANBUL KOCA MUSTAFA PAŞA\tMüşteri Şikayet Oranı\t2\n2026/3\tBY ANTALYA ALANYA CADDE\tEğitim Performans Oranı\t2\n2026/3\tBY MUĞLA MARMARİS\tMüşteri Şikayet Oranı\t2\n2026/3\tBY ANTALYA ALANYA CADDE\tYan Ürün Satışı\t2\n2026/3\tBY ANTALYA ALANYA AKDENİZ AVM\tNorm Kadro Doluluk Oranı\t2\n2026/3\tBY İSTANBUL VİALAND\tPersonel Maliyeti\t2\n2026/3\tBY İSTANBUL BAŞAKŞEHİR\tŞube Denetim\t2\n2026/3\tBY İZMİR KÜÇÜKPARK\tMüşteri Şikayet Oranı\t2\n2026/3\tBY BURSA ÖZLÜCE\tYan Ürün Satışı\t2\n2026/3\tBY İSTANBUL BEYKENT\tMüşteri Şikayet Oranı\t2\n2026/3\tBY İSTANBUL ESENLER\tKarlılık\t2\n2026/3\tBY İSTANBUL PENDİK LENS\tGoogle/Pazar Yerleri Puanı\t2\n2026/3\tBY İSTANBUL TORİUM AVM\tGıda/ Malzeme Maliyeti\t2\n2026/3\tBY İSTANBUL KAYAŞEHİR\tCiro /Hamburger Adedi\t2\n2026/3\tBY İSTANBUL KARTAL CADDE\tMüşteri Şikayet Oranı\t2\n2026/3\tBY İZMİR HATAY \tPersonel Maliyeti\t2\n2026/3\tBY İSTANBUL ŞİRİNEVLER  MEYDAN\tYan Ürün Satışı\t2\n2026/3\tBY İSTANBUL MARMARA FORUM\tCiro /Hamburger Adedi\t2\n2026/3\tBY İSTANBUL MARMARA FORUM\tGoogle/Pazar Yerleri Puanı\t2\n2026/3\tBY İSTANBUL ŞİŞLİ \tKarlılık\t2\n2026/3\tBY ESKİŞEHİR\tEnerji ve Bakım Onarım Gideri\t2\n2026/3\tBY İSTANBUL ÜSKÜDAR\tYan Ürün Satışı\t2\n2026/3\tBY İSTANBUL TORİUM AVM\tEğitim Performans Oranı\t2\n2026/3\tBY İSTANBUL TORİUM AVM\tPersonel Maliyeti\t2\n2026/3\tBY ORDU NOVADA AVM\tGoogle/Pazar Yerleri Puanı\t2\n2026/3\tBY İSTANBUL ŞİŞLİ \tİşgücü Devir Oranı\t2\n2026/3\tBY KOCAELİ ŞEKERPINAR\tNorm Kadro Doluluk Oranı\t2\n2026/3\tBY İSTANBUL BAKIRKÖY \tCiro /Hamburger Adedi\t2\n2026/3\tBY İZMİR OPTİMUM\tYan Ürün Satışı\t2\n2026/3\tBY BURSA ÖZLÜCE\tPersonel Maliyeti\t2\n2026/3\tBY İSTANBUL PENDİK\tMüşteri Şikayet Oranı\t2\n2026/3\tBY İSTANBUL FORUM İSTANBUL \tYan Ürün Satışı\t2\n2026/3\tBY İSTANBUL PENDİK\tKarlılık\t2\n2026/3\tBY ORDU NOVADA AVM\tCiro /Hamburger Adedi\t2\n2026/3\tBY İSTANBUL MARMARA PARK\tNorm Kadro Doluluk Oranı\t2\n2026/3\tBY SAKARYA 54 AVM\tŞube Denetim\t2\n2026/3\tBY İSTANBUL KAĞITHANE\tEğitim Performans Oranı\t2\n2026/3\tBY BURSA ÖZLÜCE\tGıda/ Malzeme Maliyeti\t2\n2026/3\tBY İSTANBUL VİALAND\tCiro /Hamburger Adedi\t2\n2026/3\tBY İSTANBUL KADIKÖY\tMüşteri Şikayet Oranı\t2\n2026/3\tBY İSTANBUL VENEZİA AVM\tMüşteri Şikayet Oranı\t2\n2026/3\tBY MUĞLA FETHİYE\tYan Ürün Satışı\t2\n2026/3\tBY BURSA ÖZLÜCE\tKarlılık\t2\n2026/3\tBY ESKİŞEHİR\tGoogle/Pazar Yerleri Puanı\t2\n2026/3\tBY ANTALYA ALANYA AKDENİZ AVM\tEğitim Performans Oranı\t2\n2026/3\tBY İSTANBUL MALTEPE\tMüşteri Şikayet Oranı\t2\n2026/3\tBY İSTANBUL ŞİŞLİ \tYan Ürün Satışı\t2\n2026/3\tBY İSTANBUL GELİŞİM ÜNİVERSİTESİ\tCiro /Hamburger Adedi\t2\n2026/3\tBY ÇANAKKALE 17 BURDA AVM\tKarlılık\t2\n2026/3\tBY İSTANBUL PENDİK\tYan Ürün Satışı\t2\n2026/3\tBY İSTANBUL GAZİOSMANPAŞA\tGoogle/Pazar Yerleri Puanı\t2\n2026/3\tBY İSTANBUL KAYAŞEHİR\tEğitim Performans Oranı\t2\n2026/3\tBY İSTANBUL SULTANGAZİ\tCiro /Hamburger Adedi\t2\n2026/3\tBY İSTANBUL CEVAHİR AVM \tCiro /Hamburger Adedi\t2\n2026/3\tBY İSTANBUL KARTAL CADDE\tNorm Kadro Doluluk Oranı\t2\n2026/3\tBY İSTANBUL ESENYURT\tCiro /Hamburger Adedi\t2\n2026/3\tBY İSTANBUL SEFAKÖY \tGoogle/Pazar Yerleri Puanı\t2\n2026/3\tBY ORDU NOVADA AVM\tGıda/ Malzeme Maliyeti\t2\n2026/3\tBY İSTANBUL BAKIRKÖY \tEnerji ve Bakım Onarım Gideri\t2\n2026/3\tBY İSTANBUL SUADİYE- BAĞDAT CADDESİ\tEğitim Performans Oranı\t2\n2026/3\tBY İZMİR HATAY \tEğitim Performans Oranı\t2\n2026/3\tBY İSTANBUL ÜSKÜDAR\tNorm Kadro Doluluk Oranı\t2\n2026/3\tBY KOCAELİ GEBZE\tMüşteri Şikayet Oranı\t2\n2026/3\tBY RİZE\tGoogle/Pazar Yerleri Puanı\t2\n2026/3\tBY İSTANBUL CADDEBOSTAN\tGoogle/Pazar Yerleri Puanı\t2\n2026/3\tBY İSTANBUL AVCILAR ÇARŞI\tPersonel Maliyeti\t2\n2026/3\tBY VADİ İSTANBUL AVM\tPersonel Maliyeti\t2\n2026/3\tBY ÇANAKKALE 17 BURDA AVM\tGoogle/Pazar Yerleri Puanı\t2\n2026/3\tBY İSTANBUL BAKIRKÖY \tMüşteri Şikayet Oranı\t2\n2026/3\tBY İSTANBUL KAĞITHANE\tMüşteri Şikayet Oranı\t2\n2026/3\tBY İSTANBUL YAYLA \tYan Ürün Satışı\t2\n2026/3\tBY TEKİRDAĞ ÇORLU\tŞube Denetim\t2\n2026/3\tBY İSTANBUL ZEYTİNBURNU CADDE\tNorm Kadro Doluluk Oranı\t2\n2026/3\tBY İSTANBUL CADDEBOSTAN\tYan Ürün Satışı\t2\n2026/3\tBY BURSA KENT MEYDANI AVM\tEnerji ve Bakım Onarım Gideri\t2\n2026/3\tBY İSTANBUL AVCILAR ÇARŞI\tGıda/ Malzeme Maliyeti\t2\n2026/3\tBY DENİZLİ FORUM AVM\tKarlılık\t2\n2026/3\tBY İZMİR HİLLTOWN AVM\tGıda/ Malzeme Maliyeti\t2\n2026/3\tBY İSTANBUL MALTEPE\tGıda/ Malzeme Maliyeti\t2\n2026/3\tBY İSTANBUL AVCILAR ÇARŞI\tKarlılık\t2\n2026/3\tBY İSTANBUL KOCA MUSTAFA PAŞA\tPersonel Maliyeti\t2\n2026/3\tBY MALL OF İSTANBUL\tŞube Denetim\t2\n2026/3\tBY İSTANBUL SEFAKÖY \tEnerji ve Bakım Onarım Gideri\t2\n2026/3\tBY VADİ İSTANBUL AVM\tCiro /Hamburger Adedi\t2\n2026/3\tBY İSTANBUL KAYAŞEHİR\tNorm Kadro Doluluk Oranı\t2\n2026/3\tBY İSTANBUL ŞİRİNEVLER  MEYDAN\tCiro /Hamburger Adedi\t2\n2026/3\tBY İSTANBUL YAYLA \tCiro /Hamburger Adedi\t2\n2026/3\tBY İZMİR KÜÇÜKPARK\tNorm Kadro Doluluk Oranı\t2\n2026/3\tBY AFYON WATERMALL\tEğitim Performans Oranı\t2\n2026/3\tBY İSTANBUL ÇAPA\tNorm Kadro Doluluk Oranı\t2\n2026/3\tBY İSTANBUL MİRKELAM 1\tGoogle/Pazar Yerleri Puanı\t2\n2026/3\tBY ANTALYA ALANYA AKDENİZ AVM\tMüşteri Şikayet Oranı\t2\n2026/3\tBY KOCAELİ İZMİT\tGoogle/Pazar Yerleri Puanı\t2\n2026/3\tBY İSTANBUL CENNET\tEğitim Performans Oranı\t2\n2026/3\tBY ÇANAKKALE 17 BURDA AVM\tGıda/ Malzeme Maliyeti\t2\n2026/3\tBY İSTANBUL ATLAS ÜNİVERSİTESİ\tŞube Denetim\t2\n2026/3\tBY RİZE\tMüşteri Şikayet Oranı\t2\n2026/3\tBY İSTANBUL ÜMRANİYE MEYDAN AVM\tEnerji ve Bakım Onarım Gideri\t2\n2026/3\tBY İSTANBUL ZEYTİNBURNU CADDE\tEğitim Performans Oranı\t2\n2026/3\tBY GAZİANTEP SANKO AVM\tNorm Kadro Doluluk Oranı\t2\n2026/3\tBY İSTANBUL GAZİOSMANPAŞA\tNorm Kadro Doluluk Oranı\t2\n2026/3\tBY İSTANBUL ORTAKÖY\tİşgücü Devir Oranı\t2\n2026/3\tBY İSTANBUL BEYLİKDÜZÜ KAVAKLI \tGıda/ Malzeme Maliyeti\t2\n2026/3\tBY AYDIN EFELER \tEğitim Performans Oranı\t2\n2026/3\tBY ORDU NOVADA AVM\tYan Ürün Satışı\t2\n2026/3\tBY İZMİR HATAY \tGıda/ Malzeme Maliyeti\t2\n2026/3\tBY KOCAELİ İZMİT\tYan Ürün Satışı\t2\n2026/3\tBY RİZE\tCiro /Hamburger Adedi\t2\n2026/3\tBY İSTANBUL BEYLİKDÜZÜ KAVAKLI \tYan Ürün Satışı\t2\n2026/3\tBY İSTANBUL ŞİRİNEVLER  MEYDAN\tGıda/ Malzeme Maliyeti\t2\n2026/3\tBY İSTANBUL FORUM İSTANBUL \tNorm Kadro Doluluk Oranı\t2\n2026/3\tBY İSTANBUL ŞİRİNEVLER \tMüşteri Şikayet Oranı\t2\n2026/3\tBY ORDU NOVADA AVM\tİşgücü Devir Oranı\t2\n2026/3\tBY TEKİRDAĞ ÇORLU\tYan Ürün Satışı\t2\n2026/3\tBY İSTANBUL ŞERİFALİ \tNorm Kadro Doluluk Oranı\t2\n2026/3\tBY İSTANBUL MİRKELAM 1\tNorm Kadro Doluluk Oranı\t2\n2026/3\tBY MUĞLA FETHİYE\tCiro /Hamburger Adedi\t2\n2026/3\tBY İSTANBUL TAKSİM \tYan Ürün Satışı\t2\n2026/3\tBY İSTANBUL AVCILAR ÇARŞI\tMüşteri Şikayet Oranı\t2\n2026/3\tBY İSTANBUL KADIKÖY\tŞube Denetim\t2\n2026/3\tBY İSTANBUL PELİCAN AVM\tGoogle/Pazar Yerleri Puanı\t2\n2026/3\tBY VADİ İSTANBUL AVM\tKarlılık\t2\n2026/3\tBY İSTANBUL AQUA FLORYA\tYan Ürün Satışı\t2\n2026/3\tBY MUĞLA MARMARİS\tEnerji ve Bakım Onarım Gideri\t2\n2026/3\tBY İZMİR KÜÇÜKPARK\tYan Ürün Satışı\t2\n2026/3\tBY İSTANBUL BEYLİKDÜZÜ KAVAKLI \tKarlılık\t2\n2026/3\tBY İSTANBUL BAĞCILAR\tMüşteri Şikayet Oranı\t2\n2026/3\tBY İSTANBUL BAŞAKŞEHİR\tEğitim Performans Oranı\t2\n2026/3\tBY GAZİANTEP SANKO AVM\tYan Ürün Satışı\t2\n2026/3\tBY İSTANBUL FORUM İSTANBUL \tŞube Denetim\t2\n2026/3\tBY AYDIN EFELER \tMüşteri Şikayet Oranı\t2\n2026/3\tBY BURSA KENT MEYDANI AVM\tKarlılık\t2\n2026/3\tBY ANTALYA ALANYA AKDENİZ AVM\tCiro /Hamburger Adedi\t2\n2026/3\tBY İSTANBUL GELİŞİM ÜNİVERSİTESİ\tŞube Denetim\t2\n2026/3\tBY MALL OF İSTANBUL\tYan Ürün Satışı\t2\n2026/3\tBY İSTANBUL ÇAPA\tYan Ürün Satışı\t2\n2026/3\tBY İSTANBUL OASİS AVM\tYan Ürün Satışı\t2\n2026/3\tBY İSTANBUL TAKSİM \tGoogle/Pazar Yerleri Puanı\t2\n2026/3\tBY İSTANBUL SUADİYE- BAĞDAT CADDESİ\tMüşteri Şikayet Oranı\t2\n2026/3\tBY İSTANBUL ESENLER\tMüşteri Şikayet Oranı\t2\n2026/3\tBY İSTANBUL VİALAND\tİşgücü Devir Oranı\t2\n2026/3\tBY İSTANBUL YAYLA \tNorm Kadro Doluluk Oranı\t2\n2026/3\tBY MUĞLA FETHİYE\tŞube Denetim\t2\n2026/3\tBY İSTANBUL BEYLİKDÜZÜ KAVAKLI \tEğitim Performans Oranı\t2\n2026/3\tBY TEKİRDAĞ ÇORLU\tNorm Kadro Doluluk Oranı\t2\n2026/3\tBY İSTANBUL MARMARA FORUM\tNorm Kadro Doluluk Oranı\t2\n2026/3\tBY İSTANBUL OASİS AVM\tEğitim Performans Oranı\t2\n2026/3\tBY RİZE\tNorm Kadro Doluluk Oranı\t2\n2026/3\tBY İSTANBUL PELİCAN AVM\tNorm Kadro Doluluk Oranı\t2\n2026/3\tBY İSTANBUL BAŞAKŞEHİR\tNorm Kadro Doluluk Oranı\t2\n2026/3\tBY İSTANBUL AKSARAY \tMüşteri Şikayet Oranı\t2\n2026/3\tBY AYDIN EFELER \tYan Ürün Satışı\t2\n2026/3\tBY İZMİR HİLLTOWN AVM\tİşgücü Devir Oranı\t2\n2026/3\tBY İSTANBUL ESENLER\tCiro /Hamburger Adedi\t2\n2026/3\tBY İSTANBUL CEVAHİR AVM \tPersonel Maliyeti\t2\n2026/3\tBY İSTANBUL ÜMRANİYE\tGıda/ Malzeme Maliyeti\t2\n2026/3\tBY İSTANBUL VENEZİA AVM\tEnerji ve Bakım Onarım Gideri\t2\n2026/3\tBY SAKARYA 54 AVM\tGoogle/Pazar Yerleri Puanı\t2\n2026/3\tBY BURSA ÖZLÜCE\tMüşteri Şikayet Oranı\t2\n2026/3\tBY TEKİRDAĞ ÇORLU\tCiro /Hamburger Adedi\t2\n2026/3\tBY İSTANBUL VİAPORT\tŞube Denetim\t2\n2026/3\tBY İSTANBUL MARMARA PARK\tEğitim Performans Oranı\t2\n2026/3\tBY İSTANBUL BAKIRKÖY \tGoogle/Pazar Yerleri Puanı\t2\n2026/3\tBY İSTANBUL SEFAKÖY \tCiro /Hamburger Adedi\t2\n2026/3\tBY İSTANBUL BEŞİKTAŞ\tMüşteri Şikayet Oranı\t2\n2026/3\tBY İSTANBUL PELİCAN AVM\tEğitim Performans Oranı\t2\n2026/3\tBY İSTANBUL PENDİK\tGıda/ Malzeme Maliyeti\t2\n2026/3\tBY İZMİR KÜÇÜKPARK\tGoogle/Pazar Yerleri Puanı\t2\n2026/3\tBY İSTANBUL ÇAPA\tŞube Denetim\t2\n2026/3\tBY KOCAELİ İZMİT\tCiro /Hamburger Adedi\t2\n2026/3\tBY İSTANBUL MARMARA PARK\tGoogle/Pazar Yerleri Puanı\t2\n2026/3\tBY AFYON WATERMALL\tCiro /Hamburger Adedi\t2\n2026/3\tBY İSTANBUL GAZİOSMANPAŞA\tCiro /Hamburger Adedi\t2\n2026/3\tBY İSTANBUL ARENAPARK AVM\tEnerji ve Bakım Onarım Gideri\t2\n2026/3\tBY İSTANBUL PENDİK\tGoogle/Pazar Yerleri Puanı\t2\n2026/3\tBY İSTANBUL AKSARAY \tKarlılık\t2\n2026/3\tBY İSTANBUL PENDİK LENS\tŞube Denetim\t2\n2026/3\tBY İSTANBUL ÜMRANİYE\tİşgücü Devir Oranı\t2\n2026/3\tBY BURSA ÖZLÜCE\tİşgücü Devir Oranı\t2\n2026/3\tBY İSTANBUL HL. KARGO TER\tGoogle/Pazar Yerleri Puanı\t2\n2026/3\tBY İSTANBUL BEYKENT\tYan Ürün Satışı\t2\n2026/3\tBY İSTANBUL BAĞCILAR\tEğitim Performans Oranı\t2\n2026/3\tBY İZMİR OPTİMUM\tKarlılık\t2\n2026/3\tBY MALL OF İSTANBUL\tNorm Kadro Doluluk Oranı\t2\n2026/3\tBY İSTANBUL ÜSKÜDAR\tEğitim Performans Oranı\t2\n2026/3\tBY BURSA ÖZLÜCE\tEnerji ve Bakım Onarım Gideri\t2\n2026/3\tBY İSTANBUL VİAMARİNE\tMüşteri Şikayet Oranı\t2\n2026/3\tBY İSTANBUL AQUA FLORYA\tEğitim Performans Oranı\t2\n2026/3\tBY İSTANBUL ORTAKÖY\tCiro /Hamburger Adedi\t2\n2026/3\tBY İZMİR OPTİMUM\tMüşteri Şikayet Oranı\t2\n2026/3\tBY İSTANBUL ESENLER\tEğitim Performans Oranı\t2\n2026/3\tBY İSTANBUL ÜMRANİYE MEYDAN AVM\tMüşteri Şikayet Oranı\t2\n2026/3\tBY İZMİR KÜÇÜKPARK\tŞube Denetim\t2\n2026/3\tBY İZMİR OPTİMUM\tİşgücü Devir Oranı\t2\n2026/3\tBY İSTANBUL BAĞCILAR\tŞube Denetim\t2\n2026/3\tBY VADİ İSTANBUL AVM\tEnerji ve Bakım Onarım Gideri\t2\n2026/3\tBY ESKİŞEHİR\tYan Ürün Satışı\t2\n2026/3\tBY İSTANBUL VİALAND\tKarlılık\t2\n2026/3\tBY İSTANBUL ÜMRANİYE\tEğitim Performans Oranı\t2\n2026/3\tBY İSTANBUL ŞİRİNEVLER \tYan Ürün Satışı\t2\n2026/3\tBY İSTANBUL ARENAPARK AVM\tPersonel Maliyeti\t2\n2026/3\tBY İSTANBUL ESENYURT\tGıda/ Malzeme Maliyeti\t2\n2026/3\tBY ANTALYA ALANYA CADDE\tŞube Denetim\t2\n2026/3\tBY İSTANBUL BEŞİKTAŞ\tCiro /Hamburger Adedi\t2\n2026/3\tBY İSTANBUL ŞİŞLİ \tGıda/ Malzeme Maliyeti\t2\n2026/3\tBY İSTANBUL ŞERİFALİ \tYan Ürün Satışı\t2\n2026/3\tBY İSTANBUL TORİUM AVM\tCiro /Hamburger Adedi\t2\n2026/3\tBY İSTANBUL SEFAKÖY \tMüşteri Şikayet Oranı\t2\n2026/3\tBY DENİZLİ FORUM AVM\tEğitim Performans Oranı\t2\n2026/3\tBY VADİ İSTANBUL AVM\tMüşteri Şikayet Oranı\t2\n2026/3\tBY İSTANBUL PENDİK LENS\tNorm Kadro Doluluk Oranı\t2\n2026/3\tBY İSTANBUL ÜSKÜDAR\tŞube Denetim\t2\n2026/3\tBY İSTANBUL ISPARTAKULE\tEğitim Performans Oranı\t2\n2026/3\tBY İSTANBUL BAŞAKŞEHİR\tCiro /Hamburger Adedi\t2\n2026/3\tBY İSTANBUL SEFAKÖY \tKarlılık\t2\n2026/3\tBY İSTANBUL HL. KARGO TER\tCiro /Hamburger Adedi\t2\n2026/3\tBY MALL OF İSTANBUL\tCiro /Hamburger Adedi\t2\n2026/3\tBY ORDU NOVADA AVM\tMüşteri Şikayet Oranı\t2\n2026/3\tBY GAZİANTEP SANKO AVM\tCiro /Hamburger Adedi\t2\n2026/3\tBY İSTANBUL TAKSİM \tMüşteri Şikayet Oranı\t2\n2026/3\tBY İSTANBUL ŞİŞLİ \tGoogle/Pazar Yerleri Puanı\t2\n2026/3\tBY ORDU NOVADA AVM\tEnerji ve Bakım Onarım Gideri\t2\n2026/3\tBY İZMİR HATAY \tKarlılık\t2\n2026/3\tBY ÇANAKKALE 17 BURDA AVM\tMüşteri Şikayet Oranı\t2\n2026/3\tBY İSTANBUL KOCA MUSTAFA PAŞA\tİşgücü Devir Oranı\t2\n2026/3\tBY İSTANBUL CADDEBOSTAN\tEğitim Performans Oranı\t2\n2026/3\tBY KOCAELİ GEBZE\tKarlılık\t2\n2026/3\tBY ORDU NOVADA AVM\tEğitim Performans Oranı\t2\n2026/3\tBY MALL OF İSTANBUL\tMüşteri Şikayet Oranı\t2\n2026/3\tBY İSTANBUL BEŞİKTAŞ\tEnerji ve Bakım Onarım Gideri\t2\n2026/3\tBY MUĞLA MARMARİS\tCiro /Hamburger Adedi\t2\n2026/3\tBY İSTANBUL SULTANGAZİ\tNorm Kadro Doluluk Oranı\t2\n2026/3\tBY ANTALYA ALANYA CADDE\tNorm Kadro Doluluk Oranı\t2\n2026/3\tBY İZMİR HATAY \tYan Ürün Satışı\t2\n2026/3\tBY İSTANBUL KADIKÖY\tGoogle/Pazar Yerleri Puanı\t2\n2026/3\tBY SAKARYA 54 AVM\tYan Ürün Satışı\t2\n2026/3\tBY İSTANBUL ÜMRANİYE MEYDAN AVM\tGoogle/Pazar Yerleri Puanı\t2\n2026/3\tBY İSTANBUL ORTAKÖY\tEğitim Performans Oranı\t2\n2026/3\tBY İSTANBUL MİRKELAM 2\tNorm Kadro Doluluk Oranı\t2\n2026/3\tBY İSTANBUL SULTANGAZİ\tŞube Denetim\t2\n2026/3\tBY KOCAELİ İZMİT\tNorm Kadro Doluluk Oranı\t2\n2026/3\tBY İZMİR KÜÇÜKPARK\tCiro /Hamburger Adedi\t2\n2026/3\tBY İSTANBUL MİRKELAM 2\tYan Ürün Satışı\t2\n2026/3\tBY İSTANBUL VİAPORT\tNorm Kadro Doluluk Oranı\t2\n2026/3\tBY İSTANBUL MARMARA PARK\tCiro /Hamburger Adedi\t2\n2026/3\tBY İSTANBUL ŞİRİNEVLER \tPersonel Maliyeti\t2\n2026/3\tBY İSTANBUL ARENAPARK AVM\tKarlılık\t2\n2026/3\tBY BURSA KENT MEYDANI AVM\tYan Ürün Satışı\t2\n2026/3\tBY İSTANBUL KARTAL CADDE\tEğitim Performans Oranı\t2\n2026/3\tBY İSTANBUL BAKIRKÖY \tEğitim Performans Oranı\t2\n2026/3\tBY BURSA ÖZLÜCE\tCiro /Hamburger Adedi\t2\n2026/3\tBY İSTANBUL FORUM İSTANBUL \tMüşteri Şikayet Oranı\t2\n2026/3\tBY İSTANBUL KADIKÖY\tNorm Kadro Doluluk Oranı\t2\n2026/3\tBY AYDIN EFELER \tNorm Kadro Doluluk Oranı\t2\n2026/3\tBY İSTANBUL BEŞİKTAŞ\tEğitim Performans Oranı\t2\n2026/3\tBY İSTANBUL FORUM İSTANBUL \tEğitim Performans Oranı\t2\n2026/3\tBY İSTANBUL BEYKENT\tNorm Kadro Doluluk Oranı\t2\n2026/3\tBY İSTANBUL TORİUM AVM\tMüşteri Şikayet Oranı\t2\n2026/3\tBY İSTANBUL ATLAS ÜNİVERSİTESİ\tEğitim Performans Oranı\t2\n2026/3\tBY İSTANBUL MALTEPE\tEğitim Performans Oranı\t2\n2026/3\tBY ESKİŞEHİR\tKarlılık\t2\n2026/3\tBY GAZİANTEP SANKO AVM\tŞube Denetim\t2\n2026/3\tBY İSTANBUL CENNET\tMüşteri Şikayet Oranı\t2\n2026/3\tBY İSTANBUL BAŞAKŞEHİR\tGoogle/Pazar Yerleri Puanı\t2\n2026/3\tBY İSTANBUL KAĞITHANE\tŞube Denetim\t2\n2026/3\tBY İSTANBUL YAYLA \tGoogle/Pazar Yerleri Puanı\t2\n2026/3\tBY İSTANBUL MİRKELAM 2\tCiro /Hamburger Adedi\t2\n2026/3\tBY İSTANBUL ÜMRANİYE\tMüşteri Şikayet Oranı\t2\n2026/3\tBY İSTANBUL AKSARAY \tEnerji ve Bakım Onarım Gideri\t2\n2026/3\tBY İSTANBUL FORUM İSTANBUL \tCiro /Hamburger Adedi\t2\n2026/3\tBY ESKİŞEHİR\tGıda/ Malzeme Maliyeti\t2\n2026/3\tBY İSTANBUL VİALAND\tMüşteri Şikayet Oranı\t2\n2026/3\tBY İSTANBUL CEVAHİR AVM \tEnerji ve Bakım Onarım Gideri\t2\n2026/3\tBY İSTANBUL ARENAPARK AVM\tMüşteri Şikayet Oranı\t2\n2026/3\tBY İSTANBUL ESENLER\tİşgücü Devir Oranı\t2\n2026/3\tBY İSTANBUL ŞİRİNEVLER  MEYDAN\tİşgücü Devir Oranı\t2\n2026/3\tBY İSTANBUL OASİS AVM\tMüşteri Şikayet Oranı\t2\n2026/3\tBY İSTANBUL SEFAKÖY \tİşgücü Devir Oranı\t2\n2026/3\tBY MUĞLA MARMARİS\tPersonel Maliyeti\t2\n2026/3\tBY İZMİR HİLLTOWN AVM\tGoogle/Pazar Yerleri Puanı\t2\n2026/3\tBY İSTANBUL YAYLA \tEğitim Performans Oranı\t2\n2026/3\tBY İSTANBUL BAŞAKŞEHİR\tYan Ürün Satışı\t2\n2026/3\tBY İSTANBUL İFM AVM\tŞube Denetim\t2\n2026/3\tBY İSTANBUL BAĞCILAR\tYan Ürün Satışı\t2\n2026/3\tBY AYDIN EFELER \tCiro /Hamburger Adedi\t2\n2026/3\tBY DENİZLİ FORUM AVM\tGıda/ Malzeme Maliyeti\t2\n2026/3\tBY İSTANBUL TORİUM AVM\tİşgücü Devir Oranı\t2\n2026/3\tBY İSTANBUL BAĞCILAR\tGoogle/Pazar Yerleri Puanı\t2\n2026/3\tBY İSTANBUL MARMARA FORUM\tEğitim Performans Oranı\t2\n2026/3\tBY İSTANBUL ŞİRİNEVLER  MEYDAN\tPersonel Maliyeti\t2\n2026/3\tBY İSTANBUL AQUA FLORYA\tNorm Kadro Doluluk Oranı\t2\n2026/3\tBY DENİZLİ FORUM AVM\tPersonel Maliyeti\t2\n2026/3\tBY İSTANBUL PENDİK\tİşgücü Devir Oranı\t2\n2026/3\tBY ESKİŞEHİR\tCiro /Hamburger Adedi\t2\n2026/3\tBY İSTANBUL OASİS AVM\tCiro /Hamburger Adedi\t2\n2026/3\tBY İSTANBUL İFM AVM\tNorm Kadro Doluluk Oranı\t2\n2026/3\tBY İSTANBUL PELİCAN AVM\tŞube Denetim\t2\n2026/3\tBY İSTANBUL AKSARAY \tİşgücü Devir Oranı\t2\n2026/3\tBY İSTANBUL AKSARAY \tCiro /Hamburger Adedi\t2\n2026/3\tBY İSTANBUL ESENLER\tEnerji ve Bakım Onarım Gideri\t2\n2026/3\tBY İSTANBUL ŞİRİNEVLER \tCiro /Hamburger Adedi\t2\n2026/3\tBY İSTANBUL ŞİŞLİ \tCiro /Hamburger Adedi\t2\n2026/3\tBY RİZE\tEğitim Performans Oranı\t2\n2026/3\tBY MUĞLA MARMARİS\tKarlılık\t2\n2026/3\tBY İSTANBUL TAKSİM \tNorm Kadro Doluluk Oranı\t2\n2026/3\tBY İSTANBUL BAKIRKÖY \tGıda/ Malzeme Maliyeti\t2\n2026/3\tBY İSTANBUL KADIKÖY\tCiro /Hamburger Adedi\t2\n2026/3\tBY ÇANAKKALE 17 BURDA AVM\tPersonel Maliyeti\t2\n2026/3\tBY VADİ İSTANBUL AVM\tGoogle/Pazar Yerleri Puanı\t2\n2026/3\tBY BURSA KENT MEYDANI AVM\tEğitim Performans Oranı\t2\n2026/3\tBY AYDIN EFELER \tGoogle/Pazar Yerleri Puanı\t2\n2026/3\tBY İSTANBUL VENEZİA AVM\tGıda/ Malzeme Maliyeti\t2\n2026/3\tBY ANTALYA ALANYA CADDE\tGoogle/Pazar Yerleri Puanı\t2\n2026/3\tBY MUĞLA FETHİYE\tGoogle/Pazar Yerleri Puanı\t2\n2026/3\tBY İSTANBUL BEŞİKTAŞ\tYan Ürün Satışı\t2\n2026/3\tBY İSTANBUL ISPARTAKULE\tCiro /Hamburger Adedi\t2\n2026/3\tBY MUĞLA MARMARİS\tİşgücü Devir Oranı\t2\n2026/3\tBY İSTANBUL AQUA FLORYA\tŞube Denetim\t2\n2026/3\tBY İSTANBUL TORİUM AVM\tKarlılık\t2\n2026/3\tBY İSTANBUL PELİCAN AVM\tYan Ürün Satışı\t2\n2026/3\tBY BURSA KENT MEYDANI AVM\tİşgücü Devir Oranı\t2\n2026/3\tBY İSTANBUL ESENLER\tGoogle/Pazar Yerleri Puanı\t2\n2026/3\tBY İSTANBUL MALTEPE\tCiro /Hamburger Adedi\t2\n2026/3\tBY İSTANBUL PENDİK\tEğitim Performans Oranı\t2\n2026/3\tBY İSTANBUL ÇAPA\tCiro /Hamburger Adedi\t2\n2026/3\tBY İZMİR HİLLTOWN AVM\tMüşteri Şikayet Oranı\t2\n2026/3\tBY BURSA KENT MEYDANI AVM\tGıda/ Malzeme Maliyeti\t2\n2026/3\tBY İSTANBUL AVCILAR ÇARŞI\tGoogle/Pazar Yerleri Puanı\t2\n2026/3\tBY TEKİRDAĞ ÇORLU\tMüşteri Şikayet Oranı\t2\n",
+  "stderr": "",
+  "execution_time_ms": 1783
+}

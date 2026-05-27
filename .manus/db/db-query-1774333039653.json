@@ -1,0 +1,16 @@
+{
+  "query": "SELECT p.id, p.name, COUNT(DISTINCT pc.id) as categoryCount, COUNT(pq.id) as questionCount FROM positions p LEFT JOIN position_categories pc ON p.id = pc.positionId LEFT JOIN position_questions pq ON pc.id = pq.categoryId WHERE p.name = 'SERVIS' GROUP BY p.id, p.name;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SELECT p.id, p.name, COUNT(DISTINCT pc.id) as categoryCount, COUNT(pq.id) as questionCount FROM positions p LEFT JOIN position_categories pc ON p.id = pc.positionId LEFT JOIN position_questions pq ON pc.id = pq.categoryId WHERE p.name = 'SERVIS' GROUP BY p.id, p.name;",
+  "rows": [
+    {
+      "id": "5",
+      "name": "SERVIS",
+      "categoryCount": "10",
+      "questionCount": "50"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tname\tcategoryCount\tquestionCount\n5\tSERVIS\t10\t50\n",
+  "stderr": "",
+  "execution_time_ms": 1619
+}

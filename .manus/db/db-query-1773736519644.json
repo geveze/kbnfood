@@ -1,0 +1,16 @@
+{
+  "query": "SELECT b.id, b.name, u.username, u.email FROM branches b LEFT JOIN users u ON b.id = u.branchId AND u.role = 'branch_manager' WHERE b.name LIKE '%BAĞCILAR%';",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SELECT b.id, b.name, u.username, u.email FROM branches b LEFT JOIN users u ON b.id = u.branchId AND u.role = 'branch_manager' WHERE b.name LIKE '%BAĞCILAR%';",
+  "rows": [
+    {
+      "id": "30018",
+      "name": "İSTANBUL BAĞCILAR",
+      "username": "byi̇ba",
+      "email": "byi̇ba@kebanfood.com"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tname\tusername\temail\n30018\tİSTANBUL BAĞCILAR\tbyi̇ba\tbyi̇ba@kebanfood.com\n",
+  "stderr": "",
+  "execution_time_ms": 1533
+}

@@ -1,0 +1,8 @@
+{
+  "query": "-- Çift KPI maddelerini tespit et\nSELECT \n  period, \n  branchName, \n  kpiName, \n  COUNT(*) as count\nFROM kpi_target_cards_detail\nGROUP BY period, branchName, kpiName\nHAVING COUNT(*) > 1\nORDER BY count DESC;\n\n-- Çift KPI maddelerini teke düşür - her grup için ilk kaydı tut, diğerlerini sil\nDELETE FROM kpi_target_cards_detail\nWHERE id NOT IN (\n  SELECT MIN(id)\n  FROM (\n    SELECT MIN(id) as id\n    FROM kpi_target_cards_detail\n    GROUP BY period, branchName, kpiName\n  ) as keep_ids\n);",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute -- Çift KPI maddelerini tespit et\nSELECT \n  period, \n  branchName, \n  kpiName, \n  COUNT(*) as count\nFROM kpi_target_cards_detail\nGROUP BY period, branchName, kpiName\nHAVING COUNT(*) > 1\nORDER BY count DESC;\n\n-- Çift KPI maddelerini teke düşür - her grup için ilk kaydı tut, diğerlerini sil\nDELETE FROM kpi_target_cards_detail\nWHERE id NOT IN (\n  SELECT MIN(id)\n  FROM (\n    SELECT MIN(id) as id\n    FROM kpi_target_cards_detail\n    GROUP BY period, branchName, kpiName\n  ) as keep_ids\n);",
+  "returncode": 1,
+  "logs": [
+    "ERROR 1054 (42S22) at line 2: Unknown column 'kpiname' in 'group statement'"
+  ]
+}

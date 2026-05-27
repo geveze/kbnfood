@@ -1,0 +1,9 @@
+{
+  "query": "INSERT INTO probation_evaluations (employeeTCNumber, employeeName, branchName, evaluationPeriod, successPercentage) VALUES ('99999999999', 'Test 5.5 Ay', 'Merkez', '5.5_months', 85);",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute INSERT INTO probation_evaluations (employeeTCNumber, employeeName, branchName, evaluationPeriod, successPercentage) VALUES ('99999999999', 'Test 5.5 Ay', 'Merkez', '5.5_months', 85);",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 1589
+}

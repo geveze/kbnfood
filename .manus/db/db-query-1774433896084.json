@@ -1,0 +1,31 @@
+{
+  "query": "SELECT id, employeeTCNumber, employeeName, evaluationPeriod, successPercentage FROM probation_evaluations ORDER BY evaluationPeriod, id;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SELECT id, employeeTCNumber, employeeName, evaluationPeriod, successPercentage FROM probation_evaluations ORDER BY evaluationPeriod, id;",
+  "rows": [
+    {
+      "id": "1",
+      "employeeTCNumber": "12345678925",
+      "employeeName": "Emre Çetin",
+      "evaluationPeriod": "1.5_months",
+      "successPercentage": "80.00"
+    },
+    {
+      "id": "30001",
+      "employeeTCNumber": "11111111111",
+      "employeeName": "testo",
+      "evaluationPeriod": "1.5_months",
+      "successPercentage": "47.00"
+    },
+    {
+      "id": "60001",
+      "employeeTCNumber": "12345678901",
+      "employeeName": "test personel",
+      "evaluationPeriod": "1.5_months",
+      "successPercentage": "95.00"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\temployeeTCNumber\temployeeName\tevaluationPeriod\tsuccessPercentage\n1\t12345678925\tEmre Çetin\t1.5_months\t80.00\n30001\t11111111111\ttesto\t1.5_months\t47.00\n60001\t12345678901\ttest personel\t1.5_months\t95.00\n",
+  "stderr": "",
+  "execution_time_ms": 1603
+}

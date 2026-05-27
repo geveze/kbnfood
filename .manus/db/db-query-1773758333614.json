@@ -1,0 +1,60 @@
+{
+  "query": "SELECT id, positionId, name FROM position_categories WHERE positionId = 8 ORDER BY id",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SELECT id, positionId, name FROM position_categories WHERE positionId = 8 ORDER BY id",
+  "rows": [
+    {
+      "id": "60145",
+      "positionId": "8",
+      "name": "Görev Bilinci"
+    },
+    {
+      "id": "60146",
+      "positionId": "8",
+      "name": "İletişim Becerisi"
+    },
+    {
+      "id": "60147",
+      "positionId": "8",
+      "name": "Analitik Düşünme ve Problem Çözme"
+    },
+    {
+      "id": "60148",
+      "positionId": "8",
+      "name": "Kalite Odaklılık"
+    },
+    {
+      "id": "60149",
+      "positionId": "8",
+      "name": "Takım Çalışması ve İşbirliği"
+    },
+    {
+      "id": "60150",
+      "positionId": "8",
+      "name": "Müşteri Odaklılık"
+    },
+    {
+      "id": "60151",
+      "positionId": "8",
+      "name": "Ticari Bakış"
+    },
+    {
+      "id": "60152",
+      "positionId": "8",
+      "name": "Planlama ve Organize Etme"
+    },
+    {
+      "id": "60153",
+      "positionId": "8",
+      "name": "İş Disiplini ve Tutum"
+    },
+    {
+      "id": "60154",
+      "positionId": "8",
+      "name": "Kasa"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tpositionId\tname\n60145\t8\tGörev Bilinci\n60146\t8\tİletişim Becerisi\n60147\t8\tAnalitik Düşünme ve Problem Çözme\n60148\t8\tKalite Odaklılık\n60149\t8\tTakım Çalışması ve İşbirliği\n60150\t8\tMüşteri Odaklılık\n60151\t8\tTicari Bakış\n60152\t8\tPlanlama ve Organize Etme\n60153\t8\tİş Disiplini ve Tutum\n60154\t8\tKasa\n",
+  "stderr": "",
+  "execution_time_ms": 1546
+}

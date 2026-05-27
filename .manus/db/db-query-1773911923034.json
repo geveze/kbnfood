@@ -1,0 +1,80 @@
+{
+  "query": "\nSELECT id, employeeName, employeePosition, branchId, createdAt FROM performance_evaluations ORDER BY createdAt DESC LIMIT 10;\n",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute \nSELECT id, employeeName, employeePosition, branchId, createdAt FROM performance_evaluations ORDER BY createdAt DESC LIMIT 10;\n",
+  "rows": [
+    {
+      "id": "480003",
+      "employeeName": "Test Personeli",
+      "employeePosition": "SERVIS",
+      "branchId": "1",
+      "createdAt": "2026-03-19 09:09:52"
+    },
+    {
+      "id": "480002",
+      "employeeName": "asdads",
+      "employeePosition": "IZGARA_YONETICI",
+      "branchId": "30017",
+      "createdAt": "2026-03-19 08:51:39"
+    },
+    {
+      "id": "480001",
+      "employeeName": "asdada",
+      "employeePosition": "IZGARA_YONETICI",
+      "branchId": "30017",
+      "createdAt": "2026-03-19 08:48:47"
+    },
+    {
+      "id": "450003",
+      "employeeName": "asdasdasd",
+      "employeePosition": "RESTORAN_YONETIMI",
+      "branchId": "30017",
+      "createdAt": "2026-03-19 06:20:52"
+    },
+    {
+      "id": "450002",
+      "employeeName": "MURAT ÇALLI",
+      "employeePosition": "RESTORAN_YONETIMI",
+      "branchId": "30025",
+      "createdAt": "2026-03-19 05:33:01"
+    },
+    {
+      "id": "450001",
+      "employeeName": "BERAT ERKAN",
+      "employeePosition": "RESTORAN_YONETIMI",
+      "branchId": "30059",
+      "createdAt": "2026-03-19 05:27:22"
+    },
+    {
+      "id": "420005",
+      "employeeName": "aasdadasd",
+      "employeePosition": "SERVIS",
+      "branchId": "30017",
+      "createdAt": "2026-03-18 13:25:06"
+    },
+    {
+      "id": "420004",
+      "employeeName": "Zekiye ŞAHİN",
+      "employeePosition": "SERVIS",
+      "branchId": "30017",
+      "createdAt": "2026-03-18 12:34:10"
+    },
+    {
+      "id": "420003",
+      "employeeName": "Test Employee",
+      "employeePosition": "Restoran Müdürü",
+      "branchId": "1",
+      "createdAt": "2026-03-18 12:27:47"
+    },
+    {
+      "id": "420002",
+      "employeeName": "BERAT ERKAN",
+      "employeePosition": "RESTORAN_YONETIMI",
+      "branchId": "30059",
+      "createdAt": "2026-03-18 12:00:53"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\temployeeName\temployeePosition\tbranchId\tcreatedAt\n480003\tTest Personeli\tSERVIS\t1\t2026-03-19 09:09:52\n480002\tasdads\tIZGARA_YONETICI\t30017\t2026-03-19 08:51:39\n480001\tasdada\tIZGARA_YONETICI\t30017\t2026-03-19 08:48:47\n450003\tasdasdasd\tRESTORAN_YONETIMI\t30017\t2026-03-19 06:20:52\n450002\tMURAT ÇALLI\tRESTORAN_YONETIMI\t30025\t2026-03-19 05:33:01\n450001\tBERAT ERKAN\tRESTORAN_YONETIMI\t30059\t2026-03-19 05:27:22\n420005\taasdadasd\tSERVIS\t30017\t2026-03-18 13:25:06\n420004\tZekiye ŞAHİN\tSERVIS\t30017\t2026-03-18 12:34:10\n420003\tTest Employee\tRestoran Müdürü\t1\t2026-03-18 12:27:47\n420002\tBERAT ERKAN\tRESTORAN_YONETIMI\t30059\t2026-03-18 12:00:53\n",
+  "stderr": "",
+  "execution_time_ms": 1658
+}

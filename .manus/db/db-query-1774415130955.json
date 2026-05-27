@@ -1,0 +1,17 @@
+{
+  "query": "SELECT id, username, email, role, createdAt FROM users WHERE username = 'admin' LIMIT 1;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SELECT id, username, email, role, createdAt FROM users WHERE username = 'admin' LIMIT 1;",
+  "rows": [
+    {
+      "id": "114",
+      "username": "admin",
+      "email": "admin@kebanfood.com",
+      "role": "admin",
+      "createdAt": "2026-03-10 08:41:21"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tusername\temail\trole\tcreatedAt\n114\tadmin\tadmin@kebanfood.com\tadmin\t2026-03-10 08:41:21\n",
+  "stderr": "",
+  "execution_time_ms": 1637
+}

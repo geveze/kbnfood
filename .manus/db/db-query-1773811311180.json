@@ -1,0 +1,58 @@
+{
+  "query": "SELECT id, name FROM position_categories WHERE positionId = 90002 ORDER BY `order`;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SELECT id, name FROM position_categories WHERE positionId = 90002 ORDER BY `order`;",
+  "rows": [
+    {
+      "id": "90093",
+      "name": "Görev Bilinci"
+    },
+    {
+      "id": "90094",
+      "name": "İletişim Becerisi"
+    },
+    {
+      "id": "90095",
+      "name": "Analitik Düşünme ve Problem Çözme"
+    },
+    {
+      "id": "90096",
+      "name": "Kalite Odaklılık"
+    },
+    {
+      "id": "90097",
+      "name": "Takım Çalışması ve İşbirliği"
+    },
+    {
+      "id": "90098",
+      "name": "Detay Odaklılık"
+    },
+    {
+      "id": "90099",
+      "name": "Duygularını Kontrol Etme ve Yönetme"
+    },
+    {
+      "id": "90100",
+      "name": "Sonuç Odaklılık"
+    },
+    {
+      "id": "90101",
+      "name": "İş Disiplini ve Tutum"
+    },
+    {
+      "id": "90102",
+      "name": "Ürün Kalitesi ve Standartlara Uyum"
+    },
+    {
+      "id": "90103",
+      "name": "Gıda Güvenliği ve Hijyen"
+    },
+    {
+      "id": "90104",
+      "name": "İstasyon Yönetimi"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tname\n90093\tGörev Bilinci\n90094\tİletişim Becerisi\n90095\tAnalitik Düşünme ve Problem Çözme\n90096\tKalite Odaklılık\n90097\tTakım Çalışması ve İşbirliği\n90098\tDetay Odaklılık\n90099\tDuygularını Kontrol Etme ve Yönetme\n90100\tSonuç Odaklılık\n90101\tİş Disiplini ve Tutum\n90102\tÜrün Kalitesi ve Standartlara Uyum\n90103\tGıda Güvenliği ve Hijyen\n90104\tİstasyon Yönetimi\n",
+  "stderr": "",
+  "execution_time_ms": 1607
+}

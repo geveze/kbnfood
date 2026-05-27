@@ -1,0 +1,15 @@
+{
+  "query": "SELECT id, employeeName, scores FROM performance_evaluations LIMIT 1",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SELECT id, employeeName, scores FROM performance_evaluations LIMIT 1",
+  "rows": [
+    {
+      "id": "9",
+      "employeeName": "test test",
+      "scores": "\"{\\\"Teknik ve mesleki bilgi\\\":5,\\\"Yöneticileriyle iletişim\\\":5,\\\"İş arkadaşları ile iletişim becerisi ve işbirliği içinde çalışma\\\":5,\\\"Şirketi temsil yeteneği (kılık kıyafet, genel görünüm vb.)\\\":5,\\\"Verilen işi doğru bir şekilde ve zamanında yerine getirme, iş disiplini\\\":4,\\\"Şirket kural ve talimatlarına uyma\\\":5,\\\"Araştırmaya ve öğrenmeye ilgisi\\\":5,\\\"Sorumluluk alma ve işi sahiplenme\\\":5,\\\"Değişen koşullara uyum sağlama, esneklik\\\":5,\\\"İşe değer katma, yeni fikirler üretme\\\":5,\\\"Olumlu, yapıcı ve pozitif yaklaşım\\\":4,\\\"Etkin planlama ve zaman yönetimi\\\":5,\\\"İşe adapte olma ve motive çalışma\\\":4,\\\"Muhakeme yeteneği\\\":4,\\\"Etik ve dürüst çalışma\\\":4,\\\"Analiz Etme ve Problem Çözme\\\":4,\\\"Görev Bilinci\\\":5,\\\"Kalite Odaklılık\\\":4,\\\"İletişim Becerisi\\\":5,\\\"Takım Çalışması ve İşbirliği\\\":5}\""
+    }
+  ],
+  "messages": [],
+  "stdout": "id\temployeeName\tscores\n9\ttest test\t\"{\\\"Teknik ve mesleki bilgi\\\":5,\\\"Yöneticileriyle iletişim\\\":5,\\\"İş arkadaşları ile iletişim becerisi ve işbirliği içinde çalışma\\\":5,\\\"Şirketi temsil yeteneği (kılık kıyafet, genel görünüm vb.)\\\":5,\\\"Verilen işi doğru bir şekilde ve zamanında yerine getirme, iş disiplini\\\":4,\\\"Şirket kural ve talimatlarına uyma\\\":5,\\\"Araştırmaya ve öğrenmeye ilgisi\\\":5,\\\"Sorumluluk alma ve işi sahiplenme\\\":5,\\\"Değişen koşullara uyum sağlama, esneklik\\\":5,\\\"İşe değer katma, yeni fikirler üretme\\\":5,\\\"Olumlu, yapıcı ve pozitif yaklaşım\\\":4,\\\"Etkin planlama ve zaman yönetimi\\\":5,\\\"İşe adapte olma ve motive çalışma\\\":4,\\\"Muhakeme yeteneği\\\":4,\\\"Etik ve dürüst çalışma\\\":4,\\\"Analiz Etme ve Problem Çözme\\\":4,\\\"Görev Bilinci\\\":5,\\\"Kalite Odaklılık\\\":4,\\\"İletişim Becerisi\\\":5,\\\"Takım Çalışması ve İşbirliği\\\":5}\"\n",
+  "stderr": "",
+  "execution_time_ms": 1547
+}

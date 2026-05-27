@@ -1,0 +1,170 @@
+{
+  "query": "SELECT \n  pc.id as categoryId,\n  pc.positionId,\n  p.name as positionName,\n  pc.name as categoryName,\n  COUNT(pq.id) as questionCount,\n  GROUP_CONCAT(pq.questionText SEPARATOR ' | ') as questions\nFROM position_categories pc\nJOIN positions p ON pc.positionId = p.id\nLEFT JOIN position_questions pq ON pc.id = pq.categoryId\nWHERE p.id IN (7, 90002)\nGROUP BY pc.id, pc.positionId, p.name, pc.name\nORDER BY p.id, pc.id;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SELECT \n  pc.id as categoryId,\n  pc.positionId,\n  p.name as positionName,\n  pc.name as categoryName,\n  COUNT(pq.id) as questionCount,\n  GROUP_CONCAT(pq.questionText SEPARATOR ' | ') as questions\nFROM position_categories pc\nJOIN positions p ON pc.positionId = p.id\nLEFT JOIN position_questions pq ON pc.id = pq.categoryId\nWHERE p.id IN (7, 90002)\nGROUP BY pc.id, pc.positionId, p.name, pc.name\nORDER BY p.id, pc.id;",
+  "rows": [
+    {
+      "categoryId": "150022",
+      "positionId": "7",
+      "positionName": "IZGARA_YONETICI",
+      "categoryName": "Görev Bilinci",
+      "questionCount": "0",
+      "questions": "NULL"
+    },
+    {
+      "categoryId": "150023",
+      "positionId": "7",
+      "positionName": "IZGARA_YONETICI",
+      "categoryName": "İletişim Becerisi",
+      "questionCount": "0",
+      "questions": "NULL"
+    },
+    {
+      "categoryId": "150024",
+      "positionId": "7",
+      "positionName": "IZGARA_YONETICI",
+      "categoryName": "Analitik Düşünme ve Problem Çözme",
+      "questionCount": "0",
+      "questions": "NULL"
+    },
+    {
+      "categoryId": "150025",
+      "positionId": "7",
+      "positionName": "IZGARA_YONETICI",
+      "categoryName": "Kalite Odaklılık",
+      "questionCount": "0",
+      "questions": "NULL"
+    },
+    {
+      "categoryId": "150026",
+      "positionId": "7",
+      "positionName": "IZGARA_YONETICI",
+      "categoryName": "Takım Çalışması ve İşbirliği",
+      "questionCount": "0",
+      "questions": "NULL"
+    },
+    {
+      "categoryId": "150027",
+      "positionId": "7",
+      "positionName": "IZGARA_YONETICI",
+      "categoryName": "Yönetim Becerileri ",
+      "questionCount": "10",
+      "questions": "Doğru insanları belirleyerek ihtiyaçlar doğrultusunda görev dağılımını net bir şekilde yapar.  | Ekibine mentorluk yapar, yapıcı geri bildirimlerde bulunur ve yönlendirir. | Ekibini motive eder, olumsuzluk yaratacak durumların önüne geçmek için çaba sarf eder. | Ekip içindeki anlaşmazlıkları kişiselleştirmeden şirket yararını gözeterek yönetir. | İnsanların yeteneklerini keşfeder ve doğru şekilde değerlendirir. | Görevlerin yerine getirilebilmesi için gerekli olan kaynakları belirler ve organize eder. | Aldığı kararların arkasındadır ve bu kararların sorumluluğunu üstlenir.  | Zor durumlarda ve baskı altında en etkili kararı verir. | Çalışanların gelişimi için öğrenme ortamı yaratır. Ekibini ve kendini sürekli geliştirir. | Davranışları ile ekibe örnek olur. Söyledikleri ile yaptıkları tutarlıdır."
+    },
+    {
+      "categoryId": "150028",
+      "positionId": "7",
+      "positionName": "IZGARA_YONETICI",
+      "categoryName": "İş Disiplini ve Tutum",
+      "questionCount": "4",
+      "questions": "Dış görünüşüne, saçına, sakalına, kişisel hijyenine dikkat eder. Eldiven, bone kullanır. | Şirketin eğitimlerine aktif olarak katılır, atanmış eğitimlerini tamamlar. | Restoran hedeflerinden haberdardır, hedef için elinden gelen gayreti gösterir. | Mazeret bildirmeden işe gelmemezlik yapmaz. Vardiya ve mola düzenine uyar."
+    },
+    {
+      "categoryId": "150029",
+      "positionId": "7",
+      "positionName": "IZGARA_YONETICI",
+      "categoryName": "Ürün Kalitesi ve Standartlara Uyum",
+      "questionCount": "7",
+      "questions": "Ürünleri reçetelere uygun hazırlar. Ürünlerin her seferinde aynı kalite ve tatta olmasını sağlar. | Et pişirme tekniklerine hakimdir. Şirket standartlarına uygun pişirme yapar. | Patates kızartma standartlarını bilir, doğru şekilde uygular. | Peynir çubukları, soğan halkası, nugget vb. ürünleri doğru sürede uygun sıcaklıkta pişirir. | Ekmek kesimini ve burger süslemesini standartlara uygun olarak yapar. | Kızartma yağı TPM ölçümünü doğru olarak yapar.İç ısı standardını sağlar. | Yağ filtre işlemini standartlara uygun olarak yapar. Koruyucu materyalleri kullanır."
+    },
+    {
+      "categoryId": "150030",
+      "positionId": "7",
+      "positionName": "IZGARA_YONETICI",
+      "categoryName": "Gıda Güvenliği ve Hijyen",
+      "questionCount": "6",
+      "questions": "Ürünlerin son kullanma tarihine dikkat eder. Zayii olmasına izin vermez. (FIFO-İlk Giren İlk Çıkar) | Sebzeleri standartlara uygun şekilde yıkar. | Küçük ekipmanların hijyenini standartlara uygun olarak sağlar. | Gıda güvenliği ve operasyonel prosedür ve talimatları bilir, bunlara uygun hareket eder. | Temizlik kimyasallarını İSG kurallarına uygun şekilde kullanır. | Çalışma süresince İSG kurallarına uygun hareket eder."
+    },
+    {
+      "categoryId": "150031",
+      "positionId": "7",
+      "positionName": "IZGARA_YONETICI",
+      "categoryName": "İstasyon Yönetimi",
+      "questionCount": "3",
+      "questions": "İstasyonlarda doğru ürün miktarının bulunmasına özen gösterir. | Çalıştığı istasyonların temizliğini ve düzenini sağlar. | Çalıştığı ekipmanları özenli ve titiz kullanır. Temizliğini yapar."
+    },
+    {
+      "categoryId": "150032",
+      "positionId": "90002",
+      "positionName": "IZGARA",
+      "categoryName": "Görev Bilinci",
+      "questionCount": "0",
+      "questions": "NULL"
+    },
+    {
+      "categoryId": "150033",
+      "positionId": "90002",
+      "positionName": "IZGARA",
+      "categoryName": "İletişim Becerisi",
+      "questionCount": "0",
+      "questions": "NULL"
+    },
+    {
+      "categoryId": "150034",
+      "positionId": "90002",
+      "positionName": "IZGARA",
+      "categoryName": "Analitik Düşünme ve Problem Çözme",
+      "questionCount": "0",
+      "questions": "NULL"
+    },
+    {
+      "categoryId": "150035",
+      "positionId": "90002",
+      "positionName": "IZGARA",
+      "categoryName": "Kalite Odaklılık",
+      "questionCount": "0",
+      "questions": "NULL"
+    },
+    {
+      "categoryId": "150036",
+      "positionId": "90002",
+      "positionName": "IZGARA",
+      "categoryName": "Takım Çalışması ve İşbirliği",
+      "questionCount": "0",
+      "questions": "NULL"
+    },
+    {
+      "categoryId": "150037",
+      "positionId": "90002",
+      "positionName": "IZGARA",
+      "categoryName": "Yönetim Becerileri ",
+      "questionCount": "10",
+      "questions": "Doğru insanları belirleyerek ihtiyaçlar doğrultusunda görev dağılımını net bir şekilde yapar.  | Ekibine mentorluk yapar, yapıcı geri bildirimlerde bulunur ve yönlendirir. | Ekibini motive eder, olumsuzluk yaratacak durumların önüne geçmek için çaba sarf eder. | Ekip içindeki anlaşmazlıkları kişiselleştirmeden şirket yararını gözeterek yönetir. | İnsanların yeteneklerini keşfeder ve doğru şekilde değerlendirir. | Görevlerin yerine getirilebilmesi için gerekli olan kaynakları belirler ve organize eder. | Aldığı kararların arkasındadır ve bu kararların sorumluluğunu üstlenir.  | Zor durumlarda ve baskı altında en etkili kararı verir. | Çalışanların gelişimi için öğrenme ortamı yaratır. Ekibini ve kendini sürekli geliştirir. | Davranışları ile ekibe örnek olur. Söyledikleri ile yaptıkları tutarlıdır."
+    },
+    {
+      "categoryId": "150038",
+      "positionId": "90002",
+      "positionName": "IZGARA",
+      "categoryName": "İş Disiplini ve Tutum",
+      "questionCount": "4",
+      "questions": "Dış görünüşüne, saçına, sakalına, kişisel hijyenine dikkat eder. Eldiven, bone kullanır. | Şirketin eğitimlerine aktif olarak katılır, atanmış eğitimlerini tamamlar. | Restoran hedeflerinden haberdardır, hedef için elinden gelen gayreti gösterir. | Mazeret bildirmeden işe gelmemezlik yapmaz. Vardiya ve mola düzenine uyar."
+    },
+    {
+      "categoryId": "150039",
+      "positionId": "90002",
+      "positionName": "IZGARA",
+      "categoryName": "Ürün Kalitesi ve Standartlara Uyum",
+      "questionCount": "7",
+      "questions": "Ürünleri reçetelere uygun hazırlar. Ürünlerin her seferinde aynı kalite ve tatta olmasını sağlar. | Et pişirme tekniklerine hakimdir. Şirket standartlarına uygun pişirme yapar. | Patates kızartma standartlarını bilir, doğru şekilde uygular. | Peynir çubukları, soğan halkası, nugget vb. ürünleri doğru sürede uygun sıcaklıkta pişirir. | Ekmek kesimini ve burger süslemesini standartlara uygun olarak yapar. | Kızartma yağı TPM ölçümünü doğru olarak yapar.İç ısı standardını sağlar. | Yağ filtre işlemini standartlara uygun olarak yapar. Koruyucu materyalleri kullanır."
+    },
+    {
+      "categoryId": "150040",
+      "positionId": "90002",
+      "positionName": "IZGARA",
+      "categoryName": "Gıda Güvenliği ve Hijyen",
+      "questionCount": "6",
+      "questions": "Ürünlerin son kullanma tarihine dikkat eder. Zayii olmasına izin vermez. (FIFO-İlk Giren İlk Çıkar) | Sebzeleri standartlara uygun şekilde yıkar. | Küçük ekipmanların hijyenini standartlara uygun olarak sağlar. | Gıda güvenliği ve operasyonel prosedür ve talimatları bilir, bunlara uygun hareket eder. | Temizlik kimyasallarını İSG kurallarına uygun şekilde kullanır. | Çalışma süresince İSG kurallarına uygun hareket eder."
+    },
+    {
+      "categoryId": "150041",
+      "positionId": "90002",
+      "positionName": "IZGARA",
+      "categoryName": "İstasyon Yönetimi",
+      "questionCount": "3",
+      "questions": "İstasyonlarda doğru ürün miktarının bulunmasına özen gösterir. | Çalıştığı istasyonların temizliğini ve düzenini sağlar. | Çalıştığı ekipmanları özenli ve titiz kullanır. Temizliğini yapar."
+    }
+  ],
+  "messages": [],
+  "stdout": "categoryId\tpositionId\tpositionName\tcategoryName\tquestionCount\tquestions\n150022\t7\tIZGARA_YONETICI\tGörev Bilinci\t0\tNULL\n150023\t7\tIZGARA_YONETICI\tİletişim Becerisi\t0\tNULL\n150024\t7\tIZGARA_YONETICI\tAnalitik Düşünme ve Problem Çözme\t0\tNULL\n150025\t7\tIZGARA_YONETICI\tKalite Odaklılık\t0\tNULL\n150026\t7\tIZGARA_YONETICI\tTakım Çalışması ve İşbirliği\t0\tNULL\n150027\t7\tIZGARA_YONETICI\tYönetim Becerileri \t10\tDoğru insanları belirleyerek ihtiyaçlar doğrultusunda görev dağılımını net bir şekilde yapar.  | Ekibine mentorluk yapar, yapıcı geri bildirimlerde bulunur ve yönlendirir. | Ekibini motive eder, olumsuzluk yaratacak durumların önüne geçmek için çaba sarf eder. | Ekip içindeki anlaşmazlıkları kişiselleştirmeden şirket yararını gözeterek yönetir. | İnsanların yeteneklerini keşfeder ve doğru şekilde değerlendirir. | Görevlerin yerine getirilebilmesi için gerekli olan kaynakları belirler ve organize eder. | Aldığı kararların arkasındadır ve bu kararların sorumluluğunu üstlenir.  | Zor durumlarda ve baskı altında en etkili kararı verir. | Çalışanların gelişimi için öğrenme ortamı yaratır. Ekibini ve kendini sürekli geliştirir. | Davranışları ile ekibe örnek olur. Söyledikleri ile yaptıkları tutarlıdır.\n150028\t7\tIZGARA_YONETICI\tİş Disiplini ve Tutum\t4\tDış görünüşüne, saçına, sakalına, kişisel hijyenine dikkat eder. Eldiven, bone kullanır. | Şirketin eğitimlerine aktif olarak katılır, atanmış eğitimlerini tamamlar. | Restoran hedeflerinden haberdardır, hedef için elinden gelen gayreti gösterir. | Mazeret bildirmeden işe gelmemezlik yapmaz. Vardiya ve mola düzenine uyar.\n150029\t7\tIZGARA_YONETICI\tÜrün Kalitesi ve Standartlara Uyum\t7\tÜrünleri reçetelere uygun hazırlar. Ürünlerin her seferinde aynı kalite ve tatta olmasını sağlar. | Et pişirme tekniklerine hakimdir. Şirket standartlarına uygun pişirme yapar. | Patates kızartma standartlarını bilir, doğru şekilde uygular. | Peynir çubukları, soğan halkası, nugget vb. ürünleri doğru sürede uygun sıcaklıkta pişirir. | Ekmek kesimini ve burger süslemesini standartlara uygun olarak yapar. | Kızartma yağı TPM ölçümünü doğru olarak yapar.İç ısı standardını sağlar. | Yağ filtre işlemini standartlara uygun olarak yapar. Koruyucu materyalleri kullanır.\n150030\t7\tIZGARA_YONETICI\tGıda Güvenliği ve Hijyen\t6\tÜrünlerin son kullanma tarihine dikkat eder. Zayii olmasına izin vermez. (FIFO-İlk Giren İlk Çıkar) | Sebzeleri standartlara uygun şekilde yıkar. | Küçük ekipmanların hijyenini standartlara uygun olarak sağlar. | Gıda güvenliği ve operasyonel prosedür ve talimatları bilir, bunlara uygun hareket eder. | Temizlik kimyasallarını İSG kurallarına uygun şekilde kullanır. | Çalışma süresince İSG kurallarına uygun hareket eder.\n150031\t7\tIZGARA_YONETICI\tİstasyon Yönetimi\t3\tİstasyonlarda doğru ürün miktarının bulunmasına özen gösterir. | Çalıştığı istasyonların temizliğini ve düzenini sağlar. | Çalıştığı ekipmanları özenli ve titiz kullanır. Temizliğini yapar.\n150032\t90002\tIZGARA\tGörev Bilinci\t0\tNULL\n150033\t90002\tIZGARA\tİletişim Becerisi\t0\tNULL\n150034\t90002\tIZGARA\tAnalitik Düşünme ve Problem Çözme\t0\tNULL\n150035\t90002\tIZGARA\tKalite Odaklılık\t0\tNULL\n150036\t90002\tIZGARA\tTakım Çalışması ve İşbirliği\t0\tNULL\n150037\t90002\tIZGARA\tYönetim Becerileri \t10\tDoğru insanları belirleyerek ihtiyaçlar doğrultusunda görev dağılımını net bir şekilde yapar.  | Ekibine mentorluk yapar, yapıcı geri bildirimlerde bulunur ve yönlendirir. | Ekibini motive eder, olumsuzluk yaratacak durumların önüne geçmek için çaba sarf eder. | Ekip içindeki anlaşmazlıkları kişiselleştirmeden şirket yararını gözeterek yönetir. | İnsanların yeteneklerini keşfeder ve doğru şekilde değerlendirir. | Görevlerin yerine getirilebilmesi için gerekli olan kaynakları belirler ve organize eder. | Aldığı kararların arkasındadır ve bu kararların sorumluluğunu üstlenir.  | Zor durumlarda ve baskı altında en etkili kararı verir. | Çalışanların gelişimi için öğrenme ortamı yaratır. Ekibini ve kendini sürekli geliştirir. | Davranışları ile ekibe örnek olur. Söyledikleri ile yaptıkları tutarlıdır.\n150038\t90002\tIZGARA\tİş Disiplini ve Tutum\t4\tDış görünüşüne, saçına, sakalına, kişisel hijyenine dikkat eder. Eldiven, bone kullanır. | Şirketin eğitimlerine aktif olarak katılır, atanmış eğitimlerini tamamlar. | Restoran hedeflerinden haberdardır, hedef için elinden gelen gayreti gösterir. | Mazeret bildirmeden işe gelmemezlik yapmaz. Vardiya ve mola düzenine uyar.\n150039\t90002\tIZGARA\tÜrün Kalitesi ve Standartlara Uyum\t7\tÜrünleri reçetelere uygun hazırlar. Ürünlerin her seferinde aynı kalite ve tatta olmasını sağlar. | Et pişirme tekniklerine hakimdir. Şirket standartlarına uygun pişirme yapar. | Patates kızartma standartlarını bilir, doğru şekilde uygular. | Peynir çubukları, soğan halkası, nugget vb. ürünleri doğru sürede uygun sıcaklıkta pişirir. | Ekmek kesimini ve burger süslemesini standartlara uygun olarak yapar. | Kızartma yağı TPM ölçümünü doğru olarak yapar.İç ısı standardını sağlar. | Yağ filtre işlemini standartlara uygun olarak yapar. Koruyucu materyalleri kullanır.\n150040\t90002\tIZGARA\tGıda Güvenliği ve Hijyen\t6\tÜrünlerin son kullanma tarihine dikkat eder. Zayii olmasına izin vermez. (FIFO-İlk Giren İlk Çıkar) | Sebzeleri standartlara uygun şekilde yıkar. | Küçük ekipmanların hijyenini standartlara uygun olarak sağlar. | Gıda güvenliği ve operasyonel prosedür ve talimatları bilir, bunlara uygun hareket eder. | Temizlik kimyasallarını İSG kurallarına uygun şekilde kullanır. | Çalışma süresince İSG kurallarına uygun hareket eder.\n150041\t90002\tIZGARA\tİstasyon Yönetimi\t3\tİstasyonlarda doğru ürün miktarının bulunmasına özen gösterir. | Çalıştığı istasyonların temizliğini ve düzenini sağlar. | Çalıştığı ekipmanları özenli ve titiz kullanır. Temizliğini yapar.\n",
+  "stderr": "",
+  "execution_time_ms": 1655
+}

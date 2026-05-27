@@ -1,0 +1,30 @@
+{
+  "query": "SELECT p.id, p.name, COUNT(pq.id) as question_count FROM positions p LEFT JOIN position_categories pc ON p.id = pc.positionId LEFT JOIN position_questions pq ON pc.id = pq.categoryId GROUP BY p.id, p.name ORDER BY p.id",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SELECT p.id, p.name, COUNT(pq.id) as question_count FROM positions p LEFT JOIN position_categories pc ON p.id = pc.positionId LEFT JOIN position_questions pq ON pc.id = pq.categoryId GROUP BY p.id, p.name ORDER BY p.id",
+  "rows": [
+    {
+      "id": "5",
+      "name": "SERVIS",
+      "question_count": "0"
+    },
+    {
+      "id": "6",
+      "name": "RESTORAN_YONETIMI",
+      "question_count": "0"
+    },
+    {
+      "id": "7",
+      "name": "IZGARA_YONETICI",
+      "question_count": "0"
+    },
+    {
+      "id": "8",
+      "name": "KASA",
+      "question_count": "150"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tname\tquestion_count\n5\tSERVIS\t0\n6\tRESTORAN_YONETIMI\t0\n7\tIZGARA_YONETICI\t0\n8\tKASA\t150\n",
+  "stderr": "",
+  "execution_time_ms": 1588
+}

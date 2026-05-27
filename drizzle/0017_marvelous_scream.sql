@@ -1,0 +1,1 @@
+ALTER TABLE `field_inspections` ADD CONSTRAINT `field_inspections_inspectorId_users_id_fk` FOREIGN KEY (`inspectorId`) REFERENCES `users`(`id`) ON DELETE set null ON UPDATE no action;

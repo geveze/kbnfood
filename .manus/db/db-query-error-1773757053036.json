@@ -1,0 +1,11 @@
+{
+  "query": "INSERT INTO positions (id, name, createdAt, updatedAt) VALUES \n(5, 'SERVIS', datetime('now'), datetime('now')),\n(6, 'RESTORAN_YONETIMI', datetime('now'), datetime('now')),\n(7, 'IZGARA_YONETICI', datetime('now'), datetime('now')),\n(8, 'KASA', datetime('now'), datetime('now'))",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute INSERT INTO positions (id, name, createdAt, updatedAt) VALUES \n(5, 'SERVIS', datetime('now'), datetime('now')),\n(6, 'RESTORAN_YONETIMI', datetime('now'), datetime('now')),\n(7, 'IZGARA_YONETICI', datetime('now'), datetime('now')),\n(8, 'KASA', datetime('now'), datetime('now'))",
+  "returncode": 1,
+  "logs": [
+    "ERROR 1064 (42000) at line 1: You have an error in your SQL syntax; check the manual that corresponds to your TiDB version for the right syntax to use line 2 column 24 near \"('now'), datetime('now')),",
+    "(6, 'RESTORAN_YONETIMI', datetime('now'), datetime('now')),",
+    "(7, 'IZGARA_YONETICI', datetime('now'), datetime('now')),",
+    "(8, 'KASA', datetime('now'), datetime('now'))\""
+  ]
+}

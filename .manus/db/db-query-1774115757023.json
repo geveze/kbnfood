@@ -1,0 +1,120 @@
+{
+  "query": "SELECT * FROM login_attempts WHERE username = 'admin' ORDER BY id DESC LIMIT 10;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SELECT * FROM login_attempts WHERE username = 'admin' ORDER BY id DESC LIMIT 10;",
+  "rows": [
+    {
+      "id": "420005",
+      "username": "admin",
+      "ipAddress": "::ffff:10.229.243.1",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+      "attemptTime": "2026-03-21 17:51:55",
+      "status": "success",
+      "reason": "NULL",
+      "userId": "114",
+      "createdAt": "2026-03-21 17:51:55"
+    },
+    {
+      "id": "420004",
+      "username": "admin",
+      "ipAddress": "::ffff:10.229.243.1",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+      "attemptTime": "2026-03-21 17:45:33",
+      "status": "success",
+      "reason": "NULL",
+      "userId": "114",
+      "createdAt": "2026-03-21 17:45:33"
+    },
+    {
+      "id": "420003",
+      "username": "admin",
+      "ipAddress": "::ffff:10.229.243.1",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+      "attemptTime": "2026-03-21 17:45:07",
+      "status": "success",
+      "reason": "NULL",
+      "userId": "114",
+      "createdAt": "2026-03-21 17:45:07"
+    },
+    {
+      "id": "390011",
+      "username": "admin",
+      "ipAddress": "192.168.1.102",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+      "attemptTime": "2026-03-21 08:14:34",
+      "status": "success",
+      "reason": "NULL",
+      "userId": "114",
+      "createdAt": "2026-03-21 08:14:34"
+    },
+    {
+      "id": "390010",
+      "username": "admin",
+      "ipAddress": "192.168.1.101",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+      "attemptTime": "2026-03-21 08:14:34",
+      "status": "failed",
+      "reason": "invalid_password",
+      "userId": "114",
+      "createdAt": "2026-03-21 08:14:34"
+    },
+    {
+      "id": "390003",
+      "username": "admin",
+      "ipAddress": "192.168.1.102",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+      "attemptTime": "2026-03-21 08:05:43",
+      "status": "success",
+      "reason": "NULL",
+      "userId": "114",
+      "createdAt": "2026-03-21 08:05:43"
+    },
+    {
+      "id": "390002",
+      "username": "admin",
+      "ipAddress": "192.168.1.101",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+      "attemptTime": "2026-03-21 08:05:42",
+      "status": "failed",
+      "reason": "invalid_password",
+      "userId": "114",
+      "createdAt": "2026-03-21 08:05:42"
+    },
+    {
+      "id": "360004",
+      "username": "admin",
+      "ipAddress": "192.168.1.102",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+      "attemptTime": "2026-03-21 07:41:59",
+      "status": "success",
+      "reason": "NULL",
+      "userId": "114",
+      "createdAt": "2026-03-21 07:41:59"
+    },
+    {
+      "id": "360003",
+      "username": "admin",
+      "ipAddress": "192.168.1.101",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+      "attemptTime": "2026-03-21 07:41:59",
+      "status": "failed",
+      "reason": "invalid_password",
+      "userId": "114",
+      "createdAt": "2026-03-21 07:41:59"
+    },
+    {
+      "id": "330012",
+      "username": "admin",
+      "ipAddress": "192.168.1.102",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+      "attemptTime": "2026-03-20 21:30:05",
+      "status": "success",
+      "reason": "NULL",
+      "userId": "114",
+      "createdAt": "2026-03-20 21:30:05"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tusername\tipAddress\tuserAgent\tattemptTime\tstatus\treason\tuserId\tcreatedAt\n420005\tadmin\t::ffff:10.229.243.1\tMozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148\t2026-03-21 17:51:55\tsuccess\tNULL\t114\t2026-03-21 17:51:55\n420004\tadmin\t::ffff:10.229.243.1\tMozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148\t2026-03-21 17:45:33\tsuccess\tNULL\t114\t2026-03-21 17:45:33\n420003\tadmin\t::ffff:10.229.243.1\tMozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148\t2026-03-21 17:45:07\tsuccess\tNULL\t114\t2026-03-21 17:45:07\n390011\tadmin\t192.168.1.102\tMozilla/5.0 (Windows NT 10.0; Win64; x64)\t2026-03-21 08:14:34\tsuccess\tNULL\t114\t2026-03-21 08:14:34\n390010\tadmin\t192.168.1.101\tMozilla/5.0 (Windows NT 10.0; Win64; x64)\t2026-03-21 08:14:34\tfailed\tinvalid_password\t114\t2026-03-21 08:14:34\n390003\tadmin\t192.168.1.102\tMozilla/5.0 (Windows NT 10.0; Win64; x64)\t2026-03-21 08:05:43\tsuccess\tNULL\t114\t2026-03-21 08:05:43\n390002\tadmin\t192.168.1.101\tMozilla/5.0 (Windows NT 10.0; Win64; x64)\t2026-03-21 08:05:42\tfailed\tinvalid_password\t114\t2026-03-21 08:05:42\n360004\tadmin\t192.168.1.102\tMozilla/5.0 (Windows NT 10.0; Win64; x64)\t2026-03-21 07:41:59\tsuccess\tNULL\t114\t2026-03-21 07:41:59\n360003\tadmin\t192.168.1.101\tMozilla/5.0 (Windows NT 10.0; Win64; x64)\t2026-03-21 07:41:59\tfailed\tinvalid_password\t114\t2026-03-21 07:41:59\n330012\tadmin\t192.168.1.102\tMozilla/5.0 (Windows NT 10.0; Win64; x64)\t2026-03-20 21:30:05\tsuccess\tNULL\t114\t2026-03-20 21:30:05\n",
+  "stderr": "",
+  "execution_time_ms": 1607
+}

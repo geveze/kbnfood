@@ -1,0 +1,9 @@
+{
+  "query": "CREATE TABLE `login_attempts` (\n\t`id` int AUTO_INCREMENT NOT NULL,\n\t`username` varchar(100),\n\t`ipAddress` varchar(45),\n\t`userAgent` text,\n\t`attemptTime` timestamp NOT NULL DEFAULT (now()),\n\t`status` enum('success','failed','blocked') NOT NULL DEFAULT 'failed',\n\t`reason` varchar(255),\n\t`userId` int,\n\t`createdAt` timestamp NOT NULL DEFAULT (now()),\n\tCONSTRAINT `login_attempts_id` PRIMARY KEY(`id`)\n);",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute CREATE TABLE `login_attempts` (\n\t`id` int AUTO_INCREMENT NOT NULL,\n\t`username` varchar(100),\n\t`ipAddress` varchar(45),\n\t`userAgent` text,\n\t`attemptTime` timestamp NOT NULL DEFAULT (now()),\n\t`status` enum('success','failed','blocked') NOT NULL DEFAULT 'failed',\n\t`reason` varchar(255),\n\t`userId` int,\n\t`createdAt` timestamp NOT NULL DEFAULT (now()),\n\tCONSTRAINT `login_attempts_id` PRIMARY KEY(`id`)\n);",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 1700
+}

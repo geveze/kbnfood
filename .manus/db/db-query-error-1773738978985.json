@@ -1,0 +1,8 @@
+{
+  "query": "INSERT INTO kpi_target_cards_detail (period, branchName, branchManager, dimension, target, targetDescription, unit, source, frequency, weight, targetType, lowerLimit, targetValue, upperLimit, actualValue, createdAt, updatedAt) SELECT * FROM (SELECT '2026/3' as period, 'TEST' as branchName, 'TEST' as branchManager, 'TEST' as dimension, 'TEST' as target, 'TEST' as targetDescription, 'TEST' as unit, 'TEST' as source, 'TEST' as frequency, 0 as weight, 'TEST' as targetType, '0' as lowerLimit, '0' as targetValue, '0' as upperLimit, NULL as actualValue, NOW() as createdAt, NOW() as updatedAt) LIMIT 1",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute INSERT INTO kpi_target_cards_detail (period, branchName, branchManager, dimension, target, targetDescription, unit, source, frequency, weight, targetType, lowerLimit, targetValue, upperLimit, actualValue, createdAt, updatedAt) SELECT * FROM (SELECT '2026/3' as period, 'TEST' as branchName, 'TEST' as branchManager, 'TEST' as dimension, 'TEST' as target, 'TEST' as targetDescription, 'TEST' as unit, 'TEST' as source, 'TEST' as frequency, 0 as weight, 'TEST' as targetType, '0' as lowerLimit, '0' as targetValue, '0' as upperLimit, NULL as actualValue, NOW() as createdAt, NOW() as updatedAt) LIMIT 1",
+  "returncode": 1,
+  "logs": [
+    "ERROR 1248 (42000) at line 1: Every derived table must have its own alias"
+  ]
+}

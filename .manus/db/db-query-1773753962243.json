@@ -1,0 +1,30 @@
+{
+  "query": "SELECT pq.categoryId, COUNT(*) as count FROM position_questions pq WHERE pq.categoryId IN (1, 2, 3, 4, 5) GROUP BY pq.categoryId;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SELECT pq.categoryId, COUNT(*) as count FROM position_questions pq WHERE pq.categoryId IN (1, 2, 3, 4, 5) GROUP BY pq.categoryId;",
+  "rows": [
+    {
+      "categoryId": "1",
+      "count": "16"
+    },
+    {
+      "categoryId": "4",
+      "count": "4"
+    },
+    {
+      "categoryId": "5",
+      "count": "4"
+    },
+    {
+      "categoryId": "3",
+      "count": "4"
+    },
+    {
+      "categoryId": "2",
+      "count": "16"
+    }
+  ],
+  "messages": [],
+  "stdout": "categoryId\tcount\n1\t16\n4\t4\n5\t4\n3\t4\n2\t16\n",
+  "stderr": "",
+  "execution_time_ms": 1549
+}

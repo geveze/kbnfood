@@ -1,0 +1,1 @@
+ALTER TABLE `performance_evaluations` ADD `pdfUrl` text;

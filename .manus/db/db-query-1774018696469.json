@@ -1,0 +1,17 @@
+{
+  "query": "SELECT id, username, email, role, loginMethod FROM users WHERE username LIKE '%byavcilar%' OR email LIKE '%byavcilar%';",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SELECT id, username, email, role, loginMethod FROM users WHERE username LIKE '%byavcilar%' OR email LIKE '%byavcilar%';",
+  "rows": [
+    {
+      "id": "1110031",
+      "username": "byavcilar",
+      "email": "abdullah.er@kebanet.com",
+      "role": "branch_manager",
+      "loginMethod": "local"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tusername\temail\trole\tloginMethod\n1110031\tbyavcilar\tabdullah.er@kebanet.com\tbranch_manager\tlocal\n",
+  "stderr": "",
+  "execution_time_ms": 2141
+}

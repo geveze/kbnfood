@@ -1,0 +1,22 @@
+{
+  "query": "SELECT \n  pc.positionId,\n  p.name as positionName,\n  COUNT(DISTINCT pc.id) as categoryCount,\n  COUNT(pq.id) as questionCount\nFROM position_categories pc\nLEFT JOIN positions p ON pc.positionId = p.id\nLEFT JOIN position_questions pq ON pc.id = pq.categoryId\nWHERE pc.positionId IN (7, 90002)\nGROUP BY pc.positionId, p.name\nORDER BY pc.positionId;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute SELECT \n  pc.positionId,\n  p.name as positionName,\n  COUNT(DISTINCT pc.id) as categoryCount,\n  COUNT(pq.id) as questionCount\nFROM position_categories pc\nLEFT JOIN positions p ON pc.positionId = p.id\nLEFT JOIN position_questions pq ON pc.id = pq.categoryId\nWHERE pc.positionId IN (7, 90002)\nGROUP BY pc.positionId, p.name\nORDER BY pc.positionId;",
+  "rows": [
+    {
+      "positionId": "7",
+      "positionName": "IZGARA_YONETICI",
+      "categoryCount": "12",
+      "questionCount": "50"
+    },
+    {
+      "positionId": "90002",
+      "positionName": "IZGARA",
+      "categoryCount": "12",
+      "questionCount": "50"
+    }
+  ],
+  "messages": [],
+  "stdout": "positionId\tpositionName\tcategoryCount\tquestionCount\n7\tIZGARA_YONETICI\t12\t50\n90002\tIZGARA\t12\t50\n",
+  "stderr": "",
+  "execution_time_ms": 1591
+}

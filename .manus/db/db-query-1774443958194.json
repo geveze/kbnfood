@@ -1,0 +1,9 @@
+{
+  "query": "INSERT INTO kpi_target_cards_detail (\n  period, branchName, branchManager, dimension, target, targetDescription, unit, source, frequency, weight, targetType, lowerLimit, targetValue, upperLimit, actualValue, score, weightedScore, createdAt, updatedAt\n)\nSELECT \n  '2026/3' as period,\n  branchName,\n  branchManager,\n  dimension,\n  target,\n  targetDescription,\n  unit,\n  source,\n  frequency,\n  weight,\n  targetType,\n  lowerLimit,\n  targetValue,\n  upperLimit,\n  NULL as actualValue,\n  NULL as score,\n  NULL as weightedScore,\n  NOW() as createdAt,\n  NOW() as updatedAt\nFROM kpi_target_cards_detail\nWHERE period = '2026/1' AND branchName LIKE '%BAKIRKÖY%';",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute INSERT INTO kpi_target_cards_detail (\n  period, branchName, branchManager, dimension, target, targetDescription, unit, source, frequency, weight, targetType, lowerLimit, targetValue, upperLimit, actualValue, score, weightedScore, createdAt, updatedAt\n)\nSELECT \n  '2026/3' as period,\n  branchName,\n  branchManager,\n  dimension,\n  target,\n  targetDescription,\n  unit,\n  source,\n  frequency,\n  weight,\n  targetType,\n  lowerLimit,\n  targetValue,\n  upperLimit,\n  NULL as actualValue,\n  NULL as score,\n  NULL as weightedScore,\n  NOW() as createdAt,\n  NOW() as updatedAt\nFROM kpi_target_cards_detail\nWHERE period = '2026/1' AND branchName LIKE '%BAKIRKÖY%';",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 1637
+}

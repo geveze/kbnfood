@@ -1,0 +1,9 @@
+{
+  "query": "TRUNCATE TABLE performance_evaluations; TRUNCATE TABLE probation_evaluations; TRUNCATE TABLE probation_evaluation_criteria; TRUNCATE TABLE probation_evaluations_v2; TRUNCATE TABLE probation_evaluation_criteria_v2;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 46m8FvVm7HSsc1z.root --database 6XmnMHSGkmqmcvGw6sxZ3M --execute TRUNCATE TABLE performance_evaluations; TRUNCATE TABLE probation_evaluations; TRUNCATE TABLE probation_evaluation_criteria; TRUNCATE TABLE probation_evaluations_v2; TRUNCATE TABLE probation_evaluation_criteria_v2;",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 2962
+}
